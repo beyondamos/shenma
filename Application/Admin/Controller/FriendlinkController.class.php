@@ -23,6 +23,9 @@ class FriendlinkController extends CommonController{
         if(IS_POST){
            $friendlink_model = D('Friendlink');
            if($friendlink_model->create()){
+                if($_FILES['file_upload']['error'] != 4 ){
+                    $friendlink_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
+                }
                if($friendlink_model->add()){
                    $this->success('友情链接添加成功', U('Friendlink/index'), 1);
                }else{
@@ -72,6 +75,33 @@ class FriendlinkController extends CommonController{
             $this->error('友情链接删除失败');
         }
     }
+
+
+    /**
+     * 文件上传
+     * @return [type] [description]
+     */
+    public function upload(){
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath  =      C('UPLOAD'); // 设置附件上传根目录
+        $upload->autoSub = true;
+        $upload->subName = array('date','Ymd');
+        $upload->saveName = time().'_'.mt_rand();
+        // 上传文件 
+        $info   =   $upload->upload();
+        if(!$info) {// 上传错误提示错误信息
+           $this->error($upload->getError());
+        }else{// 上传成功 获取上传文件信息
+            foreach($info as $file){
+              return $file['savepath'].$file['savename'];
+           }
+        }
+    }
+
+
+
 
 
 }
