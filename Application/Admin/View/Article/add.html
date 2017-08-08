@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<title>甫劳科技后台管理系统</title>
+	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+	<link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/uploadify/uploadify.css" />
+	<!--[if lt IE 9]>
+	<script src="__JS__/html5shiv.js"></script>
+	<script src="__JS__/respond.min.js"></script>
+	<![endif]-->
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+	<script src="__JS__/bootstrap.min.js"></script>
+	<script src="__JS__/laydate/laydate.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/Admin/kindeditor/kindeditor.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/Admin/kindeditor/lang/zh_CN.js"></script>
+	<script>
+		KindEditor.ready(function(K) {
+			window.editor = K.create('#editor_id');
+		});
+	</script>
+
+
+</head>
+<body>
+
+<include file="Public:nav_top" />
+<include file="Public:nav_left" />
+
+<div class="cont">
+	<div class="contmain">
+
+		<div class="boxi">
+			<h1>添加文章</h1>
+
+			<form action="<{:U('Article/add')}>" method="post" enctype="multipart/form-data">
+				<div class="boxinb">
+					<span>文章标题</span><input type="text" class="form-control"  name="title">
+				</div>
+				<div class="boxinb">
+					<div class="boxinbl">
+						<span>文章分类</span>
+						<select name="cate_id" class="form-control">
+							<option value="0">请选择栏目分类</option>
+							<volist name="category_data" id="vo">
+								<option value="<{$vo.cate_id}>"><{:str_repeat('----',$vo['level'])}><{$vo.cate_name}></option>
+							</volist>
+						</select>
+					</div>
+				</div>
+				<div class="boxinb">
+					<span>信息属性</span>
+					<label><input type="checkbox" name="status" checked/>审核</label>
+
+					<!--<label><input type="checkbox" name="is_hot"/>最热</label>-->
+					<label><input type="checkbox" name="is_recommend"/>推荐</label>
+				</div>
+				<div class="boxinb">
+					<div class="boxinbl">
+						<span class="lets2">作&nbsp;&nbsp;&nbsp;&nbsp;者</span><input type="text" class="form-control" name="author" value="<{$login_user_data.nickname}>">
+					</div>
+					<div class="boxinbr">
+						<span class="lets2">日&nbsp;&nbsp;&nbsp;&nbsp;期</span><input type="text" id="demo"  class="form-control laydate-icon" name="newstime"  value="">
+					</div>
+				</div>
+
+				<div class="boxinb">
+					<span class="lets3">点&nbsp;击&nbsp;数</span><input type="text" class="form-control" name="clicks" value="<{:mt_rand(1,10)}>">
+				</div>
+				<div class="boxinb">
+					<span class="lets3">关&nbsp;键&nbsp;词</span><input type="text"  class="form-control" placeholder="多个关键词用“,”半角逗号隔开"  name="keywords">
+				</div>
+				<div class="boxinb">
+					<span>标题图片</span>
+					<a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"></i>
+				</div>
+				<div class="boxinb">
+					<span class="lets2">标&nbsp;&nbsp;&nbsp;&nbsp;签</span><input type="text" name="" class="form-control" placeholder="多个标签用“,”半角逗号隔开">
+				</div>
+				<div class="boxtextb">
+					<span>内容简介</span><textarea  rows="6" class="form-control" name="synopsis"></textarea>
+				</div>
+
+				<div class="boxuediter">
+					<div class="lets2">正&nbsp;&nbsp;&nbsp;&nbsp;文</div>
+
+
+					<div class="uediter">
+						
+						<textarea id="editor_id" name="content" style="width:700px;height:300px;">
+
+						</textarea>
+
+					</div>
+				</div>
+				<div class="boxinbtn">
+					<input type="submit"  value="确定" class="btn btna" />
+					<input type="reset" value="重置" class="btn btnb" />
+				</div>
+
+			</form>
+		</div>
+
+	</div>
+</div>
+<script>
+	;!function(){
+		laydate({
+			elem: '#demo'
+		})
+	}();
+</script>
+<script src="__JS__/sdmenu.js"></script>
+<script>
+	$().ready(function(){
+		var date = new Date();
+		var dateStr = date.getFullYear()+'-';
+		var month = date.getMonth()+ 1;
+		if(month < 10){
+			month = '0'+month;
+		}
+		dateStr += month + '-';
+
+		var day = date.getDate();
+		if(day < 10){
+			day = '0' + day;
+		}
+		dateStr += day;
+//		alert(dateStr);
+		$('#demo').val(dateStr);
+
+
+
+		$(".upfn").on("change","input[type='file']",function(){
+			var filePath = $(this).val();
+			var arr = filePath.split('\\');
+			var fileName = arr[arr.length-1];
+			$(".upfnb").html(fileName);
+		});
+
+
+	});
+</script>
+</body>
+</html>

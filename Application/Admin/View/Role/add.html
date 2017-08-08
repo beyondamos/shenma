@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <title>甫劳科技后台管理系统</title>
+	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+	
+    <script src="__JS__/bootstrap.min.js"></script>
+	<script src="__JS__/laydate/laydate.js"></script>
+</head>
+<body>
+<include file="Public:nav_top" />
+<include file="Public:nav_left" />
+
+<div class="cont">
+	<div class="contmain">
+		
+		<div class="boxi">
+			<h1>添加角色</h1>
+			
+			<form action="<{:U('Role/add')}>" method="post">
+				<div class="boxinb">
+					<div class="boxinbh">
+						<span>角色名称</span><input type="text"  class="form-control" name="role_name"> 
+					</div>
+					<div class="boxinbh">
+						<span>角色描述</span><input type="text" class="form-control" name="role_desc" >
+					</div>
+				</div>
+				<div class="boxinr">
+					<div class="boxinrtitl">权限分配</div>
+						<div class="boxcektitl"><label><input type="checkbox" id="chooseAll"/>全选</label></div>
+					
+<!-- 					<ul>
+						<div class="boxcektitl"><span class="lets2">首&nbsp;&nbsp;&nbsp;&nbsp;页</span><label><input type="checkbox" name=""/>全选</label></div>
+						<li><label><input type="checkbox" name=""/>系统信息</label></li>
+						<li><label><input type="checkbox" name=""/>访问来源</label></li>
+					</ul> -->
+					
+					<volist name="auth_data" id="vo">
+					<ul>
+						<div class="boxcektitl"><span><{$vo[0]['auth_name']}></span><label><input type="checkbox" class="subAll"/>全选</label></div>
+						<li>
+							<volist name="vo" id="val">
+							<label><input type="checkbox" name="auth_list[]" value="<{$val.auth_id}>"/><{$val.auth_name}></label>
+							</volist>
+						</li>
+					</ul>
+					</volist>
+				</div>
+				<div class="boxinbtn">
+					<input type="submit" name="" value="确定" class="btn btna" />
+					<input type="reset" name="" value="重置" class="btn btnb" />
+				</div>
+			</form>
+		</div>
+	
+	</div>
+</div>
+<script src="__JS__/sdmenu.js"></script>
+<script>
+	$().ready(function(){
+		$("#chooseAll").click(function(){
+			var status = $('#chooseAll').is(':checked');
+			if(status){
+				$(":checkbox").prop('checked',true);
+			}else{
+				$(":checkbox").prop('checked',false);
+			}
+
+		});
+
+		$(".subAll").click(function(){
+			var status = $(this).is(':checked');
+			if(status){
+				$(this).parent().parent().next().find(":checkbox").prop('checked',true);
+			}else{
+				$(this).parent().parent().next().find(":checkbox").prop('checked',false);
+			}
+		});
+
+
+	});
+</script>
+</body>
+</html>

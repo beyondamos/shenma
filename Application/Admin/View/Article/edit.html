@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <title>甫劳科技后台管理系统</title>
+	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/uploadify/uploadify.css" />
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+    <script src="__JS__/bootstrap.min.js"></script>
+	<script src="__JS__/laydate/laydate.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/Admin/kindeditor/kindeditor.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/Admin/kindeditor/lang/zh_CN.js"></script>
+	<script>
+		KindEditor.ready(function(K) {
+			window.editor = K.create('#editor_id');
+		});
+	</script>
+
+	
+</head>
+<body>
+
+<include file="Public:nav_top" />
+<include file="Public:nav_left" />
+
+<div class="cont">
+	<div class="contmain">
+		
+		<div class="boxi">
+			<h1>编辑文章</h1>
+			
+			<form action="<{:U('Article/edit')}>" method="post" enctype="multipart/form-data">
+				<div class="boxinb">
+					<span>文章标题</span><input type="text" class="form-control"  name="title" value="<{$article_data.title}>">
+				</div>
+				<div class="boxinb">
+					<div class="boxinbl">
+						<span>文章分类</span>
+						<select name="cate_id" class="form-control">
+							<option value="0">请选择栏目分类</option>
+							<volist name="category_data" id="vo">
+							<option value="<{$vo.cate_id}>" <if condition="$vo['cate_id'] == $article_data['cate_id']"> selected</if>
+							><{:str_repeat('----',$vo['level'])}><{$vo.cate_name}></option>
+							</volist>
+						</select>
+					</div>
+				</div>
+				<div class="boxinb">
+					<span>信息属性</span>
+					<label><input type="checkbox" name="status" <if condition="$article_data['status'] == 1">checked</if> />审核</label>
+
+					<!--<label><input type="checkbox" name="is_hot" <if condition="$article_data['is_hot'] == 1">checked</if> />最热</label>-->
+					<label><input type="checkbox" name="is_recommend" <if condition="$article_data['is_recommend'] == 1">checked</if> />推荐</label>
+				</div>
+				<div class="boxinb">
+					<div class="boxinbl">
+						<span class="lets2">作&nbsp;&nbsp;&nbsp;&nbsp;者</span><input type="text" class="form-control" name="author" value="<{$article_data.author}>">
+					</div>
+					<div class="boxinbr">
+						<span class="lets2">日&nbsp;&nbsp;&nbsp;&nbsp;期</span><input type="text" id="demo"  class="form-control laydate-icon" name="newstime"  value="<{$article_data.newstime}>">
+					</div>
+				</div>
+				
+				<div class="boxinb">
+					<span class="lets3">点&nbsp;击&nbsp;数</span><input type="text" class="form-control" name="clicks" value="<{$article_data.clicks}>">
+				</div>
+				<div class="boxinb">
+					<span class="lets3">关&nbsp;键&nbsp;词</span><input type="text"  class="form-control" placeholder="多个关键词用“,”半角逗号隔开"  name="keywords" value="<{$article_data.keywords}>">
+				</div>
+				<div class="boxinb">
+					<span>标题图片</span>
+					<a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"><{$article_data.titleimg}></i>
+					<br /><br />
+					<img src="<{$article_data.titleimg}>" alt="" height="150" width="150" style="margin-left: 60px;">
+				</div>
+				<div class="boxinb">
+					<span class="lets2">标&nbsp;&nbsp;&nbsp;&nbsp;签</span><input type="text" name="" class="form-control" placeholder="多个标签用“,”半角逗号隔开">
+				</div>
+				<div class="boxtextb">
+					<span>内容简介</span><textarea  rows="6" class="form-control" name="synopsis"><{$article_data.synopsis}></textarea>
+				</div>
+				
+				<div class="boxuediter">
+					<div class="lets2">正&nbsp;&nbsp;&nbsp;&nbsp;文</div>
+					<div class="uediter">
+
+						<textarea id="editor_id" name="content" style="width:700px;height:300px;">
+							<{$article_data.content}>
+						</textarea>
+
+					</div>
+				</div>
+				<div class="boxinbtn">
+					<input type="hidden" name="tag" value="<{$Think.get.tag}>">
+					<input type="hidden" name="article_id" value="<{$article_data.article_id}>">
+					<input type="submit" value="确定" class="btn btna" />
+					<input type="reset" value="重置" class="btn btnb" />
+				</div>
+				
+			</form>
+		</div>
+	
+	</div>
+</div>
+<script>
+	;!function(){
+		laydate({
+		   elem: '#demo'
+		})
+	}();
+</script>
+<script src="__JS__/sdmenu.js"></script>
+<script>
+	$(".upfn").on("change","input[type='file']",function(){
+	var filePath = $(this).val();
+	var arr = filePath.split('\\');
+	var fileName = arr[arr.length-1];
+	$(".upfnb").html(fileName);
+	});
+</script>
+</body>
+</html>

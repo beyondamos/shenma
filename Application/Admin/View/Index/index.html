@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <title>甫劳科技后台管理系统</title>
+	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+    <script src="__JS__/bootstrap.min.js"></script>
+	<script src="__JS__/laydate/laydate.js"></script>
+</head>
+<body>
+<include file="Public:nav_top" />
+<include file="Public:nav_left" />
+
+<div class="cont">
+	<div class="contmain">
+		
+		<!-- 账号信息 -->
+		<div class="boxi">
+		
+			<div class="boxil">
+				<img src="__IMG__/iconhead.png" alt="" />
+				<div>
+					<h1><{$login_user_data.username}><span><{$role_info.role_name}></span></h1>
+					<h4>登录次数：<{$Think.session.login_times}><span>上次登录：<php> echo date('Y-m-d H:i:s',session('last_login_time')) </php> </span></h4>
+					<h4 class="let3">登&nbsp;录&nbsp;IP：<php>echo long2ip(session('last_login_ip'))</php></h4>
+					
+					
+					<div class="btnblue">
+						<a href="<{:U('User/password')}>" class="btn btna">修改个人信息</a>
+					</div>
+				
+				</div>
+			</div>
+			
+			<div class="boxir">
+				<div>
+					<a href="javascript:;"><{$article_total}><br/><span>全部文章</span></a>
+					<a href="<{:U('Article/checkListing')}>"><{$article_uncheck_num}><br/><span>未审核文章</span></a>
+					<a href="javascript:;">4<br/><span>未审核留言</span></a>
+					
+				</div>
+				<div style="clear:both;"></div>
+				<div class="btnblue">
+					<a href="<{:U('Article/listing')}>" class="btn btna">文章列表</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 系统信息 访问来源 -->
+		<div class="boxii">
+			
+			<div class="boxil">
+				<h1>系统信息</h1>
+				<ul>
+					<li><span>服务器操作系统：</span><span><{$server_data.os}></span></li>
+					<li><span>Socket支持：</span><span><php> echo $server_data['is_socket'] == 1 ? '是' : '否';</php></span></li>
+					<li><span>GD版本：</span><span><{$server_data.gd.GD Version}></span></li>
+					<li><span>上传文件：</span><span><{$server_data.upload}></span></li>
+				</ul>
+				<ul>
+					<li><span>PHP版本：</span><span><{$server_data.php_version}></span></li>
+					<li><span>Web服务器：</span><span><{$server_data.web}></span></li>
+					<li><span>时区设置：</span><span><{$server_data.timezone}></span></li>
+					<li><span>程序编码：</span><span>UTF-8</span></li>
+					<li><span>服务器ip：</span><span><{$server_data.host_ip}></span></li>
+				</ul>
+				
+			</div>
+			
+		</div>
+		
+
+
+
+	
+	</div>
+</div>
+
+</body>
+</html>
