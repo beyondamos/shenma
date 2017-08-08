@@ -102,7 +102,7 @@
 				</div>
 				
 				<div class="boxinb">
-					<span class="lets3">点&nbsp;击&nbsp;数</span><input type="text" class="form-control" name="clicks" value="<?php echo ($article_data["clicks"]); ?>">
+					<span class="lets3">排&nbsp;序</span><input type="text" class="form-control" name="sort" value="<?php echo ($article_data["sort"]); ?>">
 				</div>
 				<div class="boxinb">
 					<span class="lets3">关&nbsp;键&nbsp;词</span><input type="text"  class="form-control" placeholder="多个关键词用“,”半角逗号隔开"  name="keywords" value="<?php echo ($article_data["keywords"]); ?>">
@@ -113,9 +113,9 @@
 					<br /><br />
 					<img src="<?php echo ($article_data["titleimg"]); ?>" alt="" height="150" width="150" style="margin-left: 60px;">
 				</div>
-				<div class="boxinb">
+<!-- 				<div class="boxinb">
 					<span class="lets2">标&nbsp;&nbsp;&nbsp;&nbsp;签</span><input type="text" name="" class="form-control" placeholder="多个标签用“,”半角逗号隔开">
-				</div>
+				</div> -->
 				<div class="boxtextb">
 					<span>内容简介</span><textarea  rows="6" class="form-control" name="synopsis"><?php echo ($article_data["synopsis"]); ?></textarea>
 				</div>

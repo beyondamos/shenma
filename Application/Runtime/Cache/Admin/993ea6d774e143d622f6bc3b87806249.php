@@ -85,8 +85,6 @@
 					<th class="col-md-1 text-vm">分类</th>
 					<th class="col-md-1 text-vm">发布者</th>
 					<th class="col-md-2 text-vm">发布时间</th>
-					<th class="col-md-1 text-vm">点击量</th>
-					<th class="col-md-1 text-vm">留言</th>
 					<th class="col-md-2 text-vm text-center">操作</th>
 				</tr>
 				</thead>
@@ -99,8 +97,6 @@
 							<td class="text-vm"><?php echo ($vo["cate_name"]); ?></td>
 							<td class="text-vm"><?php echo ($vo["author"]); ?></td>
 							<td class="text-vm"><?php echo ($vo["newstime"]); ?></td>
-							<td class="text-vm"><?php echo ($vo["real_clicks"]); ?></td>
-							<td class="text-vm">2</td>
 							<td class="text-vm">
 								<a href="<?php echo U('Article/edit',array('article_id' => $vo['article_id']));?>">编辑</a>
 								<a href="<?php echo U('Article/unCheck', array('article_id' => $vo['article_id']));?>">取消审核</a>

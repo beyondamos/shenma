@@ -6,14 +6,6 @@ namespace Common\Model;
 use Think\Model;
 class ArticleModel extends Model{
 
-//	 protected $_validate = array(
-//	 	array('title', 'require', '标题不能为空', self::EXISTS_VALIDATE, 'regex', self::MODEL_BOTH),
-//	 	array('title', '1,30', '标题不得超过30个字符', self::EXISTS_VALIDATE, 'length', self::MODEL_BOTH),
-//	 	array('cate_id', 'number', '不合法的文章分类', self::EXISTS_VALIDATE, 'regex', self::MODEL_BOTH),
-//	 	array('content', 'require', '正文不能为空', self::EXISTS_VALIDATE, 'regex', self::MODEL_BOTH),
-//	 	array('clicks', 'number', '不合法的点击数', self::EXISTS_VALIDATE, 'regex', self::MODEL_BOTH ),
-//	 	array('author', '1,10', '不合法的作者信息', self::VALUE_VALIDATE, 'length', self::MODEL_BOTH),
-//	 );
 
 
 	protected $_auto = array(

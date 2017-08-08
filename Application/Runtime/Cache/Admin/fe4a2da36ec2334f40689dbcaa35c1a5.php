@@ -64,20 +64,6 @@
 			<div class="boxoper">
 				<a href="<?php echo U('Category/add');?>">添加分类</a>
 
-<!-- 				<div class="boxoper-seh">
-					<form action="" method="post">
-						<button class="btn btn-default" type="submit"><img src="/Public/Admin/images/iconseh.png" /></button>
-						<input type="text" class="form-control" placeholder="搜索分类名称">
-						<select class="form-control">
-							<option>全部</option>
-							<option>分类</option>
-							<option>分类</option>
-							<option>分类</option>
-							<option>分类</option>
-						</select>
-					</form>
-				</div> -->
-
 			</div>
 			
 			<!-- 表格 -->
@@ -88,7 +74,6 @@
 					   <th class="col-md-2 text-vm">分类</th>
 					   <th class="col-md-4 text-vm">描述</th>
 					   <th class="col-md-1 text-vm">文章数</th>
-					   <th class="col-md-1 text-vm">访问量</th>
 					   <th class="col-md-1 text-vm text-center">操作</th>
 					</tr>
 				</thead>
@@ -100,7 +85,6 @@
 						<td class="text-vm"><?php echo str_repeat('--',$vo['level']*2); echo ($vo["cate_name"]); ?></td>
 						<td class="text-vm"><?php echo ($vo["description"]); ?></td>
 						<td class="text-vm"><?php echo ($count_data[$vo['cate_id']]['article_num']); ?></td>
-						<td class="text-vm"><?php echo ($count_data[$vo['cate_id']]['clicks']); ?></td>
 						<td class="text-vm">
 							<a href="<?php echo U('Category/edit',array('cate_id' => $vo['cate_id']));?>">编辑</a>
 							<a href="<?php echo U('Category/delete',array('cate_id' => $vo['cate_id']));?>">删除</a>

@@ -76,6 +76,9 @@
 					<span>文章标题</span><input type="text" class="form-control"  name="title">
 				</div>
 				<div class="boxinb">
+					<span>网页标题</span><input type="text" class="form-control"  name="web_title">
+				</div>
+				<div class="boxinb">
 					<div class="boxinbl">
 						<span>文章分类</span>
 						<select name="cate_id" class="form-control">
@@ -101,7 +104,7 @@
 				</div>
 
 				<div class="boxinb">
-					<span class="lets3">点&nbsp;击&nbsp;数</span><input type="text" class="form-control" name="clicks" value="<?php echo mt_rand(1,10);?>">
+					<span class="lets3">排&nbsp;序</span><input type="text" class="form-control" name="sort" value="50">
 				</div>
 				<div class="boxinb">
 					<span class="lets3">关&nbsp;键&nbsp;词</span><input type="text"  class="form-control" placeholder="多个关键词用“,”半角逗号隔开"  name="keywords">
@@ -110,9 +113,9 @@
 					<span>标题图片</span>
 					<a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"></i>
 				</div>
-				<div class="boxinb">
+<!-- 				<div class="boxinb">
 					<span class="lets2">标&nbsp;&nbsp;&nbsp;&nbsp;签</span><input type="text" name="" class="form-control" placeholder="多个标签用“,”半角逗号隔开">
-				</div>
+				</div> -->
 				<div class="boxtextb">
 					<span>内容简介</span><textarea  rows="6" class="form-control" name="synopsis"></textarea>
 				</div>

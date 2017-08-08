@@ -10,23 +10,11 @@ class CategoryModel extends Model{
 		array('cate_name', 'require', '分类名称不能为空', self::EXISTS_VALIDATE, 'regex', self::MODEL_BOTH),
 		array('cate_name', '', '分类名称已经存在', self::EXISTS_VALIDATE, 'unique', self::MODEL_BOTH),
 		array('parent_id', 'number', '分类名称不合法', self::EXISTS_VALIDATE, 'regex', self::MODEL_BOTH),
-		array('url', 'require', '路由名称不能为空', self::EXISTS_VALIDATE, 'regex', self::MODEL_BOTH),
-		array('url', 'checkUrl', '路由名称只能为纯英文', self::EXISTS_VALIDATE, 'callback', self::MODEL_BOTH),
 		array('cate_title', '1,50', '栏目标题字数长度不超过50个字符', self::VALUE_VALIDATE, 'length', self::MODEL_BOTH),
 		array('cate_keywords', '1,50', '栏目关键词字数长度不超过50个字符', self::VALUE_VALIDATE, 'length', self::MODEL_BOTH),
 		array('description', '1,255', '分类描述字数长度不超过255个字符', self::VALUE_VALIDATE, 'length', self::MODEL_BOTH),
 	);
 
-	/**
-	 * 判断路由名称的格式是否正确
-	 * 必须为纯英文
-	 * @param string $url 接收的路由名称
-	 * @return boolean 格式正确返回true 错误返回false
-	 */
-	public function checkUrl($url){
-		if(preg_match('/^[a-zA-Z]+$/',$url)) return true;
-		return false;
-	}
 
 	/**
 	 * 获得排序好的分类

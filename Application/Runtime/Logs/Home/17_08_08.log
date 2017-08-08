@@ -373,3 +373,215 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
 
+[ 2017-08-08T14:35:39+08:00 ] 127.0.0.1 /Public/Admin/uploadify/uploadify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-08-08T14:36:08+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+
+[ 2017-08-08T14:36:13+08:00 ] 127.0.0.1 /Public/Admin/uploadify/uploadify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-08-08T14:36:13+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+
+[ 2017-08-08T14:36:52+08:00 ] 127.0.0.1 /Public/Admin/uploadify/uploadify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-08-08T14:36:52+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2017-08-08T14:37:07+08:00 ] 127.0.0.1 /Public/Admin/uploadify/uploadify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-08-08T14:37:07+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+
+[ 2017-08-08T14:37:26+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-08-08T14:38:16+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-08-08T14:38:17+08:00 ] 127.0.0.1 /Public/Admin/uploadify/uploadify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-08-08T14:38:17+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+
+[ 2017-08-08T14:38:24+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-08-08T14:39:01+08:00 ] 127.0.0.1 /Public/Admin/uploadify/uploadify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-08-08T14:39:01+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2017-08-08T14:56:51+08:00 ] 127.0.0.1 /Public/Admin/uploadify/uploadify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-08-08T14:56:51+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2017-08-08T14:58:21+08:00 ] 127.0.0.1 /Public/Admin/uploadify/uploadify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-08-08T14:58:22+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-08-08T14:58:52+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+
+[ 2017-08-08T14:58:53+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2017-08-08T14:58:54+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+
+[ 2017-08-08T14:59:25+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-08-08T15:00:01+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-08-08T15:00:03+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-08-08T15:01:14+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-08-08T15:02:09+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+
+[ 2017-08-08T15:02:13+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+
+[ 2017-08-08T15:02:14+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-08-08T15:02:15+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+
+[ 2017-08-08T15:02:16+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+
+[ 2017-08-08T15:02:16+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-08-08T15:02:17+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-08-08T15:02:17+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-08-08T15:02:18+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-08-08T15:02:19+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+
