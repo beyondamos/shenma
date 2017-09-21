@@ -13,6 +13,9 @@ class AboutController extends HomeBaseController
 		//banner
 		$banner = D('Banner')->find(5);
 		$this->assign('banner', $banner);
+		//什马介绍
+		$info = D('About')->find(1);
+		$this->assign('info', $info);
 
 		$model = D('Article');
 		$articles = $model->where(array('status' => 1, 'cate_id' => 14))->select();

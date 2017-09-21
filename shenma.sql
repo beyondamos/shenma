@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?21 �?01:52
+-- 生成日期: 2017 �?09 �?21 �?02:30
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -19,6 +19,26 @@ SET time_zone = "+00:00";
 --
 -- 数据库: `shenma`
 --
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `shenma_about`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_about` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL COMMENT '标题',
+  `content` text NOT NULL COMMENT '页面内容',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='新闻内容表' AUTO_INCREMENT=2 ;
+
+--
+-- 转存表中的数据 `shenma_about`
+--
+
+INSERT INTO `shenma_about` (`id`, `title`, `content`) VALUES
+(1, '关于什马', '&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	什马互联网金融信息服务（上海）有限公司，简称什马金融，成立于2015年1月， 总部位于国内金融中心上海。&lt;br /&gt;\r\n是一家专注在县乡镇渠道，服务于8亿农村市场的国内领先的互联网金融公司，公司成立伊始以农村交通工具领域为切入点，并依托上市公司等行业强势资源，业务快速覆盖全国。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	公司两大核心产品什马分期和信用贷分别为农民和商家提供消费金融和供应链金融服务，旨在帮助更多的经销商做好生意、做大生意，使销售资金得以快速的回笼。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	截止2017年7月，什马金融合作网点遍布全国31个省达35000多家，为近50%的商户和几十万农民家庭提供了金融服务解决方案。整体业务规模超50亿元。预计至2017年底，合作农村网点将超过5万家，业务涵盖交通工具、家电、3c、农资、农机等各版块，业务超100亿元。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	公司以“让农民拥有和城里人一样的金融服务”为核心理念，旨在通过普惠金融方式，为广大农民提供优质高效低成本的互联网金融服务，目前不仅是农村交通工具领域国内最大的互联网公司，更是国内农村金融领域的领跑者之一。\r\n&lt;/p&gt;');
 
 -- --------------------------------------------------------
 
@@ -96,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `shenma_auth` (
   `auth_url` varchar(50) NOT NULL DEFAULT '' COMMENT '权限路由',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '权限状态，是否显示在左侧菜单列表里',
   PRIMARY KEY (`auth_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=51 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=52 ;
 
 --
 -- 转存表中的数据 `shenma_auth`
@@ -139,7 +159,8 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (47, '留言查看', 1, 'Message/info', 0),
 (48, 'Banner列表', 1, 'Banner/index', 0),
 (49, 'Banner添加', 1, 'Banner/add', 0),
-(50, 'Banner编辑', 1, 'Banner/edit', 0);
+(50, 'Banner编辑', 1, 'Banner/edit', 0),
+(51, '什马简介', 1, 'Aboutus/index', 0);
 
 -- --------------------------------------------------------
 
