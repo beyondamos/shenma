@@ -98,17 +98,16 @@ $(function() {
 					<h2>发展历程</h2>
 					<div class="carousel slide" id="carousel-example"  data-ride="carousel">
 						<div class="carousel-inner">
-							<div class="item active"><a href="javascript:;"><img class="bannerwidth" alt="" src="__PUBLIC__/Home/img/hist01.jpg" /></a></div>
-							<div class="item"><a href="javascript:;"><img alt="" src="__PUBLIC__/Home/img/hist02.jpg" /></a></div>
-							<div class="item"><a href="javascript:;"><img alt="" src="__PUBLIC__/Home/img/hist03.jpg" /></a></div>
+							<volist name="develops" id="vo">
+							<div class="item <if condition="$i == 1"> active</if>"><a href="<{$vo.url}>"><img <if condition="$i == 1">class="bannerwidth" </if> alt="" src="<{$vo.thumbnail}>" /></a></div>
+							</volist>
 						</div>
 						<a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev"><img src="__PUBLIC__/Home/img/alh.png" alt="" /></a>
 						<a class="right carousel-control" href="#carousel-example" role="button" data-slide="next"><img src="__PUBLIC__/Home/img/arh.png" alt="" /></a>
 					</div>
 				</div>
 				
-				
-				
+			
 				<div class="core-shenma">
 					<h2>核心团队</h2>
 					

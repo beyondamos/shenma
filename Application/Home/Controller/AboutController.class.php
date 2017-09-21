@@ -16,6 +16,9 @@ class AboutController extends HomeBaseController
 		//什马介绍
 		$info = D('About')->find(1);
 		$this->assign('info', $info);
+		//发展历程
+		$develops = D('Develop')->order('sort asc')->select();
+		$this->assign('develops', $develops);
 
 		$model = D('Article');
 		$articles = $model->where(array('status' => 1, 'cate_id' => 14))->select();

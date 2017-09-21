@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?21 �?02:30
+-- 生成日期: 2017 �?09 �?21 �?03:16
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `shenma_auth` (
   `auth_url` varchar(50) NOT NULL DEFAULT '' COMMENT '权限路由',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '权限状态，是否显示在左侧菜单列表里',
   PRIMARY KEY (`auth_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=52 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=56 ;
 
 --
 -- 转存表中的数据 `shenma_auth`
@@ -160,7 +160,11 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (48, 'Banner列表', 1, 'Banner/index', 0),
 (49, 'Banner添加', 1, 'Banner/add', 0),
 (50, 'Banner编辑', 1, 'Banner/edit', 0),
-(51, '什马简介', 1, 'Aboutus/index', 0);
+(51, '什马简介', 1, 'Aboutus/index', 0),
+(52, '发展历程', 1, 'Develop/index', 0),
+(53, '发展历程添加', 1, 'Develop/add', 0),
+(54, '发展历程编辑', 1, 'Develop/edit', 0),
+(55, '发展历程删除', 1, 'Develop/delete', 0);
 
 -- --------------------------------------------------------
 
@@ -281,6 +285,30 @@ INSERT INTO `shenma_config` (`conf_id`, `conf_name`, `conf_value`) VALUES
 (4, 'site_desc', ''),
 (5, 'site_keywords', ''),
 (6, 'site_status', '1');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `shenma_develop`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_develop` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `url` varchar(256) NOT NULL DEFAULT '' COMMENT 'url',
+  `name` varchar(50) NOT NULL DEFAULT '' COMMENT '链接名称',
+  `thumbnail` varchar(256) NOT NULL COMMENT '缩略图',
+  `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='发展历程表' AUTO_INCREMENT=4 ;
+
+--
+-- 转存表中的数据 `shenma_develop`
+--
+
+INSERT INTO `shenma_develop` (`id`, `url`, `name`, `thumbnail`, `sort`) VALUES
+(1, '123123123', '第一张', '/Public/Upload/20170921/1505962887_1842293840.jpg', 1),
+(2, '23123213', '第2张', '/Public/Upload/20170921/1505962915_1441838237.jpg', 2),
+(3, '345345', '第3张', '/Public/Upload/20170921/1505962931_2090506420.jpg', 3);
 
 -- --------------------------------------------------------
 

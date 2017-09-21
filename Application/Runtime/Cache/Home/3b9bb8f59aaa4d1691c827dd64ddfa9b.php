@@ -123,17 +123,14 @@ $(function() {
 					<h2>发展历程</h2>
 					<div class="carousel slide" id="carousel-example"  data-ride="carousel">
 						<div class="carousel-inner">
-							<div class="item active"><a href="javascript:;"><img class="bannerwidth" alt="" src="/Public/Home/img/hist01.jpg" /></a></div>
-							<div class="item"><a href="javascript:;"><img alt="" src="/Public/Home/img/hist02.jpg" /></a></div>
-							<div class="item"><a href="javascript:;"><img alt="" src="/Public/Home/img/hist03.jpg" /></a></div>
+							<?php if(is_array($develops)): $i = 0; $__LIST__ = $develops;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="item <?php if($i == 1): ?>active<?php endif; ?>"><a href="<?php echo ($vo["url"]); ?>"><img <?php if($i == 1): ?>class="bannerwidth"<?php endif; ?> alt="" src="<?php echo ($vo["thumbnail"]); ?>" /></a></div><?php endforeach; endif; else: echo "" ;endif; ?>
 						</div>
 						<a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev"><img src="/Public/Home/img/alh.png" alt="" /></a>
 						<a class="right carousel-control" href="#carousel-example" role="button" data-slide="next"><img src="/Public/Home/img/arh.png" alt="" /></a>
 					</div>
 				</div>
 				
-				
-				
+			
 				<div class="core-shenma">
 					<h2>核心团队</h2>
 					
