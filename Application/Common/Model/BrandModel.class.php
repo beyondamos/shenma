@@ -5,7 +5,7 @@
 namespace Common\Model;
 use Think\Model;
 
-class FriendlinkModel extends Model{
+class BrandModel extends Model{
 
     protected $_validate = array(
         array('url', 'require', 'URL地址不能为空', self::EXISTS_VALIDATE, 'regex', self::MODEL_BOTH),

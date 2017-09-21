@@ -5,14 +5,14 @@
 namespace Admin\Controller;
 use Admin\Controller\CommonController;
 
-class FriendlinkController extends CommonController{
+class BrandController extends CommonController{
     /**
-     * 友情链接列表展示
+     * 品牌信息列表展示
      */
     public function index(){
-        $friendlink_model = D('Friendlink');
-        $friendlink_data = $friendlink_model->select();
-        $this->assign('friendlink_data', $friendlink_data);
+        $brand_model = D('Brand');
+        $brand_data = $brand_model->select();
+        $this->assign('brand_data', $brand_data);
         $this->display();
     }
 
@@ -21,18 +21,18 @@ class FriendlinkController extends CommonController{
      */
     public function add(){
         if(IS_POST){
-           $friendlink_model = D('Friendlink');
-           if($friendlink_model->create()){
+           $brand_model = D('brand');
+           if($brand_model->create()){
                 if($_FILES['file_upload']['error'] != 4 ){
-                    $friendlink_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
+                    $brand_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
                 }
-               if($friendlink_model->add()){
-                   $this->success('合作品牌添加成功', U('Friendlink/index'), 1);
+               if($brand_model->add()){
+                   $this->success('合作品牌添加成功', U('brand/index'), 1);
                }else{
                     $this->error('合作品牌添加失败');
                }
            }else{
-                $this->error($friendlink_model->getError());
+                $this->error($brand_model->getError());
            }
         }else{
             $this->display();
@@ -44,24 +44,24 @@ class FriendlinkController extends CommonController{
      */
     public function edit(){
         if(IS_POST){
-            $friendlink_model = D('Friendlink');
-            if($friendlink_model->create()){
+            $brand_model = D('brand');
+            if($brand_model->create()){
                 if($_FILES['file_upload']['error'] != 4 ){
-                    $friendlink_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
+                    $brand_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
                 }
-                if($friendlink_model->save()){
-                    $this->success('合作品牌编辑成功', U('Friendlink/index'), 1);
+                if($brand_model->save()){
+                    $this->success('合作品牌编辑成功', U('brand/index'), 1);
                 }else{
                     $this->error('合作品牌编辑失败！');
                 }
             }else{
-                $this->error($friendlink_model->getError());
+                $this->error($brand_model->getError());
             }
         }else{
             $id = I('get.id');
-            $friendlink_model = D('Friendlink');
-            $friendlink_data = $friendlink_model->find($id);
-            $this->assign('friendlink_data', $friendlink_data);
+            $brand_model = D('brand');
+            $brand_data = $brand_model->find($id);
+            $this->assign('brand_data', $brand_data);
             $this->display();
         }
     }
@@ -71,9 +71,9 @@ class FriendlinkController extends CommonController{
      */
     public function delete(){
         $id = I('get.id');
-        $friendlink_model = D('Friendlink');
-        if($friendlink_model->delete($id)){
-            $this->success('合作品牌删除成功', U('Friendlink/index'), 1);
+        $brand_model = D('brand');
+        if($brand_model->delete($id)){
+            $this->success('合作品牌删除成功', U('brand/index'), 1);
         }else{
             $this->error('合作品牌删除失败');
         }

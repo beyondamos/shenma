@@ -27,7 +27,7 @@
 			
 			<!-- 表格顶部搜索区 -->
 			<div class="boxoper">
-				<a href="<{:U('Friendlink/add')}>">添加合作品牌</a>
+				<a href="<{:U('Brand/add')}>">添加合作品牌</a>
 				<!--<div class="boxoper-seh">-->
 					<!--<form action="" method="post">-->
 						<!--<button class="btn btn-default" type="submit"><img src="__IMG__/iconseh.png" /></button>-->
@@ -54,14 +54,14 @@
 					</tr>
 				</thead>
 				<tbody>
-					<volist name="friendlink_data" id="vo">
+					<volist name="brand_data" id="vo">
 					<tr>
 						<td class="text-vm"><{$vo.id}></td>
 						<td class="text-vm"><{$vo.name}></td>
 						<td class="text-vm"><{$vo.url}></td>
 						<td class="text-vm">
-							<a href="<{:U('Friendlink/edit',array('id' => $vo['id']) )}>">编辑</a>
-							<a href="<{:U('Friendlink/delete',array('id' => $vo['id']) )}>">删除</a>
+							<a href="<{:U('brand/edit',array('id' => $vo['id']) )}>">编辑</a>
+							<a href="<{:U('brand/delete',array('id' => $vo['id']) )}>">删除</a>
 						</td>
 					</tr>
 					</volist>
