@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?21 �?01:25
+-- 生成日期: 2017 �?09 �?21 �?01:52
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -130,10 +130,10 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (25, '自定义导航', 23, 'Nav/listing', 1),
 (26, '自定义导航添加', 23, 'Nav/add', 0),
 (27, '自定义导航编辑', 23, 'Nav/edit', 0),
-(28, '合作品牌', 23, 'Friendlink/index', 1),
-(29, '合作品牌添加', 23, 'Friendlink/add', 0),
-(30, '合作品牌编辑', 23, 'Friendlink/edit', 0),
-(31, '合作品牌删除', 23, 'Friendlink/delete', 0),
+(28, '合作品牌', 1, 'Brand/index', 0),
+(29, '合作品牌添加', 1, 'Brand/add', 0),
+(30, '合作品牌编辑', 1, 'Brand/edit', 0),
+(31, '合作品牌删除', 1, 'Brand/delete', 0),
 (45, '留言列表', 1, 'Message/index', 1),
 (46, '留言删除', 1, 'Message/delete', 0),
 (47, '留言查看', 1, 'Message/info', 0),
@@ -155,7 +155,7 @@ CREATE TABLE IF NOT EXISTS `shenma_banner` (
   `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
   `classify` tinyint(4) NOT NULL DEFAULT '0' COMMENT '分类',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=6 ;
 
 --
 -- 转存表中的数据 `shenma_banner`
@@ -165,7 +165,40 @@ INSERT INTO `shenma_banner` (`id`, `url`, `name`, `thumbnail`, `sort`, `classify
 (1, '123123123', '第一张', '/Public/Upload/20170921/1505956113_1392164059.jpg', 1, 1),
 (2, '213213213', '第2张', '/Public/Upload/20170921/1505956130_606835435.jpg', 2, 1),
 (3, '123123', '第3张', '/Public/Upload/20170921/1505956147_498624648.jpg', 3, 1),
-(4, '123213', '第4张', '/Public/Upload/20170921/1505956164_704730493.jpg', 10, 1);
+(4, '123213', '第4张', '/Public/Upload/20170921/1505956164_704730493.jpg', 10, 1),
+(5, '123213', '关于我们', '/Public/Upload/20170921/1505958524_1209540722.jpg', 1, 3);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `shenma_brand`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_brand` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `url` varchar(256) NOT NULL DEFAULT '' COMMENT 'url',
+  `name` varchar(50) NOT NULL DEFAULT '' COMMENT '链接名称',
+  `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '1为正常，0为禁用',
+  `thumbnail` varchar(256) NOT NULL COMMENT '缩略图',
+  `is_blank` tinyint(4) NOT NULL DEFAULT '0' COMMENT '1为新页面打开，0为当前页面打开',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=11 ;
+
+--
+-- 转存表中的数据 `shenma_brand`
+--
+
+INSERT INTO `shenma_brand` (`id`, `url`, `name`, `status`, `thumbnail`, `is_blank`) VALUES
+(1, 'http://www.baidu.com', '顺为资本', 1, '/Public/Upload/20170915/1505439830_1471526976.png', 0),
+(2, 'http://www.baidu.com', '峰瑞资本', 1, '/Public/Upload/20170915/1505439306_1759848785.png', 0),
+(3, 'http://www.baidu.com', '北极光创投', 1, '/Public/Upload/20170915/1505439354_1960900315.png', 0),
+(4, 'http://www.baidu.com', '华创资本', 1, '/Public/Upload/20170915/1505439382_1388362111.png', 0),
+(5, 'http://www.baidu.com', '信中利', 1, '/Public/Upload/20170915/1505439420_1036568804.png', 0),
+(6, 'http://www.baidu.com', '新大洲本田', 1, '/Public/Upload/20170915/1505439443_1689504697.png', 0),
+(7, 'http://www.baidu.com', '雅迪电动车', 1, '/Public/Upload/20170915/1505439467_1699157341.png', 0),
+(8, 'http://www.baidu.com', '豪爵', 1, '/Public/Upload/20170915/1505439493_937432950.png', 0),
+(9, 'http://www.baidu.com', '金彭', 1, '/Public/Upload/20170915/1505439521_533915130.png', 0),
+(10, 'http://www.baidu.com', '新大洲', 1, '/Public/Upload/20170915/1505439543_239773102.png', 0);
 
 -- --------------------------------------------------------
 
@@ -227,38 +260,6 @@ INSERT INTO `shenma_config` (`conf_id`, `conf_name`, `conf_value`) VALUES
 (4, 'site_desc', ''),
 (5, 'site_keywords', ''),
 (6, 'site_status', '1');
-
--- --------------------------------------------------------
-
---
--- 表的结构 `shenma_friendlink`
---
-
-CREATE TABLE IF NOT EXISTS `shenma_friendlink` (
-  `id` smallint(6) NOT NULL AUTO_INCREMENT COMMENT '主键id',
-  `url` varchar(256) NOT NULL DEFAULT '' COMMENT 'url',
-  `name` varchar(50) NOT NULL DEFAULT '' COMMENT '链接名称',
-  `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '1为正常，0为禁用',
-  `thumbnail` varchar(256) NOT NULL COMMENT '缩略图',
-  `is_blank` tinyint(4) NOT NULL DEFAULT '0' COMMENT '1为新页面打开，0为当前页面打开',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=11 ;
-
---
--- 转存表中的数据 `shenma_friendlink`
---
-
-INSERT INTO `shenma_friendlink` (`id`, `url`, `name`, `status`, `thumbnail`, `is_blank`) VALUES
-(1, 'http://www.baidu.com', '顺为资本', 1, '/Public/Upload/20170915/1505439830_1471526976.png', 0),
-(2, 'http://www.baidu.com', '峰瑞资本', 1, '/Public/Upload/20170915/1505439306_1759848785.png', 0),
-(3, 'http://www.baidu.com', '北极光创投', 1, '/Public/Upload/20170915/1505439354_1960900315.png', 0),
-(4, 'http://www.baidu.com', '华创资本', 1, '/Public/Upload/20170915/1505439382_1388362111.png', 0),
-(5, 'http://www.baidu.com', '信中利', 1, '/Public/Upload/20170915/1505439420_1036568804.png', 0),
-(6, 'http://www.baidu.com', '新大洲本田', 1, '/Public/Upload/20170915/1505439443_1689504697.png', 0),
-(7, 'http://www.baidu.com', '雅迪电动车', 1, '/Public/Upload/20170915/1505439467_1699157341.png', 0),
-(8, 'http://www.baidu.com', '豪爵', 1, '/Public/Upload/20170915/1505439493_937432950.png', 0),
-(9, 'http://www.baidu.com', '金彭', 1, '/Public/Upload/20170915/1505439521_533915130.png', 0),
-(10, 'http://www.baidu.com', '新大洲', 1, '/Public/Upload/20170915/1505439543_239773102.png', 0);
 
 -- --------------------------------------------------------
 

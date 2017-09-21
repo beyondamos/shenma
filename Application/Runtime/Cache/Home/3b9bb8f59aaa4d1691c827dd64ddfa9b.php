@@ -106,7 +106,7 @@ $(function() {
 </nav>
 
 		<div class="bannertop">
-			<img alt="" src="/Public/Home/img/bannerabt.jpg" />
+			<img alt="" src="<?php echo ($banner["thumbnail"]); ?>" />
 		</div>
 			
 			<div class="cont">
