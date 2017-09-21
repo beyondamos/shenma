@@ -31,17 +31,6 @@ class IndexController extends CommonController {
         );
         $this->assign('server_data' , $server_data);
 
-        //点击排行
-        $article_model = D('Article');
-        $map['status'] = 1;
-        $p = I('get.p') ? I('get.p') : 1;
-        $article_data = $article_model->alias('a')->field('article_id,title,cate_name,author,clicks')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')->where($map)->order('clicks desc')->page($p.',10')->select();
-        $this->assign('article_data',$article_data);
-        //分页数据
-        $count = $article_model->alias('a')->where($map)->count();
-        $page_model = new \Think\Page($count,10);
-        $show = $page_model->show(); //分页输出显示
-        $this->assign('show',$show);
 
         $this->display();
     }

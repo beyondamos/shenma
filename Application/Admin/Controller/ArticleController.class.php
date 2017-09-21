@@ -48,9 +48,15 @@ class ArticleController extends CommonController{
     	if(IS_POST){
             $article_model = D('Article');
             if($article_model->create()){
+                //是否有图片
                 if($_FILES['file_upload']['error'] != 4 ){
                     $article_model->titleimg = ltrim(C('UPLOAD').$this->upload() ,'.');
                 }
+                //是否有视频
+                if($_FILES['video']['error'] != 4 ){
+                    $article_model->video = ltrim(C('UPLOAD').$this->uploadVideo() ,'.');
+                }
+
                 if(!I('post.synopsis')) $article_model->synopsis = $article_model->generateSynopsis();
 
                 if($article_model->add()){
@@ -78,10 +84,17 @@ class ArticleController extends CommonController{
         if(IS_POST){
             $article_model = D('Article');
             if($article_model->create()){
+                //判断是否有新图片
                 if($_FILES['file_upload']['error'] != 4 ){
                     $article_model->titleimg = ltrim(C('UPLOAD').$this->upload() ,'.');
                     $article_model->deleteImg(I('post.article_id'));                    
                 }
+                //判断是否有新视频
+                if($_FILES['video']['error'] != 4 ){
+                    $article_model->video = ltrim(C('UPLOAD').$this->uploadVideo() ,'.');
+                    $article_model->deleteVideo(I('post.article_id'));
+                }
+
                 if(!I('post.synopsis')) $article_model->synopsis = $article_model->generateSynopsis();
                 if($article_model->save()){
                     if(I('post.tag') == 1){
@@ -122,6 +135,30 @@ class ArticleController extends CommonController{
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize   =     3145728 ;// 设置附件上传大小
         $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath  =      C('UPLOAD'); // 设置附件上传根目录
+        $upload->autoSub = true;
+        $upload->subName = array('date','Ymd');
+        $upload->saveName = time().'_'.mt_rand();
+        // 上传文件 
+        $info   =   $upload->upload();
+        if(!$info) {// 上传错误提示错误信息
+           $this->error($upload->getError());
+        }else{// 上传成功 获取上传文件信息
+            foreach($info as $file){
+              return $file['savepath'].$file['savename'];
+           }
+        }
+    }
+
+
+    /**
+     * 视频上传
+     * @return [type] [description]
+     */
+    public function uploadVideo(){
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     60000000 ;// 设置附件上传大小
+        $upload->exts      =     array('mp4');// 设置附件上传类型
         $upload->rootPath  =      C('UPLOAD'); // 设置附件上传根目录
         $upload->autoSub = true;
         $upload->subName = array('date','Ymd');
@@ -205,6 +242,7 @@ class ArticleController extends CommonController{
             $this->error('文章取消审核失败');
         }
     }
+
 
     /**
      * 取消审核

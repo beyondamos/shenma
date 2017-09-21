@@ -58,7 +58,7 @@
        <div class="contmain">
 
           <div class="boxi">
-             <h1>添加友情链接</h1>
+             <h1>添加合作品牌</h1>
 
              <form action="<?php echo U('Friendlink/add');?>" method="post" enctype="multipart/form-data">
                 <div class="boxin">

@@ -58,11 +58,11 @@
 	<div class="contmain">
 		
 		<div class="boxi">
-			<h1>友情链接列表</h1>
+			<h1>合作品牌列表</h1>
 			
 			<!-- 表格顶部搜索区 -->
 			<div class="boxoper">
-				<a href="<?php echo U('Friendlink/add');?>">添加友情链接</a>
+				<a href="<?php echo U('Friendlink/add');?>">添加合作品牌</a>
 				<!--<div class="boxoper-seh">-->
 					<!--<form action="" method="post">-->
 						<!--<button class="btn btn-default" type="submit"><img src="/Public/Admin/images/iconseh.png" /></button>-->
@@ -83,7 +83,7 @@
 				<thead>
 					<tr>
 					   <th class="col-md-1 text-vm">序号</th>
-					   <th class="col-md-2 text-vm">链接名称</th>
+					   <th class="col-md-2 text-vm">品牌名称</th>
 					   <th class="col-md-6 text-vm">链接URL</th>
 					   <th class="col-md-1 text-vm text-center">操作</th>
 					</tr>
@@ -91,7 +91,7 @@
 				<tbody>
 					<?php if(is_array($friendlink_data)): $i = 0; $__LIST__ = $friendlink_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 						<td class="text-vm"><?php echo ($vo["id"]); ?></td>
-						<td class="text-vm"><?php echo ($vo["url_name"]); ?></td>
+						<td class="text-vm"><?php echo ($vo["name"]); ?></td>
 						<td class="text-vm"><?php echo ($vo["url"]); ?></td>
 						<td class="text-vm">
 							<a href="<?php echo U('Friendlink/edit',array('id' => $vo['id']) );?>">编辑</a>

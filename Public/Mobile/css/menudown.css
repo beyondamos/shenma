@@ -1,0 +1,129 @@
+/**下拉**/
+.seltopmenu{
+	width:100%;
+	position:fixed;
+	z-index:1000;
+	background-color:red !important;
+	top:0;
+	left:0;
+}
+.seltopmenu dt{
+	width:33.3%;
+	float:left;
+	
+}
+.selectlist{
+	width:100%;
+	height:auto;
+	box-sizing: border-box;
+	
+}
+.select_textdiv{
+	/* height:3rem; */
+	height:50px;
+	width:100%;
+	font-size:17px;
+	color:#fff;
+	padding-top:11px;
+	margin-left:100%;
+	/* margin-top:-50px; */
+	background-color:#94B214;
+	background-color:cyan;
+	line-height: 3rem;
+	text-align: center;
+	/* border-bottom: 2px solid #b3b3b3; */
+	position:relative;
+	/* border-left:2px solid -webkit-linear-gradient(red, blue); */
+}
+.select_textdiv .s_text{
+	position:fixed;
+	top:0;
+	text-align:center;
+	width:33.33%;
+	background-color:yellow;
+}
+.select_textul{
+	width:100%;
+	line-height: 3rem;
+	box-sizing: border-box;
+	display: none;
+	/* width: 980px; */
+    /* max-height: 20rem; */
+    overflow-y: scroll;
+	
+}
+.select_first_ul{
+	width: 100%;
+    background: #efefef;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+}
+.select_first_ul>li{
+	/* padding: 0 0.5rem; */
+	box-sizing: border-box;
+	padding-left:10px;
+	line-height:20px;
+}
+.select_first_ul>li>p{
+	width: 50%;
+    /* padding: 0 1rem; */
+    box-sizing: border-box;
+    /* border-bottom:1px #b1b1b1 solid; */
+}
+.selfocus>p{
+	/* border-bottom:1px #FF9800 solid !important; */
+	color:#FF9800;
+}
+.select_second_ul{
+	width: 50%;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background: #fff;
+    display: none;
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+	background: #efefef;
+    /*z-index: 1;*/
+	
+}
+
+.seldown{
+	position: absolute;
+    top: 0;
+    right: 0.5rem;
+    display: inline-block;
+    width:1rem;
+    height:100%;
+}
+.seldown img{
+	width:1rem;
+	margin-top: 1rem;
+}
+/* .divselfocus::after{
+	position: absolute;
+	bottom:0;
+	left:46%;
+	border-bottom:0.5rem solid #FF9800;
+	border-left:0.5rem solid transparent;
+	border-right:0.5rem solid transparent;
+	content: "";
+} */
+.selfocusli{
+	background: #ffc107;
+	color: #FFFFFF;
+}
+.select_second_ul>li{
+	padding: 0 0.5rem;
+	line-height:25px;
+	box-sizing: border-box;
+	/* border-bottom: 1px solid #eaeaea; */
+}
+
+
+
+
+
+
+

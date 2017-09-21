@@ -6,8 +6,6 @@ namespace Common\Model;
 use Think\Model;
 class ArticleModel extends Model{
 
-
-
 	protected $_auto = array(
 		array('newstime', 'maketime', self::MODEL_BOTH, 'function'),
 		array('is_recommend', 'judgeCheck', self::MODEL_BOTH, 'function'),
@@ -68,8 +66,9 @@ class ArticleModel extends Model{
 		$image_info = $this->field('titleimg')->where($map)->select();
 		foreach($image_info as $val){
 			if(is_file('.'.$val['titleimg'])) unlink('.'.$val['titleimg']);
+			if(is_file('.'.$val['video'])) unlink('.'.$val['video']);
 		}
-		
+
 		if( $this->where($map)->delete()){
 			return true;
 		}else{
@@ -85,6 +84,16 @@ class ArticleModel extends Model{
 		$img = '.'.$this->where(array('article_id'=> $article_id))->getField('titleimg');
 		unlink($img);
 	}
+
+	/**
+	 * 删除视频
+	 * @param  int $article_id 文章id
+	 */
+	public function deleteVideo($article_id){
+		$video = '.'.$this->where(array('article_id'=> $article_id))->getField('video');
+		unlink($video);
+	}
+
 
 	/**
 	 *生成简介

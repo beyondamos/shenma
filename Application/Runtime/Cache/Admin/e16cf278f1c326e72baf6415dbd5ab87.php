@@ -110,12 +110,12 @@
 					<span class="lets3">关&nbsp;键&nbsp;词</span><input type="text"  class="form-control" placeholder="多个关键词用“,”半角逗号隔开"  name="keywords">
 				</div>
 				<div class="boxinb">
+					<span class="lets3">视&nbsp;频</span><input type="file"  class="form-control" name="video">
+				</div>
+				<div class="boxinb">
 					<span>标题图片</span>
 					<a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"></i>
 				</div>
-<!-- 				<div class="boxinb">
-					<span class="lets2">标&nbsp;&nbsp;&nbsp;&nbsp;签</span><input type="text" name="" class="form-control" placeholder="多个标签用“,”半角逗号隔开">
-				</div> -->
 				<div class="boxtextb">
 					<span>内容简介</span><textarea  rows="6" class="form-control" name="synopsis"></textarea>
 				</div>

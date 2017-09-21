@@ -1,0 +1,542 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title>什马金融</title>
+<link rel="stylesheet" href="__PUBLIC__/Home/css/reset.css" rel="stylesheet">
+<link rel="stylesheet" href="__PUBLIC__/Home/bootstrap3/css/bootstrap.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/css/yinxie.css" rel="stylesheet">
+<link rel="stylesheet" href="__PUBLIC__/Home/css/vic.css" rel="stylesheet">
+
+<link rel="stylesheet" href="__PUBLIC__/Home/css/animate.css">
+<link href="__PUBLIC__/Home/img/favicon.ico" type="image/x-icon" rel="shortcut icon">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="/Public/static/bootstrap/js/html5shiv.js"></script>
+<![endif]-->
+<!--[if lte IE 9]>
+<script type="text/javascript" src="/Public/static/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/Public/static/js/ie9hack.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script type="text/javascript" src="__PUBLIC__/Home/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/bootstrap3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/jquery.fullPage.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/owl-carousel/owl.carousel.js" async="async" defer="defer"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.timelinr-0.9.53.js" async="async" defer="defer"></script>
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/index20170828.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/swiper.css" />
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.pj.js" async="async" defer="defer"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.mousewheel.min.js" async="async" defer="defer"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/swiper.min.js" async="async" defer="defer"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/slick/slick.min.js" async="async" defer="defer"></script>
+
+
+
+
+<script type="text/javascript">
+$.fn.extend({
+    animateCss: function(animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName);
+    }
+});
+         document.onreadystatechange = completeLoading;
+        function completeLoading() {
+            if (document.readyState == "complete") {
+                $('.footer,.navbar,#main-container').fadeIn();
+                $('#load').fadeOut();
+            }
+    }
+$(function() {
+    $('#load').height($(window).height());
+    var winW = $(window).width();
+    if (winW > 767) {
+        $('.mobile_version').hide();
+    } else {
+        $('.pc_version').hide();
+    }
+    // $('[data-toggle="popover"]').popover();
+        
+    //tab show reset
+    
+
+    $('.scrollTopLi').click(function() {
+                    $.fn.fullpage.moveTo('banner',1);
+            })
+})
+
+
+</script>
+<link rel="stylesheet" href="__PUBLIC__/Home/css/jquery.fullPage.css">    <link rel="stylesheet" href="__PUBLIC__/Home/css/owl.transitions.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top mobile_nav">
+	 
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="__PUBLIC__/Home/img/header_logo.jpg" alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+		<li class="active"><a href="/">首页</a></li>
+		<li><a href="<{:U('Loans/index')}>" class="fw200">借款申请</a></li>
+		<!-- <li><a href="javascript:;" class="fw200">借款申请</a></li> -->
+		<li><a href="<{:U('About/index')}>" class="fw200">关于什马</a></li>
+		<li><a href="<{:U('Article/index')}>" class="fw200">新闻资讯</a></li>
+		<li><a href="<{:U('Edu/index')}>" class="fw200">老板商学院</a></li>
+		<li><a href="javascript:;" class="fw200">小暖炉公益</a></li>
+		<li><a href="<{:U('Contact/index')}>" class="fw200">联系我们</a></li>
+      </ul>
+		<dl>
+			<a href="<{:U('Loans/index2')}>"><img src="__PUBLIC__/Home/img/linkxfz.png" alt="" />消费者借款 >></a>
+			<a href="<{:U('Loans/index')}>"><img src="__PUBLIC__/Home/img/linksh.png" alt="" />商户借款 >></a>
+		</dl>
+    </div>
+  </div>
+		<img src="__PUBLIC__/Home/img/headbk.png" alt=""/>
+</nav>
+
+<div id='load'><div class="square-spin"></div></div>
+<div id="main-container">
+        
+    <div id="fullpage">
+        <div class="section firstpage banner">
+			<div class="carousel slide" id="carousel-example"  data-ride="carousel">
+				<!--ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#carousel-example"></li>
+					<li data-slide-to="1" data-target="#carousel-example"></li>
+					<li data-slide-to="2" data-target="#carousel-example"></li>
+					<li data-slide-to="3" data-target="#carousel-example"></li>
+				</ol>-->
+				<div class="imgQR-fixed"><img src="__PUBLIC__/Home/img/QR.jpg" alt="" /></div>
+				
+				
+				<div class="carousel-inner">
+                    <volist name="banners" id="vo">
+		<!-- 			<div class="item active"><a href="javascript:;"><img class="bannerwidth" alt="" src="__PUBLIC__/Home/img/b1.jpg" /></a></div> -->
+					<div class="item <if condition="$i == 1"> active</if>"><a href="<{$vo.url}>"><img <if condition="$i == 1"> class="bannerwidth"</if> alt="" src="<{$vo.thumbnail}>" /></a></div>
+                    </volist>
+				</div>
+				<a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev"><img src="__PUBLIC__/Home/img/arl.png" alt="" /></a>
+				<a class="right carousel-control" href="#carousel-example" role="button" data-slide="next"><img src="__PUBLIC__/Home/img/arr.png" alt="" /></a>
+			</div>
+			<script type="text/javascript">
+				$(".carousel-control.left").hover(function () {
+					$(".carousel-control.left img").css('display','block');
+					$(".carousel-control.left img").animate({ "left": "30px" }, 300);
+				}, function () {
+					$(".carousel-control.left img").animate({ "left": "0" }, 300,function(){
+						$(".carousel-control.left img").css('display','none');});
+				});
+				
+				$(".carousel-control.right").hover(function () {
+					$(".carousel-control.right img").css('display','block');
+					$(".carousel-control.right img").animate({ "right": "30px" }, 300);
+				}, function () {
+					$(".carousel-control.right img").animate({ "right": "0" }, 300,function(){
+						$(".carousel-control.right img").css('display','none');});
+				});
+			</script>
+        </div>
+		
+		
+		
+    <div class="section content1">
+            <div class="pc_version h92">
+                <div class="home-secondblock h100">
+                    <div class="container relative">
+                        <div class="row">
+                            <ul class="nav nav-tabs  tab_toggle tab-btn" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#buycar" id="restFp" role="tab" data-toggle="tab">分期买车</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#purchase" role="tab" data-toggle="tab">分期进货</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <!-- <img class="img2 opacity0" src="__PUBLIC__/Home/img/store.png" alt=""> -->
+                                <div role="tabpanel" class="tab-pane fade in active" id="buycar">
+                                    <img class="img1 opacity0" src="__PUBLIC__/Home/img/xiang.png" alt="">
+                                    <img class="img2 opacity0" src="__PUBLIC__/Home/img/store.png" alt="">
+                                    <img class="img3 opacity0" src="__PUBLIC__/Home/img/jinmen.png" alt="">
+                                    <div class="img4 opacity0">
+                                        <img class="img-responsive" src="__PUBLIC__/Home/img/xuanche.png" alt="">
+                                        <img class="img5 opacity0" src="__PUBLIC__/Home/img/tiziliao.png" alt="">
+                                        <img class="img6 opacity0" src="__PUBLIC__/Home/img/guoshenhe.png" alt="">
+                                    </div>
+                                    <img class="img7 opacity0" src="__PUBLIC__/Home/img/huijia.png" alt="">
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="purchase">
+								
+                                    <img class="img2b opacity0" src="__PUBLIC__/Home/img/store.png" alt="">
+                                    
+                                    <img class="w31 bottom_img2" src="__PUBLIC__/Home/img/purchase_vendor.png" alt="">
+                                    <div class="img8">
+                                        <img class="bottom_img11" src="__PUBLIC__/Home/img/purchase_xiang_2.png" alt="">
+                                        <img class="bottom_img3" src="__PUBLIC__/Home/img/jinhuo_img2.png" alt="">
+                                        <img class="bottom_img4" src="__PUBLIC__/Home/img/jinhuo_img3.png" alt="">
+                                        <div class="common_animate">
+                                            <!-- <p class="get-product">收货啦~</p> -->
+                                            <img class="img-responsive bottom_img6" src="__PUBLIC__/Home/img/che_2.png" alt="">
+                                            <div class="common_animate_sub">
+                                                <img class="img-responsive bottom_img7" src="__PUBLIC__/Home/img/kache_2.png" alt="">
+                                                <img class="bottom_img8" src="__PUBLIC__/Home/img/kache_weiqi.png" class="img100">
+                                                <img class="bottom_img9" src="__PUBLIC__/Home/img/kache_weiqi.png" class="img100">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_version h100 bg_height">
+				<div class="mobile h100">
+					<div class="home-secondblock h100" background-size: contain;>
+                  <div class="container relative">
+                    <div class="row" >
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs tab_toggle" role="tablist">
+                            <li role="presentation" class="active" id="buy_buy">
+                                <a href="#mobile_buycar" role="tab" data-toggle="tab" class="fw200" >分期买车</a>
+                            </li>
+                           <!--  <li role="presentation">
+                                <a>/</a>
+                            </li> -->
+                            <li role="presentation" id="purchase_purchase">
+                                <a href="#mobile_purchase" role="tab" data-toggle="tab" class="fw200" >分期进货</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="mobile_buycar">
+                                <div id="buy_car" class="carousel slide carousel-fade" style="width:100%;" style="position: relative;">
+
+                                    <ol class="carousel-indicators" style="bottom: 39px;">
+                                        <li data-target="#buy_car" data-slide-to="0" class="active">1<img src="__PUBLIC__/Home/img/next.png" alt=""></li>
+                                        <li data-target="#buy_car" data-slide-to="1">2<img src="__PUBLIC__/Home/img/next.png" alt=""></li>
+                                        <li data-target="#buy_car" data-slide-to="2">3<img src="__PUBLIC__/Home/img/next.png" alt=""></li>
+                                        <li data-target="#buy_car" data-slide-to="3">4</li>
+                                    </ol>
+
+
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                          <img  class="mobile-img1" src="__PUBLIC__/Home/img/xiang.png" alt="">
+                                        </div>
+                                        <div class="item">
+                                          <p class="mobile-img2-title">进门店</p><p class="mobile-img3-title">选车</p>
+                                          <img  class="mobile-img2" src="__PUBLIC__/Home/img/mobile_dian.png" alt="">
+                                            <img  class="mobile-img3" src="__PUBLIC__/Home/img/mobile_jinmen.png" alt="">
+                                            <img  class="mobile-img4" src="__PUBLIC__/Home/img/purchase_vendor.png" alt="">
+                                        </div>
+                                        <div class="item">
+                                          <img  class="mobile-img2" src="__PUBLIC__/Home/img/mobile_dian.png" alt="">
+                                            <img  class="mobile-img6" src="__PUBLIC__/Home/img/nongming.png" alt="">
+                                            <img  class="mobile-img7" src="__PUBLIC__/Home/img/purchase_vendor.png" alt="">
+                                            <img  class="mobile-img8" src="__PUBLIC__/Home/img/mobile_shenhe.png" alt="">
+                                        </div>
+                                        <div class="item">
+                                          <p class="mobile-img9-title">骑车回家啰</p>
+                                          <img  class="mobile-img9" src="__PUBLIC__/Home/img/mobile_huijia.png" alt="">
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane fade" id="mobile_purchase">
+                                    <div id="restore" class="carousel" style="width:100%;">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators" style="bottom: 39px;">
+                                            <li data-target="#restore" data-slide-to="0" class="active">1<img src="__PUBLIC__/Home/img/next.png" alt=""></li>
+                                            <li data-target="#restore" data-slide-to="1">2<img src="__PUBLIC__/Home/img/next.png" alt=""></li>
+                                            <li data-target="#restore" data-slide-to="2">3<img src="__PUBLIC__/Home/img/next.png" alt=""></li>
+                                            <li data-target="#restore" data-slide-to="3">4</li>
+                                        </ol>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                              <img  class="mobile-img2" src="__PUBLIC__/Home/img/mobile_dian.png" alt="">
+                                              <img  class="mobile-img10" src="__PUBLIC__/Home/img/purchase_vendor.png" alt="">
+                                              <img  class="mobile-img11" src="__PUBLIC__/Home/img/purchase_xiang.png" alt="">
+                                            </div>
+                                            <div class="item">
+                                              <img  class="mobile-img2" src="__PUBLIC__/Home/img/mobile_dian.png" alt="">
+                                                <img  class="mobile-img10" src="__PUBLIC__/Home/img/purchase_vendor.png" alt="">
+                                                <img  class="mobile-img8" src="__PUBLIC__/Home/img/purchase_shenhe.png" alt="">
+                                            </div>
+                                            <div class="item">
+                                              <p class="mobile-img12-title">收货啦~</p>
+                                              <img  class="mobile-img2" src="__PUBLIC__/Home/img/mobile_dian.png" alt="">
+                                                <img  class="mobile-img12" src="__PUBLIC__/Home/img/purchase_kache.png" alt="">
+                                            </div>
+                                            <div class="item">
+                                              <img  class="mobile-img2" src="__PUBLIC__/Home/img/mobile_dian.png" alt="">
+                                                <img  class="mobile-img12" src="__PUBLIC__/Home/img/purchase_che.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+				</div>
+			</div>
+	</div>
+       
+		
+		
+		
+		<!--关于什马-->
+		<div class="section main-about content2">
+			<div class="">
+				<div class="main-about-bk"></div>
+				<h2>关于什马</h2>
+				<p>什马互联网金融信息服务（上海）有限公司，简称什马金融，成立于2015年1月，总部位于国内金融中心上海。是一家专注在县乡镇渠道，服务于8亿农村市场的国内领先的互联网金融公司
+				<p>公司成立伊始以农村交通工具领域为切入点，并依托上市公司等行业强势资源，业务快速覆盖全国。</p>
+				<p>公司两大核心产品什马分期和信用贷分别为农民和商家提供消费金融和供应链金融服务，旨在帮助更多的经销商做好生意、做大生意，使销售资金得以快速的回笼。</p>
+				<h3><a href="about.html">more</a></h3>
+			</div>
+		</div>
+		
+		
+		<!--业务介绍-->
+		<div class="section content3">
+			<div class="bg-style hxyw2">
+				<div class="swiper-container bg_div-left">
+					<div class="swiper-wrapper ">
+						<div class="swiper-slide pub_sd bg_1"><img id="bg_1imgl" src="__PUBLIC__/Home/img/imgl01.jpg" alt=""/></div>
+						<div class="swiper-slide pub_sd bg_2"><img id="bg_2imgl" src="__PUBLIC__/Home/img/imgl02.jpg" alt=""/></div>
+						<div class="swiper-slide pub_sd bg_3"><img id="bg_3imgl" src="__PUBLIC__/Home/img/imgl03.jpg" alt=""/></div>
+						<div class="swiper-slide pub_sd bg_4"><img id="bg_4imgl" src="__PUBLIC__/Home/img/imgl04.jpg" alt=""/></div>
+					</div>
+				</div>
+				<div class="swiper-container R_bg">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide bg_4"><img id="bg_4img" src="__PUBLIC__/Home/img/imgr04.jpg" alt="" /><img id="bg_4img" src="__PUBLIC__/Home/img/imgr04b.jpg" alt="" /></div>
+						<div class="swiper-slide bg_3"><img id="bg_3img" src="__PUBLIC__/Home/img/imgr03.jpg" alt="" /><img id="bg_4img" src="__PUBLIC__/Home/img/imgr03b.jpg" alt="" /></div>
+						<div class="swiper-slide bg_2"><img id="bg_2img" src="__PUBLIC__/Home/img/imgr02.jpg" alt="" /><img id="bg_4img" src="__PUBLIC__/Home/img/imgr02b.jpg" alt="" /></div>
+						<div class="swiper-slide bg_1"><img id="bg_1img" src="__PUBLIC__/Home/img/imgr01.jpg" alt="" /><img id="bg_4img" src="__PUBLIC__/Home/img/imgr01b.jpg" alt="" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		
+		
+		
+		<!--新闻资讯-->
+		<div class="section content4">
+		<div class="box-news">
+			<div class="box-newsmd">
+			
+				<!--标题文字-->
+				<h2><img src="__PUBLIC__/Home/img/imgtxt01.jpg" alt=""/></h2>
+				
+				<div class="box-news-img">
+                    <volist name="articles" id="vo" offset="0" length="1"> 
+					<div class="imglimtc"><img src="<{:U('Article/detail', array('article_id' => $vo['article_id']))}>" alt=""/></div>
+					<a href="<{:U('Article/detail', array('article_id' => $vo['article_id']))}>">
+						<{$vo.title}><span><{$vo.newstime}></span>
+						<i><{$vo.synopsis}></i>
+					</a>
+                    </volist> 
+				</div>
+				<ul>
+                    <volist name="articles" id="vo" offset="1" length="5">
+					<a href="<{:U('Article/detail', array('article_id' => $vo['article_id']))}>">
+						<b>08</b><{$vo.title}><span><{$vo.newstime}></span>
+						<i><{$vo.synopsis}>...</i>
+					</a>
+					</volist>
+				</ul>
+			</div>
+		</div>	
+		</div>
+		
+		
+
+		<!--品牌区-->
+		<div class="section box-logo content5">
+			<div class="section box-logomd">
+
+				<!--标题文字-->
+				<h2><img src="__PUBLIC__/Home/img/imgtxt02.jpg" alt=""/></h2>
+				
+				<div class="carousel slide" id="carousel-exampleb"  data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="item active box-logomd">
+						  <volist name="brands" id="vo" offset="0" length="10">
+							<a href="<{$vo.url}>"><img src="<{$vo.thumbnail}>" alt=""/><h5><{$vo.name}></h5></a>
+						  </volist>
+						</div>
+						<div class="item box-logomd">
+                          <volist name="brands" id="vo" offset="10" length="10">
+                            <a href="<{$vo.url}>"><img src="<{$vo.thumbnail}>" alt=""/><h5><{$vo.name}></h5></a>
+                          </volist>
+						</div>
+						<div class="item box-logomd">
+                          <volist name="brands" id="vo" offset="20" length="10">
+                            <a href="<{$vo.url}>"><img src="<{$vo.thumbnail}>" alt=""/><h5><{$vo.name}></h5></a>
+                          </volist>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<a class="left carousel-control" href="#carousel-exampleb" role="button" data-slide="prev"><img src="__PUBLIC__/Home/img/arl.png" alt="" /></a>
+			<a class="right carousel-control" href="#carousel-exampleb" role="button" data-slide="next"><img src="__PUBLIC__/Home/img/arr.png" alt="" /></a>
+		</div>
+		
+		
+		
+		
+		
+		<!--联系方式-->
+		<div class="section contact-us content7">
+			<img src="__PUBLIC__/Home/img/imgtxt03.jpg" alt=""/>
+			
+			<div class="contact-left">
+				<h4>什马互联网金融信息服务(上海)有限公司</h4>
+				<h6>Shenma Internet Financial Information Service Co.,Ltd.</h6>
+				<!-- <h5>公司名称：什马互联网金融信息服务(上海)有限公司</h5> -->
+				<h5>公司地址：上海市长宁区凌空SOHO5号楼1楼</h5>
+				<h5>合作邮箱：hezuo@shenmajr.com</h5>
+				<h5>联系电话：400-088-6177&nbsp;&nbsp;021-62156265</h5>
+				<h5>媒体合作：PR@SHENMAJR.COM</h5>
+				
+				<div class="contact-map">
+					<a href="http://api.map.baidu.com/geocoder?output=html&amp;address=%e4%b8%8a%e6%b5%b7%e5%b8%82%e9%95%bf%e5%ae%81%e5%8c%ba%e5%87%8c%e7%a9%basoho5%e5%8f%b7%e6%a5%bc1%e6%a5%bc" title="点击查看地图" ><img src="__PUBLIC__/Home/img/map.jpg" alt="" /></a><dt>
+				</div>
+			</div>
+		</div>
+		
+				
+		<div class="section footer fp-auto-height">
+            <footer class="home-footer" >
+                <div class="container">
+					<!-- <img class="footer-imgtemp" src="__PUBLIC__/Home/img/foot.jpg" alt=""> -->
+					<div class="row footer-wrap">
+                        <div class="col-xs-6 col-sm-6">
+							<h1><img src="__PUBLIC__/Home/img/footlogob.png" alt=""></h1>
+							<ul>
+								<li>借款申请</li>
+								<li><a href="<{:U('Loans/index')}>">商户借款</a></li>
+								<li><a href="<{:U('Loans/index2')}>">消费者借款</a></li>
+							</ul>
+							
+							<ul>
+								<li>关于什马</li>
+								<li><a href="<{:U('About/index')}>">公司介绍</a></li>
+								<li><a href="<{:U('About/index')}>">发展历程</a></li>
+								<li><a href="<{:U('About/index')}>">核心团队</a></li>
+								<li><a href="<{:U('About/index')}>">企业文化</a></li>
+							</ul>
+							
+							<ul>
+								<li>新闻资讯</li>
+								<li><a href="<{:U('Article/index', array('cate_id' => 12))}>">公司新闻</a></li>
+								<li><a href="<{:U('Article/index', array('cate_id' => 13))}>">行业资讯</a></li>
+								<li><a href="javascript:;">视频专区</a></li>
+							</ul>
+							
+							<ul>
+								<li>老板商学院</li>
+								<li><a href="<{:U('Edu/index')}>">老板大讲堂</a></li>
+								<li><a href="javascript:;">老板社区</a></li>
+							</ul>
+							
+							<ul>
+								<li>联系方式</li>
+								<li><a href="javascript:;">诚聘英才</a></li>
+								<li><a href="javascript:;">常见问题</a></li>
+								<li><a href="javascript:;">在线客服</a></li>
+							</ul>
+							
+							<h6>©什马互联网金融信息服务(上海)有限公司 | 沪ICP备15005382号-2</h6>
+                        </div>
+						
+						<div class="col-xs-6 col-sm-6">
+                            <!-- <div class="footer-logo">
+                                <img class="img-responsive" src="__PUBLIC__/Home/img/footer_logo.png" alt="">
+                            </div> -->
+							<h4>什马分期 就是低息</h4>
+							<h4>服务热线：400-088-6177</h4>
+							<div class="col-xs-4 col-sm-4">
+                                <div class="two-code pull-right">
+                                    <img class="img-responsive" src="__PUBLIC__/Home/img/qr01.jpg" alt="">
+                                    <p class="text-center fw200">商户APP下载</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-sm-4">
+                                <div class="two-code pull-left">
+                                    <img class="img-responsive" src="__PUBLIC__/Home/img/qr02.jpg" alt="">
+                                    <p class="text-center fw200">消费者微信自助借款</p>
+                                </div>
+                            </div>
+							<div class="col-xs-4 col-sm-4">
+                                <div class="two-code pull-left">
+                                    <img class="img-responsive" src="__PUBLIC__/Home/img/qr03.jpg" alt="">
+                                    <p class="text-center fw200">商户综合服务</p>
+                                </div>
+                            </div>
+							
+                        </div>
+						
+                    </div>
+                </div>
+            </footer>
+        </div>
+		
+	</div>	
+		
+
+
+<script type="text/javascript">
+    $(function(){
+        $(window).resize(function(){
+            $("#main-container").css("marginTop", $('.navbar').height());
+            // $("#main-container").css("min-height", $(window).height() -$('.footer').height());
+        }).resize();
+    })
+</script>
+
+			<script type="text/javascript" src="__PUBLIC__/Home/js/IndexFp.js" async="async" defer="defer"></script><!--PC端滚屏动画-->
+	
+
+        <script type="text/javascript">
+            $(function(){
+                $('.bg_height').height($(window).height() - $('nav').height());
+            })
+        </script>
+        <script type="text/javascript" src="__PUBLIC__/Home/js/IndexCommon.js" async="async" defer="defer"></script><!--移动端与PC端公用JS-->
+
+<div class="hidden"></div>
+
+</body>
+<script type="text/javascript" src="__PUBLIC__/Home/js/index20170823.js" async="async" defer="defer"></script>
+</html>

@@ -1,0 +1,7 @@
+1.根目录下 shenma.sql 为数据库
+2。 Application/Common/Conf/db.php  为数据库配置信息。数据库相关信息请修改此文件。
+3.URL重写 请在nginx的location中配置以下代码
+   	if (!-e $request_filename) {
+	   rewrite  ^(.*)$  /index.php?s=$1  last;
+	   break;
+    }		

@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default navbar-fixed-top mobile_nav">
+	 
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="__PUBLIC__/Home/img/header_logo.jpg" alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+		<li><a href="/">首页</a></li>
+		<li <if condition="$controller_name == 'Loans'">class="active"</if>><a href="<{:U('Loans/index')}>" class="fw200">借款申请</a></li>
+		<!-- <li><a href="javascript:;" class="fw200">借款申请</a></li> -->
+		<li <if condition="$controller_name == 'About'">class="active"</if>><a href="<{:U('About/index')}>" class="fw200">关于什马</a></li>
+		<li  <if condition="$controller_name == 'Article'">class="active"</if>><a href="<{:U('Article/index')}>" class="fw200">新闻资讯</a></li>
+		<li <if condition="$controller_name == 'Edu'">class="active"</if>><a href="<{:U('Edu/index')}>" class="fw200">老板商学院</a></li>
+		<li><a href="javascript:;" class="fw200">小暖炉公益</a></li>
+		<li <if condition="$controller_name == 'Contact'">class="active"</if>><a href="<{:U('Contact/index')}>" class="fw200">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

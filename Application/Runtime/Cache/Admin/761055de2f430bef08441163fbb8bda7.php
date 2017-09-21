@@ -76,6 +76,9 @@
 					<span>文章标题</span><input type="text" class="form-control"  name="title" value="<?php echo ($article_data["title"]); ?>">
 				</div>
 				<div class="boxinb">
+					<span>网页标题</span><input type="text" class="form-control"  name="web_title" value="<?php echo ($article_data["web_title"]); ?>">
+				</div>
+				<div class="boxinb">
 					<div class="boxinbl">
 						<span>文章分类</span>
 						<select name="cate_id" class="form-control">
@@ -106,6 +109,9 @@
 				</div>
 				<div class="boxinb">
 					<span class="lets3">关&nbsp;键&nbsp;词</span><input type="text"  class="form-control" placeholder="多个关键词用“,”半角逗号隔开"  name="keywords" value="<?php echo ($article_data["keywords"]); ?>">
+				</div>
+				<div class="boxinb">
+					<span class="lets3">视&nbsp;频</span><input type="file"  class="form-control" name="video"><?php echo ($article_data["video"]); ?>
 				</div>
 				<div class="boxinb">
 					<span>标题图片</span>

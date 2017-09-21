@@ -1,8 +1,62 @@
 <?php
 namespace Home\Controller;
-use Think\Controller;
-class IndexController extends Controller {
-    public function index(){
-        $this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover{color:blue;}</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p><br/>版本 V{$Think.version}</div><script type="text/javascript" src="http://ad.topthink.com/Public/static/client.js"></script><thinkad id="ad_55e75dfae343f5a1"></thinkad><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
+use Home\Controller\HomeBaseController;
+
+/**
+ * 首页控制器
+ */
+class IndexController extends HomeBaseController 
+{
+
+    /**
+     * pC端首页
+     * @return [type] [description]
+     */
+    public function index()
+    {
+        //banner
+        $banner_model = D('Banner');
+        $banners = $banner_model->where(array('classify' => 1))->order('sort asc')->select();
+        $this->assign('banners', $banners);
+
+        $model = D('Article');
+        $articles = $model->where(array('status' => 1, 'cate_id' => array('in', '12,13')))
+                            ->order('article_id desc')->limit(6)->select();
+        $this->assign('articles', $articles);
+
+        //合作品牌
+        $brands = D('Friendlink')->where(array('status' => 1))->select();
+        $this->assign('brands', $brands);
+
+        $this->display();
     }
+
+
+
+	/**
+	 * 手机端首页
+	 * @return [type] [description]
+	 */
+    public function indexM(){
+    	//手机端内容
+    	$model = D('Category');
+    	$categories = $model->select();
+    	
+
+        $article_model = D('Article');
+        $articles = $article_model->field('cate_id, sum(hits) as zans')->group('cate_id')->select();
+        $category_info = array();
+        foreach ($categories as $category) {
+            foreach ($articles as $article) {
+                if ($category['cate_id'] == $article['cate_id']) {
+                    $category['zans'] = $article['zans']; 
+                }
+            }
+            $category_info[] = $category;
+        }
+        $this->assign('categories', $category_info);
+    	$this->display();
+    }
+
 }
+

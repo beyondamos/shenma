@@ -1,0 +1,2671 @@
+[ 2017-09-14T08:49:47+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T08:49:49+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T08:49:49+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T08:49:57+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shenma_user` SET `login_times`='44',`last_login_time`='1505350197',`last_login_ip`='2130706433' WHERE `user_id` = 1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T08:49:58+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_article` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_article` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:10:11+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:10:16+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:10:18+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:10:41+08:00 ] 127.0.0.1 /Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:10:52+08:00 ] 127.0.0.1 /Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shenma_category` WHERE `cate_name` = '什马新闻' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shenma_category` (`cate_name`,`parent_id`,`cate_title`,`cate_keywords`,`description`) VALUES ('什马新闻','0','什马新闻','什马新闻','什马新闻') [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:10:53+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0070s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 12 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:10:56+08:00 ] 127.0.0.1 /Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:11:02+08:00 ] 127.0.0.1 /Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shenma_category` WHERE `cate_name` = '行业动态' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shenma_category` (`cate_name`,`parent_id`,`cate_title`,`cate_keywords`,`description`) VALUES ('行业动态','0','行业动态','行业动态','行业动态') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:11:03+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 12 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:11:09+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0050s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:11:38+08:00 ] 127.0.0.1 /Admin/Article/listing/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 10,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:11:39+08:00 ] 127.0.0.1 /Admin/Article/listing/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 20,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:11:41+08:00 ] 127.0.0.1 /Admin/Article/listing/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 10,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:11:43+08:00 ] 127.0.0.1 /Admin/Article/listing/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:11:59+08:00 ] 127.0.0.1 /Admin/Role/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_role`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:12:00+08:00 ] 127.0.0.1 /Admin/User/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM shenma_user u left join shenma_role r on u.role_id = r.role_id   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:12:00+08:00 ] 127.0.0.1 /Admin/Article/checkListing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 0 ORDER BY article_id desc LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:12:01+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 12 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:12:02+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:16:06+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 12 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:22:58+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:23:00+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:27:59+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 12 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:28:14+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 12 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:28:15+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 12 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:28:19+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:28:20+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0020s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 12 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:32:34+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:32:38+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:33:27+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `shenma_article` (`title`,`web_title`,`cate_id`,`status`,`author`,`newstime`,`sort`,`keywords`,`synopsis`,`content`,`is_recommend`,`titleimg`) VALUES ('这是一篇测试文章','这是一篇测试文章','12','1','xiaoming1','2017-09-14','50','','这是一篇测试文章','这是一篇测试文章','0','/Public/Upload/20170914/1505352807_1665875793.jpg') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:33:29+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:57:51+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:58:05+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+SQL: INSERT INTO `shenma_article` (`title`,`web_title`,`cate_id`,`status`,`author`,`newstime`,`sort`,`keywords`,`synopsis`,`content`,`is_recommend`) VALUES ('第2篇测试文章','','12','1','xiaoming1','2017-09-14','50','','第2篇测试文章','第2篇测试文章','0') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:58:06+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T09:58:07+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:58:19+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+SQL: INSERT INTO `shenma_article` (`title`,`web_title`,`cate_id`,`status`,`author`,`newstime`,`sort`,`keywords`,`synopsis`,`content`,`is_recommend`) VALUES ('第2篇测试文章','第2篇测试文章','12','1','xiaoming1','2017-09-14','50','','第2篇测试文章','第2篇测试文章','0') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T09:58:20+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T10:30:57+08:00 ] 127.0.0.1 /Admin/Article/edit/article_id/26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `article_id` = 26 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: is_hot D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 95 行.
+NOTIC: [8] Undefined index: tag D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T10:31:02+08:00 ] 127.0.0.1 /Admin/Article/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+SQL: UPDATE `shenma_article` SET `title`='第3篇测试文章',`web_title`='第2篇测试文章',`cate_id`='12',`status`='1',`author`='xiaoming1',`newstime`='2017-09-14',`sort`='50',`keywords`='',`synopsis`='第2篇测试文章',`content`='第2篇测试文章',`is_recommend`='0' WHERE `article_id` = 26 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T10:31:03+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:09:37+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:09:38+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:13:14+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:13:15+08:00 ] 127.0.0.1 /Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:13:23+08:00 ] 127.0.0.1 /Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `shenma_category` WHERE `cate_name` = '核心团队' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shenma_category` (`cate_name`,`parent_id`,`cate_title`,`cate_keywords`,`description`) VALUES ('核心团队','0','核心团队','核心团队','核心团队') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:13:25+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 14 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:13:26+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-09-14T13:13:27+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:16:23+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `shenma_article` (`title`,`web_title`,`cate_id`,`status`,`author`,`newstime`,`sort`,`keywords`,`synopsis`,`content`,`is_recommend`,`titleimg`) VALUES ('陈小凤','','14','1','xiaoming1','2017-09-14','50','','董事长','&lt;h5 style=&quot;font-size:15px;font-family:&amp;quot;font-weight:500;color:#9396A5;text-align:center;&quot;&gt;
+	行业最年轻传奇女性领军带领新大洲电动车从四万销量提升到五十万
+&lt;/h5&gt;','0','/Public/Upload/20170914/1505366183_255608817.jpg') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:16:24+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:16:25+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:16:51+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `shenma_article` (`title`,`web_title`,`cate_id`,`status`,`author`,`newstime`,`sort`,`keywords`,`synopsis`,`content`,`is_recommend`,`titleimg`) VALUES ('宁 锐','','0','1','xiaoming1','2017-09-14','50','','CEO','&lt;h5 style=&quot;font-size:15px;font-family:&amp;quot;font-weight:500;color:#9396A5;text-align:center;&quot;&gt;
+	不墨守成规的连续创业者因其经典营销案例登录《鲁豫有约》国内第一人
+&lt;/h5&gt;','0','/Public/Upload/20170914/1505366211_96927425.jpg') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:16:53+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:16:59+08:00 ] 127.0.0.1 /Admin/Article/edit/article_id/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `article_id` = 28 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: is_hot D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 95 行.
+NOTIC: [8] Undefined index: tag D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:17:04+08:00 ] 127.0.0.1 /Admin/Article/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+SQL: UPDATE `shenma_article` SET `title`='宁 锐',`web_title`='',`cate_id`='14',`status`='1',`author`='xiaoming1',`newstime`='2017-09-14',`sort`='50',`keywords`='',`synopsis`='CEO',`content`='&lt;h5 style=&quot;font-size:15px;font-family:&amp;quot;font-weight:500;color:#9396A5;text-align:center;&quot;&gt;
+	不墨守成规的连续创业者因其经典营销案例登录《鲁豫有约》国内第一人
+&lt;/h5&gt;',`is_recommend`='0' WHERE `article_id` = 28 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:17:05+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:17:09+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:17:33+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `shenma_article` (`title`,`web_title`,`cate_id`,`status`,`author`,`newstime`,`sort`,`keywords`,`synopsis`,`content`,`is_recommend`,`titleimg`) VALUES ('宁 锐','','14','1','xiaoming1','2017-09-14','50','','CEO','&lt;h5 style=&quot;font-size:15px;font-family:&amp;quot;font-weight:500;color:#9396A5;text-align:center;&quot;&gt;
+	不墨守成规的连续创业者因其经典营销案例登录《鲁豫有约》国内第一人
+&lt;/h5&gt;','0','/Public/Upload/20170914/1505366253_75328688.jpg') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:17:34+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:17:44+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:18:05+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `shenma_article` (`title`,`web_title`,`cate_id`,`status`,`author`,`newstime`,`sort`,`keywords`,`synopsis`,`content`,`is_recommend`,`titleimg`) VALUES ('宁 锐','','0','1','xiaoming1','2017-09-14','50','','CEO','&lt;h5 style=&quot;font-size:15px;font-family:&amp;quot;font-weight:500;color:#9396A5;text-align:center;&quot;&gt;
+	不墨守成规的连续创业者因其经典营销案例登录《鲁豫有约》国内第一人
+&lt;/h5&gt;','0','/Public/Upload/20170914/1505366285_1108243450.jpg') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:18:06+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:18:08+08:00 ] 127.0.0.1 /Admin/Article/edit/article_id/30.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_article` WHERE `article_id` = 30 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: is_hot D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 95 行.
+NOTIC: [8] Undefined index: tag D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:18:12+08:00 ] 127.0.0.1 /Admin/Article/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+SQL: UPDATE `shenma_article` SET `title`='宁 锐',`web_title`='',`cate_id`='14',`status`='1',`author`='xiaoming1',`newstime`='2017-09-14',`sort`='50',`keywords`='',`synopsis`='CEO',`content`='&lt;h5 style=&quot;font-size:15px;font-family:&amp;quot;font-weight:500;color:#9396A5;text-align:center;&quot;&gt;
+	不墨守成规的连续创业者因其经典营销案例登录《鲁豫有约》国内第一人
+&lt;/h5&gt;',`is_recommend`='0' WHERE `article_id` = 30 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:18:13+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:18:17+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:18:35+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `shenma_article` (`title`,`web_title`,`cate_id`,`status`,`author`,`newstime`,`sort`,`keywords`,`synopsis`,`content`,`is_recommend`,`titleimg`) VALUES ('宁 锐','','14','1','xiaoming1','2017-09-14','50','','CEO','&lt;h5 style=&quot;font-size:15px;font-family:&amp;quot;font-weight:500;color:#9396A5;text-align:center;&quot;&gt;
+	不墨守成规的连续创业者因其经典营销案例登录《鲁豫有约》国内第一人
+&lt;/h5&gt;','0','/Public/Upload/20170914/1505366315_467811491.jpg') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:18:36+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:18:42+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:19:02+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `shenma_article` (`title`,`web_title`,`cate_id`,`status`,`author`,`newstime`,`sort`,`keywords`,`synopsis`,`content`,`is_recommend`,`titleimg`) VALUES ('宁 锐','','14','1','xiaoming1','2017-09-14','50','','CEO','&lt;h5 style=&quot;font-size:15px;font-family:&amp;quot;font-weight:500;color:#9396A5;text-align:center;&quot;&gt;
+	不墨守成规的连续创业者因其经典营销案例登录《鲁豫有约》国内第一人
+&lt;/h5&gt;','0','/Public/Upload/20170914/1505366342_1655340530.jpg') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:19:03+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:19:06+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:19:20+08:00 ] 127.0.0.1 /Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `shenma_article` (`title`,`web_title`,`cate_id`,`status`,`author`,`newstime`,`sort`,`keywords`,`synopsis`,`content`,`is_recommend`,`titleimg`) VALUES ('宁 锐','','14','1','xiaoming1','2017-09-14','50','','CEO','&lt;h5 style=&quot;font-size:15px;font-family:&amp;quot;font-weight:500;color:#9396A5;text-align:center;&quot;&gt;
+	不墨守成规的连续创业者因其经典营销案例登录《鲁豫有约》国内第一人
+&lt;/h5&gt;','0','/Public/Upload/20170914/1505366360_1067971827.jpg') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:19:22+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:20:20+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:23:17+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:23:18+08:00 ] 127.0.0.1 /Admin/Article/edit/article_id/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_article` WHERE `article_id` = 33 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: is_hot D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 95 行.
+NOTIC: [8] Undefined index: tag D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\761055de2f430bef08441163fbb8bda7.php 第 140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:23:29+08:00 ] 127.0.0.1 /Admin/Article/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\phpStudy\WWW\shenma\Application\Common\Common\function.php 第 11 行.
+SQL: UPDATE `shenma_article` SET `title`='宁 锐',`web_title`='',`cate_id`='14',`status`='1',`author`='xiaoming1',`newstime`='2017-09-14',`sort`='50',`keywords`='',`synopsis`='CEO',`content`='&lt;h5&gt;
+	不墨守成规的连续创业者因其经典营销案例登录《鲁豫有约》国内第一人
+&lt;/h5&gt;',`is_recommend`='0' WHERE `article_id` = 33 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-14T13:23:30+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime` FROM shenma_article a left join shenma_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM shenma_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-14T13:27:57+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num FROM `shenma_article` GROUP BY cate_id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
