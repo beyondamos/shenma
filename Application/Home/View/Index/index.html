@@ -315,11 +315,9 @@ $(function() {
 		<div class="section main-about content2">
 			<div class="">
 				<div class="main-about-bk"></div>
-				<h2>关于什马</h2>
-				<p>什马互联网金融信息服务（上海）有限公司，简称什马金融，成立于2015年1月，总部位于国内金融中心上海。是一家专注在县乡镇渠道，服务于8亿农村市场的国内领先的互联网金融公司
-				<p>公司成立伊始以农村交通工具领域为切入点，并依托上市公司等行业强势资源，业务快速覆盖全国。</p>
-				<p>公司两大核心产品什马分期和信用贷分别为农民和商家提供消费金融和供应链金融服务，旨在帮助更多的经销商做好生意、做大生意，使销售资金得以快速的回笼。</p>
-				<h3><a href="about.html">more</a></h3>
+				<h2><{$about.title}></h2>
+                <{:html_entity_decode($about['content'])}>
+				<h3><a href="<{$about.url}>">more</a></h3>
 			</div>
 		</div>
 		

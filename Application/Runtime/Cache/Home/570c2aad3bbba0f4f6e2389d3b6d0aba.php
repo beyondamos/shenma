@@ -104,7 +104,7 @@ $(function() {
   </div>
 </nav>
 			<div class="apply-top">
-				<img src="/Public/Home/img/bkimgloan.jpg" alt="" />
+				<img src="<?php echo ($banner["thumbnail"]); ?>" alt="" />
 				<div class="apply-top-md">
 					<a href="<?php echo U('Loans/index');?>" class="anc"><img src="/Public/Home/img/biz.png" alt="" /><h1>商家贷款</h1><h2>Business loans</h2></a>
 					<a href="<?php echo U('Loans/index2');?>" class="anc"><img src="/Public/Home/img/cust.png" alt="" /><h1>消费者贷款</h1><h2>Consumer loans</h2></a>

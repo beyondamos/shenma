@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?21 �?03:16
+-- 生成日期: 2017 年 09 月 22 日 17:26
 -- 服务器版本: 5.5.53
--- PHP 版本: 5.6.27
+-- PHP 版本: 5.4.45
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -29,16 +29,19 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `shenma_about` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL COMMENT '标题',
+  `url` varchar(255) NOT NULL DEFAULT '' COMMENT '链接',
+  `thumbnail` varchar(255) NOT NULL COMMENT '背景图',
   `content` text NOT NULL COMMENT '页面内容',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='新闻内容表' AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='新闻内容表' AUTO_INCREMENT=3 ;
 
 --
 -- 转存表中的数据 `shenma_about`
 --
 
-INSERT INTO `shenma_about` (`id`, `title`, `content`) VALUES
-(1, '关于什马', '&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	什马互联网金融信息服务（上海）有限公司，简称什马金融，成立于2015年1月， 总部位于国内金融中心上海。&lt;br /&gt;\r\n是一家专注在县乡镇渠道，服务于8亿农村市场的国内领先的互联网金融公司，公司成立伊始以农村交通工具领域为切入点，并依托上市公司等行业强势资源，业务快速覆盖全国。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	公司两大核心产品什马分期和信用贷分别为农民和商家提供消费金融和供应链金融服务，旨在帮助更多的经销商做好生意、做大生意，使销售资金得以快速的回笼。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	截止2017年7月，什马金融合作网点遍布全国31个省达35000多家，为近50%的商户和几十万农民家庭提供了金融服务解决方案。整体业务规模超50亿元。预计至2017年底，合作农村网点将超过5万家，业务涵盖交通工具、家电、3c、农资、农机等各版块，业务超100亿元。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	公司以“让农民拥有和城里人一样的金融服务”为核心理念，旨在通过普惠金融方式，为广大农民提供优质高效低成本的互联网金融服务，目前不仅是农村交通工具领域国内最大的互联网公司，更是国内农村金融领域的领跑者之一。\r\n&lt;/p&gt;');
+INSERT INTO `shenma_about` (`id`, `title`, `url`, `thumbnail`, `content`) VALUES
+(1, '关于什马', '', '', '&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	什马互联网金融信息服务（上海）有限公司，简称什马金融，成立于2015年1月， 总部位于国内金融中心上海。&lt;br /&gt;\r\n是一家专注在县乡镇渠道，服务于8亿农村市场的国内领先的互联网金融公司，公司成立伊始以农村交通工具领域为切入点，并依托上市公司等行业强势资源，业务快速覆盖全国。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	公司两大核心产品什马分期和信用贷分别为农民和商家提供消费金融和供应链金融服务，旨在帮助更多的经销商做好生意、做大生意，使销售资金得以快速的回笼。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	截止2017年7月，什马金融合作网点遍布全国31个省达35000多家，为近50%的商户和几十万农民家庭提供了金融服务解决方案。整体业务规模超50亿元。预计至2017年底，合作农村网点将超过5万家，业务涵盖交通工具、家电、3c、农资、农机等各版块，业务超100亿元。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	公司以“让农民拥有和城里人一样的金融服务”为核心理念，旨在通过普惠金融方式，为广大农民提供优质高效低成本的互联网金融服务，目前不仅是农村交通工具领域国内最大的互联网公司，更是国内农村金融领域的领跑者之一。\r\n&lt;/p&gt;'),
+(2, '关于什马', '12312312123213123213213', '/Public/Upload/20170922/1506048343_1568812728.jpg', '&lt;p&gt;\r\n	什马互联网金融信息服务（上海）有限公司，简称什马金融，成立于2015年1月，总部位于国内金融中心上海。是一家专注在县乡镇渠道，服务于8亿农村市场的国内领先的互联网金融公司\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	公司成立伊始以农村交通工具领域为切入点，并依托上市公司等行业强势资源，业务快速覆盖全国。\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	公司两大核心产品什马分期和信用贷分别为农民和商家提供消费金融和供应链金融服务，旨在帮助更多的经销商做好生意、做大生意，使销售资金得以快速的回笼。\r\n&lt;/p&gt;');
 
 -- --------------------------------------------------------
 
@@ -116,7 +119,7 @@ CREATE TABLE IF NOT EXISTS `shenma_auth` (
   `auth_url` varchar(50) NOT NULL DEFAULT '' COMMENT '权限路由',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '权限状态，是否显示在左侧菜单列表里',
   PRIMARY KEY (`auth_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=56 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=59 ;
 
 --
 -- 转存表中的数据 `shenma_auth`
@@ -164,7 +167,10 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (52, '发展历程', 1, 'Develop/index', 0),
 (53, '发展历程添加', 1, 'Develop/add', 0),
 (54, '发展历程编辑', 1, 'Develop/edit', 0),
-(55, '发展历程删除', 1, 'Develop/delete', 0);
+(55, '发展历程删除', 1, 'Develop/delete', 0),
+(56, '首页什马简介', 1, 'Aboutus/shouye', 0),
+(57, 'Banner图标设置', 1, 'Icon/index', 0),
+(58, '图标编辑', 1, 'Icon/edit', 0);
 
 -- --------------------------------------------------------
 
@@ -180,7 +186,7 @@ CREATE TABLE IF NOT EXISTS `shenma_banner` (
   `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
   `classify` tinyint(4) NOT NULL DEFAULT '0' COMMENT '分类',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=6 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=7 ;
 
 --
 -- 转存表中的数据 `shenma_banner`
@@ -191,7 +197,8 @@ INSERT INTO `shenma_banner` (`id`, `url`, `name`, `thumbnail`, `sort`, `classify
 (2, '213213213', '第2张', '/Public/Upload/20170921/1505956130_606835435.jpg', 2, 1),
 (3, '123123', '第3张', '/Public/Upload/20170921/1505956147_498624648.jpg', 3, 1),
 (4, '123213', '第4张', '/Public/Upload/20170921/1505956164_704730493.jpg', 10, 1),
-(5, '123213', '关于我们', '/Public/Upload/20170921/1505958524_1209540722.jpg', 1, 3);
+(5, '123213', '关于我们', '/Public/Upload/20170921/1505958524_1209540722.jpg', 1, 3),
+(6, '12321313', '借款申请banner', '/Public/Upload/20170922/1506059128_950678200.jpg', 1, 2);
 
 -- --------------------------------------------------------
 
@@ -313,6 +320,21 @@ INSERT INTO `shenma_develop` (`id`, `url`, `name`, `thumbnail`, `sort`) VALUES
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `shenma_icon`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_icon` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `url` varchar(256) NOT NULL DEFAULT '' COMMENT 'url',
+  `name` varchar(50) NOT NULL DEFAULT '' COMMENT '链接名称',
+  `name_e` varchar(100) NOT NULL DEFAULT '' COMMENT '英文名称',
+  `thumbnail` varchar(256) NOT NULL COMMENT '缩略图',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Banner图标' AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `shenma_message`
 --
 
@@ -405,7 +427,7 @@ CREATE TABLE IF NOT EXISTS `shenma_user` (
 --
 
 INSERT INTO `shenma_user` (`user_id`, `username`, `nickname`, `password`, `email`, `salt`, `role_id`, `last_login_time`, `last_login_ip`, `add_time`, `login_times`, `status`) VALUES
-(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1505954375, 2130706433, 0, 47, 1),
+(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1506046857, 2130706433, 0, 48, 1),
 (7, 'ishequan', 'ishequan', 'e08df8dbfee311bcb98fae8649d4e70f', '', '6sBKPA', 1, 0, 0, 1494381412, 0, 1),
 (8, 'shenma', 'shenma', 'e0872f7bc5e019bf4ad8c24f15d72cc5', 'shenma@qq.com', 'E0iAvl', 1, 0, 0, 1505444079, 0, 1);
 

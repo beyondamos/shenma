@@ -18,6 +18,9 @@ class IndexController extends HomeBaseController
         $banner_model = D('Banner');
         $banners = $banner_model->where(array('classify' => 1))->order('sort asc')->select();
         $this->assign('banners', $banners);
+        //关于什马
+        $about = D('About')->find(2);
+        $this->assign('about', $about);
 
         $model = D('Article');
         $articles = $model->where(array('status' => 1, 'cate_id' => array('in', '12,13')))
@@ -25,7 +28,7 @@ class IndexController extends HomeBaseController
         $this->assign('articles', $articles);
 
         //合作品牌
-        $brands = D('Friendlink')->where(array('status' => 1))->select();
+        $brands = D('Brand')->where(array('status' => 1))->select();
         $this->assign('brands', $brands);
 
         $this->display();
