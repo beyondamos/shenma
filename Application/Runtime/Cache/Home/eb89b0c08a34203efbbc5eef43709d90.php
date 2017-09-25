@@ -106,12 +106,12 @@ $(function() {
 </nav>
 
 		<div class="bannertop">
-			<img alt="" src="/Public/Home/img/bannerAcad.jpg" />
+			<img alt="" src="<?php echo ($banner["thumbnail"]); ?>" />
 		</div>
 			
 			<div class="cont-edu-bantxt">
 				<img src="/Public/Home/img/quol.png" alt="">
-				<p>老板商学院是由知名互联网金融公司什马金融围绕商户经营体系所建立的综合性商户服务平台。旨在为什马商户提供更多的在线培训、销售技巧、经营辅导、宣传推广等多种增值性服务，让您的销售资金快速回笼，生意越做越大</p>
+				<p><?php echo html_entity_decode($info['content']);?></p>
 				<img src="/Public/Home/img/quor.png" alt="">
 			</div>
 					
@@ -174,11 +174,7 @@ $(function() {
 					
 					<h1>老板社区</h1>
 					<div class="edu-img">
-						<img src="/Public/Home/img/imgedu01.jpg" alt="">
-						<img src="/Public/Home/img/imgedu02.jpg" alt="">
-						<img src="/Public/Home/img/imgedu03.jpg" alt="">
-						<img src="/Public/Home/img/imgedu04.jpg" alt="">
-						<img src="/Public/Home/img/imgedu05.jpg" alt="">
+						<img src="<?php echo ($shequ["thumbnail"]); ?>" alt="">
 					</div>
 					
 					

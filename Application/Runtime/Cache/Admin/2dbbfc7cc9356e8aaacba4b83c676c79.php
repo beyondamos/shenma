@@ -72,6 +72,8 @@
 		<a href="<?php echo U('Banner/edit', array('id' => 11));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;老板社区</a>
 		<a>联系我们</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 12));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
+		<a href="<?php echo U('Department/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地点部门设置</a>
+		<a href="<?php echo U('Post/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;职位设置</a>
 		<a href="<?php echo U('Banner/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留言信息</a>
 	</div>
 	<?php if(is_array($user_auth_list)): $i = 0; $__LIST__ = $user_auth_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div>
@@ -84,24 +86,12 @@
 	<div class="contmain">
 		
 		<div class="boxi">
-			<h1>首页Banner列表</h1>
+			<h1>部门设置</h1>
 			
 			<!-- 表格顶部搜索区 -->
 			<div class="boxoper">
-				<a href="<?php echo U('Banner/add', array('classify' => 1));?>">添加Banner</a>
-				<!--<div class="boxoper-seh">-->
-					<!--<form action="" method="post">-->
-						<!--<button class="btn btn-default" type="submit"><img src="/Public/Admin/images/iconseh.png" /></button>-->
-						<!--<input type="text" class="form-control" placeholder="搜索用户名或角色">-->
-						<!--<select class="form-control">-->
-							<!--<option>全部</option>-->
-							<!--<option>分类</option>-->
-							<!--<option>分类</option>-->
-							<!--<option>分类</option>-->
-							<!--<option>分类</option>-->
-						<!--</select>-->
-					<!--</form>-->
-				<!--</div>-->
+				<a href="<?php echo U('Department/add');?>">添加部门</a>
+
 			</div>
 			
 			<!-- 表格 -->
@@ -109,21 +99,18 @@
 				<thead>
 					<tr>
 					   <th class="col-md-1 text-vm">序号</th>
-					   <th class="col-md-2 text-vm">Banner名称</th>
-					   <th class="col-md-6 text-vm">链接URL</th>
-					   <th class="col-md-2 text-vm">顺序</th>
+					   <th class="col-md-4 text-vm">名称</th>
 					   <th class="col-md-1 text-vm text-center">操作</th>
 					</tr>
 				</thead>
+
 				<tbody>
-					<?php if(is_array($banners)): $i = 0; $__LIST__ = $banners;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+					<?php if(is_array($department_data)): $i = 0; $__LIST__ = $department_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 						<td class="text-vm"><?php echo ($vo["id"]); ?></td>
-						<td class="text-vm"><?php echo ($vo["name"]); ?></td>
-						<td class="text-vm"><?php echo ($vo["url"]); ?></td>
-						<td class="text-vm"><?php echo ($vo["sort"]); ?></td>
+						<td class="text-vm"><?php echo str_repeat('-----',$vo['level']*2); echo ($vo["name"]); ?></td>
 						<td class="text-vm">
-							<a href="<?php echo U('Banner/edit',array('id' => $vo['id']) );?>">编辑</a>
-							<?php if($vo['classify'] != 4): ?><a href="<?php echo U('Banner/delete',array('id' => $vo['id']) );?>">删除</a><?php endif; ?>
+							<a href="<?php echo U('Department/edit',array('id' => $vo['id']));?>">编辑</a>
+							<a href="<?php echo U('Department/delete',array('id' => $vo['id']));?>">删除</a>
 						</td>
 					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 				</tbody>

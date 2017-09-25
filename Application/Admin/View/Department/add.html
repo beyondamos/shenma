@@ -22,30 +22,20 @@
 <div class="cont">
 	<div class="contmain">
 		<div class="boxi">
-			<h1>添加分类</h1>
-			<form action="<{:U('Category/add')}>" method="post">
+			<h1>添加部门信息</h1>
+			<form action="<{:U('Department/add')}>" method="post">
 				<div class="boxin">
-					<span>分类名称</span><input type="text" name="cate_name" class="form-control">
+					<span>地点|部门</span><input type="text" name="name" class="form-control">
 				</div>
 				<div class="boxin">
 					<span>上级分类</span>
 					<select name="parent_id" class="form-control">
-						<option value="0">请选择分类</option>
-						<volist name="categroy_data" id="vo">
-							<option value="<{$vo['cate_id']}>"><{:str_repeat('----',$vo['level'])}><{$vo['cate_name']}></option>
+						<option value="0">不选择分类则为添加地点</option>
+						<volist name="department_data" id="vo">
+							<option value="<{$vo['id']}>"><{:str_repeat('----',$vo['level'])}><{$vo['name']}></option>
 						</volist>
 					</select>
 				</div>
-				<div class="boxin">
-					<span>栏目标题</span><input type="text" class="form-control" name="cate_title">
-				</div>
-				<div class="boxin">
-					<span>关键词</span><input type="text" class="form-control" name="cate_keywords">
-				</div>
-				<div class="boxtext">
-					<span>分类描述</span><textarea rows="6" class="form-control" name="description"></textarea>
-				</div>
-
 				<div class="boxinbtn">
 					<input type="submit" value="确定" class="btn btna" />
 					<input type="submit" value="重置" class="btn btnb" />

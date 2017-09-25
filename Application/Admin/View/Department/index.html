@@ -23,11 +23,11 @@
 	<div class="contmain">
 		
 		<div class="boxi">
-			<h1>文章分类</h1>
+			<h1>部门设置</h1>
 			
 			<!-- 表格顶部搜索区 -->
 			<div class="boxoper">
-				<a href="<{:U('Category/add')}>">添加分类</a>
+				<a href="<{:U('Department/add')}>">添加部门</a>
 
 			</div>
 			
@@ -36,24 +36,19 @@
 				<thead>
 					<tr>
 					   <th class="col-md-1 text-vm">序号</th>
-					   <th class="col-md-2 text-vm">分类</th>
-					   <th class="col-md-4 text-vm">描述</th>
-					   <th class="col-md-1 text-vm">文章数</th>
+					   <th class="col-md-4 text-vm">名称</th>
 					   <th class="col-md-1 text-vm text-center">操作</th>
 					</tr>
 				</thead>
 
-
 				<tbody>
-					<volist name="category_data" id="vo">
+					<volist name="department_data" id="vo">
 					<tr>
-						<td class="text-vm"><{$vo.cate_id}></td>
-						<td class="text-vm"><{:str_repeat('--',$vo['level']*2)}><{$vo.cate_name}></td>
-						<td class="text-vm"><{$vo.description}></td>
-						<td class="text-vm"><{$count_data[$vo['cate_id']]['article_num']}></td>
+						<td class="text-vm"><{$vo.id}></td>
+						<td class="text-vm"><{:str_repeat('-----',$vo['level']*2)}><{$vo.name}></td>
 						<td class="text-vm">
-							<a href="<{:U('Category/edit',array('cate_id' => $vo['cate_id']))}>">编辑</a>
-							<a href="<{:U('Category/delete',array('cate_id' => $vo['cate_id']))}>">删除</a>
+							<a href="<{:U('Department/edit',array('id' => $vo['id']))}>">编辑</a>
+							<a href="<{:U('Department/delete',array('id' => $vo['id']))}>">删除</a>
 						</td>
 					</tr>
 					</volist>

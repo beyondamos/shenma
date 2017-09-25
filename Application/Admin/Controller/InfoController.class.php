@@ -24,7 +24,7 @@ class InfoController extends CommonController
 				}
 			}
 		} elseif (IS_GET) {
-			$info = $model->find(1);
+			$info = $model->find(I('get.id'));
 			$this->assign('info', $info);
 			$this->display();
 		}

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?25 �?06:55
+-- 生成日期: 2017 �?09 �?25 �?08:59
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `shenma_auth` (
   `auth_url` varchar(50) NOT NULL DEFAULT '' COMMENT '权限路由',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '权限状态，是否显示在左侧菜单列表里',
   PRIMARY KEY (`auth_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=68 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=72 ;
 
 --
 -- 转存表中的数据 `shenma_auth`
@@ -100,11 +100,13 @@ CREATE TABLE IF NOT EXISTS `shenma_auth` (
 INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `status`) VALUES
 (1, '内容管理', 0, '', 1),
 (2, '文章列表', 1, 'Article/index', 0),
+(68, '职位信息', 1, 'Post/index', 0),
 (5, '添加文章', 1, 'Article/add', 0),
 (6, '系统管理', 0, '', 1),
 (7, '管理员列表', 6, 'User/listing', 1),
 (8, '角色列表', 6, 'Role/listing', 1),
 (12, '文章编辑', 1, 'Article/edit', 0),
+(3, '部门信息', 1, 'Department/index', 0),
 (10, '角色添加', 6, 'Role/add', 0),
 (13, '文章删除', 1, 'Article/delete', 0),
 (16, '角色编辑', 6, 'Role/edit', 0),
@@ -112,9 +114,9 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (15, '用户编辑', 6, 'User/edit', 0),
 (17, '用户删除', 6, 'User/delete', 0),
 (18, '修改个人密码', 6, 'User/password', 0),
-(19, '添加分类', 1, 'Category/add', 0),
-(20, '编辑分类', 1, 'Category/edit', 0),
-(21, '删除分类', 1, 'Category/delete', 0),
+(19, '添加部门', 1, 'Department/add', 0),
+(20, '编辑部门', 1, 'Department/edit', 0),
+(21, '删除部门', 1, 'Department/delete', 0),
 (22, '用户添加', 6, 'User/add', 0),
 (23, '系统设置', 0, '', 1),
 (24, '网站设置', 23, 'System/webConf', 1),
@@ -147,7 +149,10 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (64, '团队信息编辑', 1, 'Team/edit', 0),
 (65, '添加团队信息', 1, 'Team/add', 0),
 (66, '删除团队信息', 1, 'Team/delete', 0),
-(67, '单信息设置', 1, 'Info/index', 0);
+(67, '单信息设置', 1, 'Info/index', 0),
+(69, '职位添加', 1, 'Post/add', 0),
+(70, '职位编辑', 1, 'Post/edit', 0),
+(71, '职位删除', 1, 'Post/删除', 0);
 
 -- --------------------------------------------------------
 
@@ -163,7 +168,7 @@ CREATE TABLE IF NOT EXISTS `shenma_banner` (
   `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
   `classify` tinyint(4) NOT NULL DEFAULT '0' COMMENT '分类',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=10 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=13 ;
 
 --
 -- 转存表中的数据 `shenma_banner`
@@ -178,7 +183,10 @@ INSERT INTO `shenma_banner` (`id`, `url`, `name`, `thumbnail`, `sort`, `classify
 (6, '12321313', '借款申请banner', '/Public/Upload/20170922/1506059128_950678200.jpg', 1, 2),
 (7, '13213213', '商户进货贷', '/Public/Upload/20170925/1506302509_1776309795.png', 1, 4),
 (8, '123123213', '核心产品banner', '/Public/Upload/20170925/1506302775_422591589.png', 2, 4),
-(9, '134123213', '新闻资讯', '/Public/Upload/20170925/1506318149_1022369721.jpg', 0, 5);
+(9, '134123213', '新闻资讯', '/Public/Upload/20170925/1506318149_1022369721.jpg', 0, 5),
+(10, '123213213', '老板商学院', '/Public/Upload/20170925/1506323394_1751433130.jpg', 0, 6),
+(11, '123213123', '老板社区', '/Public/Upload/20170925/1506324014_1641799524.png', 0, 6),
+(12, '', '联系我们', '/Public/Upload/20170925/1506324422_925569988.jpg', 0, 7);
 
 -- --------------------------------------------------------
 
@@ -215,42 +223,6 @@ INSERT INTO `shenma_brand` (`id`, `url`, `name`, `status`, `thumbnail`, `is_blan
 -- --------------------------------------------------------
 
 --
--- 表的结构 `shenma_category`
---
-
-CREATE TABLE IF NOT EXISTS `shenma_category` (
-  `cate_id` smallint(5) unsigned NOT NULL AUTO_INCREMENT COMMENT '分类id',
-  `cate_name` varchar(32) NOT NULL DEFAULT '' COMMENT '分类名称',
-  `parent_id` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT '上级分类id',
-  `cate_title` varchar(100) NOT NULL COMMENT '栏目标题描述',
-  `cate_keywords` varchar(100) NOT NULL COMMENT '栏目关键词信息',
-  `description` text NOT NULL COMMENT '分类描述',
-  PRIMARY KEY (`cate_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
-
---
--- 转存表中的数据 `shenma_category`
---
-
-INSERT INTO `shenma_category` (`cate_id`, `cate_name`, `parent_id`, `cate_title`, `cate_keywords`, `description`) VALUES
-(1, '老板商学院', 0, '老板商学院', '老板商学院', '老板商学院'),
-(2, '秩序白银', 1, '秩序白银', '秩序白银', '秩序白银'),
-(3, '荣耀黄金', 1, '荣耀黄金', '荣耀黄金', '荣耀黄金'),
-(4, '尊贵白金', 1, '尊贵白金', '尊贵白金', '尊贵白金'),
-(5, '永恒钻石', 1, '永恒钻石', '永恒钻石', '永恒钻石'),
-(6, '办单流程', 2, '办单流程', '办单流程', '40分钟\r\n你将会了解如何成为什马合伙人\r\n开始你的轻松赚钱之旅\r\n从一个青铜菜鸟直接晋级到白银段位'),
-(7, '什马产品', 2, '什马产品', '什马产品', '边吃边看，一顿饭的时间\r\n让你了解所有什马金融产品'),
-(8, '行业相关', 3, '行业相关', '行业相关', '一局王者的时间\r\n让您尽情领略最前沿的行业资讯'),
-(9, '风控相关', 3, '风控相关', '风控相关', '已经是老板的你\r\n意识到了眼前的风险么？'),
-(10, '销售技巧', 3, '销售技巧', '销售技巧', '如何提升销量？\r\n如果拓宽渠道？\r\n怎么和你的大客户打交道？'),
-(11, '业务相关技能', 3, '业务相关技能', '业务相关技能', '员工不听话？\r\n事情总是延期？\r\n教你如何做一个合格的管理者'),
-(12, '什马新闻', 0, '什马新闻', '什马新闻', '什马新闻'),
-(13, '行业动态', 0, '行业动态', '行业动态', '行业动态'),
-(14, '核心团队', 0, '核心团队', '核心团队', '核心团队');
-
--- --------------------------------------------------------
-
---
 -- 表的结构 `shenma_config`
 --
 
@@ -272,6 +244,35 @@ INSERT INTO `shenma_config` (`conf_id`, `conf_name`, `conf_value`) VALUES
 (4, 'site_desc', ''),
 (5, 'site_keywords', ''),
 (6, 'site_status', '1');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `shenma_department`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_department` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT COMMENT '分类id',
+  `name` varchar(32) NOT NULL DEFAULT '' COMMENT '分类名称',
+  `parent_id` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT '上级id',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+
+--
+-- 转存表中的数据 `shenma_department`
+--
+
+INSERT INTO `shenma_department` (`id`, `name`, `parent_id`) VALUES
+(1, '上海', 0),
+(2, '信审风控中心', 1),
+(3, '成都', 0),
+(4, '西安', 0),
+(5, '杭州', 0),
+(6, '贵州', 0),
+(7, '北京', 0),
+(8, '安全中心', 1),
+(9, '产品研发中心', 1),
+(10, '信息技术中心', 1);
 
 -- --------------------------------------------------------
 
@@ -332,14 +333,15 @@ CREATE TABLE IF NOT EXISTS `shenma_info` (
   `thumbnail` varchar(300) NOT NULL COMMENT '缩略图地址',
   `content` text NOT NULL COMMENT '页面内容',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='新闻内容表' AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='新闻内容表' AUTO_INCREMENT=3 ;
 
 --
 -- 转存表中的数据 `shenma_info`
 --
 
 INSERT INTO `shenma_info` (`id`, `title`, `thumbnail`, `content`) VALUES
-(1, '小暖炉助学计划', '/Public/Upload/20170925/1506317422_999256213.png', '&lt;p style=&quot;color:#242424;font-size:17px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	小暖炉助学计划是由热心公益事业的什马金融公司、什马金融内部员工、以及社会志愿者共同发起的，在遵守宪法、法律、法规和国家政策，遵守社会道德风尚的前提下以扶贫帮困献爱心为主的公益扶贫计划。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:17px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	1、帮扶对象：贫困学生、留守儿童；以学习优秀，积极向上的初、高中生为主；\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:17px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	2、帮扶宗旨：让贫穷的孩子都有书读，用知识改变命运；\r\n&lt;/p&gt;');
+(1, '小暖炉助学计划', '/Public/Upload/20170925/1506317422_999256213.png', '&lt;p style=&quot;color:#242424;font-size:17px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	小暖炉助学计划是由热心公益事业的什马金融公司、什马金融内部员工、以及社会志愿者共同发起的，在遵守宪法、法律、法规和国家政策，遵守社会道德风尚的前提下以扶贫帮困献爱心为主的公益扶贫计划。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:17px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	1、帮扶对象：贫困学生、留守儿童；以学习优秀，积极向上的初、高中生为主；\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:17px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	2、帮扶宗旨：让贫穷的孩子都有书读，用知识改变命运；\r\n&lt;/p&gt;'),
+(2, '老板商学院简介', '', '老板商学院是由知名互联网金融公司什马金融围绕商户经营体系所建立的综合性商户服务平台。旨在为什马商户提供更多的在线培训、销售技巧、经营辅导、宣传推广等多种增值性服务，让您的销售资金快速回笼，生意越做越大');
 
 -- --------------------------------------------------------
 
@@ -386,6 +388,27 @@ CREATE TABLE IF NOT EXISTS `shenma_nav` (
 
 INSERT INTO `shenma_nav` (`nav_id`, `nav_name`, `nav_url`, `sort`, `is_show`, `is_blank`) VALUES
 (1, '首页', '/', 50, 1, 0);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `shenma_post`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_post` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL COMMENT '职位名称',
+  `cate_id` int(11) NOT NULL DEFAULT '0' COMMENT '父级ID',
+  `content` text NOT NULL COMMENT '页面内容',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='职位表' AUTO_INCREMENT=2 ;
+
+--
+-- 转存表中的数据 `shenma_post`
+--
+
+INSERT INTO `shenma_post` (`id`, `name`, `cate_id`, `content`) VALUES
+(1, '系统运维工程师（1人）', 2, '&lt;p&gt;\r\n	系统运维工程师(1人)&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;岗位要求：\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;1、计算机相关专业本科以上学历，三年以上工作经验\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	2、熟悉linux和Windows系统&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统\r\n&lt;/p&gt;');
 
 -- --------------------------------------------------------
 

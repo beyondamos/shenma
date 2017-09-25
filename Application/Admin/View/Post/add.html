@@ -34,26 +34,37 @@
 	<div class="contmain">
 
 		<div class="boxi">
-			<h1>编辑信息</h1>
+			<h1>添加职位</h1>
 
-			<form action="<{:U('Info/index')}>" method="post" enctype="multipart/form-data">
+			<form action="<{:U('Post/add')}>" method="post" enctype="multipart/form-data">
 				<div class="boxinb">
-					<span>文章标题</span><input type="text" class="form-control"  name="title" value="<{$info.title}>">
+					<span>职位名称</span><input type="text" class="form-control"  name="name">
 				</div>
 				<div class="boxinb">
-                <span>图片</span>
-                <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"><{$info.thumbnail}></i>
-                </div>
+					<div class="boxinbl">
+						<span>部门选择</span>
+						<select name="cate_id" class="form-control">
+							<option value="0">请选择部门分类</option>
+							<volist name="department_data" id="vo">
+								<option value="<{$vo.id}>"><{:str_repeat('----',$vo['level'])}><{$vo.name}></option>
+							</volist>
+						</select>
+					</div>
+				</div>
+
 				<div class="boxuediter">
 					<div class="lets2">正&nbsp;&nbsp;&nbsp;&nbsp;文</div>
+
+
 					<div class="uediter">
+						
 						<textarea id="editor_id" name="content" style="width:700px;height:300px;">
-						<{$info.content}>
+
 						</textarea>
+
 					</div>
 				</div>
 				<div class="boxinbtn">
-					<input type="hidden" name="id" value="<{$info.id}>">
 					<input type="submit"  value="确定" class="btn btna" />
 					<input type="reset" value="重置" class="btn btnb" />
 				</div>
@@ -63,6 +74,13 @@
 
 	</div>
 </div>
+<script>
+	;!function(){
+		laydate({
+			elem: '#demo'
+		})
+	}();
+</script>
 <script src="__JS__/sdmenu.js"></script>
 <script>
 	$().ready(function(){

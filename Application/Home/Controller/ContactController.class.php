@@ -10,6 +10,8 @@ class ContactController extends HomeBaseController
 {
 	public function index()
 	{
+		$banner = D('Banner')->find(12);
+		$this->assign('banner', $banner);
 		$this->display();
 	}
 

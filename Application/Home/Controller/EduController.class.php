@@ -10,6 +10,16 @@ class EduController extends HomeBaseController
 {
 	public function index()
 	{
+		//banner
+		$banner = D('Banner')->find(10);
+		$this->assign('banner', $banner);
+		//简介
+		$info = D('Info')->find(2);
+		$this->assign('info', $info);
+		//老板社区
+		$shequ = D('Banner')->find(11);
+		$this->assign('shequ', $shequ);
+
 		$this->display();
 	}
 }

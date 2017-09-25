@@ -112,7 +112,7 @@ $(function() {
 </nav>
 
 		<div class="bannertop">
-			<img alt="" src="/Public/Home/img/bannerContact.jpg" />
+			<img alt="" src="<?php echo ($banner["thumbnail"]); ?>" />
 		</div>
 
 		<!--招聘区-->
