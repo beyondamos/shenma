@@ -3,20 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="renderer" content="webkit">
+    <meta name="renderer" content="webkit">
     <title>甫劳科技后台管理系统</title>
-	<link href="/Public/Admin/css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Admin/css/base.css" rel="stylesheet" type="text/css"/>
     <link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="/Public/Admin/js/html5shiv.js"></script>
     <script src="/Public/Admin/js/respond.min.js"></script>
     <![endif]-->
-	<script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
-	
+    <script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
+
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="nav-top">
+    <div class="nav-top">
 	<div class="nav-top-center">
 		<div class="nav-top-left">
 			<a href="<?php echo U('Admin/Index/index');?>"><img src="/Public/Admin/images/logo.png" alt=""/><span>后台管理</span></a>
@@ -41,7 +41,7 @@
 	</div>
 </div>
 <div class="nav-topb"></div>
-<div style="float:left" id="my_menu" class="sdmenu">
+    <div style="float:left" id="my_menu" class="sdmenu">
 	<div>
 		<span><a href="<?php echo U('Admin/Index/index');?>">后台首页</a></span>
 	</div>
@@ -85,71 +85,56 @@
 	</div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 </div>
 
-<div class="cont">
-	<div class="contmain">
-		
-		<div class="boxi">
-			<h1>产品列表</h1>
-			
-			<!-- 表格顶部搜索区 -->
-			<div class="boxoper">
-				<a href="<?php echo U('Product/add');?>">添加产品</a>
-				<!--<div class="boxoper-seh">-->
-					<!--<form action="" method="post">-->
-						<!--<button class="btn btn-default" type="submit"><img src="/Public/Admin/images/iconseh.png" /></button>-->
-						<!--<input type="text" class="form-control" placeholder="搜索用户名或角色">-->
-						<!--<select class="form-control">-->
-							<!--<option>全部</option>-->
-							<!--<option>分类</option>-->
-							<!--<option>分类</option>-->
-							<!--<option>分类</option>-->
-							<!--<option>分类</option>-->
-						<!--</select>-->
-					<!--</form>-->
-				<!--</div>-->
-			</div>
-			
-			<!-- 表格 -->
-			<table class="table table-hover boxtable">
-				<thead>
-					<tr>
-					   <th class="col-md-1 text-vm">序号</th>
-					   <th class="col-md-2 text-vm">产品名称</th>
-					   <th class="col-md-6 text-vm">链接URL</th>
-					   <th class="col-md-2 text-vm">顺序</th>
-					   <th class="col-md-1 text-vm text-center">操作</th>
-					</tr>
-				</thead>
-				<tbody>
-					<?php if(is_array($products)): $i = 0; $__LIST__ = $products;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-						<td class="text-vm"><?php echo ($vo["id"]); ?></td>
-						<td class="text-vm"><?php echo ($vo["name"]); ?></td>
-						<td class="text-vm"><?php echo ($vo["url"]); ?></td>
-						<td class="text-vm"><?php echo ($vo["sort"]); ?></td>
-						<td class="text-vm">
-							<a href="<?php echo U('Product/edit',array('id' => $vo['id']) );?>">编辑</a>
-							<a href="<?php echo U('Product/delete',array('id' => $vo['id']) );?>">删除</a>
-						</td>
-					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-				</tbody>
-			</table>
-			
-			<!-- 分页 -->
-<!-- 			<div class="boxpage">
-				<a href="javascript:;"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
-				<a href="javascript:;"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span></a>
-				<a href="javascript:;">1</a>
-				<a href="javascript:;">2</a>
-				<a href="javascript:;" class="boxpage-act">3</a>
-				<a href="javascript:;">4</a>
-				<a href="javascript:;">5</a>
-				<a href="javascript:;"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a>
-				<a href="javascript:;"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
-			</div> -->
-		</div>
-	
-	</div>
+    <div class="cont">
+       <div class="contmain">
+
+          <div class="boxi">
+             <h1>添加轮播图</h1>
+
+             <form action="<?php echo U('Carousel/add');?>" method="post" enctype="multipart/form-data">
+                <div class="boxin">
+                   <span>轮播图名称</span><input type="text" name="name" class="form-control">
+               </div>
+               <div class="boxinb">
+                <span>图片1</span>
+                <input type="file" name="thumbnail1" />
+                </div>
+                <div class="boxinb">
+                <span>图片2</span>
+               <input type="file"  name="thumbnail2" />
+                </div>
+                  <div class="boxinb">
+                <span>图片3</span>
+               <input type="file"  name="thumbnail3" />
+                </div>
+                <div class="boxinb">
+                   <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="10">
+               </div>
+               <input type="hidden" name="classify" value="<?php echo I('get.classify');?>">
+            <div class="boxinbtn">
+               <input type="submit"  value="确定" class="btn btna" />
+               <input type="reset"  value="重置" class="btn btnb" />
+           </div>
+
+       </form>
+   </div>
+
+</div>
 </div>
 <script src="/Public/Admin/js/sdmenu.js"></script>
+<script type="text/javascript">
+    $().ready(function(){
+
+        $(".upfn").on("change","input[type='file']",function(){
+            var filePath = $(this).val();
+            var arr = filePath.split('\\');
+            var fileName = arr[arr.length-1];
+            $(".upfnb").html(fileName);
+        });
+
+    });
+</script>
+
+
 </body>
 </html>
