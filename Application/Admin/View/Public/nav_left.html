@@ -33,9 +33,10 @@
 		<a href="<{:U('Post/index')}>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;职位设置</a>
 		<a href="<{:U('Qc/index')}>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;问题栏目</a>
 		<a href="<{:U('Question/index')}>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;问题设置</a>
-		<a href="<{:U('Banner/index')}>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留言信息</a>
+		<a href="<{:U('Message/index')}>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留言信息</a>
 	</div>
 	<volist name="user_auth_list" id="vo">
+	<if condition="$vo[0][auth_id] != 1">
 	<div>
 		<span><{$vo[0]['auth_name']}><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
 		<volist name="vo" id="val" offset ="1">
@@ -44,5 +45,6 @@
 			</if>
 		</volist>
 	</div>
+	</if>
 	</volist>
 </div>

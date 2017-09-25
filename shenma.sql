@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?25 �?13:25
+-- 生成日期: 2017 �?09 �?25 �?13:38
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -127,7 +127,7 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (29, '合作品牌添加', 1, 'Brand/add', 0),
 (30, '合作品牌编辑', 1, 'Brand/edit', 0),
 (31, '合作品牌删除', 1, 'Brand/delete', 0),
-(45, '留言列表', 1, 'Message/index', 1),
+(45, '留言列表', 1, 'Message/index', 0),
 (46, '留言删除', 1, 'Message/delete', 0),
 (47, '留言查看', 1, 'Message/info', 0),
 (48, 'Banner列表', 1, 'Banner/index', 0),
