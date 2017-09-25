@@ -133,15 +133,12 @@ $(function() {
 			
 				<div class="core-shenma">
 					<h2>核心团队</h2>
-					
 					<?php if(is_array($teams)): $i = 0; $__LIST__ = $teams;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="corep">
 						<img src="<?php echo ($vo["thumbnail"]); ?>" alt="" />
 						<h3><?php echo ($vo["name"]); ?></h3>
 						<span><?php echo ($vo["post"]); ?></span>
 						<h5><?php echo ($vo["content"]); ?></h5>
 					</li><?php endforeach; endif; else: echo "" ;endif; ?>
-
-
 				</div>
 				
 			</div>
@@ -158,11 +155,9 @@ $(function() {
 			
 			<div class="cont">
 				<div class="xnla-shenma">
-					<h1><img src="/Public/Home/img/xnlogo.png" alt="" /></h1>
-					<h2>小暖炉助学计划</h2>
-					<p>小暖炉助学计划是由热心公益事业的什马金融公司、什马金融内部员工、以及社会志愿者共同发起的，在遵守宪法、法律、法规和国家政策，遵守社会道德风尚的前提下以扶贫帮困献爱心为主的公益扶贫计划。</p>
-					<p>1、帮扶对象：贫困学生、留守儿童；以学习优秀，积极向上的初、高中生为主；</p>
-					<p>2、帮扶宗旨：让贫穷的孩子都有书读，用知识改变命运；</p>
+					<h1><img src="<?php echo ($nuanlu["thumbnail"]); ?>" alt="" /></h1>
+					<h2><?php echo ($nuanlu["title"]); ?></h2>
+					<?php echo html_entity_decode($nuanlu['content']);?>
 				</div>
 			</div>
 			

@@ -1,21 +1,32 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="renderer" content="webkit">
-    <title>甫劳科技后台管理系统</title>
+	<title>甫劳科技后台管理系统</title>
 	<link href="/Public/Admin/css/base.css" rel="stylesheet" type="text/css"/>
-    <link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="/Public/Admin/js/html5shiv.js"></script>
-    <script src="/Public/Admin/js/respond.min.js"></script>
-    <![endif]-->
+	<link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/Public/Admin/uploadify/uploadify.css" />
+	<!--[if lt IE 9]>
+	<script src="/Public/Admin/js/html5shiv.js"></script>
+	<script src="/Public/Admin/js/respond.min.js"></script>
+	<![endif]-->
 	<script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
-	
-    <script src="/Public/Admin/js/bootstrap.min.js"></script>
+	<script src="/Public/Admin/js/bootstrap.min.js"></script>
+	<script src="/Public/Admin/js/laydate/laydate.js"></script>
+	<script charset="utf-8" src="/Public/Admin/kindeditor/kindeditor.js"></script>
+	<script charset="utf-8" src="/Public/Admin/kindeditor/lang/zh_CN.js"></script>
+	<script>
+		KindEditor.ready(function(K) {
+			window.editor = K.create('#editor_id');
+		});
+	</script>
+
+
 </head>
 <body>
+
 <div class="nav-top">
 	<div class="nav-top-center">
 		<div class="nav-top-left">
@@ -77,69 +88,67 @@
 
 <div class="cont">
 	<div class="contmain">
-		
+
 		<div class="boxi">
-			<h1>首页Banner列表</h1>
-			
-			<!-- 表格顶部搜索区 -->
-			<div class="boxoper">
-				<a href="<?php echo U('Banner/add', array('classify' => 1));?>">添加Banner</a>
-				<!--<div class="boxoper-seh">-->
-					<!--<form action="" method="post">-->
-						<!--<button class="btn btn-default" type="submit"><img src="/Public/Admin/images/iconseh.png" /></button>-->
-						<!--<input type="text" class="form-control" placeholder="搜索用户名或角色">-->
-						<!--<select class="form-control">-->
-							<!--<option>全部</option>-->
-							<!--<option>分类</option>-->
-							<!--<option>分类</option>-->
-							<!--<option>分类</option>-->
-							<!--<option>分类</option>-->
-						<!--</select>-->
-					<!--</form>-->
-				<!--</div>-->
-			</div>
-			
-			<!-- 表格 -->
-			<table class="table table-hover boxtable">
-				<thead>
-					<tr>
-					   <th class="col-md-1 text-vm">序号</th>
-					   <th class="col-md-2 text-vm">Banner名称</th>
-					   <th class="col-md-6 text-vm">链接URL</th>
-					   <th class="col-md-2 text-vm">顺序</th>
-					   <th class="col-md-1 text-vm text-center">操作</th>
-					</tr>
-				</thead>
-				<tbody>
-					<?php if(is_array($banners)): $i = 0; $__LIST__ = $banners;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-						<td class="text-vm"><?php echo ($vo["id"]); ?></td>
-						<td class="text-vm"><?php echo ($vo["name"]); ?></td>
-						<td class="text-vm"><?php echo ($vo["url"]); ?></td>
-						<td class="text-vm"><?php echo ($vo["sort"]); ?></td>
-						<td class="text-vm">
-							<a href="<?php echo U('Banner/edit',array('id' => $vo['id']) );?>">编辑</a>
-							<?php if($vo['classify'] != 4): ?><a href="<?php echo U('Banner/delete',array('id' => $vo['id']) );?>">删除</a><?php endif; ?>
-						</td>
-					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-				</tbody>
-			</table>
-			
-			<!-- 分页 -->
-<!-- 			<div class="boxpage">
-				<a href="javascript:;"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
-				<a href="javascript:;"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span></a>
-				<a href="javascript:;">1</a>
-				<a href="javascript:;">2</a>
-				<a href="javascript:;" class="boxpage-act">3</a>
-				<a href="javascript:;">4</a>
-				<a href="javascript:;">5</a>
-				<a href="javascript:;"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a>
-				<a href="javascript:;"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
-			</div> -->
+			<h1>小暖炉助学计划</h1>
+
+			<form action="<?php echo U('Info/index');?>" method="post" enctype="multipart/form-data">
+				<div class="boxinb">
+					<span>文章标题</span><input type="text" class="form-control"  name="title" value="<?php echo ($info["title"]); ?>">
+				</div>
+				<div class="boxinb">
+                <span>图片</span>
+                <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"><?php echo ($info["thumbnail"]); ?></i>
+                </div>
+				<div class="boxuediter">
+					<div class="lets2">正&nbsp;&nbsp;&nbsp;&nbsp;文</div>
+					<div class="uediter">
+						<textarea id="editor_id" name="content" style="width:700px;height:300px;">
+						<?php echo ($info["content"]); ?>
+						</textarea>
+					</div>
+				</div>
+				<div class="boxinbtn">
+					<input type="hidden" name="id" value="<?php echo ($info["id"]); ?>">
+					<input type="submit"  value="确定" class="btn btna" />
+					<input type="reset" value="重置" class="btn btnb" />
+				</div>
+
+			</form>
 		</div>
-	
+
 	</div>
 </div>
 <script src="/Public/Admin/js/sdmenu.js"></script>
+<script>
+	$().ready(function(){
+		var date = new Date();
+		var dateStr = date.getFullYear()+'-';
+		var month = date.getMonth()+ 1;
+		if(month < 10){
+			month = '0'+month;
+		}
+		dateStr += month + '-';
+
+		var day = date.getDate();
+		if(day < 10){
+			day = '0' + day;
+		}
+		dateStr += day;
+//		alert(dateStr);
+		$('#demo').val(dateStr);
+
+
+
+		$(".upfn").on("change","input[type='file']",function(){
+			var filePath = $(this).val();
+			var arr = filePath.split('\\');
+			var fileName = arr[arr.length-1];
+			$(".upfnb").html(fileName);
+		});
+
+
+	});
+</script>
 </body>
 </html>

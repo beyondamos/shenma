@@ -22,10 +22,9 @@ class AboutController extends HomeBaseController
 		//核心团队
 		$teams = D('Team')->order('sort asc')->select();
 		$this->assign('teams', $teams);
-
-		$model = D('Article');
-		$articles = $model->where(array('status' => 1, 'cate_id' => 14))->select();
-		$this->assign('articles', $articles);
+		//小暖炉
+		$nuanlu = D('Info')->find(1);
+		$this->assign('nuanlu', $nuanlu);
 		$this->display();
 	}
 

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?25 �?05:21
+-- 生成日期: 2017 �?09 �?25 �?05:38
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `shenma_about` (
 --
 
 INSERT INTO `shenma_about` (`id`, `title`, `url`, `thumbnail`, `content`) VALUES
-(1, '关于什马', '', '', '&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	什马互联网金融信息服务（上海）有限公司，简称什马金融，成立于2015年1月， 总部位于国内金融中心上海。&lt;br /&gt;\r\n是一家专注在县乡镇渠道，服务于8亿农村市场的国内领先的互联网金融公司，公司成立伊始以农村交通工具领域为切入点，并依托上市公司等行业强势资源，业务快速覆盖全国。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	公司两大核心产品什马分期和信用贷分别为农民和商家提供消费金融和供应链金融服务，旨在帮助更多的经销商做好生意、做大生意，使销售资金得以快速的回笼。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	截止2017年7月，什马金融合作网点遍布全国31个省达35000多家，为近50%的商户和几十万农民家庭提供了金融服务解决方案。整体业务规模超50亿元。预计至2017年底，合作农村网点将超过5万家，业务涵盖交通工具、家电、3c、农资、农机等各版块，业务超100亿元。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:16px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	公司以“让农民拥有和城里人一样的金融服务”为核心理念，旨在通过普惠金融方式，为广大农民提供优质高效低成本的互联网金融服务，目前不仅是农村交通工具领域国内最大的互联网公司，更是国内农村金融领域的领跑者之一。\r\n&lt;/p&gt;'),
+(1, '小暖炉', '', '', '&lt;p style=&quot;color:#242424;font-size:17px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	小暖炉助学计划是由热心公益事业的什马金融公司、什马金融内部员工、以及社会志愿者共同发起的，在遵守宪法、法律、法规和国家政策，遵守社会道德风尚的前提下以扶贫帮困献爱心为主的公益扶贫计划。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:17px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	1、帮扶对象：贫困学生、留守儿童；以学习优秀，积极向上的初、高中生为主；\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:17px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	2、帮扶宗旨：让贫穷的孩子都有书读，用知识改变命运；\r\n&lt;/p&gt;'),
 (2, '关于什马', '12312312123213123213213', '/Public/Upload/20170922/1506048343_1568812728.jpg', '&lt;p&gt;\r\n	什马互联网金融信息服务（上海）有限公司，简称什马金融，成立于2015年1月，总部位于国内金融中心上海。是一家专注在县乡镇渠道，服务于8亿农村市场的国内领先的互联网金融公司\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	公司成立伊始以农村交通工具领域为切入点，并依托上市公司等行业强势资源，业务快速覆盖全国。\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	公司两大核心产品什马分期和信用贷分别为农民和商家提供消费金融和供应链金融服务，旨在帮助更多的经销商做好生意、做大生意，使销售资金得以快速的回笼。\r\n&lt;/p&gt;');
 
 -- --------------------------------------------------------
@@ -119,7 +119,7 @@ CREATE TABLE IF NOT EXISTS `shenma_auth` (
   `auth_url` varchar(50) NOT NULL DEFAULT '' COMMENT '权限路由',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '权限状态，是否显示在左侧菜单列表里',
   PRIMARY KEY (`auth_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=67 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=68 ;
 
 --
 -- 转存表中的数据 `shenma_auth`
@@ -178,7 +178,8 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (63, '团队信息', 1, 'Team/index', 0),
 (64, '团队信息编辑', 1, 'Team/edit', 0),
 (65, '添加团队信息', 1, 'Team/add', 0),
-(66, '删除团队信息', 1, 'Team/delete', 0);
+(66, '删除团队信息', 1, 'Team/delete', 0),
+(67, '单信息设置', 1, 'Info/index', 0);
 
 -- --------------------------------------------------------
 
@@ -359,10 +360,17 @@ INSERT INTO `shenma_icon` (`id`, `url`, `name`, `name_e`, `thumbnail`) VALUES
 CREATE TABLE IF NOT EXISTS `shenma_info` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL COMMENT '标题',
-  `titleimg` varchar(300) NOT NULL COMMENT '缩略图地址',
+  `thumbnail` varchar(300) NOT NULL COMMENT '缩略图地址',
   `content` text NOT NULL COMMENT '页面内容',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='新闻内容表' AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='新闻内容表' AUTO_INCREMENT=2 ;
+
+--
+-- 转存表中的数据 `shenma_info`
+--
+
+INSERT INTO `shenma_info` (`id`, `title`, `thumbnail`, `content`) VALUES
+(1, '小暖炉助学计划', '/Public/Upload/20170925/1506317422_999256213.png', '&lt;p style=&quot;color:#242424;font-size:17px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	小暖炉助学计划是由热心公益事业的什马金融公司、什马金融内部员工、以及社会志愿者共同发起的，在遵守宪法、法律、法规和国家政策，遵守社会道德风尚的前提下以扶贫帮困献爱心为主的公益扶贫计划。\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:17px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	1、帮扶对象：贫困学生、留守儿童；以学习优秀，积极向上的初、高中生为主；\r\n&lt;/p&gt;\r\n&lt;p style=&quot;color:#242424;font-size:17px;font-family:&amp;quot;background-color:#FFFFFF;&quot;&gt;\r\n	2、帮扶宗旨：让贫穷的孩子都有书读，用知识改变命运；\r\n&lt;/p&gt;');
 
 -- --------------------------------------------------------
 
