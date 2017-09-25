@@ -9,46 +9,10 @@ class ArticleModel extends Model{
 	protected $_auto = array(
 		array('newstime', 'maketime', self::MODEL_BOTH, 'function'),
 		array('is_recommend', 'judgeCheck', self::MODEL_BOTH, 'function'),
-		array('status', 'judgeCheck', self::MODEL_BOTH, 'function'),
+		array('is_top', 'judgeCheck', self::MODEL_BOTH, 'function'),
 	);
 
-	/**
-	 * 文章审核
-	 * @param  mixed $id 需要处理的文章id
-	 * @return bool  成功返回true  失败返回false
-	 */
-	public function checkArticle($id){
-		if(!is_array($id)){
-			$map['article_id'] = $id;
-		}else{
-			$id = implode(',', $id);
-			$map['article_id'] = array('in', $id);
-		}
-		$data = array('status' => 1);
-		if($this->where($map)->save($data)){
-			return true;
-		}
-		return false;
-	}	
-
-	/**
-	 * 取消文章审核
-	 * @param  mixed $id 需要处理的文章id
-	 * @return bool  成功返回true  失败返回false
-	 */
-	public function unCheck($id){
-		if(!is_array($id)){
-			$map['article_id'] = $id;
-		}else{
-			$id = implode(',', $id);
-			$map['article_id'] = array('in', $id);
-		}
-		$data = array('status' => 0);
-		if($this->where($map)->save($data)){
-			return true;
-		}
-		return false;
-	}
+	
 
 	/**
 	 * 删除文章

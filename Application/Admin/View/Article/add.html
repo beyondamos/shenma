@@ -44,22 +44,9 @@
 					<span>网页标题</span><input type="text" class="form-control"  name="web_title">
 				</div>
 				<div class="boxinb">
-					<div class="boxinbl">
-						<span>文章分类</span>
-						<select name="cate_id" class="form-control">
-							<option value="0">请选择栏目分类</option>
-							<volist name="category_data" id="vo">
-								<option value="<{$vo.cate_id}>"><{:str_repeat('----',$vo['level'])}><{$vo.cate_name}></option>
-							</volist>
-						</select>
-					</div>
-				</div>
-				<div class="boxinb">
 					<span>信息属性</span>
-					<label><input type="checkbox" name="status" checked/>审核</label>
-
-					<!--<label><input type="checkbox" name="is_hot"/>最热</label>-->
-					<label><input type="checkbox" name="is_recommend"/>推荐</label>
+					<label><input type="checkbox" name="is_top"/>首页头条</label>
+					<label><input type="checkbox" name="is_recommend"/>首页多条推荐</label>
 				</div>
 				<div class="boxinb">
 					<div class="boxinbl">
@@ -69,15 +56,8 @@
 						<span class="lets2">日&nbsp;&nbsp;&nbsp;&nbsp;期</span><input type="text" id="demo"  class="form-control laydate-icon" name="newstime"  value="">
 					</div>
 				</div>
-
-				<div class="boxinb">
-					<span class="lets3">排&nbsp;序</span><input type="text" class="form-control" name="sort" value="50">
-				</div>
 				<div class="boxinb">
 					<span class="lets3">关&nbsp;键&nbsp;词</span><input type="text"  class="form-control" placeholder="多个关键词用“,”半角逗号隔开"  name="keywords">
-				</div>
-				<div class="boxinb">
-					<span class="lets3">视&nbsp;频</span><input type="file"  class="form-control" name="video">
 				</div>
 				<div class="boxinb">
 					<span>标题图片</span>
@@ -100,6 +80,7 @@
 					</div>
 				</div>
 				<div class="boxinbtn">
+					<input type="hidden" name="cate_id" value="<{$cate_id}>">
 					<input type="submit"  value="确定" class="btn btna" />
 					<input type="reset" value="重置" class="btn btnb" />
 				</div>

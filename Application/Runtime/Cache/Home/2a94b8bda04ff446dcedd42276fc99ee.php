@@ -354,15 +354,15 @@ $(function() {
 				<h2><img src="/Public/Home/img/imgtxt01.jpg" alt=""/></h2>
 				
 				<div class="box-news-img">
-                    <?php if(is_array($articles)): $i = 0; $__LIST__ = array_slice($articles,0,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="imglimtc"><img src="<?php echo U('Article/detail', array('article_id' => $vo['article_id']));?>" alt=""/></div>
-					<a href="<?php echo U('Article/detail', array('article_id' => $vo['article_id']));?>">
-						<?php echo ($vo["title"]); ?><span><?php echo ($vo["newstime"]); ?></span>
-						<i><?php echo ($vo["synopsis"]); ?></i>
-					</a><?php endforeach; endif; else: echo "" ;endif; ?> 
+					<div class="imglimtc"><img src="<?php echo ($top_article["titleimg"]); ?>" alt=""/></div>
+					<a href="<?php echo U('Article/detail', array('article_id' => $top_article['article_id']));?>">
+						<?php echo ($top_article["title"]); ?><span><?php echo ($top_article["newstime"]); ?></span>
+						<i><?php echo ($top_article["synopsis"]); ?></i>
+					</a>
 				</div>
 				<ul>
-                    <?php if(is_array($articles)): $i = 0; $__LIST__ = array_slice($articles,1,5,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('Article/detail', array('article_id' => $vo['article_id']));?>">
-						<b>08</b><?php echo ($vo["title"]); ?><span><?php echo ($vo["newstime"]); ?></span>
+                    <?php if(is_array($recommend_articles)): $i = 0; $__LIST__ = $recommend_articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('Article/detail', array('article_id' => $vo['article_id']));?>">
+						<b><?php echo substr($vo['newstime'], -2 , 2);?></b><?php echo ($vo["title"]); ?><span><?php echo ($vo["newstime"]); ?></span>
 						<i><?php echo ($vo["synopsis"]); ?>...</i>
 					</a><?php endforeach; endif; else: echo "" ;endif; ?>
 				</ul>

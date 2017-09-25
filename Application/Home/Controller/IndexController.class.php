@@ -22,10 +22,13 @@ class IndexController extends HomeBaseController
         $about = D('About')->find(2);
         $this->assign('about', $about);
 
+
         $model = D('Article');
-        $articles = $model->where(array('status' => 1, 'cate_id' => array('in', '12,13')))
-                            ->order('article_id desc')->limit(6)->select();
-        $this->assign('articles', $articles);
+        $top_article = $model->where(array('is_top' => 1))->order('newstime desc')->limit(1)->find();
+        $this->assign('top_article', $top_article);
+
+        $recommend_articles = $model->where(array('is_recommend' => 1))->order('newstime desc')->limit(5)->select();
+        $this->assign('recommend_articles', $recommend_articles);
 
         //合作品牌
         $brands = D('Brand')->where(array('status' => 1))->select();

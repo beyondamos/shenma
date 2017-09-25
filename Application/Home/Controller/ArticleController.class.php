@@ -42,11 +42,13 @@ class ArticleController extends HomeBaseController
 	 */
 	public function index()
 	{
-		$where[] = array('status' => 1);
+		//banner设置
+		$banner  = D('Banner')->find(9);
+		$this->assign('banner', $banner);
+
+		
 		$cate_id = I('get.cate_id');
-		if (empty($cate_id)) {
-			$where[] = array('cate_id' => array('in', '12,13'));
-		} else {
+		if (!empty($cate_id)) {
 			$where[] = array('cate_id' => $cate_id);
 		}
 

@@ -356,18 +356,16 @@ $(function() {
 				<h2><img src="__PUBLIC__/Home/img/imgtxt01.jpg" alt=""/></h2>
 				
 				<div class="box-news-img">
-                    <volist name="articles" id="vo" offset="0" length="1"> 
-					<div class="imglimtc"><img src="<{:U('Article/detail', array('article_id' => $vo['article_id']))}>" alt=""/></div>
-					<a href="<{:U('Article/detail', array('article_id' => $vo['article_id']))}>">
-						<{$vo.title}><span><{$vo.newstime}></span>
-						<i><{$vo.synopsis}></i>
+					<div class="imglimtc"><img src="<{$top_article.titleimg}>" alt=""/></div>
+					<a href="<{:U('Article/detail', array('article_id' => $top_article['article_id']))}>">
+						<{$top_article.title}><span><{$top_article.newstime}></span>
+						<i><{$top_article.synopsis}></i>
 					</a>
-                    </volist> 
 				</div>
 				<ul>
-                    <volist name="articles" id="vo" offset="1" length="5">
+                    <volist name="recommend_articles" id="vo" >
 					<a href="<{:U('Article/detail', array('article_id' => $vo['article_id']))}>">
-						<b>08</b><{$vo.title}><span><{$vo.newstime}></span>
+						<b><{:substr($vo['newstime'], -2 , 2)}></b><{$vo.title}><span><{$vo.newstime}></span>
 						<i><{$vo.synopsis}>...</i>
 					</a>
 					</volist>

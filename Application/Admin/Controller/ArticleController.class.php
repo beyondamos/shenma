@@ -9,32 +9,23 @@ class ArticleController extends CommonController{
     /**
      * 文章列表
      */
-    public function listing(){
+    public function index(){
         if(IS_GET){
             $cate_id = I('get.cate_id');
+            $map['cate_id'] = $cate_id;
             $search_article = I('get.search_article');
-            if($cate_id){
-                $category_model = D('Category');
-                $map['a.cate_id'] = array('in',$category_model->getSub($cate_id));
-            }
             if($search_article) $map['title'] = array('like',"%{$search_article}%");
-            $this->assign('search_cate_id',$cate_id);
+            $this->assign('cate_id',$cate_id);
             $this->assign('search_article',$search_article);
         }
-        $map['status'] = 1;
-        //分类数据
-        $category_model = D('Category');
-        $category_data = $category_model->getSortCategories();
-        $this->assign('category_data',$category_data);
+
         //文章数据
         $article_model = D('Article');
         $p = I('get.p') ? I('get.p') : 1;
-        $article_data = $article_model->alias('a')->field('article_id,a.cate_id,title,cate_name,author,newstime')
-            ->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
-            ->where($map)->order('article_id desc')->page($p.',10')->select();
+        $article_data = $article_model->where($map)->order('article_id desc')->page($p.',10')->select();
         $this->assign('article_data',$article_data);
         //分页数据
-        $count = $article_model->alias('a')->where($map)->count();
+        $count = $article_model->where($map)->count();
         $page_model = new \Think\Page($count,10);
         $show = $page_model->show(); //分页输出显示
         $this->assign('show',$show);
@@ -52,15 +43,11 @@ class ArticleController extends CommonController{
                 if($_FILES['file_upload']['error'] != 4 ){
                     $article_model->titleimg = ltrim(C('UPLOAD').$this->upload() ,'.');
                 }
-                //是否有视频
-                if($_FILES['video']['error'] != 4 ){
-                    $article_model->video = ltrim(C('UPLOAD').$this->uploadVideo() ,'.');
-                }
 
                 if(!I('post.synopsis')) $article_model->synopsis = $article_model->generateSynopsis();
 
                 if($article_model->add()){
-                    $this->success('文章添加成功',U('Article/listing'),1);
+                    $this->success('文章添加成功',U('Article/index', array('cate_id' => I('post.cate_id') )),1);
                 }else{
                     $this->error('文章添加失败');
                 }
@@ -68,10 +55,7 @@ class ArticleController extends CommonController{
                 $this->error($article_model->getError());
             }
     	}elseif(IS_GET){
-            //文章分类数据
-            $category_model = D('Category');
-            $category_data = $category_model->getSortCategories();
-            $this->assign('category_data',$category_data);
+            $this->assign('cate_id', I('get.cate_id'));
     		$this->display();
     	}
     }
@@ -89,19 +73,10 @@ class ArticleController extends CommonController{
                     $article_model->titleimg = ltrim(C('UPLOAD').$this->upload() ,'.');
                     $article_model->deleteImg(I('post.article_id'));                    
                 }
-                //判断是否有新视频
-                if($_FILES['video']['error'] != 4 ){
-                    $article_model->video = ltrim(C('UPLOAD').$this->uploadVideo() ,'.');
-                    $article_model->deleteVideo(I('post.article_id'));
-                }
 
                 if(!I('post.synopsis')) $article_model->synopsis = $article_model->generateSynopsis();
                 if($article_model->save()){
-                    if(I('post.tag') == 1){
-                        $this->success('文章编辑成功',U('Article/checkListing'),1);
-                    }else{
-                        $this->success('文章编辑成功',U('Article/listing'),1);
-                    }
+                    $this->success('文章编辑成功',U('Article/index', array('cate_id' => I('post.cate_id') )),1);
                 }else{
                     $this->error('文章编辑失败');
                 }
@@ -116,10 +91,6 @@ class ArticleController extends CommonController{
             $article_model = D('Article');
             $article_data = $article_model->find($article_id);
             $this->assign('article_data' , $article_data);
-            //文章分类数据
-            $category_model = D('Category');
-            $category_data = $category_model->getSortCategories();
-            $this->assign('category_data',$category_data);
             $this->display();
         }
 

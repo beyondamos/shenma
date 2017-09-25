@@ -54,16 +54,38 @@
 <div class="nav-topb"></div>
 <div style="float:left" id="my_menu" class="sdmenu">
 	<div>
-		<span><a href="<?php echo U('Admin/Index/index');?>">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></span>
+		<span><a href="<?php echo U('Admin/Index/index');?>">后台首页</a></span>
+	</div>
+	<div>
+		<span>内容管理<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
+		<a>首页</a>
+		<a href="<?php echo U('Banner/index', array('classify' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
+		<a href="<?php echo U('Aboutus/shouye');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于什马</a>
+		<a href="<?php echo U('Brand/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合作品牌</a>
+		<a>借款申请</a>
+		<a href="<?php echo U('Banner/edit', array('id' => 6 ));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
+		<a href="<?php echo U('Icon/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图标设置</a>
+		<a href="<?php echo U('Banner/index', array('classify' => 4));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中部Banner设置</a>
+		<a href="<?php echo U('Product/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;产品设置</a>
+		<a>关于什马</a>
+		<a href="<?php echo U('Banner/edit', array('id' => 5));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
+		<a href="<?php echo U('Aboutus/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马介绍</a>
+		<a href="<?php echo U('Develop/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发展历程</a>
+		<a href="<?php echo U('Team/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;核心团队</a>
+		<a href="<?php echo U('Info/index', array('id' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小暖炉助学计划</a>
+		<a>新闻资讯</a>
+		<a href="<?php echo U('Banner/edit', array('id' => 9));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
+		<a href="<?php echo U('Article/index', array('cate_id' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马新闻</a>
+		<a href="<?php echo U('Article/index', array('cate_id' => 2));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行业动态</a>
+		<a>老板商学院</a>
+		<a>联系我们</a>
+		<a href="<?php echo U('Banner/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留言信息</a>
 	</div>
 	<?php if(is_array($user_auth_list)): $i = 0; $__LIST__ = $user_auth_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div>
 		<span><?php echo ($vo[0]['auth_name']); ?><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
 		<?php if(is_array($vo)): $i = 0; $__LIST__ = array_slice($vo,1,null,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i; if($val['status'] == 1): ?><a href="<?php echo U($val['auth_url']) ?>"><?php echo ($val["auth_name"]); ?></a><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 	</div><?php endforeach; endif; else: echo "" ;endif; ?>
 </div>
-
-
-
 
 <div class="cont">
 	<div class="contmain">
@@ -79,21 +101,9 @@
 					<span>网页标题</span><input type="text" class="form-control"  name="web_title" value="<?php echo ($article_data["web_title"]); ?>">
 				</div>
 				<div class="boxinb">
-					<div class="boxinbl">
-						<span>文章分类</span>
-						<select name="cate_id" class="form-control">
-							<option value="0">请选择栏目分类</option>
-							<?php if(is_array($category_data)): $i = 0; $__LIST__ = $category_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["cate_id"]); ?>" <?php if($vo['cate_id'] == $article_data['cate_id']): ?>selected<?php endif; ?>
-							><?php echo str_repeat('----',$vo['level']); echo ($vo["cate_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-						</select>
-					</div>
-				</div>
-				<div class="boxinb">
 					<span>信息属性</span>
-					<label><input type="checkbox" name="status" <?php if($article_data['status'] == 1): ?>checked<?php endif; ?> />审核</label>
-
-					<!--<label><input type="checkbox" name="is_hot" <?php if($article_data['is_hot'] == 1): ?>checked<?php endif; ?> />最热</label>-->
-					<label><input type="checkbox" name="is_recommend" <?php if($article_data['is_recommend'] == 1): ?>checked<?php endif; ?> />推荐</label>
+					<label><input type="checkbox" name="is_top" <?php if($article_data['is_top'] == 1): ?>checked<?php endif; ?> />首页头条</label>
+					<label><input type="checkbox" name="is_recommend" <?php if($article_data['is_recommend'] == 1): ?>checked<?php endif; ?> />首页多条</label>
 				</div>
 				<div class="boxinb">
 					<div class="boxinbl">
@@ -105,13 +115,7 @@
 				</div>
 				
 				<div class="boxinb">
-					<span class="lets3">排&nbsp;序</span><input type="text" class="form-control" name="sort" value="<?php echo ($article_data["sort"]); ?>">
-				</div>
-				<div class="boxinb">
 					<span class="lets3">关&nbsp;键&nbsp;词</span><input type="text"  class="form-control" placeholder="多个关键词用“,”半角逗号隔开"  name="keywords" value="<?php echo ($article_data["keywords"]); ?>">
-				</div>
-				<div class="boxinb">
-					<span class="lets3">视&nbsp;频</span><input type="file"  class="form-control" name="video"><?php echo ($article_data["video"]); ?>
 				</div>
 				<div class="boxinb">
 					<span>标题图片</span>
@@ -137,8 +141,8 @@
 					</div>
 				</div>
 				<div class="boxinbtn">
-					<input type="hidden" name="tag" value="<?php echo ($_GET['tag']); ?>">
 					<input type="hidden" name="article_id" value="<?php echo ($article_data["article_id"]); ?>">
+					<input type="hidden" name="cate_id" value="<?php echo ($article_data["cate_id"]); ?>">
 					<input type="submit" value="确定" class="btn btna" />
 					<input type="reset" value="重置" class="btn btnb" />
 				</div>

@@ -106,7 +106,7 @@ $(function() {
 </nav>
 
 		<div class="bannertop">
-			<img alt="" src="/Public/Home/img/bannerlist.jpg" />
+			<img alt="" src="<?php echo ($banner["thumbnail"]); ?>" />
 		</div>
 			
 			<div class="cont">
@@ -114,8 +114,8 @@ $(function() {
 				<div class="contl">
 					<div class="contl-nav">
 						<a href="<?php echo U('Article/index');?>" class="contl-nav-act contl-nav-actb">全部动态</a>
-						<a href="<?php echo U('Article/index', array('cate_id' => 12));?>">什马新闻</a>
-						<a href="<?php echo U('Article/index', array('cate_id' => 13));?>">行业动态</a>
+						<a href="<?php echo U('Article/index', array('cate_id' => 1));?>">什马新闻</a>
+						<a href="<?php echo U('Article/index', array('cate_id' => 2));?>">行业动态</a>
 					</div>
 				</div><!--左侧 end-->
 
