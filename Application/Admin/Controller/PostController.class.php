@@ -23,11 +23,11 @@ class PostController extends CommonController
         $post_model = D('Post');
         $p = I('get.p') ? I('get.p') : 1;
         $post_data = $post_model->alias('a')->field('a.id,a.name,d.name as part')
-            ->join('left join __DEPARTMENT__ d on a.cate_id = d.id')->where($map)->order('a.id desc')->page($p.',10')->select();
+            ->join('left join __DEPARTMENT__ d on a.cate_id = d.id')->where($map)->order('a.id desc')->page($p.',20')->select();
         $this->assign('post_data',$post_data);
         //分页数据
         $count = $post_model->alias('a')->where($map)->count();
-        $page_model = new \Think\Page($count,10);
+        $page_model = new \Think\Page($count,20);
         $show = $page_model->show(); //分页输出显示
         $this->assign('show',$show);
         $this->display();

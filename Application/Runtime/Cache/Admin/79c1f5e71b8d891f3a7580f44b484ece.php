@@ -1,18 +1,19 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="renderer" content="webkit">
-	<title>甫劳科技后台管理系统</title>
+    <title>甫劳科技后台管理系统</title>
 	<link href="/Public/Admin/css/base.css" rel="stylesheet" type="text/css"/>
-	<link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
-	<!--[if lt IE 9]>
-	<script src="/Public/Admin/js/html5shiv.js"></script>
-	<script src="/Public/Admin/js/respond.min.js"></script>
-	<![endif]-->
+    <link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="/Public/Admin/js/html5shiv.js"></script>
+    <script src="/Public/Admin/js/respond.min.js"></script>
+    <![endif]-->
 	<script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
-	<script src="/Public/Admin/js/bootstrap.min.js"></script>
+	
+    <script src="/Public/Admin/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="nav-top">
@@ -85,83 +86,65 @@
 
 <div class="cont">
 	<div class="contmain">
-
+		
 		<div class="boxi">
-			<h1>职位管理</h1>
-
+			<h1>问题分类</h1>
+			
 			<!-- 表格顶部搜索区 -->
 			<div class="boxoper">
-				<a href="<?php echo U('Post/add');?>">添加职位</a>
-				<div class="boxoper-seh">
-					<form action="<?php echo U('Post/index');?>" method="get">
-						<button class="btn btn-default" type="submit"><img src="/Public/Admin/images/iconseh.png" /></button>
-						<input type="text" class="form-control" placeholder="查询职位" name="name" value="<?php echo ($search_name); ?>">
-					</form>
-				</div>
+				<a href="<?php echo U('Qc/add');?>">添加分类</a>
+				<!--<div class="boxoper-seh">-->
+					<!--<form action="" method="post">-->
+						<!--<button class="btn btn-default" type="submit"><img src="/Public/Admin/images/iconseh.png" /></button>-->
+						<!--<input type="text" class="form-control" placeholder="搜索用户名或角色">-->
+						<!--<select class="form-control">-->
+							<!--<option>全部</option>-->
+							<!--<option>分类</option>-->
+							<!--<option>分类</option>-->
+							<!--<option>分类</option>-->
+							<!--<option>分类</option>-->
+						<!--</select>-->
+					<!--</form>-->
+				<!--</div>-->
 			</div>
-
+			
 			<!-- 表格 -->
 			<table class="table table-hover boxtable">
 				<thead>
-				<tr>
-					<th class="col-md-1 text-vm">编号</th>
-					<th class="col-md-3 text-vm">职位名称</th>
-					<th class="col-md-3 text-vm">部门</th>
-					<!-- <th class="col-md-2 text-vm">发布时间</th> -->
-					<th class="col-md-1 text-vm text-center">操作</th>
-				</tr>
+					<tr>
+					   <th class="col-md-1 text-vm">序号</th>
+					   <th class="col-md-3 text-vm">分类名称</th>
+					   <th class="col-md-1 text-vm text-center">操作</th>
+					</tr>
 				</thead>
-				<form action="" method="post" id="form">
-					<tbody>
-					<?php if(is_array($post_data)): $i = 0; $__LIST__ = $post_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-							<td class="text-vm"><?php echo ($vo["id"]); ?></td>
-							<td class="text-vm"><?php echo mb_substr($vo['name'],0,15,'utf-8');;?></td>
-							<td class="text-vm"><?php echo ($vo["part"]); ?></td>
-							<!-- <td class="text-vm"><?php echo ($vo["newstime"]); ?></td> -->
-							<td class="text-vm">
-								<a href="<?php echo U('Post/edit',array('id' => $vo['id']));?>">编辑</a>
-								<a href="<?php echo U('Post/delete', array('id' => $vo['id']));?>">删除</a>
-							</td>
-						</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-					</tbody>
-				</form>
+				<tbody>
+					<?php if(is_array($qcs)): $i = 0; $__LIST__ = $qcs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+						<td class="text-vm"><?php echo ($vo["id"]); ?></td>
+						<td class="text-vm"><?php echo ($vo["qc"]); ?></td>
+						<td class="text-vm">
+							<a href="<?php echo U('Qc/edit',array('id' => $vo['id']) );?>">编辑</a>
+							<a href="<?php echo U('Qc/delete',array('id' => $vo['id']) );?>">删除</a>
+						</td>
+					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+				</tbody>
 			</table>
-
-
-			<?php echo ($show); ?>
+			
 			<!-- 分页 -->
-			<!-- 			<div class="boxpage">
-                            <a href="javascript:;"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
-                            <a href="javascript:;"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span></a>
-                            <a href="javascript:;">1</a>
-                            <a href="javascript:;">2</a>
-                            <a href="javascript:;" class="boxpage-act">3</a>
-                            <a href="javascript:;">4</a>
-                            <a href="javascript:;">5</a>
-                            <a href="javascript:;"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a>
-                            <a href="javascript:;"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
-                        </div> -->
+<!-- 			<div class="boxpage">
+				<a href="javascript:;"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
+				<a href="javascript:;"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span></a>
+				<a href="javascript:;">1</a>
+				<a href="javascript:;">2</a>
+				<a href="javascript:;" class="boxpage-act">3</a>
+				<a href="javascript:;">4</a>
+				<a href="javascript:;">5</a>
+				<a href="javascript:;"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a>
+				<a href="javascript:;"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
+			</div> -->
 		</div>
-
+	
 	</div>
 </div>
 <script src="/Public/Admin/js/sdmenu.js"></script>
-<script>
-	$().ready(function(){
-		$('#all').click(function(){
-			var status = $(this).is(':checked');
-			if(status){
-				$(":checkbox").prop('checked',true);
-			}else{
-				$(":checkbox").prop('checked',false);
-			}
-		});
-
-		$("#uncheck").click(function(){
-			$("#form").attr('action',"<?php echo U('Article/unCheck');?>");
-			$("#form").submit();
-		});
-	});
-</script>
 </body>
 </html>

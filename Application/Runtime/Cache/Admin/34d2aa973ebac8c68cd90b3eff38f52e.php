@@ -1,21 +1,22 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="renderer" content="webkit">
-	<title>甫劳科技后台管理系统</title>
-	<link href="/Public/Admin/css/base.css" rel="stylesheet" type="text/css"/>
-	<link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
-	<!--[if lt IE 9]>
-	<script src="/Public/Admin/js/html5shiv.js"></script>
-	<script src="/Public/Admin/js/respond.min.js"></script>
-	<![endif]-->
-	<script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
-	<script src="/Public/Admin/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>甫劳科技后台管理系统</title>
+    <link href="/Public/Admin/css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="/Public/Admin/js/html5shiv.js"></script>
+    <script src="/Public/Admin/js/respond.min.js"></script>
+    <![endif]-->
+    <script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
+
+    <script src="/Public/Admin/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="nav-top">
+    <div class="nav-top">
 	<div class="nav-top-center">
 		<div class="nav-top-left">
 			<a href="<?php echo U('Admin/Index/index');?>"><img src="/Public/Admin/images/logo.png" alt=""/><span>后台管理</span></a>
@@ -40,7 +41,7 @@
 	</div>
 </div>
 <div class="nav-topb"></div>
-<div style="float:left" id="my_menu" class="sdmenu">
+    <div style="float:left" id="my_menu" class="sdmenu">
 	<div>
 		<span><a href="<?php echo U('Admin/Index/index');?>">后台首页</a></span>
 	</div>
@@ -83,85 +84,39 @@
 	</div><?php endforeach; endif; else: echo "" ;endif; ?>
 </div>
 
-<div class="cont">
-	<div class="contmain">
+    <div class="cont">
+       <div class="contmain">
 
-		<div class="boxi">
-			<h1>职位管理</h1>
+          <div class="boxi">
+             <h1>添加问题分类信息</h1>
+             <form action="<?php echo U('Qc/add');?>" method="post" enctype="multipart/form-data">
+                <div class="boxin">
+                   <span>分类名称</span><input type="text" name="qc" class="form-control">
+               </div>
+            <div class="boxinbtn">
+               <input type="submit"  value="确定" class="btn btna" />
+               <input type="reset"  value="重置" class="btn btnb" />
+           </div>
 
-			<!-- 表格顶部搜索区 -->
-			<div class="boxoper">
-				<a href="<?php echo U('Post/add');?>">添加职位</a>
-				<div class="boxoper-seh">
-					<form action="<?php echo U('Post/index');?>" method="get">
-						<button class="btn btn-default" type="submit"><img src="/Public/Admin/images/iconseh.png" /></button>
-						<input type="text" class="form-control" placeholder="查询职位" name="name" value="<?php echo ($search_name); ?>">
-					</form>
-				</div>
-			</div>
+       </form>
+   </div>
 
-			<!-- 表格 -->
-			<table class="table table-hover boxtable">
-				<thead>
-				<tr>
-					<th class="col-md-1 text-vm">编号</th>
-					<th class="col-md-3 text-vm">职位名称</th>
-					<th class="col-md-3 text-vm">部门</th>
-					<!-- <th class="col-md-2 text-vm">发布时间</th> -->
-					<th class="col-md-1 text-vm text-center">操作</th>
-				</tr>
-				</thead>
-				<form action="" method="post" id="form">
-					<tbody>
-					<?php if(is_array($post_data)): $i = 0; $__LIST__ = $post_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-							<td class="text-vm"><?php echo ($vo["id"]); ?></td>
-							<td class="text-vm"><?php echo mb_substr($vo['name'],0,15,'utf-8');;?></td>
-							<td class="text-vm"><?php echo ($vo["part"]); ?></td>
-							<!-- <td class="text-vm"><?php echo ($vo["newstime"]); ?></td> -->
-							<td class="text-vm">
-								<a href="<?php echo U('Post/edit',array('id' => $vo['id']));?>">编辑</a>
-								<a href="<?php echo U('Post/delete', array('id' => $vo['id']));?>">删除</a>
-							</td>
-						</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-					</tbody>
-				</form>
-			</table>
-
-
-			<?php echo ($show); ?>
-			<!-- 分页 -->
-			<!-- 			<div class="boxpage">
-                            <a href="javascript:;"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
-                            <a href="javascript:;"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span></a>
-                            <a href="javascript:;">1</a>
-                            <a href="javascript:;">2</a>
-                            <a href="javascript:;" class="boxpage-act">3</a>
-                            <a href="javascript:;">4</a>
-                            <a href="javascript:;">5</a>
-                            <a href="javascript:;"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a>
-                            <a href="javascript:;"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
-                        </div> -->
-		</div>
-
-	</div>
+</div>
 </div>
 <script src="/Public/Admin/js/sdmenu.js"></script>
-<script>
-	$().ready(function(){
-		$('#all').click(function(){
-			var status = $(this).is(':checked');
-			if(status){
-				$(":checkbox").prop('checked',true);
-			}else{
-				$(":checkbox").prop('checked',false);
-			}
-		});
+<script type="text/javascript">
+    $().ready(function(){
 
-		$("#uncheck").click(function(){
-			$("#form").attr('action',"<?php echo U('Article/unCheck');?>");
-			$("#form").submit();
-		});
-	});
+        $(".upfn").on("change","input[type='file']",function(){
+            var filePath = $(this).val();
+            var arr = filePath.split('\\');
+            var fileName = arr[arr.length-1];
+            $(".upfnb").html(fileName);
+        });
+
+    });
 </script>
+
+
 </body>
 </html>

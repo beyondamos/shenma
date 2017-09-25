@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?25 �?08:59
+-- 生成日期: 2017 �?09 �?25 �?09:27
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `shenma_auth` (
   `auth_url` varchar(50) NOT NULL DEFAULT '' COMMENT '权限路由',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '权限状态，是否显示在左侧菜单列表里',
   PRIMARY KEY (`auth_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=72 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=76 ;
 
 --
 -- 转存表中的数据 `shenma_auth`
@@ -152,7 +152,11 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (67, '单信息设置', 1, 'Info/index', 0),
 (69, '职位添加', 1, 'Post/add', 0),
 (70, '职位编辑', 1, 'Post/edit', 0),
-(71, '职位删除', 1, 'Post/删除', 0);
+(71, '职位删除', 1, 'Post/delete', 0),
+(72, '问题分类', 1, 'Qc/index', 0),
+(73, '问题分类添加', 1, 'Qc/add', 0),
+(74, '问题分类编辑', 1, 'Qc/edit', 0),
+(75, '问题分类删除', 1, 'Qc/delete', 0);
 
 -- --------------------------------------------------------
 
@@ -431,6 +435,28 @@ CREATE TABLE IF NOT EXISTS `shenma_product` (
 
 INSERT INTO `shenma_product` (`id`, `url`, `name`, `thumbnail`, `sort`) VALUES
 (1, '123123213213', '信用贷', '/Public/Upload/20170925/1506303899_464808054.png', 10);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `shenma_qc`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_qc` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `qc` varchar(100) NOT NULL COMMENT '问题分类',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='核心团队' AUTO_INCREMENT=5 ;
+
+--
+-- 转存表中的数据 `shenma_qc`
+--
+
+INSERT INTO `shenma_qc` (`id`, `qc`) VALUES
+(1, 'App操作'),
+(2, '我要贷款'),
+(3, '我要买车'),
+(4, '如何更换手机号码');
 
 -- --------------------------------------------------------
 

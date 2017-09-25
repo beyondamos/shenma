@@ -76,7 +76,7 @@ class TeamController extends CommonController
 
 
 	/**
-	 * 删除banner
+	 * 删除信息
 	 * @return [type] [description]
 	 */
 	public function delete()
