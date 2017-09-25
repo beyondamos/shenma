@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?25 �?09:27
+-- 生成日期: 2017 �?09 �?25 �?13:25
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `shenma_auth` (
   `auth_url` varchar(50) NOT NULL DEFAULT '' COMMENT '权限路由',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '权限状态，是否显示在左侧菜单列表里',
   PRIMARY KEY (`auth_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=76 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=80 ;
 
 --
 -- 转存表中的数据 `shenma_auth`
@@ -156,7 +156,11 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (72, '问题分类', 1, 'Qc/index', 0),
 (73, '问题分类添加', 1, 'Qc/add', 0),
 (74, '问题分类编辑', 1, 'Qc/edit', 0),
-(75, '问题分类删除', 1, 'Qc/delete', 0);
+(75, '问题分类删除', 1, 'Qc/delete', 0),
+(76, '问题列表', 1, 'Question/index', 0),
+(77, '问题添加', 1, 'Question/add', 0),
+(78, '问题编辑', 1, 'Question/edit', 0),
+(79, '问题删除', 1, 'Question/delete', 0);
 
 -- --------------------------------------------------------
 
@@ -461,6 +465,28 @@ INSERT INTO `shenma_qc` (`id`, `qc`) VALUES
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `shenma_question`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_question` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `question` varchar(100) NOT NULL COMMENT '问题',
+  `qc_id` smallint(6) NOT NULL DEFAULT '0' COMMENT '问题分类id',
+  `answer` text NOT NULL COMMENT '答案',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='问题表' AUTO_INCREMENT=3 ;
+
+--
+-- 转存表中的数据 `shenma_question`
+--
+
+INSERT INTO `shenma_question` (`id`, `question`, `qc_id`, `answer`) VALUES
+(1, '换了新手机，如何绑定账户', 1, '在APP应用登录界面点击“更改手机”发起申请后，工作日时间段09:00-18:00当天处理，非工作日时间段顺延至工作日处理'),
+(2, '我要贷款', 2, '123123123');
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `shenma_role`
 --
 
@@ -531,7 +557,7 @@ CREATE TABLE IF NOT EXISTS `shenma_user` (
 --
 
 INSERT INTO `shenma_user` (`user_id`, `username`, `nickname`, `password`, `email`, `salt`, `role_id`, `last_login_time`, `last_login_ip`, `add_time`, `login_times`, `status`) VALUES
-(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1506300492, 2130706433, 0, 49, 1),
+(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1506336290, 2130706433, 0, 50, 1),
 (7, 'ishequan', 'ishequan', 'e08df8dbfee311bcb98fae8649d4e70f', '', '6sBKPA', 1, 0, 0, 1494381412, 0, 1),
 (8, 'shenma', 'shenma', 'e0872f7bc5e019bf4ad8c24f15d72cc5', 'shenma@qq.com', 'E0iAvl', 1, 0, 0, 1505444079, 0, 1);
 

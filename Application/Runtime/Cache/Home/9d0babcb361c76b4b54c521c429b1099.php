@@ -711,100 +711,31 @@ $(function() {
 			
 			<div class="contact-qar">
 			<h1>常见问题</h1>
-				<!--第一题-->
-				<a data-toggle="collapse" data-target="#claps-tit01">
-					<div class="panel-info-titl clapstit-acta">APP操作</div>
+
+			<?php if(is_array($qcs)): $i = 0; $__LIST__ = $qcs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><!--第一题-->
+				<a data-toggle="collapse" data-target="#claps-tit0<?php echo ($i); ?>">
+					<div class="panel-info-titl clapstit-acta"><?php echo ($vo["qc"]); ?></div>
 				</a>
-				<div id="claps-tit01" class="claps-area collapse in">
+				<div id="claps-tit0<?php echo ($i); ?>" class="claps-area collapse in">
 					<div class="container-fluid">
 						<div class="row">
-							<!--第一题 第1条-->
-							<a data-toggle="collapse" data-target="#claps-tit0101">
-								<div class="panel-info-titl clapstit-acta">换了新手机，如何绑定账户?</div>
+					<?php if(is_array($questions)): $j = 0; $__LIST__ = $questions;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$question): $mod = ($j % 2 );++$j; if($question['qc_id'] == $vo['id']): ?><!--第一题 第1条-->
+							<a data-toggle="collapse" data-target="#claps-tit0<?php echo ($i); ?>0<?php echo ($j); ?>">
+								<div class="panel-info-titl clapstit-acta"><?php echo ($question["question"]); ?></div>
 							</a>
-							<div id="claps-tit0101" class="claps-area collapse in">
+							<div id="claps-tit0<?php echo ($i); ?>0<?php echo ($j); ?>" class="claps-area collapse in">
 								<div class="container-fluid">
 									<div class="row">
-										<h3>在APP应用登录界面点击“更改手机”发起申请后</h3>
-										<h3>工作日时间段09:00-18:00当天处理，非工作日时间段顺延至工作日处理</h3>
+										<h3><?php echo ($question["answer"]); ?></h3>
 									</div>
 								</div>
-							</div><!--第一题 第1条 end-->
-							
-							<!--第一题 第2条-->
-							<a data-toggle="collapse" data-target="#claps-tit0102">
-								<div class="panel-info-titl clapstit-actb">如何更换手机号码?</div>
-							</a>
-							<div id="claps-tit0102" class="claps-area collapse on">
-								<div class="container-fluid">
-									<div class="row">
-										<h3>更换手机号</h3>
-									</div>
-								</div>
-							</div><!--第一题 第2条 end-->
-							
-							<!--第一题 第3条-->
-							<a data-toggle="collapse" data-target="#claps-tit0103">
-								<div class="panel-info-titl clapstit-actb">密码忘记如何操作?</div>
-							</a>
-							<div id="claps-tit0103" class="claps-area collapse on">
-								<div class="container-fluid">
-									<div class="row">
-										<h3>密码忘记如何操作</h3>
-									</div>
-								</div>
-							</div><!--第一题 第3条 end-->
-							
-							
+							</div><!--第一题 第1条 end--><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+
+	
 						</div>
 					</div>
-				</div><!--第一题 end-->
-				
-				<a data-toggle="collapse" data-target="#claps-tit02">
-					<div class="panel-info-titl clapstit-actb">我要贷款</div>
-				</a>
-				<div id="claps-tit02" class="claps-area collapse on">
-					<div class="container-fluid">
-						<div class="row">
-							<h3>我要贷款我要贷款</h3>
-						</div>
-					</div>
-				</div>
-				
-				<a data-toggle="collapse" data-target="#claps-tit03">
-					<div class="panel-info-titl clapstit-actb">我要买车</div>
-				</a>
-				<div id="claps-tit03" class="claps-area collapse on">
-					<div class="container-fluid">
-						<div class="row">
-							<h3>我要买车我要买车</h3>
-						</div>
-					</div>
-				</div>
-				
-				<a data-toggle="collapse" data-target="#claps-tit04">
-					<div class="panel-info-titl clapstit-actb">如何更换手机号码?</div>
-				</a>
-				<div id="claps-tit04" class="claps-area collapse on">
-					<div class="container-fluid">
-						<div class="row">
-							<h3>换了新手机，如何更换手机号码?</h3>
-						</div>
-					</div>
-				</div>
-			
-				<a data-toggle="collapse" data-target="#claps-tit05">
-					<div class="panel-info-titl clapstit-actb">如何更换手机号码?</div>
-				</a>
-				<div id="claps-tit05" class="claps-area collapse on">
-					<div class="container-fluid">
-						<div class="row">
-							<h3>换了新手机，如何更换手机号码?</h3>
-						</div>
-					</div>
-				</div>
-				
-				
+				</div><!--第一题 end--><?php endforeach; endif; else: echo "" ;endif; ?>	
+
 			</div>
 			
 			

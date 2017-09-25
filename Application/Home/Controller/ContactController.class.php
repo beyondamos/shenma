@@ -10,8 +10,17 @@ class ContactController extends HomeBaseController
 {
 	public function index()
 	{
+		//banner
 		$banner = D('Banner')->find(12);
 		$this->assign('banner', $banner);
+		//问题
+		$questions = D('Question')->select();
+		$this->assign('questions', $questions);
+		//问题类别
+		$qcs = D('Qc')->select();
+		$this->assign('qcs', $qcs);
+
+
 		$this->display();
 	}
 

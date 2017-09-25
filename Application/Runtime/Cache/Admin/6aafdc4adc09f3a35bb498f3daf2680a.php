@@ -88,23 +88,25 @@
        <div class="contmain">
 
           <div class="boxi">
-             <h1>编辑Banner</h1>
+             <h1>编辑问题</h1>
 
-             <form action="<?php echo U('Banner/edit');?>" method="post" enctype="multipart/form-data">
+             <form action="<?php echo U('Question/edit');?>" method="post" enctype="multipart/form-data">
                 <div class="boxin">
-                   <span>Banner名称</span><input type="text" name="name" class="form-control" value="<?php echo ($banner["name"]); ?>">
+                   <span>问题</span><input type="text" name="question" class="form-control" value="<?php echo ($question["question"]); ?>">
                </div>
-               <div class="boxinb">
-                   <span>链&nbsp;接&nbsp;地&nbsp;址</span><input type="text" name="url" class="form-control" value="<?php echo ($banner["url"]); ?>">
+        <div class="boxinb">
+          <div class="boxinbl">
+            <span>分类选择</span>
+            <select name="qc_id" class="form-control">
+              <option value="0">请选择问题分类</option>
+              <?php if(is_array($qcs)): $i = 0; $__LIST__ = $qcs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($vo['id'] == $question['qc_id']): ?>selected<?php endif; ?>><?php echo ($vo["qc"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+            </select>
+          </div>
+        </div>
+                <div class="boxin">
+                   <span>答案</span><textarea rows="10" class="form-control" name="answer"><?php echo ($question["answer"]); ?></textarea>
                </div>
-               <div class="boxinb">
-                <span>链接图片</span>
-                <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"><?php echo ($banner["thumbnail"]); ?></i>
-                </div>
-                <div class="boxinb">
-                   <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="<?php echo ($banner["sort"]); ?>">
-               </div>
-               <input type="hidden" name="id" value="<?php echo ($banner["id"]); ?>">
+               <input type="hidden" name="id" value="<?php echo ($question["id"]); ?>">
             <div class="boxinbtn">
                <input type="submit"  value="确定" class="btn btna" />
                <input type="reset"  value="重置" class="btn btnb" />
