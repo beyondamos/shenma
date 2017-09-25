@@ -17,8 +17,11 @@ class AboutController extends HomeBaseController
 		$info = D('About')->find(1);
 		$this->assign('info', $info);
 		//发展历程
-		$develops = D('Develop')->order('sort asc')->select();
+		$develops = D('Develop')->order('newstime asc')->select();
 		$this->assign('develops', $develops);
+		//核心团队
+		$teams = D('Team')->order('sort asc')->select();
+		$this->assign('teams', $teams);
 
 		$model = D('Article');
 		$articles = $model->where(array('status' => 1, 'cate_id' => 14))->select();

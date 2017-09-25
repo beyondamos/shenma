@@ -1,23 +1,22 @@
 <?php
-/**
- * Banner控制器
- */
 namespace Admin\Controller;
 
 use Admin\Controller\CommonController;
 
-class BannerController extends CommonController
+/**
+ * 产品控制器
+ */
+class ProductController extends CommonController
 {
 	/**
-	 * Banner列表
+	 * 产品列表
 	 * @return [type] [description]
 	 */
 	public function index()
 	{
-		$classify = I('get.classify');
-		$banner_model = D('Banner');
-		$banners = $banner_model->where(array('classify' => $classify))->select();
-		$this->assign('banners', $banners);
+		$product_model = D('Product');
+		$products = $product_model->select();
+		$this->assign('products', $products);
 		$this->display();
 	}
 
@@ -27,19 +26,19 @@ class BannerController extends CommonController
 	public function add()
 	{
 		if (IS_POST) {
-			$banner_model = D('Banner');
-			if ($banner_model->create()) {
+			$product_model = D('Product');
+			if ($product_model->create()) {
 				//如有有图片上传
 				if ($_FILES['file_upload']['error'] != 4) {
-					$banner_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
+					$product_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
 				}
-				if ($banner_model->add()) {
-					$this->success('Banner添加成功', U('Banner/index'), 1);
+				if ($product_model->add()) {
+					$this->success('产品添加成功', U('Product/index'), 1);
 				} else {
-					$this->error('Banner添加失败');
+					$this->error('产品添加失败');
 				}
 			} else {
-				$this->error($banner_model->getError());
+				$this->error($product_model->getError());
 			}
 		} else {
 			$this->display();
@@ -54,25 +53,25 @@ class BannerController extends CommonController
 	public function edit()
 	{
 		if (IS_POST) {
-			$banner_model = D('Banner');
-            if($banner_model->create()){
+			$product_model = D('Product');
+            if($product_model->create()){
                 if($_FILES['file_upload']['error'] != 4 ){
-                    $banner_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
+                    $product_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
                 }
-                if($banner_model->save()){
-                    $this->success('Banner编辑成功');
+                if($product_model->save()){
+                    $this->success('产品编辑成功');
                 }else{
-                    $this->error('Banner编辑失败！');
+                    $this->error('产品编辑失败！');
                 }
             }else{
-                $this->error($banner_model->getError());
+                $this->error($product_model->getError());
             }
 
 		} elseif (IS_GET) {
 			$id = I('get.id');
-			$banner_model = D('Banner');
-			$banner = $banner_model->find($id);
-			$this->assign('banner', $banner);
+			$product_model = D('Product');
+			$product = $product_model->find($id);
+			$this->assign('product', $product);
 			$this->display();
 		}
 		
@@ -86,11 +85,11 @@ class BannerController extends CommonController
 	public function delete()
 	{
 		$id = I('get.id');
-        $banner_model = D('Banner');
-        if($banner_model->delete($id)){
-            $this->success('Banner删除成功', U('Banner/index'), 1);
+        $product_model = D('Product');
+        if($product_model->delete($id)){
+            $this->success('产品删除成功', U('Product/index'), 1);
         }else{
-            $this->error('Banner删除失败');
+            $this->error('产品删除失败');
         }
 	}
 

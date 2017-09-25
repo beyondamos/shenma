@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 年 09 月 22 日 17:26
+-- 生成日期: 2017 �?09 �?25 �?05:21
 -- 服务器版本: 5.5.53
--- PHP 版本: 5.4.45
+-- PHP 版本: 5.6.27
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -119,7 +119,7 @@ CREATE TABLE IF NOT EXISTS `shenma_auth` (
   `auth_url` varchar(50) NOT NULL DEFAULT '' COMMENT '权限路由',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '权限状态，是否显示在左侧菜单列表里',
   PRIMARY KEY (`auth_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=59 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=67 ;
 
 --
 -- 转存表中的数据 `shenma_auth`
@@ -170,7 +170,15 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (55, '发展历程删除', 1, 'Develop/delete', 0),
 (56, '首页什马简介', 1, 'Aboutus/shouye', 0),
 (57, 'Banner图标设置', 1, 'Icon/index', 0),
-(58, '图标编辑', 1, 'Icon/edit', 0);
+(58, '图标编辑', 1, 'Icon/edit', 0),
+(59, '产品列表', 1, 'Product/index', 0),
+(60, '产品编辑', 1, 'Product/edit', 0),
+(61, '产品编辑', 1, 'Product/delete', 0),
+(62, '产品添加', 1, 'Product/add', 0),
+(63, '团队信息', 1, 'Team/index', 0),
+(64, '团队信息编辑', 1, 'Team/edit', 0),
+(65, '添加团队信息', 1, 'Team/add', 0),
+(66, '删除团队信息', 1, 'Team/delete', 0);
 
 -- --------------------------------------------------------
 
@@ -186,7 +194,7 @@ CREATE TABLE IF NOT EXISTS `shenma_banner` (
   `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
   `classify` tinyint(4) NOT NULL DEFAULT '0' COMMENT '分类',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=9 ;
 
 --
 -- 转存表中的数据 `shenma_banner`
@@ -198,7 +206,9 @@ INSERT INTO `shenma_banner` (`id`, `url`, `name`, `thumbnail`, `sort`, `classify
 (3, '123123', '第3张', '/Public/Upload/20170921/1505956147_498624648.jpg', 3, 1),
 (4, '123213', '第4张', '/Public/Upload/20170921/1505956164_704730493.jpg', 10, 1),
 (5, '123213', '关于我们', '/Public/Upload/20170921/1505958524_1209540722.jpg', 1, 3),
-(6, '12321313', '借款申请banner', '/Public/Upload/20170922/1506059128_950678200.jpg', 1, 2);
+(6, '12321313', '借款申请banner', '/Public/Upload/20170922/1506059128_950678200.jpg', 1, 2),
+(7, '13213213', '商户进货贷', '/Public/Upload/20170925/1506302509_1776309795.png', 1, 4),
+(8, '123123213', '核心产品banner', '/Public/Upload/20170925/1506302775_422591589.png', 2, 4);
 
 -- --------------------------------------------------------
 
@@ -301,21 +311,21 @@ INSERT INTO `shenma_config` (`conf_id`, `conf_name`, `conf_value`) VALUES
 
 CREATE TABLE IF NOT EXISTS `shenma_develop` (
   `id` smallint(6) NOT NULL AUTO_INCREMENT COMMENT '主键id',
-  `url` varchar(256) NOT NULL DEFAULT '' COMMENT 'url',
-  `name` varchar(50) NOT NULL DEFAULT '' COMMENT '链接名称',
-  `thumbnail` varchar(256) NOT NULL COMMENT '缩略图',
-  `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
+  `title` varchar(255) NOT NULL DEFAULT '' COMMENT '发展名称',
+  `ftitle` varchar(256) NOT NULL DEFAULT '' COMMENT '副标题',
+  `newstime` char(10) NOT NULL DEFAULT '' COMMENT '时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='发展历程表' AUTO_INCREMENT=4 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='发展历程表' AUTO_INCREMENT=5 ;
 
 --
 -- 转存表中的数据 `shenma_develop`
 --
 
-INSERT INTO `shenma_develop` (`id`, `url`, `name`, `thumbnail`, `sort`) VALUES
-(1, '123123123', '第一张', '/Public/Upload/20170921/1505962887_1842293840.jpg', 1),
-(2, '23123213', '第2张', '/Public/Upload/20170921/1505962915_1441838237.jpg', 2),
-(3, '345345', '第3张', '/Public/Upload/20170921/1505962931_2090506420.jpg', 3);
+INSERT INTO `shenma_develop` (`id`, `title`, `ftitle`, `newstime`) VALUES
+(1, '什马金融成立', '成立', '2017-09-01'),
+(2, '第2张', '', ''),
+(3, '第3张', '', ''),
+(4, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -330,7 +340,29 @@ CREATE TABLE IF NOT EXISTS `shenma_icon` (
   `name_e` varchar(100) NOT NULL DEFAULT '' COMMENT '英文名称',
   `thumbnail` varchar(256) NOT NULL COMMENT '缩略图',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Banner图标' AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Banner图标' AUTO_INCREMENT=3 ;
+
+--
+-- 转存表中的数据 `shenma_icon`
+--
+
+INSERT INTO `shenma_icon` (`id`, `url`, `name`, `name_e`, `thumbnail`) VALUES
+(1, '123123213', '商家贷款', 'Business loans', '/Public/Upload/20170925/1506300950_520147208.png'),
+(2, '4234234234234', '消费者贷款', 'Consumer loans', '/Public/Upload/20170925/1506301262_1864146358.png');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `shenma_info`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_info` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL COMMENT '标题',
+  `titleimg` varchar(300) NOT NULL COMMENT '缩略图地址',
+  `content` text NOT NULL COMMENT '页面内容',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='新闻内容表' AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -381,6 +413,28 @@ INSERT INTO `shenma_nav` (`nav_id`, `nav_name`, `nav_url`, `sort`, `is_show`, `i
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `shenma_product`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_product` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `url` varchar(256) NOT NULL DEFAULT '' COMMENT 'url',
+  `name` varchar(50) NOT NULL DEFAULT '' COMMENT '链接名称',
+  `thumbnail` varchar(256) NOT NULL COMMENT '缩略图',
+  `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=2 ;
+
+--
+-- 转存表中的数据 `shenma_product`
+--
+
+INSERT INTO `shenma_product` (`id`, `url`, `name`, `thumbnail`, `sort`) VALUES
+(1, '123123213213', '信用贷', '/Public/Upload/20170925/1506303899_464808054.png', 10);
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `shenma_role`
 --
 
@@ -399,6 +453,30 @@ CREATE TABLE IF NOT EXISTS `shenma_role` (
 INSERT INTO `shenma_role` (`role_id`, `role_name`, `role_desc`, `auth_list`) VALUES
 (1, '管理员', '拥有全部权限', 'all'),
 (2, '信息发布员', '只能使用和信息发布有关的功能', '1,2,3,4,5,12');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `shenma_team`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_team` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL COMMENT '标题',
+  `post` char(10) NOT NULL DEFAULT '' COMMENT '职务',
+  `thumbnail` varchar(300) NOT NULL COMMENT '缩略图地址',
+  `content` text NOT NULL COMMENT '页面内容',
+  `sort` int(11) NOT NULL DEFAULT '0' COMMENT '排序',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='核心团队' AUTO_INCREMENT=3 ;
+
+--
+-- 转存表中的数据 `shenma_team`
+--
+
+INSERT INTO `shenma_team` (`id`, `name`, `post`, `thumbnail`, `content`, `sort`) VALUES
+(1, '陈小凤', '董事长', '/Public/Upload/20170925/1506315643_1088500336.jpg', '行业最年轻传奇女性领军带领新大洲电动车从四万销量提升到五十万', 1),
+(2, '宁锐', 'CEO', '/Public/Upload/20170925/1506316045_1229404465.jpg', '不墨守成规的连续创业者因其经典营销案例登录《鲁豫有约》国内第一人', 2);
 
 -- --------------------------------------------------------
 
@@ -427,7 +505,7 @@ CREATE TABLE IF NOT EXISTS `shenma_user` (
 --
 
 INSERT INTO `shenma_user` (`user_id`, `username`, `nickname`, `password`, `email`, `salt`, `role_id`, `last_login_time`, `last_login_ip`, `add_time`, `login_times`, `status`) VALUES
-(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1506046857, 2130706433, 0, 48, 1),
+(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1506300492, 2130706433, 0, 49, 1),
 (7, 'ishequan', 'ishequan', 'e08df8dbfee311bcb98fae8649d4e70f', '', '6sBKPA', 1, 0, 0, 1494381412, 0, 1),
 (8, 'shenma', 'shenma', 'e0872f7bc5e019bf4ad8c24f15d72cc5', 'shenma@qq.com', 'E0iAvl', 1, 0, 0, 1505444079, 0, 1);
 

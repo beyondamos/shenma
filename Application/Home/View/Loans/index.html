@@ -82,13 +82,13 @@ $(function() {
 			<div class="apply-top">
 				<img src="<{$banner.thumbnail}>" alt="" />
 				<div class="apply-top-md">
-					<a href="<{:U('Loans/index')}>" class="anc"><img src="__PUBLIC__/Home/img/biz.png" alt="" /><h1>商家贷款</h1><h2>Business loans</h2></a>
-					<a href="<{:U('Loans/index2')}>" class="anc"><img src="__PUBLIC__/Home/img/cust.png" alt="" /><h1>消费者贷款</h1><h2>Consumer loans</h2></a>
+					<volist name="icons" id="vo"> 
+					<a href="<{$vo.url}>" class="anc"><img src="<{$vo.thumbnail}>" alt="" /><h1><{$vo.name}></h1><h2><{$vo.name_e}></h2></a>
+					</volist>
 				</div>
 			</div>
 			
-			
-			
+	
 			
 			<div class="apply-app">
 				<div class="apply-app-md">
@@ -100,19 +100,19 @@ $(function() {
 			
 			
 			
-			
+
 			<div class="apply-cartoon">
-				<img src="__PUBLIC__/Home/img/bkimgCartoon.jpg" alt="" />
-				<div class="apply-cartoon-md">
+				<img src="<{$banners['0']['thumbnail']}>" alt="" />
+<!-- 				<div class="apply-cartoon-md">
 					<img src="__PUBLIC__/Home/img/cartoon.png" alt="" />
-				</div>
+				</div> -->
 			</div>
-			
+
 			<div class="apply-goods">
-				<img src="__PUBLIC__/Home/img/bkxyd.jpg" alt="" />
-				<div class="apply-goods-md">
+				<img src="<{$banners['1']['thumbnail']}>" alt="" />
+<!-- 				<div class="apply-goods-md">
 					<img src="__PUBLIC__/Home/img/imgoods.png" alt="" />
-				</div>
+				</div> -->
 			</div>
 			
 			<div class="apply-loans">
@@ -147,14 +147,6 @@ $(function() {
 						</ul>
 						
 					</div>
-					
-					
-					
-					
-					
-					
-					
-					
 					
 					
 					

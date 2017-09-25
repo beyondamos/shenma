@@ -15,7 +15,7 @@ class DevelopController extends CommonController
 	public function index()
 	{
 		$model = D('Develop');
-		$develops = $model->select();
+		$develops = $model->order('id asc')->select();
 		$this->assign('develops', $develops);
 		$this->display();
 	}
@@ -28,10 +28,6 @@ class DevelopController extends CommonController
 		if (IS_POST) {
 			$model = D('Develop');
 			if ($model->create()) {
-				//如有有图片上传
-				if ($_FILES['file_upload']['error'] != 4) {
-					$model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-				}
 				if ($model->add()) {
 					$this->success('发展历程添加成功', U('Develop/index'), 1);
 				} else {
@@ -55,9 +51,6 @@ class DevelopController extends CommonController
 		if (IS_POST) {
 			$develop_model = D('Develop');
             if($develop_model->create()){
-                if($_FILES['file_upload']['error'] != 4 ){
-                    $develop_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-                }
                 if($develop_model->save()){
                     $this->success('发展历程编辑成功', U('Develop/index'), 1);
                 }else{

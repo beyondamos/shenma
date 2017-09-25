@@ -12,7 +12,7 @@
     <script src="/Public/Admin/js/respond.min.js"></script>
     <![endif]-->
     <script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
-<script src="/Public/Admin/js/laydate/laydate.js"></script>
+
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -79,18 +79,22 @@
        <div class="contmain">
 
           <div class="boxi">
-             <h1>添加发展历程</h1>
+             <h1>添加产品</h1>
 
-             <form action="<?php echo U('Develop/add');?>" method="post" enctype="multipart/form-data">
+             <form action="<?php echo U('Product/add');?>" method="post" enctype="multipart/form-data">
                 <div class="boxin">
-                   <span>历程名称</span><input type="text" name="title" class="form-control">
+                   <span>产品名称</span><input type="text" name="name" class="form-control">
                </div>
-              <div class="boxin">
-                   <span>简介</span><input type="text" name="ftitle" class="form-control">
+               <div class="boxinb">
+                   <span>链&nbsp;接&nbsp;地&nbsp;址</span><input type="text" name="url" class="form-control">
                </div>
-              <div class="boxin">
-            <span class="lets2">日&nbsp;&nbsp;&nbsp;&nbsp;期</span><input type="text" id="demo"  class="form-control laydate-icon" name="newstime"  value="">
-          </div>
+               <div class="boxinb">
+                <span>链接图片</span>
+                <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"></i>
+                </div>
+                <div class="boxinb">
+                   <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="10">
+               </div>
             <div class="boxinbtn">
                <input type="submit"  value="确定" class="btn btna" />
                <input type="reset"  value="重置" class="btn btnb" />
@@ -101,39 +105,19 @@
 
 </div>
 </div>
+<script src="/Public/Admin/js/sdmenu.js"></script>
+<script type="text/javascript">
+    $().ready(function(){
 
-<script>
-  ;!function(){
-    laydate({
-      elem: '#demo'
-    })
-  }();
+        $(".upfn").on("change","input[type='file']",function(){
+            var filePath = $(this).val();
+            var arr = filePath.split('\\');
+            var fileName = arr[arr.length-1];
+            $(".upfnb").html(fileName);
+        });
+
+    });
 </script>
-
-<script>
-  $().ready(function(){
-    var date = new Date();
-    var dateStr = date.getFullYear()+'-';
-    var month = date.getMonth()+ 1;
-    if(month < 10){
-      month = '0'+month;
-    }
-    dateStr += month + '-';
-
-    var day = date.getDate();
-    if(day < 10){
-      day = '0' + day;
-    }
-    dateStr += day;
-//    alert(dateStr);
-    $('#demo').val(dateStr);
-
-
-
-  });
-</script>
-
-
 
 </body>
 </html>

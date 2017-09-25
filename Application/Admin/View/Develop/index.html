@@ -48,9 +48,8 @@
 				<thead>
 					<tr>
 					   <th class="col-md-1 text-vm">序号</th>
-					   <th class="col-md-2 text-vm">名称</th>
-					   <th class="col-md-6 text-vm">链接URL</th>
-					   <th class="col-md-2 text-vm">顺序</th>
+					   <th class="col-md-6 text-vm">名称</th>
+					   <th class="col-md-1 text-vm">时间</th>
 					   <th class="col-md-1 text-vm text-center">操作</th>
 					</tr>
 				</thead>
@@ -58,9 +57,8 @@
 					<volist name="develops" id="vo">
 					<tr>
 						<td class="text-vm"><{$vo.id}></td>
-						<td class="text-vm"><{$vo.name}></td>
-						<td class="text-vm"><{$vo.url}></td>
-						<td class="text-vm"><{$vo.sort}></td>
+						<td class="text-vm"><{$vo.title}></td>
+						<td class="text-vm"><{$vo.newstime}></td>
 						<td class="text-vm">
 							<a href="<{:U('Develop/edit',array('id' => $vo['id']) )}>">编辑</a>
 							<a href="<{:U('Develop/delete',array('id' => $vo['id']) )}>">删除</a>

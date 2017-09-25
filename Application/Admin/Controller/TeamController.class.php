@@ -1,23 +1,19 @@
 <?php
-/**
- * Banner控制器
- */
 namespace Admin\Controller;
 
 use Admin\Controller\CommonController;
 
-class BannerController extends CommonController
+class TeamController extends CommonController
 {
 	/**
-	 * Banner列表
+	 * 团队列表
 	 * @return [type] [description]
 	 */
 	public function index()
 	{
-		$classify = I('get.classify');
-		$banner_model = D('Banner');
-		$banners = $banner_model->where(array('classify' => $classify))->select();
-		$this->assign('banners', $banners);
+		$team_model = D('Team');
+		$teams = $team_model->select();
+		$this->assign('teams', $teams);
 		$this->display();
 	}
 
@@ -27,19 +23,19 @@ class BannerController extends CommonController
 	public function add()
 	{
 		if (IS_POST) {
-			$banner_model = D('Banner');
-			if ($banner_model->create()) {
+			$team_model = D('Team');
+			if ($team_model->create()) {
 				//如有有图片上传
 				if ($_FILES['file_upload']['error'] != 4) {
-					$banner_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
+					$team_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
 				}
-				if ($banner_model->add()) {
-					$this->success('Banner添加成功', U('Banner/index'), 1);
+				if ($team_model->add()) {
+					$this->success('团队信息添加成功', U('Team/index'), 1);
 				} else {
-					$this->error('Banner添加失败');
+					$this->error('团队信息添加失败');
 				}
 			} else {
-				$this->error($banner_model->getError());
+				$this->error($team_model->getError());
 			}
 		} else {
 			$this->display();
@@ -54,25 +50,25 @@ class BannerController extends CommonController
 	public function edit()
 	{
 		if (IS_POST) {
-			$banner_model = D('Banner');
-            if($banner_model->create()){
+			$team_model = D('Team');
+            if($team_model->create()){
                 if($_FILES['file_upload']['error'] != 4 ){
-                    $banner_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
+                    $team_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
                 }
-                if($banner_model->save()){
-                    $this->success('Banner编辑成功');
+                if($team_model->save()){
+                    $this->success('团队信息编辑成功');
                 }else{
-                    $this->error('Banner编辑失败！');
+                    $this->error('团队信息编辑失败！');
                 }
             }else{
-                $this->error($banner_model->getError());
+                $this->error($team_model->getError());
             }
 
 		} elseif (IS_GET) {
 			$id = I('get.id');
-			$banner_model = D('Banner');
-			$banner = $banner_model->find($id);
-			$this->assign('banner', $banner);
+			$team_model = D('Team');
+			$team = $team_model->find($id);
+			$this->assign('team', $team);
 			$this->display();
 		}
 		
@@ -86,11 +82,11 @@ class BannerController extends CommonController
 	public function delete()
 	{
 		$id = I('get.id');
-        $banner_model = D('Banner');
-        if($banner_model->delete($id)){
-            $this->success('Banner删除成功', U('Banner/index'), 1);
+        $team_model = D('Team');
+        if($team_model->delete($id)){
+            $this->success('团队信息删除成功', U('Team/index'), 1);
         }else{
-            $this->error('Banner删除失败');
+            $this->error('团队信息删除失败');
         }
 	}
 
@@ -118,7 +114,6 @@ class BannerController extends CommonController
            }
         }
     }
-
 
 
 

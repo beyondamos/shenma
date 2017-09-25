@@ -23,24 +23,23 @@
        <div class="contmain">
 
           <div class="boxi">
-             <h1>编辑Banner图标</h1>
+             <h1>编辑产品</h1>
 
-             <form action="<{:U('Icon/edit')}>" method="post" enctype="multipart/form-data">
+             <form action="<{:U('Product/edit')}>" method="post" enctype="multipart/form-data">
                 <div class="boxin">
-                   <span>名称</span><input type="text" name="name" class="form-control" value="<{$icon.name}>">
+                   <span>产品名称</span><input type="text" name="name" class="form-control" value="<{$product.name}>">
                </div>
-                <div class="boxin">
-                   <span>英文名称</span><input type="text" name="name_e" class="form-control" value="<{$icon.name_e}>">
-               </div>
-
                <div class="boxinb">
-                   <span>链&nbsp;接&nbsp;地&nbsp;址</span><input type="text" name="url" class="form-control" value="<{$icon.url}>">
+                   <span>链&nbsp;接&nbsp;地&nbsp;址</span><input type="text" name="url" class="form-control" value="<{$product.url}>">
                </div>
                <div class="boxinb">
                 <span>链接图片</span>
-                <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"><{$icon.thumbnail}></i>
+                <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"><{$product.thumbnail}></i>
                 </div>
-               <input type="hidden" name="id" value="<{$icon.id}>">
+                <div class="boxinb">
+                   <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="<{$product.sort}>">
+               </div>
+               <input type="hidden" name="id" value="<{$product.id}>">
             <div class="boxinbtn">
                <input type="submit"  value="确定" class="btn btna" />
                <input type="reset"  value="重置" class="btn btnb" />

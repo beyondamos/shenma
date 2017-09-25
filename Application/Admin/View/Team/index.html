@@ -23,11 +23,11 @@
 	<div class="contmain">
 		
 		<div class="boxi">
-			<h1>首页Banner列表</h1>
+			<h1>团队列表</h1>
 			
 			<!-- 表格顶部搜索区 -->
 			<div class="boxoper">
-				<a href="<{:U('Banner/add', array('classify' => 1))}>">添加Banner</a>
+				<a href="<{:U('Team/add')}>">添加团队信息</a>
 				<!--<div class="boxoper-seh">-->
 					<!--<form action="" method="post">-->
 						<!--<button class="btn btn-default" type="submit"><img src="__IMG__/iconseh.png" /></button>-->
@@ -48,23 +48,23 @@
 				<thead>
 					<tr>
 					   <th class="col-md-1 text-vm">序号</th>
-					   <th class="col-md-2 text-vm">Banner名称</th>
-					   <th class="col-md-6 text-vm">链接URL</th>
+					   <th class="col-md-3 text-vm">姓名</th>
+					   <th class="col-md-3 text-vm">职务</th>
 					   <th class="col-md-2 text-vm">顺序</th>
 					   <th class="col-md-1 text-vm text-center">操作</th>
 					</tr>
 				</thead>
 				<tbody>
-					<volist name="banners" id="vo">
+					<volist name="teams" id="vo">
 					<tr>
 						<td class="text-vm"><{$vo.id}></td>
 						<td class="text-vm"><{$vo.name}></td>
-						<td class="text-vm"><{$vo.url}></td>
+						<td class="text-vm"><{$vo.post}></td>
 						<td class="text-vm"><{$vo.sort}></td>
 						<td class="text-vm">
-							<a href="<{:U('Banner/edit',array('id' => $vo['id']) )}>">编辑</a>
+							<a href="<{:U('Team/edit',array('id' => $vo['id']) )}>">编辑</a>
 							<if condition="$vo['classify'] != 4">
-							<a href="<{:U('Banner/delete',array('id' => $vo['id']) )}>">删除</a>
+							<a href="<{:U('Team/delete',array('id' => $vo['id']) )}>">删除</a>
 							</if>
 						</td>
 					</tr>

@@ -134,11 +134,11 @@ $(function() {
 				<div class="core-shenma">
 					<h2>核心团队</h2>
 					
-					<?php if(is_array($articles)): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="corep">
-						<img src="<?php echo ($vo["titleimg"]); ?>" alt="" />
-						<h3><?php echo ($vo["title"]); ?></h3>
-						<span><?php echo ($vo["synopsis"]); ?></span>
-						<h5><?php echo html_entity_decode($vo['content']);?></h5>
+					<?php if(is_array($teams)): $i = 0; $__LIST__ = $teams;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="corep">
+						<img src="<?php echo ($vo["thumbnail"]); ?>" alt="" />
+						<h3><?php echo ($vo["name"]); ?></h3>
+						<span><?php echo ($vo["post"]); ?></span>
+						<h5><?php echo ($vo["content"]); ?></h5>
 					</li><?php endforeach; endif; else: echo "" ;endif; ?>
 
 

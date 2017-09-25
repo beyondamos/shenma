@@ -15,8 +15,15 @@ class LoansController extends HomeBaseController
 	 */
 	public function index()
 	{
+
 		$banner = D('Banner')->find(6);
 		$this->assign('banner', $banner);
+		//图标
+		$icons = D('Icon')->select();
+		$this->assign('icons', $icons);
+		//中部banner
+		$banners = D('Banner')->where(array('classify' => 4))->select();
+		$this->assign('banners', $banners);
 		$this->display();
 	}
 
@@ -24,6 +31,9 @@ class LoansController extends HomeBaseController
 	{
 		$banner = D('Banner')->find(6);
 		$this->assign('banner', $banner);
+		//图标
+		$icons = D('Icon')->select();
+		$this->assign('icons', $icons);
 		$this->display();
 	}
 

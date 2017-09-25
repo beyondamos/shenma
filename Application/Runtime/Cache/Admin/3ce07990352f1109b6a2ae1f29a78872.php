@@ -12,7 +12,7 @@
     <script src="/Public/Admin/js/respond.min.js"></script>
     <![endif]-->
     <script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
-<script src="/Public/Admin/js/laydate/laydate.js"></script>
+
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -60,7 +60,7 @@
 		<a href="<?php echo U('Banner/edit', array('id' => 5));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
 		<a href="<?php echo U('Aboutus/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马介绍</a>
 		<a href="<?php echo U('Develop/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发展历程</a>
-		<a href="<?php echo U('Banner/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;核心团队</a>
+		<a href="<?php echo U('Team/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;核心团队</a>
 		<a href="<?php echo U('Banner/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小暖炉助学计划</a>
 		<a>新闻资讯</a>
 		<a href="<?php echo U('Banner/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马新闻</a>
@@ -79,18 +79,24 @@
        <div class="contmain">
 
           <div class="boxi">
-             <h1>添加发展历程</h1>
-
-             <form action="<?php echo U('Develop/add');?>" method="post" enctype="multipart/form-data">
+             <h1>添加团队信息</h1>
+             <form action="<?php echo U('Team/add');?>" method="post" enctype="multipart/form-data">
                 <div class="boxin">
-                   <span>历程名称</span><input type="text" name="title" class="form-control">
+                   <span>姓&nbsp;&nbsp;&nbsp;&nbsp;名</span><input type="text" name="name" class="form-control">
                </div>
-              <div class="boxin">
-                   <span>简介</span><input type="text" name="ftitle" class="form-control">
+                <div class="boxin">
+                   <span>职&nbsp;&nbsp;&nbsp;&nbsp;务</span><input type="text" name="post" class="form-control">
                </div>
-              <div class="boxin">
-            <span class="lets2">日&nbsp;&nbsp;&nbsp;&nbsp;期</span><input type="text" id="demo"  class="form-control laydate-icon" name="newstime"  value="">
-          </div>
+               <div class="boxinb">
+                <span>头像图片</span>
+                <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"></i>
+                </div>
+              <div class="boxinb">
+                   <span>简&nbsp;&nbsp;&nbsp;&nbsp;介</span><input type="text" name="content" class="form-control">
+               </div>
+                <div class="boxinb">
+                   <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="10">
+               </div>
             <div class="boxinbtn">
                <input type="submit"  value="确定" class="btn btna" />
                <input type="reset"  value="重置" class="btn btnb" />
@@ -101,38 +107,19 @@
 
 </div>
 </div>
+<script src="/Public/Admin/js/sdmenu.js"></script>
+<script type="text/javascript">
+    $().ready(function(){
 
-<script>
-  ;!function(){
-    laydate({
-      elem: '#demo'
-    })
-  }();
+        $(".upfn").on("change","input[type='file']",function(){
+            var filePath = $(this).val();
+            var arr = filePath.split('\\');
+            var fileName = arr[arr.length-1];
+            $(".upfnb").html(fileName);
+        });
+
+    });
 </script>
-
-<script>
-  $().ready(function(){
-    var date = new Date();
-    var dateStr = date.getFullYear()+'-';
-    var month = date.getMonth()+ 1;
-    if(month < 10){
-      month = '0'+month;
-    }
-    dateStr += month + '-';
-
-    var day = date.getDate();
-    if(day < 10){
-      day = '0' + day;
-    }
-    dateStr += day;
-//    alert(dateStr);
-    $('#demo').val(dateStr);
-
-
-
-  });
-</script>
-
 
 
 </body>

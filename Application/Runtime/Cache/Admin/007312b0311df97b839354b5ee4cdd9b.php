@@ -48,15 +48,16 @@
 	<div>
 		<span>内容管理<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
 		<a>首页</a>
-		<a href="<?php echo U('Banner/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
+		<a href="<?php echo U('Banner/index', array('classify' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
 		<a href="<?php echo U('Aboutus/shouye');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于什马</a>
 		<a href="<?php echo U('Brand/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合作品牌</a>
 		<a>借款申请</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 6 ));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
 		<a href="<?php echo U('Icon/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图标设置</a>
+		<a href="<?php echo U('Banner/index', array('classify' => 4));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中部Banner设置</a>
+		<a href="<?php echo U('Product/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;产品设置</a>
 		<a>关于什马</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 5));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
-
 		<a href="<?php echo U('Aboutus/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马介绍</a>
 		<a href="<?php echo U('Develop/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发展历程</a>
 		<a href="<?php echo U('Banner/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;核心团队</a>
@@ -105,18 +106,17 @@
 					   <th class="col-md-1 text-vm">序号</th>
 					   <th class="col-md-2 text-vm">名称</th>
 					   <th class="col-md-6 text-vm">链接URL</th>
-					   <!-- <th class="col-md-2 text-vm">顺序</th> -->
+
 					   <th class="col-md-1 text-vm text-center">操作</th>
 					</tr>
 				</thead>
 				<tbody>
-					<?php if(is_array($develops)): $i = 0; $__LIST__ = $develops;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+					<?php if(is_array($icons)): $i = 0; $__LIST__ = $icons;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 						<td class="text-vm"><?php echo ($vo["id"]); ?></td>
 						<td class="text-vm"><?php echo ($vo["name"]); ?></td>
 						<td class="text-vm"><?php echo ($vo["url"]); ?></td>
-						<!-- <td class="text-vm"><?php echo ($vo["sort"]); ?></td> -->
 						<td class="text-vm">
-							<a href="<?php echo U('Develop/edit',array('id' => $vo['id']) );?>">编辑</a>
+							<a href="<?php echo U('Icon/edit',array('id' => $vo['id']) );?>">编辑</a>
 							<!-- <a href="<?php echo U('Develop/delete',array('id' => $vo['id']) );?>">删除</a> -->
 						</td>
 					</tr><?php endforeach; endif; else: echo "" ;endif; ?>

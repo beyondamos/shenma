@@ -110,17 +110,14 @@ $(function() {
 			
 				<div class="core-shenma">
 					<h2>核心团队</h2>
-					
-					<volist name="articles" id="vo">	
+					<volist name="teams" id="vo">	
 					<li class="corep">
-						<img src="<{$vo.titleimg}>" alt="" />
-						<h3><{$vo.title}></h3>
-						<span><{$vo.synopsis}></span>
-						<h5><{:html_entity_decode($vo['content'])}></h5>
+						<img src="<{$vo.thumbnail}>" alt="" />
+						<h3><{$vo.name}></h3>
+						<span><{$vo.post}></span>
+						<h5><{$vo.content}></h5>
 					</li>
 					</volist>
-
-
 				</div>
 				
 			</div>

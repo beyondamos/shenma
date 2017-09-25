@@ -107,13 +107,11 @@ $(function() {
 			<div class="apply-top">
 				<img src="<?php echo ($banner["thumbnail"]); ?>" alt="" />
 				<div class="apply-top-md">
-					<a href="<?php echo U('Loans/index');?>" class="anc"><img src="/Public/Home/img/biz.png" alt="" /><h1>商家贷款</h1><h2>Business loans</h2></a>
-					<a href="<?php echo U('Loans/index2');?>" class="anc"><img src="/Public/Home/img/cust.png" alt="" /><h1>消费者贷款</h1><h2>Consumer loans</h2></a>
+					<?php if(is_array($icons)): $i = 0; $__LIST__ = $icons;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($vo["url"]); ?>" class="anc"><img src="<?php echo ($vo["thumbnail"]); ?>" alt="" /><h1><?php echo ($vo["name"]); ?></h1><h2><?php echo ($vo["name_e"]); ?></h2></a><?php endforeach; endif; else: echo "" ;endif; ?>
 				</div>
 			</div>
 			
-			
-			
+	
 			
 			<div class="apply-app">
 				<div class="apply-app-md">
@@ -125,19 +123,19 @@ $(function() {
 			
 			
 			
-			
+
 			<div class="apply-cartoon">
-				<img src="/Public/Home/img/bkimgCartoon.jpg" alt="" />
-				<div class="apply-cartoon-md">
+				<img src="<?php echo ($banners['0']['thumbnail']); ?>" alt="" />
+<!-- 				<div class="apply-cartoon-md">
 					<img src="/Public/Home/img/cartoon.png" alt="" />
-				</div>
+				</div> -->
 			</div>
-			
+
 			<div class="apply-goods">
-				<img src="/Public/Home/img/bkxyd.jpg" alt="" />
-				<div class="apply-goods-md">
+				<img src="<?php echo ($banners['1']['thumbnail']); ?>" alt="" />
+<!-- 				<div class="apply-goods-md">
 					<img src="/Public/Home/img/imgoods.png" alt="" />
-				</div>
+				</div> -->
 			</div>
 			
 			<div class="apply-loans">
@@ -172,14 +170,6 @@ $(function() {
 						</ul>
 						
 					</div>
-					
-					
-					
-					
-					
-					
-					
-					
 					
 					
 					

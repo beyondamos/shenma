@@ -12,7 +12,7 @@
     <script src="/Public/Admin/js/respond.min.js"></script>
     <![endif]-->
     <script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
-
+    <script src="/Public/Admin/js/laydate/laydate.js"></script>
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -48,15 +48,16 @@
 	<div>
 		<span>内容管理<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
 		<a>首页</a>
-		<a href="<?php echo U('Banner/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
+		<a href="<?php echo U('Banner/index', array('classify' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
 		<a href="<?php echo U('Aboutus/shouye');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于什马</a>
 		<a href="<?php echo U('Brand/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合作品牌</a>
 		<a>借款申请</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 6 ));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
 		<a href="<?php echo U('Icon/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图标设置</a>
+		<a href="<?php echo U('Banner/index', array('classify' => 4));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中部Banner设置</a>
+		<a href="<?php echo U('Product/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;产品设置</a>
 		<a>关于什马</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 5));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
-
 		<a href="<?php echo U('Aboutus/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马介绍</a>
 		<a href="<?php echo U('Develop/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发展历程</a>
 		<a href="<?php echo U('Banner/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;核心团队</a>
@@ -82,18 +83,14 @@
 
              <form action="<?php echo U('Develop/edit');?>" method="post" enctype="multipart/form-data">
                 <div class="boxin">
-                   <span>名称</span><input type="text" name="name" class="form-control" value="<?php echo ($develop["name"]); ?>">
+                   <span>历程名称</span><input type="text" name="title" class="form-control" value="<?php echo ($develop["title"]); ?>">
                </div>
                <div class="boxinb">
-                   <span>链&nbsp;接&nbsp;地&nbsp;址</span><input type="text" name="url" class="form-control" value="<?php echo ($develop["url"]); ?>">
+                   <span>历程简介</span><input type="text" name="ftitle" class="form-control" value="<?php echo ($develop["ftitle"]); ?>">
                </div>
-               <div class="boxinb">
-                <span>链接图片</span>
-                <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"><?php echo ($develop["thumbnail"]); ?></i>
-                </div>
-                <div class="boxinb">
-                   <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="<?php echo ($develop["sort"]); ?>">
-               </div>
+              <div class="boxin">
+            <span class="lets2">日&nbsp;&nbsp;&nbsp;&nbsp;期</span><input type="text" id="demo"  class="form-control laydate-icon" name="newstime"  value="<?php echo ($develop["newstime"]); ?>">
+          </div>
                <input type="hidden" name="id" value="<?php echo ($develop["id"]); ?>">
             <div class="boxinbtn">
                <input type="submit"  value="确定" class="btn btna" />
@@ -105,19 +102,14 @@
 
 </div>
 </div>
-<script src="/Public/Admin/js/sdmenu.js"></script>
-<script type="text/javascript">
-    $().ready(function(){
-
-        $(".upfn").on("change","input[type='file']",function(){
-            var filePath = $(this).val();
-            var arr = filePath.split('\\');
-            var fileName = arr[arr.length-1];
-            $(".upfnb").html(fileName);
-        });
-
-    });
+<script>
+  ;!function(){
+    laydate({
+      elem: '#demo'
+    })
+  }();
 </script>
+
 
 
 </body>
