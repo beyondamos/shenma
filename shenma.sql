@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?25 �?13:38
+-- 生成日期: 2017 �?09 �?25 �?14:06
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `shenma_auth` (
   `auth_url` varchar(50) NOT NULL DEFAULT '' COMMENT '权限路由',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '权限状态，是否显示在左侧菜单列表里',
   PRIMARY KEY (`auth_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=80 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=84 ;
 
 --
 -- 转存表中的数据 `shenma_auth`
@@ -160,7 +160,11 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (76, '问题列表', 1, 'Question/index', 0),
 (77, '问题添加', 1, 'Question/add', 0),
 (78, '问题编辑', 1, 'Question/edit', 0),
-(79, '问题删除', 1, 'Question/delete', 0);
+(79, '问题删除', 1, 'Question/delete', 0),
+(80, '轮播列表', 1, 'Carousel/index', 0),
+(81, '轮播添加', 1, 'Carousel/add', 0),
+(82, '轮播编辑', 1, 'Carousel/edit', 0),
+(83, '轮播删除', 1, 'Carousel/delete', 0);
 
 -- --------------------------------------------------------
 
@@ -227,6 +231,22 @@ INSERT INTO `shenma_brand` (`id`, `url`, `name`, `status`, `thumbnail`, `is_blan
 (8, 'http://www.baidu.com', '豪爵', 1, '/Public/Upload/20170915/1505439493_937432950.png', 0),
 (9, 'http://www.baidu.com', '金彭', 1, '/Public/Upload/20170915/1505439521_533915130.png', 0),
 (10, 'http://www.baidu.com', '新大洲', 1, '/Public/Upload/20170915/1505439543_239773102.png', 0);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `shenma_carousel`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_carousel` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `name` varchar(50) NOT NULL DEFAULT '' COMMENT '链接名称',
+  `thumbnail1` varchar(256) NOT NULL DEFAULT '' COMMENT '缩略图',
+  `thumbnail2` varchar(256) NOT NULL DEFAULT '',
+  `thumbnail3` varchar(256) NOT NULL DEFAULT '',
+  `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
