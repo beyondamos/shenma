@@ -451,7 +451,7 @@ $(function() {
 		});
 	});
 
-	$().ready(function(){
+
 		//切换地点职位效果
 		$(".post").click(function(){
 			post_id = $(this).attr('post');
@@ -462,7 +462,7 @@ $(function() {
 			// });
 
 		});
-	});
+
 
 
 </script>
