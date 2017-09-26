@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?25 �?14:06
+-- 生成日期: 2017 �?09 �?26 �?04:00
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -246,7 +246,15 @@ CREATE TABLE IF NOT EXISTS `shenma_carousel` (
   `thumbnail3` varchar(256) NOT NULL DEFAULT '',
   `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=3 ;
+
+--
+-- 转存表中的数据 `shenma_carousel`
+--
+
+INSERT INTO `shenma_carousel` (`id`, `name`, `thumbnail1`, `thumbnail2`, `thumbnail3`, `sort`) VALUES
+(1, '第一张', '/Public/Upload/20170926/1506386812_370368380.png', '/Public/Upload/20170926/1506386812_1712470916.png', '/Public/Upload/20170926/1506386812_415027315.png', 10),
+(2, '第2套图', '/Public/Upload/20170926/1506387333_503064594.png', '/Public/Upload/20170926/1506387333_1369760074.png', '/Public/Upload/20170926/1506387333_696539910.png', 10);
 
 -- --------------------------------------------------------
 
@@ -284,7 +292,7 @@ CREATE TABLE IF NOT EXISTS `shenma_department` (
   `name` varchar(32) NOT NULL DEFAULT '' COMMENT '分类名称',
   `parent_id` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT '上级id',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- 转存表中的数据 `shenma_department`
@@ -300,7 +308,8 @@ INSERT INTO `shenma_department` (`id`, `name`, `parent_id`) VALUES
 (7, '北京', 0),
 (8, '安全中心', 1),
 (9, '产品研发中心', 1),
-(10, '信息技术中心', 1);
+(10, '信息技术中心', 1),
+(11, '新部门', 3);
 
 -- --------------------------------------------------------
 
@@ -429,14 +438,16 @@ CREATE TABLE IF NOT EXISTS `shenma_post` (
   `cate_id` int(11) NOT NULL DEFAULT '0' COMMENT '父级ID',
   `content` text NOT NULL COMMENT '页面内容',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='职位表' AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='职位表' AUTO_INCREMENT=4 ;
 
 --
 -- 转存表中的数据 `shenma_post`
 --
 
 INSERT INTO `shenma_post` (`id`, `name`, `cate_id`, `content`) VALUES
-(1, '系统运维工程师（1人）', 2, '&lt;p&gt;\r\n	系统运维工程师(1人)&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;岗位要求：\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;1、计算机相关专业本科以上学历，三年以上工作经验\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	2、熟悉linux和Windows系统&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统\r\n&lt;/p&gt;');
+(1, '系统运维工程师（1人）', 2, '&lt;p&gt;\r\n	系统运维工程师(1人)&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;岗位要求：\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;1、计算机相关专业本科以上学历，三年以上工作经验\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	2、熟悉linux和Windows系统&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统&amp;nbsp;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;2、熟悉linux和Windows系统\r\n&lt;/p&gt;'),
+(2, '新的职位招1人', 10, '&lt;p&gt;\r\n	测试信息&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;.&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;span&gt;测试信息&lt;/span&gt;&lt;br /&gt;\r\n&lt;/span&gt;\r\n&lt;/p&gt;'),
+(3, '新职位测试', 11, '新职位测试新职位测试新职位测试新职位测试');
 
 -- --------------------------------------------------------
 
@@ -577,7 +588,7 @@ CREATE TABLE IF NOT EXISTS `shenma_user` (
 --
 
 INSERT INTO `shenma_user` (`user_id`, `username`, `nickname`, `password`, `email`, `salt`, `role_id`, `last_login_time`, `last_login_ip`, `add_time`, `login_times`, `status`) VALUES
-(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1506336290, 2130706433, 0, 50, 1),
+(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1506385768, 2130706433, 0, 51, 1),
 (7, 'ishequan', 'ishequan', 'e08df8dbfee311bcb98fae8649d4e70f', '', '6sBKPA', 1, 0, 0, 1494381412, 0, 1),
 (8, 'shenma', 'shenma', 'e0872f7bc5e019bf4ad8c24f15d72cc5', 'shenma@qq.com', 'E0iAvl', 1, 0, 0, 1505444079, 0, 1);
 

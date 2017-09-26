@@ -106,7 +106,7 @@ $(function() {
 </nav>
 
 		<div class="bannertop">
-			<img alt="" src="<?php echo ($banner["thumbnail"]); ?>" />
+			<img alt="" src="<?php echo ($banner["thumbnail"]); ?>" /><!-- 图片 宽度1920px  高度525px -->
 		</div>
 			
 			<div class="cont-edu-bantxt">
@@ -117,6 +117,7 @@ $(function() {
 					
 			<div class="cont">
 				<div class="cont-edu">
+					
 					
 					<h1>什马大讲堂</h1>
 					<img src="/Public/Home/img/smdjt.png" alt="">
@@ -174,7 +175,7 @@ $(function() {
 					
 					<h1>老板社区</h1>
 					<div class="edu-img">
-						<img src="<?php echo ($shequ["thumbnail"]); ?>" alt="">
+						<img src="<?php echo ($shequ["thumbnail"]); ?>" alt=""><!-- 图片 宽度1000px -->
 					</div>
 					
 					
@@ -183,6 +184,8 @@ $(function() {
 
 		
 		
+	
+		<!--页脚-->
 		<div class="fp-auto-height">
             <footer class="home-footer home-footerb" >
                 <div class="container">

@@ -122,16 +122,31 @@ $(function() {
 				<h1>最新职位</h1>
 				<div class="navtabs">
 					<!-- 选项卡头 -->
+					
+					
+					
+					<span id="zpmore">更多</span>
+					<span id="zpmoreb"></span>
 					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active"><a href="#tab01" role="tab" data-toggle="tab">上海</a></li>
-						<li role="presentation"><a href="#tab02" role="tab" data-toggle="tab">成都</a></li>
-						<li role="presentation"><a href="#tab03" role="tab" data-toggle="tab">西安</a></li>
-						<li role="presentation"><a href="#tab04" role="tab" data-toggle="tab">杭州</a></li>
-						<li role="presentation"><a href="#tab05" role="tab" data-toggle="tab">贵州</a></li>
-						<li role="presentation"><a href="#tab06" role="tab" data-toggle="tab">北京</a></li>
-						<li role="presentation"><a href="#tab07" role="tab" data-toggle="tab">河北</a></li>
-						<li role="presentation"><a href="#tab08" role="tab" data-toggle="tab">重庆</a></li>
+					<?php if(is_array($locations)): $i = 0; $__LIST__ = $locations;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$location): $mod = ($i % 2 );++$i; if($location['parent_id'] == 0): ?><li location="<?php echo ($location["id"]); ?>" role="presentation" <?php if($i == 1): ?>class="active"<?php endif; ?>><a href="#tab<?php echo ($i); ?>" role="tab" data-toggle="tab" ><?php echo ($location["name"]); ?></a></li><?php endif; endforeach; endif; else: echo "" ;endif; ?>					
 					</ul>
+					
+					<script>					
+						$("#zpmore").click(function(){
+						var t=$(this).text();
+						if(t=="更多"){
+							$(".contact-recruitmd .nav-tabs").css('overflow','visible');
+							$(".contact-recruitmd .nav-tabs").css('height','auto');
+							$(this).text("收缩");
+						}else{
+							$(".contact-recruitmd .nav-tabs").css('overflow','hidden');
+							$(".contact-recruitmd .nav-tabs").css('height','50');
+							$(this).text("更多");
+						}  
+						});
+					</script>
+
+
 
 					<!-- 招聘内容 -->
 					<div class="tab-content">
@@ -140,7 +155,7 @@ $(function() {
 							
 								<!-- 招聘内容详情 -->
 								<div class="contact-recruit-detail">
-									<ul>
+<!-- 									<ul>
 										<li>
 											<h2>系统运维工程师(1人)</h2>
 											<h4>岗位要求：</h4>
@@ -152,480 +167,13 @@ $(function() {
 												<h5>2、熟悉linux和Windows系统</h5>
 												<h5>2、熟悉linux和Windows系统</h5>
 										</li>
-										
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-										
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-										
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-									</ul>
+									</ul> -->
+									<?php echo html_entity_decode($posts[0]['content']);?>
 								</div><!-- 招聘内容详情 end-->
 				
 							</div>
 						</div>
-						<div role="tabpanel" class="tab-pane" id="tab02">
-							<div class="box-news-item">
-								
-								<!-- 招聘内容详情 -->
-								<div class="contact-recruit-detail">
-									<ul>
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-									</ul>
-								</div><!-- 招聘内容详情 end-->
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="tab03">
-							<div class="box-news-item">
-								
-								<!-- 招聘内容详情 -->
-								<div class="contact-recruit-detail">
-									<ul>
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-										
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-										
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-										
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-									</ul>
-								</div><!-- 招聘内容详情 end-->
-				
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="tab04">
-							<div class="box-news-item">
-								<!-- 招聘内容详情 -->
-								<div class="contact-recruit-detail">
-									<ul>
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-									</ul>
-								</div><!-- 招聘内容详情 end-->	
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="tab05">
-							<div class="box-news-item">
-								<!-- 招聘内容详情 -->
-								<div class="contact-recruit-detail">
-									<ul>
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-										
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-										
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-										
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-									</ul>
-								</div><!-- 招聘内容详情 end-->
-				
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="tab06">
-							<div class="box-news-item">
-								<!-- 招聘内容详情 -->
-								<div class="contact-recruit-detail">
-									<ul>
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-									</ul>
-								</div><!-- 招聘内容详情 end-->
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="tab07">
-							<div class="box-news-item">
-								<!-- 招聘内容详情 -->
-								<div class="contact-recruit-detail">
-									<ul>
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-										
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-										
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-										
-										<li>
-											<h2>系统运维工程师(1人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、计算机相关专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-												<h5>2、熟悉linux和Windows系统</h5>
-										</li>
-									</ul>
-								</div><!-- 招聘内容详情 end-->
-				
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="tab08">
-							<div class="box-news-item">
-								<!-- 招聘内容详情 -->
-								<div class="contact-recruit-detail">
-									<ul>
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-										<li>
-											<h2>贷后经理(10人)</h2>
-											<h4>岗位要求：</h4>
-												<h5>1、财经专业本科以上学历，三年以上工作经验</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-												<h5>2、熟悉贷款流程</h5>
-										</li>
-										
-									</ul>
-								</div><!-- 招聘内容详情 end-->
-							</div>
-						</div>
+
 					</div><!-- 招聘内容 end-->
 				</div>
 				
@@ -640,61 +188,18 @@ $(function() {
 				
 				<!-- 招聘菜单 -->
 				<div class="contact-recruit-nav">
-					<a data-toggle="collapse" data-target="#claps-tit01r">
-						<div class="panel-info-titl"><img src="/Public/Home/img/navimg01.jpg" alt=""/><br/>信审风控中心</div>
+
+				<?php if(is_array($departments)): $i = 0; $__LIST__ = $departments;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$department): $mod = ($i % 2 );++$i;?><a data-toggle="collapse" data-target="#claps-tit<?php echo ($i); ?>r">
+						<div class="panel-info-titl"><!-- <img src="/Public/Home/img/navimg01.jpg" alt=""/><br/> --><?php echo ($department["name"]); ?></div>
 					</a>
-					<div id="claps-tit01r" class="claps-area collapse in">
+					<div id="claps-tit<?php echo ($i); ?>r" class="claps-area collapse in">
 						<div class="container-fluid">
 							<div class="row">
-								<li><a href="javascript:;">系统运维工程师(1人)</a></li>
-								<li><a href="javascript:;">系统运维工程师(1人)</a></li>
-								<li><a href="javascript:;">系统运维工程师(1人)</a></li>
-								<li><a href="javascript:;">系统运维工程师(1人)</a></li>
+								<?php if(is_array($posts)): $i = 0; $__LIST__ = $posts;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$post): $mod = ($i % 2 );++$i; if($post['cate_id'] == $department['id']): ?><li class="post" post="<?php echo ($post['id']); ?>"><a href="javascript:;" ><?php echo ($post["name"]); ?></a></li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 							</div>
 						</div>
-					</div>
-					
-					<a data-toggle="collapse" data-target="#claps-tit02r">
-						<div class="panel-info-titl"><img src="/Public/Home/img/navimg02.jpg" alt=""/><br/>安全中心</div>
-					</a>
-					<div id="claps-tit02r" class="claps-area collapse on">
-						<div class="container-fluid">
-							<div class="row">
-								<li><a href="javascript:;">贷前工程师(10人)</a></li>
-								<li><a href="javascript:;">贷后工程师(12人)</a></li>
-								<li><a href="javascript:;">售前工程师(15人)</a></li>
-							</div>
-						</div>
-					</div>
-					
-					<a data-toggle="collapse" data-target="#claps-tit03r">
-						<div class="panel-info-titl"><img src="/Public/Home/img/navimg03.jpg" alt=""/><br/>产品研发中心</div>
-					</a>
-					<div id="claps-tit03r" class="claps-area collapse on">
-						<div class="container-fluid">
-							<div class="row">
-								<li><a href="javascript:;">系统运维工程师(1人)</a></li>
-								<li><a href="javascript:;">系统运维工程师(1人)</a></li>
-								<li><a href="javascript:;">系统运维工程师(1人)</a></li>
-								<li><a href="javascript:;">系统运维工程师(1人)</a></li>
-							</div>
-						</div>
-					</div>
-					
-					<a data-toggle="collapse" data-target="#claps-tit04r">
-						<div class="panel-info-titl"><img src="/Public/Home/img/navimg04.jpg" alt=""/><br/>信息技术中心</div>
-					</a>
-					<div id="claps-tit04r" class="claps-area collapse on">
-						<div class="container-fluid">
-							<div class="row">
-								<li><a href="javascript:;">系统运维工程师(1人)</a></li>
-								<li><a href="javascript:;">系统运维工程师(1人)</a></li>
-								<li><a href="javascript:;">系统运维工程师(1人)</a></li>
-								<li><a href="javascript:;">系统运维工程师(1人)</a></li>
-								<li><a href="javascript:;">系统运维工程师(1人)</a></li>
-							</div>
-						</div>
-					</div>
+					</div><?php endforeach; endif; else: echo "" ;endif; ?>
+
 				</div><!-- 招聘菜单 end-->
 				
 
@@ -714,14 +219,14 @@ $(function() {
 
 			<?php if(is_array($qcs)): $i = 0; $__LIST__ = $qcs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><!--第一题-->
 				<a data-toggle="collapse" data-target="#claps-tit0<?php echo ($i); ?>">
-					<div class="panel-info-titl clapstit-acta"><?php echo ($vo["qc"]); ?></div>
+					<div class="panel-info-titl clapstit-act<?php if($i == 1): ?>a<?php else: ?>b<?php endif; ?>"><?php echo ($vo["qc"]); ?></div>
 				</a>
 				<div id="claps-tit0<?php echo ($i); ?>" class="claps-area collapse in">
 					<div class="container-fluid">
 						<div class="row">
 					<?php if(is_array($questions)): $j = 0; $__LIST__ = $questions;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$question): $mod = ($j % 2 );++$j; if($question['qc_id'] == $vo['id']): ?><!--第一题 第1条-->
 							<a data-toggle="collapse" data-target="#claps-tit0<?php echo ($i); ?>0<?php echo ($j); ?>">
-								<div class="panel-info-titl clapstit-acta"><?php echo ($question["question"]); ?></div>
+								<div class="panel-info-titl clapstit-act<?php if($j == 1): ?>a<?php else: ?>b<?php endif; ?>"><?php echo ($question["question"]); ?></div>
 							</a>
 							<div id="claps-tit0<?php echo ($i); ?>0<?php echo ($j); ?>" class="claps-area collapse in">
 								<div class="container-fluid">
@@ -731,11 +236,11 @@ $(function() {
 								</div>
 							</div><!--第一题 第1条 end--><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 
-	
 						</div>
 					</div>
 				</div><!--第一题 end--><?php endforeach; endif; else: echo "" ;endif; ?>	
-
+				
+				
 			</div>
 			
 			
@@ -792,6 +297,7 @@ $(function() {
 
 
 		
+		<!--页脚-->
 		<div class="fp-auto-height">
             <footer class="home-footer home-footerb" >
                 <div class="container">
@@ -872,7 +378,7 @@ $(function() {
                 }
     
     //标注点数组
-    var markerArr = [{title:"什马互联网金融",content:"什马互联网金融信息服务(上海)有限公司",point:"121.359161|31.22846",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+    var markerArr = [{title:"什马金融",content:"什马互联网金融信息服务(上海)有限公司",point:"121.359161|31.22846",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
 		 ];
     //创建marker
     function addMarker(){
@@ -935,7 +441,31 @@ $(function() {
 
 
 
+<script>
+	//切换地点职位效果
+	$("li[role='presentation']").click(function(){
+		location_id = $(this).attr('location');
+		$.post('<?php echo U('Contact/getPostInfo');?>', {'location_id': location_id}, function(data){
+			$('.contact-recruit-nav').html(data);
+			// alert(data);
+		});
+	});
 
+	$().ready(function(){
+		//切换地点职位效果
+		$(".post").click(function(){
+			post_id = $(this).attr('post');
+			alert(post_id);
+			// $.post('<?php echo U('Contact/getPost');?>', {'post_id': post_id}, function(data){
+			// 	// alert(data);
+			//  	$('.contact-recruit-detail').html(data);
+			// });
+
+		});
+	});
+
+
+</script>
 
 
 

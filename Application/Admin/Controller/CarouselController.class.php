@@ -14,9 +14,9 @@ class CarouselController extends CommonController
 	 */
 	public function index()
 	{
-		$banner_model = D('Carousel');
-		$banners = $banner_model->where(array('classify' => $classify))->select();
-		$this->assign('banners', $banners);
+		$carousel_model = D('Carousel');
+		$carousels = $carousel_model->select();
+		$this->assign('carousels', $carousels);
 		$this->display();
 	}
 
@@ -26,19 +26,26 @@ class CarouselController extends CommonController
 	public function add()
 	{
 		if (IS_POST) {
-			$banner_model = D('Banner');
-			if ($banner_model->create()) {
+			$carousel_model = D('Carousel');
+			if ($carousel_model->create()) {
 				//如有有图片上传
-				if ($_FILES['file_upload']['error'] != 4) {
-					$banner_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
+				if ($_FILES['file_upload1']['error'] != 4) {
+					$carousel_model->thumbnail1 = ltrim(C('UPLOAD').$this->upload() ,'.');
 				}
-				if ($banner_model->add()) {
-					$this->success('Banner添加成功', U('Banner/index'), 1);
+				if ($_FILES['file_upload2']['error'] != 4) {
+					$carousel_model->thumbnail2 = ltrim(C('UPLOAD').$this->upload() ,'.');
+				}
+				if ($_FILES['file_upload3']['error'] != 4) {
+					$carousel_model->thumbnail3 = ltrim(C('UPLOAD').$this->upload() ,'.');
+				}
+
+				if ($carousel_model->add()) {
+					$this->success('轮播图添加成功', U('Carousel/index'), 1);
 				} else {
-					$this->error('Banner添加失败');
+					$this->error('轮播图添加失败');
 				}
 			} else {
-				$this->error($banner_model->getError());
+				$this->error($carousel_model->getError());
 			}
 		} else {
 			$this->display();
@@ -53,25 +60,33 @@ class CarouselController extends CommonController
 	public function edit()
 	{
 		if (IS_POST) {
-			$banner_model = D('Banner');
-            if($banner_model->create()){
-                if($_FILES['file_upload']['error'] != 4 ){
-                    $banner_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-                }
-                if($banner_model->save()){
-                    $this->success('Banner编辑成功');
+			$carousel_model = D('Carousel');
+            if($carousel_model->create()){
+				//如有有图片上传
+				if ($_FILES['file_upload1']['error'] != 4) {
+					$carousel_model->thumbnail1 = ltrim(C('UPLOAD').$this->upload() ,'.');
+				}
+				if ($_FILES['file_upload2']['error'] != 4) {
+					$carousel_model->thumbnail2 = ltrim(C('UPLOAD').$this->upload() ,'.');
+				}
+				if ($_FILES['file_upload3']['error'] != 4) {
+					$carousel_model->thumbnail3 = ltrim(C('UPLOAD').$this->upload() ,'.');
+				}
+
+                if($carousel_model->save()){
+                    $this->success('轮播图编辑成功');
                 }else{
-                    $this->error('Banner编辑失败！');
+                    $this->error('轮播图编辑失败！');
                 }
             }else{
-                $this->error($banner_model->getError());
+                $this->error($carousel_model->getError());
             }
 
 		} elseif (IS_GET) {
 			$id = I('get.id');
-			$banner_model = D('Banner');
-			$banner = $banner_model->find($id);
-			$this->assign('banner', $banner);
+			$carousel_model = D('Carousel');
+			$carousel = $carousel_model->find($id);
+			$this->assign('carousel', $carousel);
 			$this->display();
 		}
 		
@@ -85,11 +100,11 @@ class CarouselController extends CommonController
 	public function delete()
 	{
 		$id = I('get.id');
-        $banner_model = D('Banner');
-        if($banner_model->delete($id)){
-            $this->success('Banner删除成功', U('Banner/index'), 1);
+        $carousel_model = D('Carousel');
+        if($carousel_model->delete($id)){
+            $this->success('轮播图删除成功', U('Carousel/index'), 1);
         }else{
-            $this->error('Banner删除失败');
+            $this->error('轮播图删除失败');
         }
 	}
 

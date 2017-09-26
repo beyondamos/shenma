@@ -400,7 +400,7 @@
         color: #d9854d;
     }
     .home-secondblock .bottom_img11{
-        bottom:165%;
+        bottom:155%;
     }
     .recruit_welfare_bg{
         height:568px;
@@ -629,27 +629,27 @@ a:hover{
     /* width: 10.8%; */
     width: 14.8%;
     /* bottom: 2.8%; */
-    bottom:13%;
-    left: -10%;
+    bottom:16%;
+    left: 0;
 }
 .home-secondblock .img2{
     position: absolute;
     /* width: 65.8%; */
-    width: 60.8%;
+    width: 49.5%;
     /* bottom: 2.8%; */
-    bottom: 20%;
+    bottom: 28%;
     /* left: 16.9%; */
-    left: 5%;
+    left: 11%;
 }
 
 .home-secondblock .img2b{
     position: absolute;
     /* width: 65.8%; */
-    width: 60.8%;
+    width: 52.5%;
     /* bottom: 2.8%; */
     bottom: 18%;
     /* left: 16.9%; */
-    left: 46%;
+    left: 45%;
 }
 
 
@@ -657,7 +657,7 @@ a:hover{
     position: absolute;
     /* width: 29%; */
     width: 24%;
-    bottom: 10%;
+    bottom: 16%;
     /* left: 19.5%; */
     left: 44.5%;
 }
@@ -665,43 +665,43 @@ a:hover{
     position: absolute;
     width: 23%;
     /* bottom: 2.8%; */
-    bottom:13%;
+    bottom:19%;
     /* left: 32.7%; */
-    left: 22.7%;
+    left: 23.7%;
 }
 .home-secondblock .img5{
     position: absolute;
     width: 42%;
-    width: 34%;
+    width: 31.5%;
     bottom: 46.8%;
     bottom: 66.8%;
-    left: 102.7%;
-    left: 192.7%;
+    /* left: 102.7%; */
+    left: 165%;
 }
 .home-secondblock .img6{
     position: absolute;
     /* width: 42%; */
     /* width: 34%; */
-    width: 65%;
+    width: 60%;
     /* bottom: 46.8%; */
     bottom: 66.8%;
     /* left: 160.7%; */
-    left: 234%;
+    left: 206%;
 }
 .home-secondblock .img7{
     position: absolute;
     /* width: 19%; */
     width: 22%;
      /* bottom: 2.8%; */
-    bottom: 15%;
-    left: 92%;
+    bottom: 25%;
+    left: 84%;
 }
 
 .home-secondblock .img8{
     position: absolute;
     width: 47%;
     /* bottom: 2.8%; */
-    bottom:13%;
+    bottom:11%;
     left: 56.7%;
 }
 .home-secondblock .img10{
@@ -1722,7 +1722,7 @@ a:hover{
 }
 .home-secondblock .bottom_img11{
     position: absolute;
-    left: -133.5%;
+    left: -118.5%;
     width: 21%;
 }
 .office-environment .title span{

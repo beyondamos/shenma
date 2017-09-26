@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit(); echo html_entity_decode($post['content']);?>

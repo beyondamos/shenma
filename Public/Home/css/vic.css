@@ -46,11 +46,11 @@
 .bottom_qrcode{animation-delay:1s; -moz-animation-delay: 1s; -o-animation-delay: 1s; -webkit-animation-delay: 1s; -ms-animation-delay: 1s; }
 .home-secondblock .bottom_img1{position: absolute;width:65.8%;bottom: 2.8%;left: 16.9%;}
 /* .home-secondblock .bottom_img2{position: absolute;bottom: 2.8%;left: 19.5%;width:6.5%;animation-delay:.3s; -moz-animation-delay: .3s; -o-animation-delay: .3s; -webkit-animation-delay: .3s; -ms-animation-delay: .3s; } */
-.home-secondblock .bottom_img2{position: absolute;bottom: 12%;left: -5%;width:17%;animation-delay:.3s; -moz-animation-delay: .3s; -o-animation-delay: .3s; -webkit-animation-delay: .3s; -ms-animation-delay: .3s; }
+.home-secondblock .bottom_img2{position: absolute;bottom: 12%;left:0;width:17%;animation-delay:.3s; -moz-animation-delay: .3s; -o-animation-delay: .3s; -webkit-animation-delay: .3s; -ms-animation-delay: .3s; }
 /* .home-secondblock .bottom_img3{position: absolute;width: 18%;bottom:143%;left: 10%;animation-delay:.8s; -moz-animation-delay: .8s; -o-animation-delay: .8s; -webkit-animation-delay: .8s; -ms-animation-delay: .8s; } */
-.home-secondblock .bottom_img3{position: absolute;width: 34%;bottom:99%;left: -80%;animation-delay:.8s; -moz-animation-delay: .8s; -o-animation-delay: .8s; -webkit-animation-delay: .8s; -ms-animation-delay: .8s; }
+.home-secondblock .bottom_img3{position: absolute;width: 30%;bottom:99%;left: -80%;animation-delay:.8s; -moz-animation-delay: .8s; -o-animation-delay: .8s; -webkit-animation-delay: .8s; -ms-animation-delay: .8s; }
 /* .home-secondblock .bottom_img4{position: absolute;bottom: 143%;left: 34%;width: 18%;animation-delay:1.3s; -moz-animation-delay: 1.3s; -o-animation-delay: 1.3s; -webkit-animation-delay: 1.3s; -ms-animation-delay: 1.3s; } */
-.home-secondblock .bottom_img4{position: absolute;bottom: 99%;left: -42%;width: 18%;animation-delay:1.3s; -moz-animation-delay: 1.3s; -o-animation-delay: 1.3s; -webkit-animation-delay: 1.3s; -ms-animation-delay: 1.3s; }
+.home-secondblock .bottom_img4{position: absolute;bottom: 99%;left: -47%;width: 15.5%;animation-delay:1.3s; -moz-animation-delay: 1.3s; -o-animation-delay: 1.3s; -webkit-animation-delay: 1.3s; -ms-animation-delay: 1.3s; }
 .home-secondblock .bottom_img5{animation-delay:1.8s; -moz-animation-delay: 1.8s; -o-animation-delay: 1.8s; -webkit-animation-delay: 1.8s; -ms-animation-delay: 1.8s; }
 .home-secondblock .bottom_img6{position: absolute;width: 51%;bottom: 32%;left: 16%;}
 .home-secondblock .bottom_img7{width: 90%;}
@@ -394,4 +394,8 @@
   .team_info .one{
     font-weight: 300;
   }
+}
+
+.home-footer .container,.home-footer .footer-wrap{
+	width:970px!important;
 }

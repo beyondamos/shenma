@@ -23,23 +23,28 @@
        <div class="contmain">
 
           <div class="boxi">
-             <h1>编辑Banner</h1>
+             <h1>编辑轮播图</h1>
 
-             <form action="<{:U('Banner/edit')}>" method="post" enctype="multipart/form-data">
+             <form action="<{:U('Carousel/edit')}>" method="post" enctype="multipart/form-data">
                 <div class="boxin">
-                   <span>Banner名称</span><input type="text" name="name" class="form-control" value="<{$banner.name}>">
+                   <span>轮播图名称</span><input type="text" name="name" class="form-control" value="<{$carousel.name}>">
                </div>
                <div class="boxinb">
-                   <span>链&nbsp;接&nbsp;地&nbsp;址</span><input type="text" name="url" class="form-control" value="<{$banner.url}>">
-               </div>
-               <div class="boxinb">
-                <span>链接图片</span>
-                <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"><{$banner.thumbnail}></i>
+                <span>图片1</span>
+                <a href="javascript:;" class="form-control upfn1"><input type="file" id='file_upload1'  name="file_upload1" /></a><i class="upfnb1"><{$carousel.thumbnail1}></i>
                 </div>
                 <div class="boxinb">
-                   <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="<{$banner.sort}>">
+                <span>图片2</span>
+                <a href="javascript:;" class="form-control upfn2"><input type="file" id='file_upload2'  name="file_upload2" /></a><i class="upfnb2"><{$carousel.thumbnail2}></i>
+                </div>
+                               <div class="boxinb">
+                <span>图片3</span>
+                <a href="javascript:;" class="form-control upfn3"><input type="file" id='file_upload3'  name="file_upload3" /></a><i class="upfnb3"><{$carousel.thumbnail3}></i>
+                </div>
+                <div class="boxinb">
+                   <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="<{$carousel.sort}>">
                </div>
-               <input type="hidden" name="id" value="<{$banner.id}>">
+               <input type="hidden" name="id" value="<{$carousel.id}>">
             <div class="boxinbtn">
                <input type="submit"  value="确定" class="btn btna" />
                <input type="reset"  value="重置" class="btn btnb" />
@@ -54,11 +59,25 @@
 <script type="text/javascript">
     $().ready(function(){
 
-        $(".upfn").on("change","input[type='file']",function(){
+        $(".upfn1").on("change","input[type='file']",function(){
             var filePath = $(this).val();
             var arr = filePath.split('\\');
             var fileName = arr[arr.length-1];
-            $(".upfnb").html(fileName);
+            $(".upfnb1").html(fileName);
+        });
+
+        $(".upfn2").on("change","input[type='file']",function(){
+            var filePath = $(this).val();
+            var arr = filePath.split('\\');
+            var fileName = arr[arr.length-1];
+            $(".upfnb2").html(fileName);
+        });
+
+        $(".upfn3").on("change","input[type='file']",function(){
+            var filePath = $(this).val();
+            var arr = filePath.split('\\');
+            var fileName = arr[arr.length-1];
+            $(".upfnb3").html(fileName);
         });
 
     });

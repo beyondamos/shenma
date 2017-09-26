@@ -104,73 +104,74 @@ $(document).ready(function() {
 	// 此方法自能执行一次
 	//var isFirst = true;
 	// 首屏显示
-	function lastShow(isFirst) {
-		if(isFirst) {
-			var leftSwiper = new Swiper('.hxyw2 .swiper-container.bg_div-left', {
-				direction: 'vertical',
-				loop: true,
-				//simulateTouch: true, // 鼠标无效
-				autoplay: 5000,
-				speed: 2500,
-				autoplayDisableOnInteraction : false,
-			});
-			// 统计个数
-			var slideCount = $(".hxyw2 > .bg_div-left > .swiper-wrapper > .swiper-slide").length
-			var rightSwiper = new Swiper('.hxyw2 .swiper-container.R_bg', {
-				direction: 'vertical',
-				loop: true,
-				simulateTouch: false, // 鼠标无效
-				initialSlide: slideCount,
-				onSlideChangeEnd: function(swiper) {
-					$(".hxyw2 > .bg_div-left > .swiper-wrapper > .swiper-slide .timer-svg circle").attr('class', '').attr("stroke", "");
-					if($(".hxyw2 > .bg_div-left > .swiper-wrapper > .swiper-slide.swiper-slide-duplicate.swiper-slide-active").length != 0) {
-						$(".hxyw2 > .bg_div-left > .swiper-wrapper > .swiper-slide .timer-svg circle").eq(1).attr('class', 'circles').attr("stroke", "#fff");
+	// function lastShow(isFirst) {
+		// if(isFirst) {
+			// var leftSwiper = new Swiper('.hxyw2 .swiper-container.bg_div-left', {
+				// direction: 'vertical',
+				// loop: true,
+				// //simulateTouch: true, // 鼠标无效
+				// autoplay: 5000,
+				// speed: 2500,
+				// autoplayDisableOnInteraction : false
+			// });
+			// // 统计个数
+			// var slideCount = $(".hxyw2 > .bg_div-left > .swiper-wrapper > .swiper-slide").length;
+			// var rightSwiper = new Swiper('.hxyw2 .swiper-container.R_bg', {
+				// direction: 'vertical',
+				// loop: true,
+				// simulateTouch: false, // 鼠标无效
+				// initialSlide: slideCount
+				// // ,
+				// // onSlideChangeEnd: function(swiper) {
+					// // //$(".hxyw2 > .bg_div-left > .swiper-wrapper > .swiper-slide .timer-svg circle").attr('class', '').attr("stroke", "");
+					// // if($(".hxyw2 > .bg_div-left > .swiper-wrapper > .swiper-slide.swiper-slide-duplicate.swiper-slide-active").length != 0) {
+						// // $(".hxyw2 > .bg_div-left > .swiper-wrapper > .swiper-slide .timer-svg circle").eq(1).attr('class', 'circles').attr("stroke", "#fff");
 
-					}
-					$(".hxyw2 > .bg_div-left > .swiper-wrapper > .swiper-slide-active .timer-svg circle").attr('class', 'circles').attr("stroke", "#fff");
+					// // }
+					// // $(".hxyw2 > .bg_div-left > .swiper-wrapper > .swiper-slide-active .timer-svg circle").attr('class', 'circles').attr("stroke", "#fff");
 
-				}
-			});
+				// // }
+			// });
 
-			leftSwiper.params.control = rightSwiper;
-			leftSwiper.params.controlInverse = true;
+			// leftSwiper.params.control = rightSwiper;
+			// leftSwiper.params.controlInverse = true;
 			
 			
-			$('#bg_4imgl').click(function(){
-				//alert("aa");
-				leftSwiper.stopAutoplay();
-				rightSwiper.stopAutoplay();
-				$("#bg_4img").hide();
-			})
+			// $('#bg_4imgl').click(function(){
+				// //alert("aa");
+				// leftSwiper.stopAutoplay();
+				// rightSwiper.stopAutoplay();
+				// $("#bg_4img").hide();
+			// })
 			
-			$('#bg_3imgl').click(function(){
-				//alert("aa");
-				leftSwiper.stopAutoplay();
-				rightSwiper.stopAutoplay();
-				$("#bg_3img").hide();
-			})
+			// $('#bg_3imgl').click(function(){
+				// //alert("aa");
+				// leftSwiper.stopAutoplay();
+				// rightSwiper.stopAutoplay();
+				// $("#bg_3img").hide();
+			// })
 			
-			$('#bg_2imgl').click(function(){
-				//alert("aa");
-				leftSwiper.stopAutoplay();
-				rightSwiper.stopAutoplay();
-				$("#bg_2img").hide();
-			})
+			// $('#bg_2imgl').click(function(){
+				// //alert("aa");
+				// leftSwiper.stopAutoplay();
+				// rightSwiper.stopAutoplay();
+				// $("#bg_2img").hide();
+			// })
 			
-			$('#bg_1imgl').click(function(){
-				//alert("aa");
-				leftSwiper.startAutoplay();
-				rightSwiper.startAutoplay();
-				$("#bg_1img").hide();
-			})
+			// $('#bg_1imgl').click(function(){
+				// //alert("aa");
+				// leftSwiper.startAutoplay();
+				// rightSwiper.startAutoplay();
+				// $("#bg_1img").hide();
+			// })
 
 
 
-		}
+		// }
 		
 		
-		isFirst = true;
-	}
+		// isFirst = true;
+	// }
 	
 	// function bg_3img(){
 		// isFirst = false;
@@ -271,9 +272,9 @@ $(document).ready(function() {
 		// window.location = "/news/?t=3-3.html";
 	// });
 
-	layer.config({
-		path: '/js/layer/' //layer.js所在的目录，可以是绝对目录，也可以是相对目录
-	});
+	// layer.config({
+		// path: '/js/layer/' //layer.js所在的目录，可以是绝对目录，也可以是相对目录
+	// });
 
 	/*首次进入首页弹窗*/
 	// if($("#alert_fc").length != 0) {

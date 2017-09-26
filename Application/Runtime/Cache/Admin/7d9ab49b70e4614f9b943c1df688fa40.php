@@ -121,7 +121,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<?php if(is_array($banners)): $i = 0; $__LIST__ = $banners;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+					<?php if(is_array($carousels)): $i = 0; $__LIST__ = $carousels;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 						<td class="text-vm"><?php echo ($vo["id"]); ?></td>
 						<td class="text-vm"><?php echo ($vo["name"]); ?></td>
 						<td class="text-vm"><?php echo ($vo["sort"]); ?></td>

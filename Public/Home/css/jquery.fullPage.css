@@ -356,9 +356,9 @@ html, body {
 
 .box-newsmd ul a{
 	display:block;
-	margin-bottom:15px;
+	margin-bottom:9px;
 	background-color:#f4f4f4;
-	padding:12px 100px 12px 80px;
+	padding:11px 100px 11px 80px;
 	font-size:16px;
 	position:relative;
 }
@@ -373,7 +373,7 @@ html, body {
 	/* height:40px; */
 	border-right:1px solid #aaa;
 	position:absolute;
-	top:10px;
+	top:8px;
 	left:0;
 }
 .box-newsmd ul a span{
@@ -394,11 +394,11 @@ html, body {
 
 .box-news-img a{
 	display:block;
-	margin-bottom:25px;
-	padding:20px;
+	margin-bottom:10px;
+	padding:13px 20px;
 	font-size:16px;
 	font-weight:bold;
-	margin-top:10px;
+	margin-top:5px;
 }
 
 .box-news-img a i{
@@ -411,7 +411,7 @@ html, body {
 .box-news-img a span{
 	font-size:12px;
 	position:absolute;
-	bottom:80px;
+	bottom:50px;
 	right:30px;
 	font-weight:normal;
 }
@@ -540,7 +540,11 @@ html, body {
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);/* W3C */ 
-    filter:0;/* IE6-9 */
+    /* filter:none; IE6-9 */
+	/*filter:0; IE6-9 */
+	filter: gray;
+	/* overflow-y:scroll;filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(100%); */
+	
 	
 	filter:alpha(opacity=41);
 	-moz-opacity:.41;
@@ -649,7 +653,9 @@ html, body {
 .footer .container{
 	text-align:center;
 	margin:0 auto;
+	width:970px!important;
 }
+
 
 @media screen and (max-width:1370px) {
 	.contact-left .contact-map img{

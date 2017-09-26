@@ -97,16 +97,17 @@
                </div>
                <div class="boxinb">
                 <span>图片1</span>
-                <input type="file" name="thumbnail1" />
+                <a href="javascript:;" class="form-control upfn1"><input type="file" id='file_upload1'  name="file_upload1" /></a><i class="upfnb1"></i>
                 </div>
                 <div class="boxinb">
                 <span>图片2</span>
-               <input type="file"  name="thumbnail2" />
+                <a href="javascript:;" class="form-control upfn2"><input type="file" id='file_upload2'  name="file_upload2" /></a><i class="upfnb2"></i>
                 </div>
-                  <div class="boxinb">
+                <div class="boxinb">
                 <span>图片3</span>
-               <input type="file"  name="thumbnail3" />
+                <a href="javascript:;" class="form-control upfn3"><input type="file" id='file_upload3'  name="file_upload3" /></a><i class="upfnb3"></i>
                 </div>
+
                 <div class="boxinb">
                    <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="10">
                </div>
@@ -125,11 +126,25 @@
 <script type="text/javascript">
     $().ready(function(){
 
-        $(".upfn").on("change","input[type='file']",function(){
+        $(".upfn1").on("change","input[type='file']",function(){
             var filePath = $(this).val();
             var arr = filePath.split('\\');
             var fileName = arr[arr.length-1];
-            $(".upfnb").html(fileName);
+            $(".upfnb1").html(fileName);
+        });
+
+                $(".upfn2").on("change","input[type='file']",function(){
+            var filePath = $(this).val();
+            var arr = filePath.split('\\');
+            var fileName = arr[arr.length-1];
+            $(".upfnb2").html(fileName);
+        });
+
+                        $(".upfn3").on("change","input[type='file']",function(){
+            var filePath = $(this).val();
+            var arr = filePath.split('\\');
+            var fileName = arr[arr.length-1];
+            $(".upfnb3").html(fileName);
         });
 
     });
