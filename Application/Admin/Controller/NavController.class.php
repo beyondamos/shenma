@@ -9,9 +9,9 @@ class NavController extends  CommonController{
     /**
      * 自定义导航列表
      */
-    public function listing(){
+    public function index(){
         $nav_model = D('Nav');
-        $nav_data = $nav_model->select();
+        $nav_data = $nav_model->getSortCategories();
         $this->assign('nav_data', $nav_data);
         $this->display();
     }
@@ -20,11 +20,11 @@ class NavController extends  CommonController{
      * 自定义导航添加
      */
     public function add(){
+        $nav_model = D('Nav');
         if(IS_POST){
-            $nav_model = D('Nav');
             if($nav_model->create()){
                 if($nav_model->add()){
-                    $this->success('自定义导航添加成功', U('Nav/listing'), 1);
+                    $this->success('自定义导航添加成功', U('Nav/index'), 1);
                 }else{
                     $this->error('自定义导航添加失败');
                 }
@@ -32,6 +32,8 @@ class NavController extends  CommonController{
                 $this->error($nav_model->getError());
             }
         }else{
+            $navs = D('Nav')->where('parent_id = 0')->order('sort asc')->select();
+            $this->assign('navs', $navs);
             $this->display();
         }
     }
@@ -44,18 +46,20 @@ class NavController extends  CommonController{
             $nav_model = D('Nav');
             if($nav_model->create()){
                 if($nav_model->save()){
-                    $this->success('自定义导航编辑成功', U('Nav/listing') ,1);
+                    $this->success('导航编辑成功', U('Nav/index') ,1);
                 }else{
-                    $this->error('自定义导航编辑失败');
+                    $this->error('导航编辑失败');
                 }
             }else{
                 $this->error($nav_model->getError());
             }
         }else{
-            $nav_id = I('get.nav_id');
+            $nav_id = I('get.id');
             $nav_model = D('Nav');
             $nav_data = $nav_model->find($nav_id);
             $this->assign('nav_data', $nav_data);
+            $navs = D('Nav')->where('parent_id = 0')->order('sort asc')->select();
+            $this->assign('navs', $navs);
             $this->display();
         }
     }

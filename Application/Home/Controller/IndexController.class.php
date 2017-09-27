@@ -34,6 +34,10 @@ class IndexController extends HomeBaseController
         $brands = D('Brand')->where(array('status' => 1))->select();
         $this->assign('brands', $brands);
 
+        //底部导航
+        $navs = D('Nav')->getSortCategories();
+        $this->assign('navs', $navs);
+
         $this->display();
     }
 

@@ -95,25 +95,26 @@
 			
 			<form action="" method="post">
 				<div class="boxin">
-					<span>导航名称</span><input type="text"  class="form-control" name="name">
+					<span>导航名称</span><input type="text"  class="form-control" name="name" value="<?php echo ($nav_data["name"]); ?>"> 
 				</div>
 				<div class="boxinb">
 		          <div class="boxinbl">
 		            <span>上级导航</span>
 		            <select name="parent_id" class="form-control">
 		              <option value="0">请选择上级导航</option>
-		              <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+		              <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($vo['id'] == $nav_data['parent_id']): ?>selected<?php endif; ?>><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 		            </select>
 		          </div>
 		        </div>
 				<div class="boxin">
-					<span>链&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;接</span><input type="text"  class="form-control" name="url">
+					<span>链&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;接</span><input type="text"  class="form-control" name="url" value="<?php echo ($nav_data["url"]); ?>">
 				</div>
 				<div class="boxin">
-					<span>排&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text"  class="form-control" name="sort" value="50">
+					<span>排&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text"  class="form-control" name="sort" value="<?php echo ($nav_data["sort"]); ?>">
 				</div>
-			
+								
 				<div class="boxinbtn">
+					<input type="hidden" name="id" value="<?php echo ($nav_data["id"]); ?>">
 					<input type="submit"  value="确定" class="btn btna" />
 					<input type="reset"  value="重置" class="btn btnb" />
 				</div>

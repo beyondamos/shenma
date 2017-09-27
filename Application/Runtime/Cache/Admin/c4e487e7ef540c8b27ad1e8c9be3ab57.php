@@ -91,36 +91,64 @@
 	<div class="contmain">
 		
 		<div class="boxi">
-			<h1>导航设置</h1>
+			<h1>导航列表</h1>
 			
-			<form action="" method="post">
-				<div class="boxin">
-					<span>导航名称</span><input type="text"  class="form-control" name="name">
-				</div>
-				<div class="boxinb">
-		          <div class="boxinbl">
-		            <span>上级导航</span>
-		            <select name="parent_id" class="form-control">
-		              <option value="0">请选择上级导航</option>
-		              <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-		            </select>
-		          </div>
-		        </div>
-				<div class="boxin">
-					<span>链&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;接</span><input type="text"  class="form-control" name="url">
-				</div>
-				<div class="boxin">
-					<span>排&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text"  class="form-control" name="sort" value="50">
-				</div>
+			<!-- 表格顶部搜索区 -->
+			<div class="boxoper">
+				<a href="<?php echo U('Nav/add');?>">添加导航</a>
+				<!---->
+				<!--<div class="boxoper-seh">-->
+					<!--<form action="" method="post">-->
+						<!--<button class="btn btn-default" type="submit"><img src="/Public/Admin/images/iconseh.png" /></button>-->
+						<!--<input type="text" class="form-control" placeholder="搜索导航">-->
+						<!--<select class="form-control">-->
+							<!--<option>全部</option>-->
+							<!--<option>分类</option>-->
+							<!--<option>分类</option>-->
+							<!--<option>分类</option>-->
+							<!--<option>分类</option>-->
+						<!--</select>-->
+					<!--</form>-->
+				<!--</div>-->
+			</div>
 			
-				<div class="boxinbtn">
-					<input type="submit"  value="确定" class="btn btna" />
-					<input type="reset"  value="重置" class="btn btnb" />
-				</div>
-				
-			</form>
+			<!-- 表格 -->
+			<table class="table table-hover boxtable">
+				<thead>
+					<tr>
+					   <th class="col-md-2 text-vm">导航名称</th>
+					   <th class="col-md-5 text-vm">链接地址</th>
+					   <th class="col-md-1 text-vm">排序</th>
+					   <th class="col-md-1 text-vm text-center">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					<?php if(is_array($nav_data)): $i = 0; $__LIST__ = $nav_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+						<td class="text-vm"><?php echo str_repeat('---------', $vo['level']); echo ($vo["name"]); ?></td>
+						<td class="text-vm"><?php echo ($vo["url"]); ?></td>
+						<td class="text-vm"><?php echo ($vo["sort"]); ?></td>
+						<td class="text-vm">
+							<a href="<?php echo U('Nav/edit',array('id' => $vo['id']));?>">编辑</a>
+							<a href="<?php echo U('Nav/delete', array('id' => $vo['id']));?>">删除</a>
+						</td>
+					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+
+				</tbody>
+			</table>
+			<!--&lt;!&ndash; 分页 &ndash;&gt;-->
+			<!--<div class="boxpage">-->
+				<!--<a href="javascript:;"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>-->
+				<!--<a href="javascript:;"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span></a>-->
+				<!--<a href="javascript:;">1</a>-->
+				<!--<a href="javascript:;">2</a>-->
+				<!--<a href="javascript:;" class="boxpage-act">3</a>-->
+				<!--<a href="javascript:;">4</a>-->
+				<!--<a href="javascript:;">5</a>-->
+				<!--<a href="javascript:;"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a>-->
+				<!--<a href="javascript:;"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>-->
+			<!--</div>-->
 		</div>
-	
 	</div>
 </div>
 <script src="/Public/Admin/js/sdmenu.js"></script>

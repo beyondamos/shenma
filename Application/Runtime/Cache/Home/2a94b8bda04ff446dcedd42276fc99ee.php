@@ -429,39 +429,12 @@ $(function() {
 					<div class="row footer-wrap">
                         <div class="col-xs-6 col-sm-6">
 							<h1><img src="/Public/Home/img/footlogob.png" alt=""></h1>
-							<ul>
-								<li>借款申请</li>
-								<li><a href="<?php echo U('Loans/index');?>">商户借款</a></li>
-								<li><a href="<?php echo U('Loans/index2');?>">消费者借款</a></li>
-							</ul>
-							
-							<ul>
-								<li>关于什马</li>
-								<li><a href="<?php echo U('About/index');?>">公司介绍</a></li>
-								<li><a href="<?php echo U('About/index');?>">发展历程</a></li>
-								<li><a href="<?php echo U('About/index');?>">核心团队</a></li>
-								<li><a href="<?php echo U('About/index');?>">企业文化</a></li>
-							</ul>
-							
-							<ul>
-								<li>新闻资讯</li>
-								<li><a href="<?php echo U('Article/index', array('cate_id' => 12));?>">公司新闻</a></li>
-								<li><a href="<?php echo U('Article/index', array('cate_id' => 13));?>">行业资讯</a></li>
-								<li><a href="javascript:;">视频专区</a></li>
-							</ul>
-							
-							<ul>
-								<li>老板商学院</li>
-								<li><a href="<?php echo U('Edu/index');?>">老板大讲堂</a></li>
-								<li><a href="javascript:;">老板社区</a></li>
-							</ul>
-							
-							<ul>
-								<li>联系方式</li>
-								<li><a href="javascript:;">诚聘英才</a></li>
-								<li><a href="javascript:;">常见问题</a></li>
-								<li><a href="javascript:;">在线客服</a></li>
-							</ul>
+                            <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if($vo['parent_id'] == 0): ?><ul>
+								<li><?php echo ($vo["name"]); ?></li>
+                            
+                                <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i; if($nav['parent_id'] == $vo['id']): ?><li><a href="<?php echo ($nav["url"]); ?>"><?php echo ($nav["name"]); ?></a></li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+							</ul><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+
 							
 							<h6>©什马互联网金融信息服务(上海)有限公司 | 沪ICP备15005382号-2</h6>
                         </div>

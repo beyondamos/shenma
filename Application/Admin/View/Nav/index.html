@@ -50,8 +50,6 @@
 					<tr>
 					   <th class="col-md-2 text-vm">导航名称</th>
 					   <th class="col-md-5 text-vm">链接地址</th>
-					   <th class="col-md-1 text-vm">是否显示</th>
-					   <th class="col-md-1 text-vm">是否新页面</th>
 					   <th class="col-md-1 text-vm">排序</th>
 					   <th class="col-md-1 text-vm text-center">操作</th>
 					</tr>
@@ -60,14 +58,12 @@
 
 					<volist name="nav_data" id="vo">
 					<tr>
-						<td class="text-vm"><{$vo.nav_name}></td>
-						<td class="text-vm"><{$vo.nav_url}></td>
-						<td class="text-vm"><if condition="$vo['is_show'] == 1">是<else />否</if></td>
-						<td class="text-vm"><if condition="$vo['is_blank'] == 1">是<else />否</if></td>
+						<td class="text-vm"><{:str_repeat('---------', $vo['level'])}><{$vo.name}></td>
+						<td class="text-vm"><{$vo.url}></td>
 						<td class="text-vm"><{$vo.sort}></td>
 						<td class="text-vm">
-							<a href="<{:U('Nav/edit',array('nav_id' => $vo['nav_id']))}>">编辑</a>
-							<a href="<{:U('Nav/delete', array('nav_id' => $vo['nav_id']))}>">删除</a>
+							<a href="<{:U('Nav/edit',array('id' => $vo['id']))}>">编辑</a>
+							<a href="<{:U('Nav/delete', array('id' => $vo['id']))}>">删除</a>
 						</td>
 					</tr>
 					</volist>
