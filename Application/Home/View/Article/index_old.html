@@ -107,23 +107,15 @@ $(function() {
 							</form>
 						</div>
 						
-						<!--新闻列表页 头部 轮播图-->
+						
 						<div class="imglimtb">
-							<div class="carousel slide" id="carousel-example"  data-ride="carousel">
-								<div class="carousel-inner">
-								<volist name="banners" id="vo">
-									<div class="item <if condition="$i == 1">active</if>"><a href="<{$vo.url}>"><img src="<{$vo.thumbnail}>" alt="" /></a></div><!--图片 宽度810px 高度190px-->
-								</volist>
-								</div>
-								<a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev"></a>
-								<a class="right carousel-control" href="#carousel-example" role="button" data-slide="next"></a>
-							</div>
-						</div><!--新闻列表页 头部 轮播图 end-->
+							<img src="__PUBLIC__/Home/img/imgnewst.jpg" alt="" />
+						</div>
 						
 						
 						<div class="list-news">
 
-							<volist name="articles" id="vo">
+						<volist name="articles" id="vo">
 							<div class="boxitem">
 								<div class="imglimt">
 									<img src="<{$vo.titleimg}>" alt="" />
@@ -136,10 +128,30 @@ $(function() {
 							</div>
 						</volist>
 
+							
+	
+							
+	
+	
+	
+
+
 						</div>
 						<div class="clr"></div>
-						
-							<{$page}>
+						<{$page}>
+			<!-- 			<div class="l_num">
+							<ul>
+								<a class="lk6" href="#">1</a>
+								<a class="lk6" href="#">2</a>
+								<a class="lk6" href="#">3</a>
+								<a class="lk6" href="#">4</a>
+								<a class="lk7" href="#">5</a>
+								<a class="lk6" href="#">6</a>
+								<a class="lk6" href="#">...</a>
+								<a class="lk6" href="#">15</a>
+								<a class="lk6" href="#">End</a>
+							</ul>
+						</div> -->
 						
 			
 					</div>
@@ -149,8 +161,6 @@ $(function() {
 
 	
 		
-			
-		<!--页脚-->
 		<div class="fp-auto-height">
 <include file="Public::foot" />
         </div>

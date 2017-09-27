@@ -46,7 +46,10 @@ class ArticleController extends HomeBaseController
 		$banner  = D('Banner')->find(9);
 		$this->assign('banner', $banner);
 
-		
+		//小banner轮播图
+		$banners = D('Banner')->where(array('classify' => 8))->order('sort')->select();
+		$this->assign('banners', $banners);
+
 		$cate_id = I('get.cate_id');
 		if (!empty($cate_id)) {
 			$where[] = array('cate_id' => $cate_id);

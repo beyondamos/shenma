@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?26 �?04:00
+-- 生成日期: 2017 �?09 �?27 �?01:45
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -180,7 +180,7 @@ CREATE TABLE IF NOT EXISTS `shenma_banner` (
   `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
   `classify` tinyint(4) NOT NULL DEFAULT '0' COMMENT '分类',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=13 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=16 ;
 
 --
 -- 转存表中的数据 `shenma_banner`
@@ -198,7 +198,10 @@ INSERT INTO `shenma_banner` (`id`, `url`, `name`, `thumbnail`, `sort`, `classify
 (9, '134123213', '新闻资讯', '/Public/Upload/20170925/1506318149_1022369721.jpg', 0, 5),
 (10, '123213213', '老板商学院', '/Public/Upload/20170925/1506323394_1751433130.jpg', 0, 6),
 (11, '123213123', '老板社区', '/Public/Upload/20170925/1506324014_1641799524.png', 0, 6),
-(12, '', '联系我们', '/Public/Upload/20170925/1506324422_925569988.jpg', 0, 7);
+(12, '', '联系我们', '/Public/Upload/20170925/1506324422_925569988.jpg', 0, 7),
+(13, '11111', '第一张', '/Public/Upload/20170927/1506475425_775454612.jpg', 1, 8),
+(14, '123123', '第2张', '/Public/Upload/20170927/1506475558_187202306.jpg', 2, 8),
+(15, '123123213', '第3张', '/Public/Upload/20170927/1506475618_449450261.jpg', 3, 8);
 
 -- --------------------------------------------------------
 
@@ -588,7 +591,7 @@ CREATE TABLE IF NOT EXISTS `shenma_user` (
 --
 
 INSERT INTO `shenma_user` (`user_id`, `username`, `nickname`, `password`, `email`, `salt`, `role_id`, `last_login_time`, `last_login_ip`, `add_time`, `login_times`, `status`) VALUES
-(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1506385768, 2130706433, 0, 51, 1),
+(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1506474563, 2130706433, 0, 52, 1),
 (7, 'ishequan', 'ishequan', 'e08df8dbfee311bcb98fae8649d4e70f', '', '6sBKPA', 1, 0, 0, 1494381412, 0, 1),
 (8, 'shenma', 'shenma', 'e0872f7bc5e019bf4ad8c24f15d72cc5', 'shenma@qq.com', 'E0iAvl', 1, 0, 0, 1505444079, 0, 1);
 

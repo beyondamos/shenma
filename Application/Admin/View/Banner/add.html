@@ -36,9 +36,15 @@
                 <span>链接图片</span>
                 <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"></i>
                 </div>
+                
                 <div class="boxinb">
                    <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="10">
                </div>
+               <if condition="I('get.classify') == 8">
+               <div class="boxinb">
+               <span>注：</span>图片 宽度810px 高度190px
+               </div>
+               </if>
                <input type="hidden" name="classify" value="<{:I('get.classify')}>">
             <div class="boxinbtn">
                <input type="submit"  value="确定" class="btn btna" />

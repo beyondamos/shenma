@@ -132,15 +132,21 @@ $(function() {
 							</form>
 						</div>
 						
-						
+						<!--新闻列表页 头部 轮播图-->
 						<div class="imglimtb">
-							<img src="/Public/Home/img/imgnewst.jpg" alt="" />
-						</div>
+							<div class="carousel slide" id="carousel-example"  data-ride="carousel">
+								<div class="carousel-inner">
+								<?php if(is_array($banners)): $i = 0; $__LIST__ = $banners;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="item <?php if($i == 1): ?>active<?php endif; ?>"><a href="<?php echo ($vo["url"]); ?>"><img src="<?php echo ($vo["thumbnail"]); ?>" alt="" /></a></div><!--图片 宽度810px 高度190px--><?php endforeach; endif; else: echo "" ;endif; ?>
+								</div>
+								<a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev"></a>
+								<a class="right carousel-control" href="#carousel-example" role="button" data-slide="next"></a>
+							</div>
+						</div><!--新闻列表页 头部 轮播图 end-->
 						
 						
 						<div class="list-news">
 
-						<?php if(is_array($articles)): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="boxitem">
+							<?php if(is_array($articles)): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="boxitem">
 								<div class="imglimt">
 									<img src="<?php echo ($vo["titleimg"]); ?>" alt="" />
 								</div>
@@ -149,32 +155,12 @@ $(function() {
 									<h3><?php echo ($vo["newstime"]); ?></h3>
 									<h4><?php echo ($vo["synopsis"]); ?></h4>
 								</a>
-							</div><?php endforeach; endif; else: echo "" ;endif; ?>	
-
-							
-	
-							
-	
-	
-	
-
+							</div><?php endforeach; endif; else: echo "" ;endif; ?>
 
 						</div>
 						<div class="clr"></div>
-						<?php echo ($page); ?>
-			<!-- 			<div class="l_num">
-							<ul>
-								<a class="lk6" href="#">1</a>
-								<a class="lk6" href="#">2</a>
-								<a class="lk6" href="#">3</a>
-								<a class="lk6" href="#">4</a>
-								<a class="lk7" href="#">5</a>
-								<a class="lk6" href="#">6</a>
-								<a class="lk6" href="#">...</a>
-								<a class="lk6" href="#">15</a>
-								<a class="lk6" href="#">End</a>
-							</ul>
-						</div> -->
+						
+							<?php echo ($page); ?>
 						
 			
 					</div>
@@ -184,6 +170,8 @@ $(function() {
 
 	
 		
+			
+		<!--页脚-->
 		<div class="fp-auto-height">
             <footer class="home-footer home-footerb" >
                 <div class="container">

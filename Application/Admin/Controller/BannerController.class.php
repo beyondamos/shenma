@@ -18,6 +18,7 @@ class BannerController extends CommonController
 		$banner_model = D('Banner');
 		$banners = $banner_model->where(array('classify' => $classify))->select();
 		$this->assign('banners', $banners);
+		$this->assign('classify', $classify);
 		$this->display();
 	}
 
@@ -34,7 +35,7 @@ class BannerController extends CommonController
 					$banner_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
 				}
 				if ($banner_model->add()) {
-					$this->success('Banner添加成功', U('Banner/index'), 1);
+					$this->success('Banner添加成功', U('Banner/index', array('classify' => I('post.classify'))), 1);
 				} else {
 					$this->error('Banner添加失败');
 				}

@@ -1,0 +1,2744 @@
+[ 2017-09-27T09:09:11+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:09:13+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:09:13+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:09:23+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `shenma_user` SET `login_times`='52',`last_login_time`='1506474563',`last_login_ip`='2130706433' WHERE `user_id` = 1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:09:24+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_article` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 82 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 82 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:09:37+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_product` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 82 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 82 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\34e4b095905075aaede5ee9039415509.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:09:42+08:00 ] 127.0.0.1 /Admin/Brand/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\2a38b4b7be29a02b1e37409ba1a585bd.php 第 82 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\2a38b4b7be29a02b1e37409ba1a585bd.php 第 82 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\2a38b4b7be29a02b1e37409ba1a585bd.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:09:47+08:00 ] 127.0.0.1 /Admin/Article/index/cate_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_article` WHERE `cate_id` = 1 ORDER BY article_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_article` WHERE `cate_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 81 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 81 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:09:49+08:00 ] 127.0.0.1 /Admin/Banner/edit/id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 82 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 82 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:09:51+08:00 ] 127.0.0.1 /Admin/Banner/edit/id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 82 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 82 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:11:17+08:00 ] 127.0.0.1 /Admin/Banner/edit/id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-09-27T09:11:21+08:00 ] 127.0.0.1 /Admin/Banner/index/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:14:49+08:00 ] 127.0.0.1 /Admin/Banner/edit/id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:14:52+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:14:56+08:00 ] 127.0.0.1 /Admin/Banner/edit/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:14:58+08:00 ] 127.0.0.1 /Admin/Icon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_icon` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_icon` ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\007312b0311df97b839354b5ee4cdd9b.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\007312b0311df97b839354b5ee4cdd9b.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\007312b0311df97b839354b5ee4cdd9b.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:14:59+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 4  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:15:02+08:00 ] 127.0.0.1 /Admin/Banner/index/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:15:11+08:00 ] 127.0.0.1 /Admin/Banner/edit/id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\9b9de4d9bbd642501a826c4df69768ef.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:15:30+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 4  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:15:53+08:00 ] 127.0.0.1 /Admin/Banner/index/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:16:14+08:00 ] 127.0.0.1 /Admin/Icon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_icon` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_icon` ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\007312b0311df97b839354b5ee4cdd9b.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\007312b0311df97b839354b5ee4cdd9b.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\007312b0311df97b839354b5ee4cdd9b.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:16:15+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 4  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:19:24+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 4  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:21:08+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 4  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:21:14+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 4  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:21:41+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 4  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:21:45+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:21:49+08:00 ] 127.0.0.1 /Admin/Banner/index/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:22:38+08:00 ] 127.0.0.1 /Admin/Banner/index/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:22:42+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:22:45+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:23:20+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:23:21+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:23:45+08:00 ] 127.0.0.1 /Admin/Banner/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `shenma_banner` (`name`,`url`,`sort`,`classify`,`thumbnail`) VALUES ('第一张','11111','1','8','/Public/Upload/20170927/1506475425_775454612.jpg') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:23:46+08:00 ] 127.0.0.1 /Admin/Banner/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:24:26+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:25:45+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:25:47+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:25:58+08:00 ] 127.0.0.1 /Admin/Banner/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `shenma_banner` (`name`,`url`,`sort`,`classify`,`thumbnail`) VALUES ('第2张','123123','2','8','/Public/Upload/20170927/1506475558_187202306.jpg') [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: banner D:\phpStudy\WWW\shenma\Application\Admin\Controller\BannerController.class.php 第 38 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy\WWW\shenma\Application\Admin\Controller\BannerController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:26:00+08:00 ] 127.0.0.1 /Admin/Banner/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:26:41+08:00 ] 127.0.0.1 /Admin/Banner/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:26:44+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:26:45+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:26:58+08:00 ] 127.0.0.1 /Admin/Banner/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\shenma\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `shenma_banner` (`name`,`url`,`sort`,`classify`,`thumbnail`) VALUES ('第3张','123123213','3','8','/Public/Upload/20170927/1506475618_449450261.jpg') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:26:59+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:28:25+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:28:26+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:28:26+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:28:26+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:28:26+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:28:27+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:28:27+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:40:28+08:00 ] 127.0.0.1 /Admin/Banner/index/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:40:29+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:40:39+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:40:40+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:40:40+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:40:47+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:40:53+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:41:01+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:41:12+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:41:24+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:41:35+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:41:45+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:41:53+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:41:54+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:41:54+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:41:55+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:41:55+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:42:35+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:43:04+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:43:14+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:44:14+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:44:15+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:44:15+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:44:15+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:44:16+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:44:16+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:44:19+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:44:25+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:44:26+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:44:26+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:44:27+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:44:27+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:44:27+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:44:28+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:44:28+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:44:29+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:44:29+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-27T09:44:29+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:44:39+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-27T09:44:43+08:00 ] 127.0.0.1 /Admin/Banner/add/classify/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\fdb6517bd5618a603440d3f60f8d1032.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
