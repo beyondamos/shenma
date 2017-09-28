@@ -28,6 +28,10 @@ class DevelopController extends CommonController
 		if (IS_POST) {
 			$model = D('Develop');
 			if ($model->create()) {
+                if($_FILES['file_upload']['error'] != 4 ){
+                    $model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
+                }
+
 				if ($model->add()) {
 					$this->success('发展历程添加成功', U('Develop/index'), 1);
 				} else {
@@ -51,6 +55,9 @@ class DevelopController extends CommonController
 		if (IS_POST) {
 			$develop_model = D('Develop');
             if($develop_model->create()){
+                if($_FILES['file_upload']['error'] != 4 ){
+                    $develop_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
+                }
                 if($develop_model->save()){
                     $this->success('发展历程编辑成功', U('Develop/index'), 1);
                 }else{

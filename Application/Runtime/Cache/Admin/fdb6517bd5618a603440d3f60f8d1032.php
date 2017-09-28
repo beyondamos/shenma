@@ -108,6 +108,9 @@
                 <div class="boxinb">
                    <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="10">
                </div>
+                <?php if(I('get.classify') == 1): ?><div class="boxinb">
+               <span>注：</span>图片 宽度1920px 高度680px
+               </div><?php endif; ?>
                <?php if(I('get.classify') == 8): ?><div class="boxinb">
                <span>注：</span>图片 宽度810px 高度190px
                </div><?php endif; ?>

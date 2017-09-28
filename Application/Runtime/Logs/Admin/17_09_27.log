@@ -5991,3 +5991,34 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
+[ 2017-09-27T11:02:25+08:00 ] 127.0.0.1 /Admin/Nav/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_auth` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_auth`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 84 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 84 行.
+NOTIC: [8] Use of undefined constant auth_id - assumed 'auth_id' D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

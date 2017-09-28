@@ -472,8 +472,8 @@ html, body {
 }
 .box-logomd h2 img{
 	width:auto;
-	height:55px;
-	margin-top:60px;
+	height:80px;
+	margin-top:75px;
 }
 
 .box-logomd a{
@@ -517,12 +517,12 @@ html, body {
 	.box-logomd a{
 		width:199px;
 		float:left;
-		margin-top:1.5%;
+		margin-top:1.6%;
 	}
 	.box-logomd h2 img{
 		width:auto;
-		height:55px;
-		margin-top:25px;
+		height:67px;
+		margin-top:30px;
 	}
 }
 
@@ -620,7 +620,9 @@ html, body {
 .contact-us img{
 	margin-top:5%;
 }
-
+.contact-us:nth-child(0){
+	border:1px solid red;
+}
 
 .contact-left .contact-map img{
 	width:400px;

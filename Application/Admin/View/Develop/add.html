@@ -29,9 +29,10 @@
                 <div class="boxin">
                    <span>历程名称</span><input type="text" name="title" class="form-control">
                </div>
-              <div class="boxin">
-                   <span>简介</span><input type="text" name="ftitle" class="form-control">
-               </div>
+                <div class="boxinb">
+                <span>链接图片</span>
+                <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"></i>
+                </div>
               <div class="boxin">
             <span class="lets2">日&nbsp;&nbsp;&nbsp;&nbsp;期</span><input type="text" id="demo"  class="form-control laydate-icon" name="newstime"  value="">
           </div>
@@ -72,12 +73,16 @@
 //    alert(dateStr);
     $('#demo').val(dateStr);
 
+            $(".upfn").on("change","input[type='file']",function(){
+            var filePath = $(this).val();
+            var arr = filePath.split('\\');
+            var fileName = arr[arr.length-1];
+            $(".upfnb").html(fileName);
+        });
 
 
   });
 </script>
-
-
 
 </body>
 </html>

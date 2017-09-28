@@ -446,22 +446,24 @@ $(function() {
 	$("li[role='presentation']").click(function(){
 		location_id = $(this).attr('location');
 		$.post('<?php echo U('Contact/getPostInfo');?>', {'location_id': location_id}, function(data){
+            // alert(data);
 			$('.contact-recruit-nav').html(data);
-			// alert(data);
+			
 		});
 	});
 
 
-		//切换地点职位效果
-		$(".post").click(function(){
-			post_id = $(this).attr('post');
-			alert(post_id);
-			// $.post('<?php echo U('Contact/getPost');?>', {'post_id': post_id}, function(data){
-			// 	// alert(data);
-			//  	$('.contact-recruit-detail').html(data);
-			// });
-
+	//切换地点职位效果
+	$(".post").click(function(){
+        // alert(this);
+		post_id = $(this).attr('post');
+		// alert(post_id);
+		$.post('<?php echo U('Contact/getPost');?>', {'post_id': post_id}, function(data){
+			// alert(data);
+		 	$('.contact-recruit-detail').html(data);
 		});
+
+	});
 
 
 

@@ -46,7 +46,7 @@
 .bottom_qrcode{animation-delay:1s; -moz-animation-delay: 1s; -o-animation-delay: 1s; -webkit-animation-delay: 1s; -ms-animation-delay: 1s; }
 .home-secondblock .bottom_img1{position: absolute;width:65.8%;bottom: 2.8%;left: 16.9%;}
 /* .home-secondblock .bottom_img2{position: absolute;bottom: 2.8%;left: 19.5%;width:6.5%;animation-delay:.3s; -moz-animation-delay: .3s; -o-animation-delay: .3s; -webkit-animation-delay: .3s; -ms-animation-delay: .3s; } */
-.home-secondblock .bottom_img2{position: absolute;bottom: 12%;left:0;width:17%;animation-delay:.3s; -moz-animation-delay: .3s; -o-animation-delay: .3s; -webkit-animation-delay: .3s; -ms-animation-delay: .3s; }
+.home-secondblock .bottom_img2{position: absolute;bottom: 15%;left:0;width:16%;animation-delay:.3s; -moz-animation-delay: .3s; -o-animation-delay: .3s; -webkit-animation-delay: .3s; -ms-animation-delay: .3s; }
 /* .home-secondblock .bottom_img3{position: absolute;width: 18%;bottom:143%;left: 10%;animation-delay:.8s; -moz-animation-delay: .8s; -o-animation-delay: .8s; -webkit-animation-delay: .8s; -ms-animation-delay: .8s; } */
 .home-secondblock .bottom_img3{position: absolute;width: 30%;bottom:99%;left: -80%;animation-delay:.8s; -moz-animation-delay: .8s; -o-animation-delay: .8s; -webkit-animation-delay: .8s; -ms-animation-delay: .8s; }
 /* .home-secondblock .bottom_img4{position: absolute;bottom: 143%;left: 34%;width: 18%;animation-delay:1.3s; -moz-animation-delay: 1.3s; -o-animation-delay: 1.3s; -webkit-animation-delay: 1.3s; -ms-animation-delay: 1.3s; } */
@@ -94,8 +94,8 @@
 .fp-auto-height .home-footer{ height: 450px;/*background-position:0 236px; */}
 .home-footerb{height:auto!important;}
 .home-footerb .col-xs-6:last-child,.home-footerb .col-sm-6:last-child{margin-top:25px;}
-.home-footerb h2{color:#fff;font-weight:bold;}
-.home-footerb h3{color:#fff;}
+.home-footerb h2{color:#fff;font-weight:bold;font-size:24px;}
+.home-footerb h3{color:#fff;font-size:22px;}
 
 .mobile .avatar_content .avatar-small img{height: 100%;}
 .map_total_wrap0,.map_total_wrap1,.map_total_wrap2,.map_total_wrap3,.map_total_wrap4{position: absolute;transition: 1s all;}

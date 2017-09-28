@@ -83,9 +83,9 @@
     .mobile .avatar_content .info p{
         margin-bottom: 5px;
     }
-    .home-footer .footer-wrap{
+  /*   .home-footer .footer-wrap{
         padding: 39px 0 39px;
-    }
+    } */
     .mobile_version .home-secondblock .nav-tabs{
         left: 15%;
     }
@@ -123,9 +123,9 @@
         padding: 10%;
         height: 565px;
     }
-    .home-footer .footer-wrap{
+/*     .home-footer .footer-wrap{
         padding: 65px 0 64px;
-    }
+    } */
     .mobile_version .home-secondblock .nav-tabs{
         left: 19%;
     }
@@ -327,10 +327,10 @@
        font-size: 60px;
        padding: 0 85px;
     }
-    .home-footer .footer-wrap{
-        /* padding: 106px 0 152px; */
+/*     .home-footer .footer-wrap{
+        padding: 106px 0 152px;
         padding: 50px;
-    }
+    } */
     .product .banner-wrap .block-one .product-description{
        bottom: 33%;
     }
@@ -629,7 +629,7 @@ a:hover{
     /* width: 10.8%; */
     width: 14.8%;
     /* bottom: 2.8%; */
-    bottom:16%;
+    bottom:19%;
     left: 0;
 }
 .home-secondblock .img2{
@@ -637,7 +637,7 @@ a:hover{
     /* width: 65.8%; */
     width: 49.5%;
     /* bottom: 2.8%; */
-    bottom: 28%;
+    bottom: 33%;
     /* left: 16.9%; */
     left: 11%;
 }
@@ -647,7 +647,7 @@ a:hover{
     /* width: 65.8%; */
     width: 52.5%;
     /* bottom: 2.8%; */
-    bottom: 18%;
+    bottom: 30%;
     /* left: 16.9%; */
     left: 45%;
 }
@@ -665,7 +665,7 @@ a:hover{
     position: absolute;
     width: 23%;
     /* bottom: 2.8%; */
-    bottom:19%;
+    bottom:22%;
     /* left: 32.7%; */
     left: 23.7%;
 }
@@ -693,7 +693,7 @@ a:hover{
     /* width: 19%; */
     width: 22%;
      /* bottom: 2.8%; */
-    bottom: 25%;
+    bottom: 30%;
     left: 84%;
 }
 
@@ -1705,7 +1705,7 @@ a:hover{
 }
 .home-footer .footer-wrap .two-code p{
     color: #fff;
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 9px;
 }
 .menu_wrap li:first-child{
@@ -1770,7 +1770,7 @@ a:hover{
 }
 .home-footer .footer-wrap{
     padding: 10.5% 0 !important;
-    padding: 5% 0 !important;
+    padding: 1% 0 !important;
 }
 .y_mt10{
     margin-top: 10%;

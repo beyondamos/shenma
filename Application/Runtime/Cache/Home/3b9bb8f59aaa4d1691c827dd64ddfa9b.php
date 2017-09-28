@@ -71,10 +71,19 @@ $(function() {
 		$.fn.fullpage.moveTo('banner',1);
 	})
 })
-
-
 </script>
 
+<link rel="stylesheet" type="text/css" href="/Public/Home/css/styles.css" />
+<script src="/Public/Home/js/jquery.timelinr-0.9.53.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+	$(function(){
+		$().timelinr({
+			autoPlay: 'true',
+			autoPlayDirection: 'forward',
+			startAt: 4
+		})
+	});
+</script>
 </head>
 <body>
 
@@ -112,34 +121,45 @@ $(function() {
 			<div class="cont">
 			
 			
-				<div class="about-shenma">
-					<h2><?php echo ($info["title"]); ?></h2>
-					<?php echo html_entity_decode($info['content']);?>
-				</div>
+                <div class="about-shenma">
+                    <h2><?php echo ($info["title"]); ?></h2>
+                    <?php echo html_entity_decode($info['content']);?>
+                </div>
+                
 				
 				
 				
 				<div class="history-shenma">
 					<h2>发展历程</h2>
-					<div class="carousel slide" id="carousel-example"  data-ride="carousel">
-						<div class="carousel-inner">
-							<?php if(is_array($develops)): $i = 0; $__LIST__ = $develops;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="item <?php if($i == 1): ?>active<?php endif; ?>"><a href="<?php echo ($vo["url"]); ?>"><img <?php if($i == 1): ?>class="bannerwidth"<?php endif; ?> alt="" src="<?php echo ($vo["thumbnail"]); ?>" /></a></div><?php endforeach; endif; else: echo "" ;endif; ?>
+					<div id="container" class="content clearfix">
+						<div id="timeline">
+							<ul id="datesb">
+                                <?php if(is_array($develops)): $i = 0; $__LIST__ = $develops;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="#<?php echo ($vo["newstime"]); ?>"><?php echo date('Y.m', strtotime($vo['newstime']));?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+							</ul>
+							<ul id="issues">
+                            <?php if(is_array($develops)): $i = 0; $__LIST__ = $develops;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li id="<?php echo ($vo["newstime"]); ?>">
+									<img src="<?php echo ($vo["thumbnail"]); ?>" />
+									<h1><?php echo date('Y.m', strtotime($vo['newstime']));?></h1>
+									<p><?php echo ($vo["title"]); ?></p>
+								</li><?php endforeach; endif; else: echo "" ;endif; ?>    
+							</ul>
+							
 						</div>
-						<a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev"><img src="/Public/Home/img/alh.png" alt="" /></a>
-						<a class="right carousel-control" href="#carousel-example" role="button" data-slide="next"><img src="/Public/Home/img/arh.png" alt="" /></a>
-					</div>
+					</div> 
+				
 				</div>
 				
-			
 				<div class="core-shenma">
-					<h2>核心团队</h2>
-					<?php if(is_array($teams)): $i = 0; $__LIST__ = $teams;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="corep">
-						<img src="<?php echo ($vo["thumbnail"]); ?>" alt="" />
-						<h3><?php echo ($vo["name"]); ?></h3>
-						<span><?php echo ($vo["post"]); ?></span>
-						<h5><?php echo ($vo["content"]); ?></h5>
-					</li><?php endforeach; endif; else: echo "" ;endif; ?>
-				</div>
+                    <h2>核心团队</h2>
+                    <?php if(is_array($teams)): $i = 0; $__LIST__ = $teams;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="corep">
+                        <img src="<?php echo ($vo["thumbnail"]); ?>" alt="" />
+                        <h3><?php echo ($vo["name"]); ?></h3>
+                        <span><?php echo ($vo["post"]); ?></span>
+                        <h5><?php echo ($vo["content"]); ?></h5>
+                    </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                </div>
+				
+
 				
 			</div>
 			
@@ -153,7 +173,7 @@ $(function() {
 			
 			
 			
-			<div class="cont">
+			<div class="cont" id="xnl">
 				<div class="xnla-shenma">
 					<h1><img src="<?php echo ($nuanlu["thumbnail"]); ?>" alt="" /></h1>
 					<h2><?php echo ($nuanlu["title"]); ?></h2>
@@ -174,8 +194,8 @@ $(function() {
 			
 		
 		
+		<!--页脚-->
 		<div class="fp-auto-height">
- 
             <footer class="home-footer home-footerb" >
                 <div class="container">
 					<!-- <img class="footer-imgtemp" src="/Public/Home/img/foot.jpg" alt=""> -->
@@ -213,8 +233,14 @@ $(function() {
                     </div>
                 </div>
             </footer>
-
         </div>
-		
+	<script>
+		$(".anc").click(function(){
+			var href = $(this).attr("href");
+			var pos = $(href).offset().top;
+			$("html,body").animate({scrollTop: pos}, 1000);
+			return false;
+		});
+	</script>
 </body>
 </html>

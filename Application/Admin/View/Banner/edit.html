@@ -39,6 +39,12 @@
                 <div class="boxinb">
                    <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="<{$banner.sort}>">
                </div>
+              <if condition="$banner['id'] == 6 || $banner['id'] == 5 || $banner['id'] == 9 || $banner['id'] == 10 || $banner['id'] == 12">
+               <div class="boxinb">
+               <span>注：</span>图片 宽度1920px 高度525px
+               </div>
+               </if>
+
                <input type="hidden" name="id" value="<{$banner.id}>">
             <div class="boxinbtn">
                <input type="submit"  value="确定" class="btn btna" />

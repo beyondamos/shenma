@@ -1,0 +1,100 @@
+/* Menu style */
+	#timeline {
+		width: 800px;
+		height: 300px;
+		overflow: hidden;
+		margin: 0 auto;
+		position: relative;
+	}
+		#datesb {
+			width: 800px;
+			height: 60px;
+			overflow: hidden;
+		}
+			#datesb li {
+				list-style: none;
+				float: left;
+				width: 100px;
+				height: 50px;
+				font-size: 16px;
+				text-align: center;
+			}
+				#datesb a {
+					line-height: 38px;
+					padding-bottom: 10px;
+				}
+				#datesb .selected {
+					color:#58b8ea;
+			        font-size: 26px;
+				}
+		
+		#issues {
+			width: 800px;
+			height: 300px;
+			overflow: hidden;
+		}	
+			#issues li {
+				width: 800px;
+				height: 300px;
+				list-style: none;
+				float: left;
+			}
+				#issues li img {
+					float: left;
+					margin: 10px 30px 10px 50px;
+					width:250px;
+					height:200px;
+				}
+				#issues li h1 {
+					color: #58b8ea;
+					font-size: 38px;
+					margin: 5px;
+				}
+				#issues li p {
+					font-size: 14px;
+					margin-right: 70px;
+					font-weight: normal;
+					line-height: 22px;
+				}
+		
+		#grad_left,
+		#grad_right {
+			width: 100px;
+			height: 350px;
+			position: absolute;
+			top: 0;
+		}
+			#grad_left {
+		        left: 0;
+			}
+			#grad_right {
+		        right: 0;
+			}
+		
+		#next,
+		#prev {
+			position: absolute;
+			top: 0;
+			font-size: 70px;
+			top: 170px;
+			width: 22px;
+			height: 38px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			text-indent: -9999px;
+			overflow: hidden;
+		}
+			#next:hover,
+			#prev:hover {
+				background-position: 0 -76px;
+			}
+			#next {
+				right: 0;
+			}
+			#prev {
+				left: 0;
+			}
+				#next.disabled,
+				#prev.disabled {
+					opacity: 0.2;
+				}

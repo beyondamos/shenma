@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?27 �?01:45
+-- 生成日期: 2017 �?09 �?28 �?02:03
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `shenma_auth` (
   `auth_url` varchar(50) NOT NULL DEFAULT '' COMMENT '权限路由',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '权限状态，是否显示在左侧菜单列表里',
   PRIMARY KEY (`auth_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=84 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=85 ;
 
 --
 -- 转存表中的数据 `shenma_auth`
@@ -120,9 +120,9 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (22, '用户添加', 6, 'User/add', 0),
 (23, '系统设置', 0, '', 1),
 (24, '网站设置', 23, 'System/webConf', 1),
-(25, '自定义导航', 23, 'Nav/listing', 1),
-(26, '自定义导航添加', 23, 'Nav/add', 0),
-(27, '自定义导航编辑', 23, 'Nav/edit', 0),
+(25, '首页底部导航', 1, 'Nav/index', 0),
+(26, '导航添加', 1, 'Nav/add', 0),
+(27, '导航编辑', 1, 'Nav/edit', 0),
 (28, '合作品牌', 1, 'Brand/index', 0),
 (29, '合作品牌添加', 1, 'Brand/add', 0),
 (30, '合作品牌编辑', 1, 'Brand/edit', 0),
@@ -164,7 +164,8 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (80, '轮播列表', 1, 'Carousel/index', 0),
 (81, '轮播添加', 1, 'Carousel/add', 0),
 (82, '轮播编辑', 1, 'Carousel/edit', 0),
-(83, '轮播删除', 1, 'Carousel/delete', 0);
+(83, '轮播删除', 1, 'Carousel/delete', 0),
+(84, '导航删除', 1, 'Nav/edit', 0);
 
 -- --------------------------------------------------------
 
@@ -323,7 +324,7 @@ INSERT INTO `shenma_department` (`id`, `name`, `parent_id`) VALUES
 CREATE TABLE IF NOT EXISTS `shenma_develop` (
   `id` smallint(6) NOT NULL AUTO_INCREMENT COMMENT '主键id',
   `title` varchar(255) NOT NULL DEFAULT '' COMMENT '发展名称',
-  `ftitle` varchar(256) NOT NULL DEFAULT '' COMMENT '副标题',
+  `thumbnail` varchar(256) NOT NULL DEFAULT '',
   `newstime` char(10) NOT NULL DEFAULT '' COMMENT '时间',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='发展历程表' AUTO_INCREMENT=5 ;
@@ -332,11 +333,11 @@ CREATE TABLE IF NOT EXISTS `shenma_develop` (
 -- 转存表中的数据 `shenma_develop`
 --
 
-INSERT INTO `shenma_develop` (`id`, `title`, `ftitle`, `newstime`) VALUES
-(1, '什马金融成立', '成立', '2017-09-01'),
-(2, '第2张', '', ''),
-(3, '第3张', '', ''),
-(4, '', '', '');
+INSERT INTO `shenma_develop` (`id`, `title`, `thumbnail`, `newstime`) VALUES
+(1, '什马金融成立', '/Public/Upload/20170928/1506561754_1043244688.jpg', '2017-09-01'),
+(2, '第2张', '/Public/Upload/20170928/1506561760_1128571938.jpg', '2017-09-28'),
+(3, '第3张', '/Public/Upload/20170928/1506561766_1139172261.jpg', '2017-09-14'),
+(4, '', '0', '');
 
 -- --------------------------------------------------------
 
@@ -413,21 +414,37 @@ INSERT INTO `shenma_message` (`id`, `name`, `phone`, `email`, `info`, `createtim
 --
 
 CREATE TABLE IF NOT EXISTS `shenma_nav` (
-  `nav_id` smallint(5) unsigned NOT NULL AUTO_INCREMENT COMMENT '导航id',
-  `nav_name` varchar(20) NOT NULL COMMENT '导航名称',
-  `nav_url` varchar(30) NOT NULL COMMENT '导航url',
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT COMMENT '导航id',
+  `name` varchar(20) NOT NULL COMMENT '导航名称',
+  `url` varchar(30) NOT NULL COMMENT '导航url',
   `sort` tinyint(3) unsigned NOT NULL COMMENT '排序',
-  `is_show` tinyint(4) NOT NULL COMMENT '是否显示',
-  `is_blank` tinyint(4) NOT NULL COMMENT '是否新页面',
-  PRIMARY KEY (`nav_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+  `parent_id` smallint(6) NOT NULL COMMENT '上级id',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
 --
 -- 转存表中的数据 `shenma_nav`
 --
 
-INSERT INTO `shenma_nav` (`nav_id`, `nav_name`, `nav_url`, `sort`, `is_show`, `is_blank`) VALUES
-(1, '首页', '/', 50, 1, 0);
+INSERT INTO `shenma_nav` (`id`, `name`, `url`, `sort`, `parent_id`) VALUES
+(1, '借款申请', '213123123', 1, 0),
+(2, '关于什马', '111111', 2, 0),
+(3, '商户借款', '123123213', 50, 1),
+(4, '消费者借款', '123123', 50, 1),
+(5, '公司介绍', '123123', 50, 2),
+(6, '发展历程', '123123', 50, 2),
+(7, '核心团队', '123', 50, 2),
+(8, '企业文化', '123123', 50, 2),
+(9, '新闻资讯', '123', 50, 0),
+(10, '公司新闻', '123', 50, 9),
+(11, '行业资讯', '213', 50, 9),
+(12, '老板商学院', '123', 50, 0),
+(13, '老板大讲堂', '213', 50, 12),
+(14, '老板社区', '213', 50, 12),
+(15, '联系方式', '', 50, 0),
+(16, '诚聘英才', '123', 50, 15),
+(17, '常见问题', '123', 50, 15),
+(18, '在线客服', '123', 50, 15);
 
 -- --------------------------------------------------------
 
@@ -591,7 +608,7 @@ CREATE TABLE IF NOT EXISTS `shenma_user` (
 --
 
 INSERT INTO `shenma_user` (`user_id`, `username`, `nickname`, `password`, `email`, `salt`, `role_id`, `last_login_time`, `last_login_ip`, `add_time`, `login_times`, `status`) VALUES
-(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1506474563, 2130706433, 0, 52, 1),
+(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1506559326, 2130706433, 0, 53, 1),
 (7, 'ishequan', 'ishequan', 'e08df8dbfee311bcb98fae8649d4e70f', '', '6sBKPA', 1, 0, 0, 1494381412, 0, 1),
 (8, 'shenma', 'shenma', 'e0872f7bc5e019bf4ad8c24f15d72cc5', 'shenma@qq.com', 'E0iAvl', 1, 0, 0, 1505444079, 0, 1);
 
