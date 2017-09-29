@@ -103,60 +103,30 @@ $(function() {
     </div>
   </div>
 </nav>
+
 			<div class="apply-top">
 				<img src="<?php echo ($banner["thumbnail"]); ?>" alt="" />
 				<div class="apply-top-md">
-					<a href="<?php echo U('Loans/index');?>" class="anc"><img src="/Public/Home/img/biz.png" alt="" /><h1>商家贷款</h1><h2>Business loans</h2></a>
-					<a href="<?php echo U('Loans/index2');?>" class="anc"><img src="/Public/Home/img/cust.png" alt="" /><h1>消费者贷款</h1><h2>Consumer loans</h2></a>
+                    <?php if(is_array($icons)): $i = 0; $__LIST__ = $icons;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($vo["url"]); ?>" class="anc"><img src="<?php echo ($vo["thumbnail"]); ?>" alt="" /><h1><?php echo ($vo["name"]); ?></h1><h2><?php echo ($vo["name_e"]); ?></h2></a><?php endforeach; endif; else: echo "" ;endif; ?>
 				</div>
 			</div>
 			
 			
-			
-			
 			<!--什么是商品分期？-->
-			<div class="goods-spfq" id="anchora">
+			<div class="goods-spfq">
 				<div class="goods-spfq-md">
-					<img src="/Public/Home/img/iconSp.png" alt="" />
-					<h3>什么是商品分期？</h3>
-					<span></span>
-					<p>商品分期是什马金融针对终端消费者推出的，<br/>凭借信用评估可分期购买所需商品的消费金融产品。</p>
-					<img src="/Public/Home/img/imgNm.png" alt="" />
+					<img src="<?php echo ($goods_banner["thumbnail"]); ?>" alt="" /><!--什么是商品分期？  图片宽度 不小于1000px-->
 				</div>
 			</div>
 			
 			
 			<!--核心产品-->
 			<div class="goods-core">
-				<img src="/Public/Home/img/bkimgArr.png" alt="" />
+				<!-- <img src="/Public/Home/img/bkimgArr.png" alt="" /> -->
 				<div class="goods-core-md">
 					<h2><span>核心产品</span><br/>CORE PRODUCTS</h2>
-					
-					<div class="goods-core-md-btn">
-						<a href="javascript:;"><img src="/Public/Home/img/iconSmfq.png" alt="" /><span>什马分期</span></a>
-						<a href="javascript:;"><img src="/Public/Home/img/icon1fq.png" alt="" /><span>1分期</span></a>
-					</div>
-					
-					<div class="goods-core-md-five">
-						<a href="javascript:;"><img src="/Public/Home/img/icon5a.png" alt="" /><i>操作简单</i><span>5分钟办单</span></a>
-						<a href="javascript:;"><img src="/Public/Home/img/icon5b.png" alt="" /><i>审核快</i><span>最快秒过</span></a>
-						<a href="javascript:;"><img src="/Public/Home/img/icon5c.png" alt="" /><i>利率低</i><span>月供更少</span></a>
-						<a href="javascript:;"><img src="/Public/Home/img/icon5d.png" alt="" /><i>到账快</i><span>最快T+1到账</span></a>
-						<a href="javascript:;"><img src="/Public/Home/img/icon5e.png" alt="" /><i>资料少</i><span>身份证和银行卡</span></a>
-					</div>
-					
-					<div class="goods-core-md-process">
-						<div class="goods-core-phone"><img src="/Public/Home/img/imgSj.png" alt="" /></div>
-						<h3>申请流程</h3>
-						<h4>APPLICATION PROCESS</h4>
-						<a href="javascript:;"><img src="/Public/Home/img/num6a1.png" alt="" />下载什马金融APP</a>
-						<a href="javascript:;"><img src="/Public/Home/img/num6a2.png" alt="" />点击什马分期</a>
-						<a href="javascript:;"><img src="/Public/Home/img/num6a3.png" alt="" />录入申办信息</a>
-						<a href="javascript:;"><img src="/Public/Home/img/num6a4.png" alt="" />上传证件</a>
-						<a href="javascript:;"><img src="/Public/Home/img/num6a5.png" alt="" />确认提交</a>
-						<a href="javascript:;"><img src="/Public/Home/img/num6a6.png" alt="" />等待结果</a>
-					</div>
-					
+					<?php if(is_array($goods_products)): $i = 0; $__LIST__ = $goods_products;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><img src="<?php echo ($vo["thumbnail"]); ?>" alt="" /><?php endforeach; endif; else: echo "" ;endif; ?> 
+                    <!--核心产品 什马分期 1分期  图片宽度 不小于1000px-->					
 				</div>
 			</div>
 			
@@ -171,54 +141,30 @@ $(function() {
 			</div>
 			
 			
+			
+			
 			<!--什么是现金分期？-->
-			<div class="goods-spfq" id="anchorb">
+			<div class="goods-spfq">
 				<div class="goods-spfq-md">
-					<img src="/Public/Home/img/iconSp.png" alt="" />
-					<h3>什么是现金分期？</h3>
-					<span></span>
-					<p>现金分期是什马金融针对终端消费者推出的，<br/>凭借信用评估可分期借贷小额现金的金融产品。</p>
-					<img src="/Public/Home/img/imgXedk.png" alt="" />
+					<img src="<?php echo ($cash_banner["thumbnail"]); ?>" alt="" /><!--什么是现金分期？  图片宽度 不小于1000px-->
 				</div>
 			</div>
 			
 			
+			
 			<!--核心产品-->
-			<div class="goods-core goods-coreb">
-				<img src="/Public/Home/img/bkimgArr.png" alt="" />
+			<div class="goods-core">
+				<!-- <img src="/Public/Home/img/bkimgArr.png" alt="" /> -->
 				<div class="goods-core-md">
 					<h2><span>核心产品</span><br/>CORE PRODUCTS</h2>
-					
-					<div class="goods-core-md-fkh">
-						<img src="/Public/Home/img/imgFkh.png" alt="" />
-					</div>
-					
-					<div class="goods-core-md-process">
-						<div class="goods-core-phone"><img src="/Public/Home/img/imgSjb.png" alt="" /></div>
-						<h3>申请方式一：微信自助办理</h3>
-						<h4>APPLICATION OF A WAY:WECHAT FOR SELF-HELP</h4>
-						<a href="javascript:;"><img src="/Public/Home/img/num6b1.png" alt="" />微信搜索并关注“什马个人号”</a>
-						<a href="javascript:;"><img src="/Public/Home/img/num6b2.png" alt="" />选择“放开花”</a>
-						<a href="javascript:;"><img src="/Public/Home/img/num6b3.png" alt="" />我要借贷</a>
-						<a href="javascript:;"><img src="/Public/Home/img/num6b4.png" alt="" />填写资料</a>
-						<a href="javascript:;"><img src="/Public/Home/img/num6a5.png" alt="" />提交审核</a>
-						<a href="javascript:;"><img src="/Public/Home/img/num6a6.png" alt="" />等待放款</a>
-					</div>
-					
-					<div class="goods-core-md-process goods-core-md-processb">
-						<div class="goods-core-phone"><img src="/Public/Home/img/imgKf.png" alt="" /></div>
-						<h3>申请方式二：由客服代为办理</h3>
-						<h4>APPLICATION OF TWO WAY:BY THE CUSTOMER SERVICE ON BEHALF OF THE HANDLE</h4>
-						<a href="javascript:;"><img src="/Public/Home/img/iconkfb.png" alt="" />服务热线：400-088-6177</a>
-					</div>
-					
+					<?php if(is_array($cash_products)): $i = 0; $__LIST__ = $cash_products;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><img src="<?php echo ($vo["thumbnail"]); ?>" alt="" /><!--核心产品 放开花  图片宽度 不小于1000px--><?php endforeach; endif; else: echo "" ;endif; ?>
+
 				</div>
 			</div>
 			
 			
 		<!--页脚-->
 		<div class="fp-auto-height">
-
             <footer class="home-footer home-footerb" >
                 <div class="container">
 					<!-- <img class="footer-imgtemp" src="/Public/Home/img/foot.jpg" alt=""> -->
@@ -239,13 +185,13 @@ $(function() {
                                 </div>
                             </div>
                             <div class="col-xs-4 col-sm-4">
-                                <div class="two-code pull-left">
+                                <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr02.jpg" alt="">
                                     <p class="text-center fw200">消费者微信自助借款</p>
                                 </div>
                             </div>
 							<div class="col-xs-4 col-sm-4">
-                                <div class="two-code pull-left">
+                                <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr03.jpg" alt="">
                                     <p class="text-center fw200">商户综合服务</p>
                                 </div>
@@ -256,16 +202,6 @@ $(function() {
                     </div>
                 </div>
             </footer>
-
         </div>
-	<script>
-		$(".anc").click(function(){
-			var href = $(this).attr("href");
-			var pos = $(href).offset().top;
-			$("html,body").animate({scrollTop: pos}, 1000);
-			return false;
-		});
-	</script>
-
 </body>
 </html>

@@ -13,6 +13,9 @@ class ArticleController extends CommonController{
         if(IS_GET){
             $cate_id = I('get.cate_id');
             $map['cate_id'] = $cate_id;
+            if (I('get.status') != null) {
+                $map['status'] = I('get.status'); 
+            }
             $search_article = I('get.search_article');
             if($search_article) $map['title'] = array('like',"%{$search_article}%");
             $this->assign('cate_id',$cate_id);

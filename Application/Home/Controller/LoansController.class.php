@@ -15,7 +15,7 @@ class LoansController extends HomeBaseController
 	 */
 	public function index()
 	{
-
+		//banner
 		$banner = D('Banner')->find(6);
 		$this->assign('banner', $banner);
 		//图标
@@ -24,16 +24,37 @@ class LoansController extends HomeBaseController
 		//中部banner
 		$banners = D('Banner')->where(array('classify' => 4))->select();
 		$this->assign('banners', $banners);
+		//产品
+		$products = D('Product')->select();
+		$this->assign('products', $products);
+
 		$this->display();
 	}
 
 	public function index2()
 	{
+		//banner
 		$banner = D('Banner')->find(6);
 		$this->assign('banner', $banner);
 		//图标
 		$icons = D('Icon')->select();
 		$this->assign('icons', $icons);
+		//商品分期banner
+		$goods_banner = D('Banner')->find(16);
+		$this->assign('goods_banner', $goods_banner);
+		//商品产品图
+		$goods_products = D('Productf')->where(array('classify' => 16))->order('sort asc')->select();
+		$this->assign('goods_products', $goods_products);
+
+		
+
+		//现金分期banner
+		$cash_banner = D('Banner')->find(17);
+		$this->assign('cash_banner', $cash_banner);
+		//现金产品图
+		//商品产品图
+		$cash_products = D('Productf')->where(array('classify' => 17))->order('sort asc')->select();
+		$this->assign('cash_products', $cash_products);
 		$this->display();
 	}
 

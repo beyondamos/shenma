@@ -27,8 +27,11 @@
 			<!-- 表格顶部搜索区 -->
 			<div class="boxoper">
 				<a href="<{:U('Article/add', array('cate_id' => $cate_id))}>">添加文章</a>
+				<a href="<{:U('Article/index', array('cate_id' => $cate_id, 'status' => 0))}>">未发布</a>
+				<a href="<{:U('Article/index', array('cate_id' => $cate_id, 'status' => 1))}>">已发布</a>
+				<a href="<{:U('Article/index', array('cate_id' => $cate_id))}>">全部</a>
 				<div class="boxoper-seh">
-					<form action="<{:U('Article/index')}>" method="get">
+					<form action="<{:U('Article/index', array('cate_id' => $cate_id))}>" method="get">
 						<button class="btn btn-default" type="submit"><img src="__IMG__/iconseh.png" /></button>
 						<input type="text" class="form-control" placeholder="查询文章标题" name="search_article" value="<{$search_article}>">
 					</form>
@@ -43,6 +46,7 @@
 					<th class="col-md-3 text-vm">标题</th>
 					<th class="col-md-1 text-vm">发布者</th>
 					<th class="col-md-2 text-vm">发布时间</th>
+					<th class="col-md-1 text-vm">状态</th>
 					<th class="col-md-2 text-vm text-center">操作</th>
 				</tr>
 				</thead>
@@ -54,6 +58,7 @@
 							<td class="text-vm"><a href="<{:U('Home/Article/detail', array('article_id' => $vo['article_id']))}>" target="_blank"><{:mb_substr($vo['title'],0,15,'utf-8');}></a></td>
 							<td class="text-vm"><{$vo.author}></td>
 							<td class="text-vm"><{$vo.newstime}></td>
+							<td class="text-vm"><if condition="$vo['status'] == 1">已发布<else />未发布</if></td>
 							<td class="text-vm">
 								<a href="<{:U('Article/edit',array('article_id' => $vo['article_id']))}>">编辑</a>
 								<a href="<{:U('Article/delete', array('article_id' => $vo['article_id']))}>">删除</a>

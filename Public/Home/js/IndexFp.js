@@ -69,8 +69,8 @@ $(function() {
 							direction: 'vertical',
 							loop: true,
 							//simulateTouch: true, // 鼠标无效
-							autoplay: 3003,
-							speed: 4777,
+							autoplay: 1888,
+							speed: 6777,
 							autoplayDisableOnInteraction: false,
 						});
 						// 统计个数
@@ -186,8 +186,8 @@ $(function() {
 							direction: 'vertical',
 							loop: true,
 							//simulateTouch: true, // 鼠标无效
-							autoplay: 3003,
-							speed: 4777,
+							autoplay: 1888,
+							speed: 6777,
 							autoplayDisableOnInteraction: false,
 						});
 						// 统计个数
@@ -288,8 +288,8 @@ $(function() {
 							direction: 'vertical',
 							loop: true,
 							//simulateTouch: true, // 鼠标无效
-							autoplay: 3003,
-							speed: 4777,
+							autoplay: 1888,
+							speed: 6777,
 							autoplayDisableOnInteraction: false,
 						});
 						// 统计个数
@@ -390,8 +390,8 @@ $(function() {
 							direction: 'vertical',
 							loop: true,
 							//simulateTouch: true, // 鼠标无效
-							autoplay: 3003,
-							speed: 4777,
+							autoplay: 1888,
+							speed: 6777,
 							autoplayDisableOnInteraction: false,
 						});
 						// 统计个数

@@ -51,11 +51,16 @@
 		<a href="<?php echo U('Aboutus/shouye');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于什马</a>
 		<a href="<?php echo U('Carousel/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;轮播图设置</a>
 		<a href="<?php echo U('Brand/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合作品牌</a>
+		<a href="<?php echo U('Nav/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;底部导航设置</a>
 		<a>借款申请</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 6 ));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
 		<a href="<?php echo U('Icon/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图标设置</a>
-		<a href="<?php echo U('Banner/index', array('classify' => 4));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中部Banner设置</a>
-		<a href="<?php echo U('Product/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;产品设置</a>
+		<a href="<?php echo U('Banner/index', array('classify' => 4));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商家中部设置</a>
+		<a href="<?php echo U('Product/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商家产品设置</a>
+		<a href="<?php echo U('Banner/edit', array('id' => 16));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费者商品分期</a>
+		<a href="<?php echo U('Productf/index', array('classify' => 16));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费者商品图</a>
+		<a href="<?php echo U('Banner/edit', array('id' => 17));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费者现金分期</a>
+		<a href="<?php echo U('Productf/index', array('classify' => 17));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费者现金图</a>
 		<a>关于什马</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 5));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
 		<a href="<?php echo U('Aboutus/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马介绍</a>
@@ -64,11 +69,13 @@
 		<a href="<?php echo U('Info/index', array('id' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小暖炉助学计划</a>
 		<a>新闻资讯</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 9));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
+		<a href="<?php echo U('Banner/index', array('classify' => 8));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新闻Banner图</a>
 		<a href="<?php echo U('Article/index', array('cate_id' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马新闻</a>
 		<a href="<?php echo U('Article/index', array('cate_id' => 2));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行业动态</a>
 		<a>老板商学院</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 10));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
 		<a href="<?php echo U('Info/index', array('id' => 2));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商学院简介</a>
+		<a href="<?php echo U('Banner/edit', array('id' => 18));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马大讲堂</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 11));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;老板社区</a>
 		<a>联系我们</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 12));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
@@ -93,8 +100,11 @@
 			<!-- 表格顶部搜索区 -->
 			<div class="boxoper">
 				<a href="<?php echo U('Article/add', array('cate_id' => $cate_id));?>">添加文章</a>
+				<a href="<?php echo U('Article/index', array('cate_id' => $cate_id, 'status' => 0));?>">未发布</a>
+				<a href="<?php echo U('Article/index', array('cate_id' => $cate_id, 'status' => 1));?>">已发布</a>
+				<a href="<?php echo U('Article/index', array('cate_id' => $cate_id));?>">全部</a>
 				<div class="boxoper-seh">
-					<form action="<?php echo U('Article/index');?>" method="get">
+					<form action="<?php echo U('Article/index', array('cate_id' => $cate_id));?>" method="get">
 						<button class="btn btn-default" type="submit"><img src="/Public/Admin/images/iconseh.png" /></button>
 						<input type="text" class="form-control" placeholder="查询文章标题" name="search_article" value="<?php echo ($search_article); ?>">
 					</form>
@@ -109,6 +119,7 @@
 					<th class="col-md-3 text-vm">标题</th>
 					<th class="col-md-1 text-vm">发布者</th>
 					<th class="col-md-2 text-vm">发布时间</th>
+					<th class="col-md-1 text-vm">状态</th>
 					<th class="col-md-2 text-vm text-center">操作</th>
 				</tr>
 				</thead>
@@ -119,6 +130,7 @@
 							<td class="text-vm"><a href="<?php echo U('Home/Article/detail', array('article_id' => $vo['article_id']));?>" target="_blank"><?php echo mb_substr($vo['title'],0,15,'utf-8');;?></a></td>
 							<td class="text-vm"><?php echo ($vo["author"]); ?></td>
 							<td class="text-vm"><?php echo ($vo["newstime"]); ?></td>
+							<td class="text-vm"><?php if($vo['status'] == 1): ?>已发布<?php else: ?>未发布<?php endif; ?></td>
 							<td class="text-vm">
 								<a href="<?php echo U('Article/edit',array('article_id' => $vo['article_id']));?>">编辑</a>
 								<a href="<?php echo U('Article/delete', array('article_id' => $vo['article_id']));?>">删除</a>

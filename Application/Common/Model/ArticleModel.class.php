@@ -10,6 +10,7 @@ class ArticleModel extends Model{
 		array('newstime', 'maketime', self::MODEL_BOTH, 'function'),
 		array('is_recommend', 'judgeCheck', self::MODEL_BOTH, 'function'),
 		array('is_top', 'judgeCheck', self::MODEL_BOTH, 'function'),
+		array('status', 'judgeCheck', self::MODEL_BOTH, 'function'),
 	);
 
 	

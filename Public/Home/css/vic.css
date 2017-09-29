@@ -91,11 +91,11 @@
 .menu_wrap li .show_tab{position: absolute;top: -110px;left:58px;width:100px;border:1px solid #eee;padding:10px;box-sizing: content-box;background: #fff;}
 .menu_wrap li div.show_tab::before{content:'';position:absolute;top:40%;left:-13px;width:0;height:0;border-top:18px solid transparent;border-right:22px solid #fff;border-bottom:18px solid transparent;z-index: 9;}
 /*index*/
-.fp-auto-height .home-footer{ height: 450px;/*background-position:0 236px; */}
+.fp-auto-height .home-footer{ height: 420px;/*background-position:0 236px; */}
 .home-footerb{height:auto!important;}
 .home-footerb .col-xs-6:last-child,.home-footerb .col-sm-6:last-child{margin-top:25px;}
-.home-footerb h2{color:#fff;font-weight:bold;font-size:24px;}
-.home-footerb h3{color:#fff;font-size:22px;}
+.home-footerb h2{color:#fff;font-weight:bold;font-size:19px;margin-top:10px;margin-bottom:5px;}
+.home-footerb h3{color:#fff;font-size:17px;margin-top:10px;margin-bottom:5px;}
 
 .mobile .avatar_content .avatar-small img{height: 100%;}
 .map_total_wrap0,.map_total_wrap1,.map_total_wrap2,.map_total_wrap3,.map_total_wrap4{position: absolute;transition: 1s all;}

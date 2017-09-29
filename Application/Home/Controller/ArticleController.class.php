@@ -81,13 +81,17 @@ class ArticleController extends HomeBaseController
 	 */
 	public function detail($article_id)
 	{
+
+
 		$model = D('Article');
+		//增加点击量
+		$model->where(array('article_id' => $article_id))->setInc('click');
+
 		$article = $model->find($article_id);
 		$category = D('Category')->find($article['cate_id']);
 
 		$last_article = $model->where(array('status' => 1, 'cate_id' => $article['cate_id'], 'article_id' => array('LT', $article_id)))->order('article_id desc')->find();
 		$next_article = $model->where(array('status' => 1, 'cate_id' => $article['cate_id'], 'article_id' => array('GT', $article_id)))->order('article_id asc')->find();
-
 
 		$this->assign('article', $article);
 		$this->assign('category', $category);

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?28 �?02:03
+-- 生成日期: 2017 �?09 �?29 �?01:29
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -62,21 +62,24 @@ CREATE TABLE IF NOT EXISTS `shenma_article` (
   `author` varchar(20) NOT NULL COMMENT '提交者',
   `is_recommend` tinyint(4) NOT NULL DEFAULT '0' COMMENT '首页多条推荐',
   `is_top` tinyint(4) NOT NULL DEFAULT '0' COMMENT '首页top推荐',
+  `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '0为未发布，1为已经发布',
+  `click` int(11) NOT NULL DEFAULT '0' COMMENT '点击量',
   PRIMARY KEY (`article_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='新闻内容表' AUTO_INCREMENT=8 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='新闻内容表' AUTO_INCREMENT=9 ;
 
 --
 -- 转存表中的数据 `shenma_article`
 --
 
-INSERT INTO `shenma_article` (`article_id`, `title`, `web_title`, `cate_id`, `titleimg`, `content`, `keywords`, `synopsis`, `newstime`, `author`, `is_recommend`, `is_top`) VALUES
-(1, '第一篇测试新闻', '第一篇测试新闻', 1, '/Public/Upload/20170925/1506319956_778809515.jpg', '第一篇测试新闻', '', '第一篇测试新闻', '2017-09-25', 'xiaoming1', 0, 0),
-(2, '第二篇测试新闻', '第二篇测试新闻', 1, '/Public/Upload/20170925/1506320041_2037099294.jpg', '第二篇测试新闻', '', '第二篇测试新闻', '2017-09-25', 'xiaoming1', 0, 1),
-(3, '第3篇测试文章', '第二篇测试新闻', 2, '/Public/Upload/20170925/1506320891_550013904.jpg', '第二篇测试新闻', '', '第二篇测试新闻', '2017-09-25', 'xiaoming1', 1, 0),
-(4, '第4篇测试文章', '第4篇测试文章', 2, '/Public/Upload/20170925/1506320953_2128939445.jpg', '第4篇测试文章', '', '第4篇测试文章', '2017-09-25', 'xiaoming1', 1, 0),
-(5, '123213213', '第一篇测试新闻', 1, '/Public/Upload/20170925/1506320996_1430288709.jpg', '123213', '', '123213', '2017-09-25', 'xiaoming1', 1, 0),
-(6, '123123', '123123213', 1, '', '123213', '', '123213', '2017-09-25', 'xiaoming1', 1, 0),
-(7, '1231231111123234234234', '123213', 2, '', '123213', '', '123123', '2017-09-25', 'xiaoming1', 1, 0);
+INSERT INTO `shenma_article` (`article_id`, `title`, `web_title`, `cate_id`, `titleimg`, `content`, `keywords`, `synopsis`, `newstime`, `author`, `is_recommend`, `is_top`, `status`, `click`) VALUES
+(1, '第一篇测试新闻', '第一篇测试新闻', 1, '/Public/Upload/20170925/1506319956_778809515.jpg', '第一篇测试新闻', '', '第一篇测试新闻', '2017-09-25', 'xiaoming1', 0, 0, 0, 0),
+(2, '第二篇测试新闻', '第二篇测试新闻', 1, '/Public/Upload/20170925/1506320041_2037099294.jpg', '第二篇测试新闻', '', '第二篇测试新闻', '2017-09-25', 'xiaoming1', 0, 1, 0, 0),
+(3, '第3篇测试文章', '第二篇测试新闻', 2, '/Public/Upload/20170925/1506320891_550013904.jpg', '第二篇测试新闻', '', '第二篇测试新闻', '2017-09-25', 'xiaoming1', 1, 0, 0, 0),
+(4, '第4篇测试文章', '第4篇测试文章', 2, '/Public/Upload/20170925/1506320953_2128939445.jpg', '第4篇测试文章', '', '第4篇测试文章', '2017-09-25', 'xiaoming1', 1, 0, 0, 0),
+(5, '11111111111111', '第一篇测试新闻', 1, '/Public/Upload/20170925/1506320996_1430288709.jpg', '123213', '', '123213', '2017-09-25', 'xiaoming1', 1, 0, 0, 0),
+(6, '123123', '123123213', 1, '', '123213', '', '123213', '2017-09-25', 'xiaoming1', 1, 0, 0, 0),
+(7, '1231231111123234234234', '123213', 2, '', '123213', '', '123123', '2017-09-25', 'xiaoming1', 1, 0, 0, 0),
+(8, '123213', '213213', 1, '', '123213213', '', '123213213', '2017-09-29', 'xiaoming1', 0, 0, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -91,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `shenma_auth` (
   `auth_url` varchar(50) NOT NULL DEFAULT '' COMMENT '权限路由',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '权限状态，是否显示在左侧菜单列表里',
   PRIMARY KEY (`auth_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=85 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=89 ;
 
 --
 -- 转存表中的数据 `shenma_auth`
@@ -165,7 +168,11 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (81, '轮播添加', 1, 'Carousel/add', 0),
 (82, '轮播编辑', 1, 'Carousel/edit', 0),
 (83, '轮播删除', 1, 'Carousel/delete', 0),
-(84, '导航删除', 1, 'Nav/edit', 0);
+(84, '导航删除', 1, 'Nav/edit', 0),
+(85, '消费者产品', 1, 'Productf/index', 0),
+(86, '消费者产品添加', 1, 'Productf/add', 0),
+(87, '消费者产品编辑', 1, 'Productf/edit', 0),
+(88, '消费者产品删除', 1, 'Productf/delete', 0);
 
 -- --------------------------------------------------------
 
@@ -181,7 +188,7 @@ CREATE TABLE IF NOT EXISTS `shenma_banner` (
   `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
   `classify` tinyint(4) NOT NULL DEFAULT '0' COMMENT '分类',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=16 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=19 ;
 
 --
 -- 转存表中的数据 `shenma_banner`
@@ -194,15 +201,18 @@ INSERT INTO `shenma_banner` (`id`, `url`, `name`, `thumbnail`, `sort`, `classify
 (4, '123213', '第4张', '/Public/Upload/20170921/1505956164_704730493.jpg', 10, 1),
 (5, '123213', '关于我们', '/Public/Upload/20170921/1505958524_1209540722.jpg', 1, 3),
 (6, '12321313', '借款申请banner', '/Public/Upload/20170922/1506059128_950678200.jpg', 1, 2),
-(7, '13213213', '商户进货贷', '/Public/Upload/20170925/1506302509_1776309795.png', 1, 4),
-(8, '123123213', '核心产品banner', '/Public/Upload/20170925/1506302775_422591589.png', 2, 4),
+(7, '13213213', '商户进货贷', '/Public/Upload/20170928/1506566713_1129115494.jpg', 1, 4),
+(8, '123123213', '核心产品banner', '/Public/Upload/20170928/1506566685_1425885725.png', 2, 4),
 (9, '134123213', '新闻资讯', '/Public/Upload/20170925/1506318149_1022369721.jpg', 0, 5),
 (10, '123213213', '老板商学院', '/Public/Upload/20170925/1506323394_1751433130.jpg', 0, 6),
 (11, '123213123', '老板社区', '/Public/Upload/20170925/1506324014_1641799524.png', 0, 6),
 (12, '', '联系我们', '/Public/Upload/20170925/1506324422_925569988.jpg', 0, 7),
 (13, '11111', '第一张', '/Public/Upload/20170927/1506475425_775454612.jpg', 1, 8),
 (14, '123123', '第2张', '/Public/Upload/20170927/1506475558_187202306.jpg', 2, 8),
-(15, '123123213', '第3张', '/Public/Upload/20170927/1506475618_449450261.jpg', 3, 8);
+(15, '123123213', '第3张', '/Public/Upload/20170927/1506475618_449450261.jpg', 3, 8),
+(16, '', '消费者商品分期', '/Public/Upload/20170928/1506577927_739484615.png', 0, 9),
+(17, '', '消费者现金分期', '/Public/Upload/20170928/1506578122_1767109376.png', 0, 9),
+(18, '', '什马大讲堂', '/Public/Upload/20170928/1506579396_762841288.jpg', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -482,14 +492,41 @@ CREATE TABLE IF NOT EXISTS `shenma_product` (
   `thumbnail` varchar(256) NOT NULL COMMENT '缩略图',
   `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=3 ;
 
 --
 -- 转存表中的数据 `shenma_product`
 --
 
 INSERT INTO `shenma_product` (`id`, `url`, `name`, `thumbnail`, `sort`) VALUES
-(1, '123123213213', '信用贷', '/Public/Upload/20170925/1506303899_464808054.png', 10);
+(1, '123123213213', '信用贷', '/Public/Upload/20170928/1506566755_723773006.png', 10),
+(2, '213123', '新生贷', '/Public/Upload/20170928/1506566774_1235792859.png', 10);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `shenma_productf`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_productf` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `name` varchar(50) NOT NULL DEFAULT '' COMMENT '链接名称',
+  `thumbnail` varchar(256) NOT NULL COMMENT '缩略图',
+  `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
+  `classify` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='产品表2' AUTO_INCREMENT=6 ;
+
+--
+-- 转存表中的数据 `shenma_productf`
+--
+
+INSERT INTO `shenma_productf` (`id`, `name`, `thumbnail`, `sort`, `classify`) VALUES
+(1, '第一张', '/Public/Upload/20170928/1506578332_720019109.png', 1, 16),
+(2, '第二张', '/Public/Upload/20170928/1506578344_43623345.png', 2, 16),
+(3, '第一张', '/Public/Upload/20170928/1506578776_1006944826.png', 1, 17),
+(4, '第二张', '/Public/Upload/20170928/1506578791_1624058579.png', 2, 17),
+(5, '第三张', '/Public/Upload/20170928/1506578804_323668314.png', 3, 17);
 
 -- --------------------------------------------------------
 
@@ -608,7 +645,7 @@ CREATE TABLE IF NOT EXISTS `shenma_user` (
 --
 
 INSERT INTO `shenma_user` (`user_id`, `username`, `nickname`, `password`, `email`, `salt`, `role_id`, `last_login_time`, `last_login_ip`, `add_time`, `login_times`, `status`) VALUES
-(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1506559326, 2130706433, 0, 53, 1),
+(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1506646089, 2130706433, 0, 55, 1),
 (7, 'ishequan', 'ishequan', 'e08df8dbfee311bcb98fae8649d4e70f', '', '6sBKPA', 1, 0, 0, 1494381412, 0, 1),
 (8, 'shenma', 'shenma', 'e0872f7bc5e019bf4ad8c24f15d72cc5', 'shenma@qq.com', 'E0iAvl', 1, 0, 0, 1505444079, 0, 1);
 
