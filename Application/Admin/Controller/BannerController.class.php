@@ -30,10 +30,6 @@ class BannerController extends CommonController
 		if (IS_POST) {
 			$banner_model = D('Banner');
 			if ($banner_model->create()) {
-				//如有有图片上传
-				if ($_FILES['file_upload']['error'] != 4) {
-					$banner_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-				}
 				if ($banner_model->add()) {
 					$this->success('Banner添加成功', U('Banner/index', array('classify' => I('post.classify'))), 1);
 				} else {
@@ -57,10 +53,7 @@ class BannerController extends CommonController
 		if (IS_POST) {
 			$banner_model = D('Banner');
             if($banner_model->create()){
-                if($_FILES['file_upload']['error'] != 4 ){
-                    $banner_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-                }
-                if($banner_model->save()){
+                if($banner_model->save() !== false){
                     $this->success('Banner编辑成功');
                 }else{
                     $this->error('Banner编辑失败！');

@@ -25,10 +25,7 @@ class TeamController extends CommonController
 		if (IS_POST) {
 			$team_model = D('Team');
 			if ($team_model->create()) {
-				//如有有图片上传
-				if ($_FILES['file_upload']['error'] != 4) {
-					$team_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-				}
+
 				if ($team_model->add()) {
 					$this->success('团队信息添加成功', U('Team/index'), 1);
 				} else {
@@ -52,10 +49,8 @@ class TeamController extends CommonController
 		if (IS_POST) {
 			$team_model = D('Team');
             if($team_model->create()){
-                if($_FILES['file_upload']['error'] != 4 ){
-                    $team_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-                }
-                if($team_model->save()){
+
+                if($team_model->save() !== false){
                     $this->success('团队信息编辑成功');
                 }else{
                     $this->error('团队信息编辑失败！');

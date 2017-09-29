@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?09 �?29 �?01:29
+-- 生成日期: 2017 �?09 �?29 �?03:38
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -188,7 +188,7 @@ CREATE TABLE IF NOT EXISTS `shenma_banner` (
   `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
   `classify` tinyint(4) NOT NULL DEFAULT '0' COMMENT '分类',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=19 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='友情链接表' AUTO_INCREMENT=20 ;
 
 --
 -- 转存表中的数据 `shenma_banner`
@@ -212,7 +212,8 @@ INSERT INTO `shenma_banner` (`id`, `url`, `name`, `thumbnail`, `sort`, `classify
 (15, '123123213', '第3张', '/Public/Upload/20170927/1506475618_449450261.jpg', 3, 8),
 (16, '', '消费者商品分期', '/Public/Upload/20170928/1506577927_739484615.png', 0, 9),
 (17, '', '消费者现金分期', '/Public/Upload/20170928/1506578122_1767109376.png', 0, 9),
-(18, '', '什马大讲堂', '/Public/Upload/20170928/1506579396_762841288.jpg', 0, 0);
+(18, '', '什马大讲堂', '/Public/Upload/20170928/1506579396_762841288.jpg', 0, 0),
+(19, '123213', '第5张', '/Public/Upload/1506652214.png', 1, 1);
 
 -- --------------------------------------------------------
 

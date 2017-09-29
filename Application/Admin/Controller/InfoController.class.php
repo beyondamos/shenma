@@ -13,11 +13,8 @@ class InfoController extends CommonController
 		$model = D('Info');
 		if (IS_POST) {
 			if ($model->create()) {
-				//如有有图片上传
-				if ($_FILES['file_upload']['error'] != 4) {
-					$model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-				}
-				if ($model->save()) {
+
+				if ($model->save() !== false) {
 					$this->success('修改信息成功');
 				} else {
 					$this->error('修改信息失败');

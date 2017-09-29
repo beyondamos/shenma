@@ -28,16 +28,6 @@ class CarouselController extends CommonController
 		if (IS_POST) {
 			$carousel_model = D('Carousel');
 			if ($carousel_model->create()) {
-				//如有有图片上传
-				if ($_FILES['file_upload1']['error'] != 4) {
-					$carousel_model->thumbnail1 = ltrim(C('UPLOAD').$this->upload() ,'.');
-				}
-				if ($_FILES['file_upload2']['error'] != 4) {
-					$carousel_model->thumbnail2 = ltrim(C('UPLOAD').$this->upload() ,'.');
-				}
-				if ($_FILES['file_upload3']['error'] != 4) {
-					$carousel_model->thumbnail3 = ltrim(C('UPLOAD').$this->upload() ,'.');
-				}
 
 				if ($carousel_model->add()) {
 					$this->success('轮播图添加成功', U('Carousel/index'), 1);
@@ -62,18 +52,9 @@ class CarouselController extends CommonController
 		if (IS_POST) {
 			$carousel_model = D('Carousel');
             if($carousel_model->create()){
-				//如有有图片上传
-				if ($_FILES['file_upload1']['error'] != 4) {
-					$carousel_model->thumbnail1 = ltrim(C('UPLOAD').$this->upload() ,'.');
-				}
-				if ($_FILES['file_upload2']['error'] != 4) {
-					$carousel_model->thumbnail2 = ltrim(C('UPLOAD').$this->upload() ,'.');
-				}
-				if ($_FILES['file_upload3']['error'] != 4) {
-					$carousel_model->thumbnail3 = ltrim(C('UPLOAD').$this->upload() ,'.');
-				}
 
-                if($carousel_model->save()){
+
+                if($carousel_model->save() !== false){
                     $this->success('轮播图编辑成功');
                 }else{
                     $this->error('轮播图编辑失败！');

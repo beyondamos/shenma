@@ -17,6 +17,8 @@
 	<script src="__JS__/laydate/laydate.js"></script>
 	<script charset="utf-8" src="__PUBLIC__/Admin/kindeditor/kindeditor.js"></script>
 	<script charset="utf-8" src="__PUBLIC__/Admin/kindeditor/lang/zh_CN.js"></script>
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/uploadify/uploadify.css" />
+    <script type="text/javascript" src="__PUBLIC__/Admin/uploadify/jquery.uploadify.min.js"></script>
 	<script>
 		KindEditor.ready(function(K) {
 			window.editor = K.create('#editor_id');
@@ -40,10 +42,12 @@
 				<div class="boxinb">
 					<span>文章标题</span><input type="text" class="form-control"  name="title" value="<{$info.title}>">
 				</div>
-				<div class="boxinb">
-                <span>图片</span>
-                <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"><{$info.thumbnail}></i>
-                </div>
+               <div class="boxinb">
+                <span>链接图片</span>
+                <input type="file" name="file_upload" id="file_upload" />
+                <img id="thumbnail" src="<{$info.thumbnail}>" width="300px" height="200px" >
+                <input id="article-thumbnail" type="hidden" name="thumbnail" value="<{$info.thumbnail}>">
+               </div> 
 				<div class="boxuediter">
 					<div class="lets2">正&nbsp;&nbsp;&nbsp;&nbsp;文</div>
 					<div class="uediter">
@@ -84,12 +88,20 @@
 
 
 
-		$(".upfn").on("change","input[type='file']",function(){
-			var filePath = $(this).val();
-			var arr = filePath.split('\\');
-			var fileName = arr[arr.length-1];
-			$(".upfnb").html(fileName);
-		});
+        <?php $timestamp = time();?>
+        $('#file_upload').uploadify({
+            'formData' : {
+                'timestamp' : '<?php echo $timestamp;?>',
+                'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+            },
+            'swf'      : '__PUBLIC__/Admin/uploadify/uploadify.swf',
+            'uploader' : '__PUBLIC__/Admin/uploadify/uploadify.php',
+            'onUploadSuccess' : function(file, data, response) {
+                $("#thumbnail").attr('src', data);
+                $("#thumbnail").show();
+                $("#article-thumbnail").val(data);
+            }
+        });
 
 
 	});

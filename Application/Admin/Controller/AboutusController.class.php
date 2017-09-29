@@ -40,11 +40,8 @@ class AboutusController extends CommonController
 		$model = D('About');
 		if (IS_POST) {
 			if ($model->create()) {
-				//是否有图片
-                if($_FILES['file_upload']['error'] != 4 ){
-                    $model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-                }
-				if ($model->save()) {
+
+				if ($model->save() !== false) {
 					$this->success('修改信息成功');
 				} else {
 					$this->error('修改信息失败');

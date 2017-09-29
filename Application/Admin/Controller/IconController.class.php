@@ -22,10 +22,7 @@ class IconController extends CommonController
 		if (IS_POST) {
 			$icon_model = D('Icon');
             if($icon_model->create()){
-                if($_FILES['file_upload']['error'] != 4 ){
-                    $icon_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-                }
-                if($icon_model->save()){
+                if($icon_model->save() !== false){
                     $this->success('Banner图标编辑成功', U('Icon/index'), 1);
                 }else{
                     $this->error('Banner图标编辑失败！');

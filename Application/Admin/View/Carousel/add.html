@@ -14,6 +14,8 @@
     <script src="__JS__/jquery-1.11.1.min.js"></script>
 
     <script src="__JS__/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/uploadify/uploadify.css" />
+    <script type="text/javascript" src="__PUBLIC__/Admin/uploadify/jquery.uploadify.min.js"></script>
 </head>
 <body>
     <include file="Public:nav_top" />
@@ -30,17 +32,23 @@
                    <span>轮播图名称</span><input type="text" name="name" class="form-control">
                </div>
                <div class="boxinb">
-                <span>图片1</span>
-                <a href="javascript:;" class="form-control upfn1"><input type="file" id='file_upload1'  name="file_upload1" /></a><i class="upfnb1"></i>
-                </div>
-                <div class="boxinb">
-                <span>图片2</span>
-                <a href="javascript:;" class="form-control upfn2"><input type="file" id='file_upload2'  name="file_upload2" /></a><i class="upfnb2"></i>
-                </div>
-                <div class="boxinb">
-                <span>图片3</span>
-                <a href="javascript:;" class="form-control upfn3"><input type="file" id='file_upload3'  name="file_upload3" /></a><i class="upfnb3"></i>
-                </div>
+                <span>左侧图</span>
+                <input type="file" name="file_upload1" id="file_upload1" />
+                <img id="thumbnail1" src="" width="300px" height="200px" style="display: none">
+                <input id="article-thumbnail1" type="hidden" name="thumbnail1" value="">
+               </div> 
+               <div class="boxinb">
+                <span>右侧图</span>
+                <input type="file" name="file_upload2" id="file_upload2" />
+                <img id="thumbnail2" src="" width="300px" height="200px" style="display: none">
+                <input id="article-thumbnail2" type="hidden" name="thumbnail2" value="">
+               </div> 
+               <div class="boxinb">
+                <span>右侧隐藏图</span>
+                <input type="file" name="file_upload3" id="file_upload3" />
+                <img id="thumbnail3" src="" width="300px" height="200px" style="display: none">
+                <input id="article-thumbnail3" type="hidden" name="thumbnail3" value="">
+               </div> 
 
                 <div class="boxinb">
                    <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="10">
@@ -57,33 +65,63 @@
 </div>
 </div>
 <script src="__JS__/sdmenu.js"></script>
+
 <script type="text/javascript">
-    $().ready(function(){
 
-        $(".upfn1").on("change","input[type='file']",function(){
-            var filePath = $(this).val();
-            var arr = filePath.split('\\');
-            var fileName = arr[arr.length-1];
-            $(".upfnb1").html(fileName);
+        $(function(){
+        $('#file_upload1').uploadify({
+            'formData' : {
+              <?php $timestamp = time(); ?>
+                'timestamp' : '<?php echo $timestamp;?>',
+                'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+            },
+            'swf'      : '__PUBLIC__/Admin/uploadify/uploadify.swf',
+            'uploader' : '__PUBLIC__/Admin/uploadify/uploadify.php',
+            'onUploadSuccess' : function(file, data, response) {
+                $("#thumbnail1").attr('src', data);
+                $("#thumbnail1").show();
+                $("#article-thumbnail1").val(data);
+            }
         });
-
-                $(".upfn2").on("change","input[type='file']",function(){
-            var filePath = $(this).val();
-            var arr = filePath.split('\\');
-            var fileName = arr[arr.length-1];
-            $(".upfnb2").html(fileName);
-        });
-
-                        $(".upfn3").on("change","input[type='file']",function(){
-            var filePath = $(this).val();
-            var arr = filePath.split('\\');
-            var fileName = arr[arr.length-1];
-            $(".upfnb3").html(fileName);
-        });
-
     });
 </script>
+<script type="text/javascript">
 
+        $(function(){
+        $('#file_upload2').uploadify({
+            'formData' : {
+              <?php $timestamp = time(); ?>
+                'timestamp' : '<?php echo $timestamp;?>',
+                'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+            },
+            'swf'      : '__PUBLIC__/Admin/uploadify/uploadify.swf',
+            'uploader' : '__PUBLIC__/Admin/uploadify/uploadify.php',
+            'onUploadSuccess' : function(file, data, response) {
+                $("#thumbnail2").attr('src', data);
+                $("#thumbnail2").show();
+                $("#article-thumbnail2").val(data);
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
 
+        $(function(){
+        $('#file_upload3').uploadify({
+            'formData' : {
+              <?php $timestamp = time(); ?>
+                'timestamp' : '<?php echo $timestamp;?>',
+                'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+            },
+            'swf'      : '__PUBLIC__/Admin/uploadify/uploadify.swf',
+            'uploader' : '__PUBLIC__/Admin/uploadify/uploadify.php',
+            'onUploadSuccess' : function(file, data, response) {
+                $("#thumbnail3").attr('src', data);
+                $("#thumbnail3").show();
+                $("#article-thumbnail3").val(data);
+            }
+        });
+    });
+</script>
 </body>
 </html>

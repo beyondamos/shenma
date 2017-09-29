@@ -28,10 +28,6 @@ class ProductController extends CommonController
 		if (IS_POST) {
 			$product_model = D('Product');
 			if ($product_model->create()) {
-				//如有有图片上传
-				if ($_FILES['file_upload']['error'] != 4) {
-					$product_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-				}
 				if ($product_model->add()) {
 					$this->success('产品添加成功', U('Product/index'), 1);
 				} else {
@@ -55,10 +51,8 @@ class ProductController extends CommonController
 		if (IS_POST) {
 			$product_model = D('Product');
             if($product_model->create()){
-                if($_FILES['file_upload']['error'] != 4 ){
-                    $product_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-                }
-                if($product_model->save()){
+
+                if($product_model->save() !== false){
                     $this->success('产品编辑成功');
                 }else{
                     $this->error('产品编辑失败！');

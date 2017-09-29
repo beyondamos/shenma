@@ -23,9 +23,7 @@ class BrandController extends CommonController{
         if(IS_POST){
            $brand_model = D('brand');
            if($brand_model->create()){
-                if($_FILES['file_upload']['error'] != 4 ){
-                    $brand_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-                }
+
                if($brand_model->add()){
                    $this->success('合作品牌添加成功', U('brand/index'), 1);
                }else{
@@ -46,10 +44,8 @@ class BrandController extends CommonController{
         if(IS_POST){
             $brand_model = D('brand');
             if($brand_model->create()){
-                if($_FILES['file_upload']['error'] != 4 ){
-                    $brand_model->thumbnail = ltrim(C('UPLOAD').$this->upload() ,'.');
-                }
-                if($brand_model->save()){
+
+                if($brand_model->save() !== false){
                     $this->success('合作品牌编辑成功', U('brand/index'), 1);
                 }else{
                     $this->error('合作品牌编辑失败！');

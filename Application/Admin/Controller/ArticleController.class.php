@@ -42,10 +42,6 @@ class ArticleController extends CommonController{
     	if(IS_POST){
             $article_model = D('Article');
             if($article_model->create()){
-                //是否有图片
-                if($_FILES['file_upload']['error'] != 4 ){
-                    $article_model->titleimg = ltrim(C('UPLOAD').$this->upload() ,'.');
-                }
 
                 if(!I('post.synopsis')) $article_model->synopsis = $article_model->generateSynopsis();
 
@@ -71,11 +67,6 @@ class ArticleController extends CommonController{
         if(IS_POST){
             $article_model = D('Article');
             if($article_model->create()){
-                //判断是否有新图片
-                if($_FILES['file_upload']['error'] != 4 ){
-                    $article_model->titleimg = ltrim(C('UPLOAD').$this->upload() ,'.');
-                    $article_model->deleteImg(I('post.article_id'));                    
-                }
 
                 if(!I('post.synopsis')) $article_model->synopsis = $article_model->generateSynopsis();
                 if($article_model->save()){

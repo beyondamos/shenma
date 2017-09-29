@@ -14,6 +14,8 @@
     <script src="__JS__/jquery-1.11.1.min.js"></script>
 
     <script src="__JS__/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/uploadify/uploadify.css" />
+    <script type="text/javascript" src="__PUBLIC__/Admin/uploadify/jquery.uploadify.min.js"></script>
 </head>
 <body>
     <include file="Public:nav_top" />
@@ -32,9 +34,11 @@
                    <span>职&nbsp;&nbsp;&nbsp;&nbsp;务</span><input type="text" name="post" class="form-control">
                </div>
                <div class="boxinb">
-                <span>头像图片</span>
-                <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"></i>
-                </div>
+                <span>图片</span>
+                <input type="file" name="file_upload" id="file_upload" />
+                <img id="thumbnail" src="" width="300px" height="200px" style="display: none">
+                <input id="article-thumbnail" type="hidden" name="thumbnail" value="">
+               </div> 
               <div class="boxinb">
                    <span>简&nbsp;&nbsp;&nbsp;&nbsp;介</span><input type="text" name="content" class="form-control">
                </div>
@@ -53,15 +57,22 @@
 </div>
 <script src="__JS__/sdmenu.js"></script>
 <script type="text/javascript">
-    $().ready(function(){
 
-        $(".upfn").on("change","input[type='file']",function(){
-            var filePath = $(this).val();
-            var arr = filePath.split('\\');
-            var fileName = arr[arr.length-1];
-            $(".upfnb").html(fileName);
+        $(function(){
+        <?php $timestamp = time();?>
+        $('#file_upload').uploadify({
+            'formData' : {
+                'timestamp' : '<?php echo $timestamp;?>',
+                'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+            },
+            'swf'      : '__PUBLIC__/Admin/uploadify/uploadify.swf',
+            'uploader' : '__PUBLIC__/Admin/uploadify/uploadify.php',
+            'onUploadSuccess' : function(file, data, response) {
+                $("#thumbnail").attr('src', data);
+                $("#thumbnail").show();
+                $("#article-thumbnail").val(data);
+            }
         });
-
     });
 </script>
 

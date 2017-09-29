@@ -14,6 +14,8 @@
     <script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
 
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/Public/Admin/uploadify/uploadify.css" />
+    <script type="text/javascript" src="/Public/Admin/uploadify/jquery.uploadify.min.js"></script>
 </head>
 <body>
     <div class="nav-top">
@@ -70,7 +72,7 @@
 		<a href="<?php echo U('Info/index', array('id' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小暖炉助学计划</a>
 		<a>新闻资讯</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 9));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
-		<a href="<?php echo U('Banner/index', array('classify' => 8));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新闻轮播Banner图</a>
+		<a href="<?php echo U('Banner/index', array('classify' => 8));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新闻Banner图</a>
 		<a href="<?php echo U('Article/index', array('cate_id' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马新闻</a>
 		<a href="<?php echo U('Article/index', array('cate_id' => 2));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行业动态</a>
 		<a>老板商学院</a>
@@ -107,8 +109,10 @@
                </div>
                <div class="boxinb">
                 <span>链接图片</span>
-                <a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"></i>
-                </div>
+                <input type="file" name="file_upload" id="file_upload" />
+                <img id="thumbnail" src="" width="300px" height="200px" style="display: none">
+                <input id="article-thumbnail" type="hidden" name="thumbnail" value="">
+               </div> 
             <div class="boxinb">
                 <div class="boxinbl">
                     <span>状态</span>
@@ -144,15 +148,22 @@
 </div>
 <script src="/Public/Admin/js/sdmenu.js"></script>
 <script type="text/javascript">
-    $().ready(function(){
 
-        $(".upfn").on("change","input[type='file']",function(){
-            var filePath = $(this).val();
-            var arr = filePath.split('\\');
-            var fileName = arr[arr.length-1];
-            $(".upfnb").html(fileName);
+        $(function(){
+        <?php $timestamp = time();?>
+        $('#file_upload').uploadify({
+            'formData' : {
+                'timestamp' : '<?php echo $timestamp;?>',
+                'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+            },
+            'swf'      : '/Public/Admin/uploadify/uploadify.swf',
+            'uploader' : '/Public/Admin/uploadify/uploadify.php',
+            'onUploadSuccess' : function(file, data, response) {
+                $("#thumbnail").attr('src', data);
+                $("#thumbnail").show();
+                $("#article-thumbnail").val(data);
+            }
         });
-
     });
 </script>
 
