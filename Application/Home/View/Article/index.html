@@ -126,7 +126,7 @@ $(function() {
 							<volist name="articles" id="vo">
 							<div class="boxitem">
 								<div class="imglimt">
-									<img src="<{$vo.titleimg}>" alt="" />
+									<img src="<{$vo.thumbnail}>" alt="" />
 								</div>
 								<a href="<{:U('Article/detail', array('article_id' => $vo['article_id']))}>">
 									<h2><{$vo.title}></h2>

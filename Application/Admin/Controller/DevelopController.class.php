@@ -115,4 +115,9 @@ class DevelopController extends CommonController
     }
 
 
+    public function up()
+    {
+        $this->ajaxReturn($this->upload());
+    }
+
 }

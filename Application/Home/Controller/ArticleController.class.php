@@ -88,13 +88,13 @@ class ArticleController extends HomeBaseController
 		$model->where(array('article_id' => $article_id))->setInc('click');
 
 		$article = $model->find($article_id);
-		$category = D('Category')->find($article['cate_id']);
+		// $category = D('Category')->find($article['cate_id']);
 
 		$last_article = $model->where(array('status' => 1, 'cate_id' => $article['cate_id'], 'article_id' => array('LT', $article_id)))->order('article_id desc')->find();
 		$next_article = $model->where(array('status' => 1, 'cate_id' => $article['cate_id'], 'article_id' => array('GT', $article_id)))->order('article_id asc')->find();
 
 		$this->assign('article', $article);
-		$this->assign('category', $category);
+		// $this->assign('category', $category);
 		$this->assign('last_article', $last_article);
 		$this->assign('next_article', $next_article);
 

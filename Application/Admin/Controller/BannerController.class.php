@@ -80,9 +80,10 @@ class BannerController extends CommonController
 	public function delete()
 	{
 		$id = I('get.id');
+        $classify = I('get.classify');
         $banner_model = D('Banner');
         if($banner_model->delete($id)){
-            $this->success('Banner删除成功', U('Banner/index'), 1);
+            $this->success('Banner删除成功', U('Banner/index', array('classify' => $classify)), 1);
         }else{
             $this->error('Banner删除失败');
         }
@@ -114,6 +115,9 @@ class BannerController extends CommonController
     }
 
 
-
+    public function up()
+    {
+        $this->ajaxReturn($this->upload());
+    }
 
 }

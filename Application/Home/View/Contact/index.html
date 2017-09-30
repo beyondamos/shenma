@@ -410,8 +410,8 @@ $(function() {
 
 
 	//切换地点职位效果
-	$(".post").click(function(){
-        // alert(this);
+	$(".contact-recruit-nav").on('click','li',function(){
+        // alert($(this).html());
 		post_id = $(this).attr('post');
 		// alert(post_id);
 		$.post('<{:U('Contact/getPost')}>', {'post_id': post_id}, function(data){

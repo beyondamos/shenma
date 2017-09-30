@@ -64,7 +64,7 @@
 						<td class="text-vm">
 							<a href="<{:U('Banner/edit',array('id' => $vo['id']) )}>">编辑</a>
 							<if condition="$vo['classify'] != 4">
-							<a href="<{:U('Banner/delete',array('id' => $vo['id']) )}>">删除</a>
+							<a href="<{:U('Banner/delete',array('id' => $vo['id'], 'classify' => $classify ))}>">删除</a>
 							</if>
 						</td>
 					</tr>

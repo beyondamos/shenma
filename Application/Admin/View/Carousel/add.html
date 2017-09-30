@@ -14,8 +14,10 @@
     <script src="__JS__/jquery-1.11.1.min.js"></script>
 
     <script src="__JS__/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/uploadify/uploadify.css" />
-    <script type="text/javascript" src="__PUBLIC__/Admin/uploadify/jquery.uploadify.min.js"></script>
+<!--引入CSS-->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/uploader/webuploader.css">
+<!--引入JS-->
+<script type="text/javascript" src="__PUBLIC__/Admin/uploader/webuploader.js"></script>
 </head>
 <body>
     <include file="Public:nav_top" />
@@ -31,24 +33,40 @@
                 <div class="boxin">
                    <span>轮播图名称</span><input type="text" name="name" class="form-control">
                </div>
-               <div class="boxinb">
-                <span>左侧图</span>
-                <input type="file" name="file_upload1" id="file_upload1" />
-                <img id="thumbnail1" src="" width="300px" height="200px" style="display: none">
-                <input id="article-thumbnail1" type="hidden" name="thumbnail1" value="">
-               </div> 
-               <div class="boxinb">
-                <span>右侧图</span>
-                <input type="file" name="file_upload2" id="file_upload2" />
-                <img id="thumbnail2" src="" width="300px" height="200px" style="display: none">
-                <input id="article-thumbnail2" type="hidden" name="thumbnail2" value="">
-               </div> 
-               <div class="boxinb">
-                <span>右侧隐藏图</span>
-                <input type="file" name="file_upload3" id="file_upload3" />
-                <img id="thumbnail3" src="" width="300px" height="200px" style="display: none">
-                <input id="article-thumbnail3" type="hidden" name="thumbnail3" value="">
-               </div> 
+              <div class="boxinb">
+              
+              <span>左侧图</span>
+                  <div id="uploader-demo">
+                      <!--用来存放item-->
+                      
+                      <div id="filePicker1">选择图片</div>
+                      <input id="thumbnail1" type="hidden" name="thumbnail1" value="">
+                      <div id="fileList1" class="uploader-list"></div>
+                      <img id="oldimg1" src="" width="300px" height="200px" style="display:none">
+                  </div>
+            </div>
+              <div class="boxinb">
+              <span>右侧图</span>
+                  <div id="uploader-demo">
+                      <!--用来存放item-->
+                      
+                      <div id="filePicker2">选择图片</div>
+                      <input id="thumbnail2" type="hidden" name="thumbnail2" value="">
+                      <div id="fileList2" class="uploader-list"></div>
+                      <img id="oldimg2" src="" width="300px" height="200px" style="display:none">
+                  </div>
+            </div>
+            <div class="boxinb">
+                          <span>右侧隐藏图</span>
+                  <div id="uploader-demo">
+                      <!--用来存放item-->
+                      
+                      <div id="filePicker3">选择图片</div>
+                      <input id="thumbnail3" type="hidden" name="thumbnail3" value="">
+                      <div id="fileList3" class="uploader-list"></div>
+                       <img id="oldimg3" src="" width="300px" height="200px" style="display:none">
+                  </div>
+            </div>
 
                 <div class="boxinb">
                    <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="10">
@@ -66,62 +84,132 @@
 </div>
 <script src="__JS__/sdmenu.js"></script>
 
-<script type="text/javascript">
 
-        $(function(){
-        $('#file_upload1').uploadify({
-            'formData' : {
-              <?php $timestamp = time(); ?>
-                'timestamp' : '<?php echo $timestamp;?>',
-                'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
-            },
-            'swf'      : '__PUBLIC__/Admin/uploadify/uploadify.swf',
-            'uploader' : '__PUBLIC__/Admin/uploadify/uploadify.php',
-            'onUploadSuccess' : function(file, data, response) {
-                $("#thumbnail1").attr('src', data);
-                $("#thumbnail1").show();
-                $("#article-thumbnail1").val(data);
-            }
-        });
-    });
+<script type="text/javascript">
+var $list=$("#fileList1");   //这几个初始化全局的百度文档上没说明，好蛋疼。 
+   // var $btn =$("#ctlBtn");   //开始上传  
+   var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
+   var thumbnailHeight = 100;  
+// 初始化Web Uploader
+var uploader = WebUploader.create({
+    // 选完文件后，是否自动上传。
+    auto: true,
+    // swf文件路径
+    swf: '__PUBLIC__/Admin/uploader/Uploader.swf',
+    // 文件接收服务端。
+    server: '<{:U('Admin/Banner/up')}>',
+    // 选择文件的按钮。可选。
+    // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+    pick: '#filePicker1',
+    // // 只允许选择图片文件。
+    // accept: {
+    //     title: 'Images',
+    //     extensions: 'gif,jpg,jpeg,bmp,png',
+    //     mimeTypes: 'image/*'
+    // }
+});
+
+// // 当有文件添加进来的时候
+// uploader.on( 'fileQueued', function( file ) {
+//     var $li = $(
+//             '<div id="' + file.id + '" class="file-item thumbnail">' +
+//                 '<img>' +
+//                 '<div class="info">' + file.name + '</div>' +
+//             '</div>'
+//             ),
+//         $img = $li.find('img');
+//     // $list为容器jQuery实例
+//     $list.append( $li );
+//     // 创建缩略图
+//     // 如果为非图片文件，可以不用调用此方法。
+//     // thumbnailWidth x thumbnailHeight 为 100 x 100
+//     uploader.makeThumb( file, function( error, src ) {
+//         if ( error ) {
+//             $img.replaceWith('<span>不能预览</span>');
+//             return;
+//         }
+//         $img.attr( 'src', src );
+//     }, thumbnailWidth, thumbnailHeight );
+// });
+
+   // 文件上传成功，给item添加成功class, 用样式标记上传成功。  
+   uploader.on( 'uploadSuccess', function( file , response) { 
+        $("#oldimg1").attr('src', '/Public/Upload/'+response);
+        $("#oldimg1").show();
+        $("#thumbnail1").attr('value', '/Public/Upload/'+response);
+   });  
 </script>
-<script type="text/javascript">
 
-        $(function(){
-        $('#file_upload2').uploadify({
-            'formData' : {
-              <?php $timestamp = time(); ?>
-                'timestamp' : '<?php echo $timestamp;?>',
-                'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
-            },
-            'swf'      : '__PUBLIC__/Admin/uploadify/uploadify.swf',
-            'uploader' : '__PUBLIC__/Admin/uploadify/uploadify.php',
-            'onUploadSuccess' : function(file, data, response) {
-                $("#thumbnail2").attr('src', data);
-                $("#thumbnail2").show();
-                $("#article-thumbnail2").val(data);
-            }
-        });
-    });
+
+
+
+
+<script type="text/javascript">
+var $list=$("#fileList2");   //这几个初始化全局的百度文档上没说明，好蛋疼。 
+   // var $btn =$("#ctlBtn");   //开始上传  
+   var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
+   var thumbnailHeight = 100;  
+// 初始化Web Uploader
+var uploader = WebUploader.create({
+    // 选完文件后，是否自动上传。
+    auto: true,
+    // swf文件路径
+    swf: '__PUBLIC__/Admin/uploader/Uploader.swf',
+    // 文件接收服务端。
+    server: '<{:U('Admin/Banner/up')}>',
+    // 选择文件的按钮。可选。
+    // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+    pick: '#filePicker2',
+    // // 只允许选择图片文件。
+    // accept: {
+    //     title: 'Images',
+    //     extensions: 'gif,jpg,jpeg,bmp,png',
+    //     mimeTypes: 'image/*'
+    // }
+});
+
+
+
+   // 文件上传成功，给item添加成功class, 用样式标记上传成功。  
+   uploader.on( 'uploadSuccess', function( file , response) {  
+        $("#oldimg2").attr('src', '/Public/Upload/'+response);
+        $("#oldimg2").show();
+        $("#thumbnail2").attr('value', '/Public/Upload/'+response);
+   });  
 </script>
-<script type="text/javascript">
 
-        $(function(){
-        $('#file_upload3').uploadify({
-            'formData' : {
-              <?php $timestamp = time(); ?>
-                'timestamp' : '<?php echo $timestamp;?>',
-                'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
-            },
-            'swf'      : '__PUBLIC__/Admin/uploadify/uploadify.swf',
-            'uploader' : '__PUBLIC__/Admin/uploadify/uploadify.php',
-            'onUploadSuccess' : function(file, data, response) {
-                $("#thumbnail3").attr('src', data);
-                $("#thumbnail3").show();
-                $("#article-thumbnail3").val(data);
-            }
-        });
-    });
+
+<script type="text/javascript">
+var $list=$("#fileList3");   //这几个初始化全局的百度文档上没说明，好蛋疼。 
+   // var $btn =$("#ctlBtn");   //开始上传  
+   var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
+   var thumbnailHeight = 100;  
+// 初始化Web Uploader
+var uploader = WebUploader.create({
+    // 选完文件后，是否自动上传。
+    auto: true,
+    // swf文件路径
+    swf: '__PUBLIC__/Admin/uploader/Uploader.swf',
+    // 文件接收服务端。
+    server: '<{:U('Admin/Banner/up')}>',
+    // 选择文件的按钮。可选。
+    // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+    pick: '#filePicker3',
+    // // 只允许选择图片文件。
+    // accept: {
+    //     title: 'Images',
+    //     extensions: 'gif,jpg,jpeg,bmp,png',
+    //     mimeTypes: 'image/*'
+    // }
+});
+
+
+   // 文件上传成功，给item添加成功class, 用样式标记上传成功。  
+   uploader.on( 'uploadSuccess', function( file , response) {  
+                $("#oldimg3").attr('src', '/Public/Upload/'+response);
+        $("#oldimg3").show();
+        $("#thumbnail3").attr('value', '/Public/Upload/'+response);
+   });  
 </script>
 </body>
 </html>

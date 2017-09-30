@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="renderer" content="webkit">
-<title>什马金融</title>
+<title><?php echo ($site_title); ?></title>
+<meta name="keywords" content="<?php echo ($site_keyword); ?>">
+<meta name="description" content="<?php echo ($site_desc); ?>">
 <link rel="stylesheet" href="/Public/Home/css/reset.css" rel="stylesheet">
 <link rel="stylesheet" href="/Public/Home/bootstrap3/css/bootstrap.min.css">
 <link rel="stylesheet" href="/Public/Home/css/yinxie.css" rel="stylesheet">

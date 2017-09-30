@@ -135,7 +135,7 @@
 						<td class="text-vm"><?php echo ($vo["sort"]); ?></td>
 						<td class="text-vm">
 							<a href="<?php echo U('Banner/edit',array('id' => $vo['id']) );?>">编辑</a>
-							<?php if($vo['classify'] != 4): ?><a href="<?php echo U('Banner/delete',array('id' => $vo['id']) );?>">删除</a><?php endif; ?>
+							<?php if($vo['classify'] != 4): ?><a href="<?php echo U('Banner/delete',array('id' => $vo['id'], 'classify' => $classify ));?>">删除</a><?php endif; ?>
 						</td>
 					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 				</tbody>

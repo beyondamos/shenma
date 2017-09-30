@@ -14,6 +14,17 @@ class IndexController extends HomeBaseController
      */
     public function index()
     {
+        
+        $site_model = D('Config');
+        //网站标题
+        $site_title = $site_model->where('conf_id = 3')->getField('conf_value');
+        $this->assign('site_title', $site_title);
+        //网站关键字
+        $site_keyword = $site_model->where('conf_id = 5')->getField('conf_value');
+        $this->assign('site_keyword', $site_keyword);
+        //网站描述
+        $site_desc = $site_model->where('conf_id = 4')->getField('conf_value');
+        $this->assign('site_desc', $site_desc);
         //banner
         $banner_model = D('Banner');
         $banners = $banner_model->where(array('classify' => 1))->order('sort asc')->select();

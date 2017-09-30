@@ -148,7 +148,7 @@ $(function() {
 
 							<?php if(is_array($articles)): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="boxitem">
 								<div class="imglimt">
-									<img src="<?php echo ($vo["titleimg"]); ?>" alt="" />
+									<img src="<?php echo ($vo["thumbnail"]); ?>" alt="" />
 								</div>
 								<a href="<?php echo U('Article/detail', array('article_id' => $vo['article_id']));?>">
 									<h2><?php echo ($vo["title"]); ?></h2>
@@ -193,13 +193,13 @@ $(function() {
                                 </div>
                             </div>
                             <div class="col-xs-4 col-sm-4">
-                                <div class="two-code pull-left">
+                                <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr02.jpg" alt="">
                                     <p class="text-center fw200">消费者微信自助借款</p>
                                 </div>
                             </div>
 							<div class="col-xs-4 col-sm-4">
-                                <div class="two-code pull-left">
+                                <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr03.jpg" alt="">
                                     <p class="text-center fw200">商户综合服务</p>
                                 </div>

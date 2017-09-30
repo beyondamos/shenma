@@ -319,13 +319,13 @@ $(function() {
                                 </div>
                             </div>
                             <div class="col-xs-4 col-sm-4">
-                                <div class="two-code pull-left">
+                                <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr02.jpg" alt="">
                                     <p class="text-center fw200">消费者微信自助借款</p>
                                 </div>
                             </div>
 							<div class="col-xs-4 col-sm-4">
-                                <div class="two-code pull-left">
+                                <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr03.jpg" alt="">
                                     <p class="text-center fw200">商户综合服务</p>
                                 </div>
@@ -454,8 +454,8 @@ $(function() {
 
 
 	//切换地点职位效果
-	$(".post").click(function(){
-        // alert(this);
+	$(".contact-recruit-nav").on('click','li',function(){
+        // alert($(this).html());
 		post_id = $(this).attr('post');
 		// alert(post_id);
 		$.post('<?php echo U('Contact/getPost');?>', {'post_id': post_id}, function(data){
