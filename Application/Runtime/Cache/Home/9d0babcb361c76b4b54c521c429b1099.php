@@ -94,17 +94,17 @@ $(function() {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><img src="/Public/Home/img/header_logo.jpg" alt=""></a>
+      <a class="navbar-brand" href="<?php echo U('Home/index');?>"><img src="/Public/Home/img/header_logo.jpg" alt=""></a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-		<li><a href="/">首页</a></li>
+		<li><a href="<?php echo U('Home/index');?>">首页</a></li>
 		<li <?php if($controller_name == 'Loans'): ?>class="active"<?php endif; ?>><a href="<?php echo U('Loans/index');?>" class="fw200">借款申请</a></li>
 		<!-- <li><a href="javascript:;" class="fw200">借款申请</a></li> -->
 		<li <?php if($controller_name == 'About'): ?>class="active"<?php endif; ?>><a href="<?php echo U('About/index');?>" class="fw200">关于什马</a></li>
 		<li  <?php if($controller_name == 'Article'): ?>class="active"<?php endif; ?>><a href="<?php echo U('Article/index');?>" class="fw200">新闻资讯</a></li>
 		<li <?php if($controller_name == 'Edu'): ?>class="active"<?php endif; ?>><a href="<?php echo U('Edu/index');?>" class="fw200">老板商学院</a></li>
-		<li><a href="javascript:;" class="fw200">小暖炉公益</a></li>
+		<li><a href="<?php echo U('About/index#xnl');?>" class="fw200">小暖炉公益</a></li>
 		<li <?php if($controller_name == 'Contact'): ?>class="active"<?php endif; ?>><a href="<?php echo U('Contact/index');?>" class="fw200">联系我们</a></li>
       </ul>
     </div>
@@ -116,9 +116,9 @@ $(function() {
 		</div>
 
 		<!--招聘区-->
-		<div class="contact-recruit">
+		<div class="contact-recruit" id="cpyc">
 			
-			<div class="contact-recruitmd">
+			<div class="contact-recruitmd"> 
 				<h1>最新职位</h1>
 				<div class="navtabs">
 					<!-- 选项卡头 -->
@@ -137,10 +137,10 @@ $(function() {
 						if(t=="更多"){
 							$(".contact-recruitmd .nav-tabs").css('overflow','visible');
 							$(".contact-recruitmd .nav-tabs").css('height','auto');
-							$(this).text("收缩");
+							$(this).text("收起");
 						}else{
 							$(".contact-recruitmd .nav-tabs").css('overflow','hidden');
-							$(".contact-recruitmd .nav-tabs").css('height','50');
+							$(".contact-recruitmd .nav-tabs").css('height','35');
 							$(this).text("更多");
 						}  
 						});
@@ -192,10 +192,10 @@ $(function() {
 				<?php if(is_array($departments)): $i = 0; $__LIST__ = $departments;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$department): $mod = ($i % 2 );++$i;?><a data-toggle="collapse" data-target="#claps-tit<?php echo ($i); ?>r">
 						<div class="panel-info-titl"><!-- <img src="/Public/Home/img/navimg01.jpg" alt=""/><br/> --><?php echo ($department["name"]); ?></div>
 					</a>
-					<div id="claps-tit<?php echo ($i); ?>r" class="claps-area collapse in">
+					<div id="claps-tit<?php echo ($i); ?>r" class="claps-area collapse <?php if($i == 1): ?>in <?php else: ?> on<?php endif; ?>">
 						<div class="container-fluid">
 							<div class="row">
-								<?php if(is_array($posts)): $i = 0; $__LIST__ = $posts;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$post): $mod = ($i % 2 );++$i; if($post['cate_id'] == $department['id']): ?><li class="post" post="<?php echo ($post['id']); ?>"><a href="javascript:;" ><?php echo ($post["name"]); ?></a></li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+								<?php if(is_array($posts)): $j = 0; $__LIST__ = $posts;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$post): $mod = ($j % 2 );++$j; if($post['cate_id'] == $department['id']): ?><li class="post" post="<?php echo ($post['id']); ?>"><a href="javascript:;" ><?php echo ($post["name"]); ?></a></li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 							</div>
 						</div>
 					</div><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -211,7 +211,7 @@ $(function() {
 		
 		
 		<!--常见问题-->
-		<div class="contact-qa">
+		<div class="contact-qa" id="cjwt">
 			<img src="/Public/Home/img/contactbk.jpg" alt="" />
 			
 			<div class="contact-qar">
@@ -269,7 +269,7 @@ $(function() {
 
 
 		<!--联系方式-->
-		<div class="contact-msg">
+		<div class="contact-msg" id="zxkf">
 			<img src="/Public/Home/img/contactus.png" alt="" />
 			
 			<div class="contact-msgl">

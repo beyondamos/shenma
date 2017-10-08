@@ -44,7 +44,8 @@ class IndexController extends HomeBaseController
         //合作品牌
         $brands = D('Brand')->where(array('status' => 1))->select();
         $this->assign('brands', $brands);
-
+        $count = D('Brand')->count();
+        $this->assign('count',$count);
         //底部导航
         $navs = D('Nav')->getSortCategories();
         $this->assign('navs', $navs);

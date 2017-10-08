@@ -91,9 +91,9 @@ $(function() {
 		</div>
 
 		<!--招聘区-->
-		<div class="contact-recruit">
+		<div class="contact-recruit" id="cpyc">
 			
-			<div class="contact-recruitmd">
+			<div class="contact-recruitmd"> 
 				<h1>最新职位</h1>
 				<div class="navtabs">
 					<!-- 选项卡头 -->
@@ -116,10 +116,10 @@ $(function() {
 						if(t=="更多"){
 							$(".contact-recruitmd .nav-tabs").css('overflow','visible');
 							$(".contact-recruitmd .nav-tabs").css('height','auto');
-							$(this).text("收缩");
+							$(this).text("收起");
 						}else{
 							$(".contact-recruitmd .nav-tabs").css('overflow','hidden');
-							$(".contact-recruitmd .nav-tabs").css('height','50');
+							$(".contact-recruitmd .nav-tabs").css('height','35');
 							$(this).text("更多");
 						}  
 						});
@@ -172,10 +172,10 @@ $(function() {
 					<a data-toggle="collapse" data-target="#claps-tit<{$i}>r">
 						<div class="panel-info-titl"><!-- <img src="__PUBLIC__/Home/img/navimg01.jpg" alt=""/><br/> --><{$department.name}></div>
 					</a>
-					<div id="claps-tit<{$i}>r" class="claps-area collapse in">
+					<div id="claps-tit<{$i}>r" class="claps-area collapse <if condition="$i == 1">in <else /> on </if>">
 						<div class="container-fluid">
 							<div class="row">
-								<volist name="posts" id="post">
+								<volist name="posts" id="post" key="j">
 								<if condition="$post['cate_id'] == $department['id']">
 								<li class="post" post="<{$post['id']}>"><a href="javascript:;" ><{$post.name}></a></li>
 								</if>
@@ -196,7 +196,7 @@ $(function() {
 		
 		
 		<!--常见问题-->
-		<div class="contact-qa">
+		<div class="contact-qa" id="cjwt">
 			<img src="__PUBLIC__/Home/img/contactbk.jpg" alt="" />
 			
 			<div class="contact-qar">
@@ -261,7 +261,7 @@ $(function() {
 
 
 		<!--联系方式-->
-		<div class="contact-msg">
+		<div class="contact-msg" id="zxkf">
 			<img src="__PUBLIC__/Home/img/contactus.png" alt="" />
 			
 			<div class="contact-msgl">

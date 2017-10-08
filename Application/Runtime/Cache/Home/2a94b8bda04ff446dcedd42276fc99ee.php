@@ -103,7 +103,7 @@ $(function() {
 		<li><a href="<?php echo U('About/index');?>" class="fw200">关于什马</a></li>
 		<li><a href="<?php echo U('Article/index');?>" class="fw200">新闻资讯</a></li>
 		<li><a href="<?php echo U('Edu/index');?>" class="fw200">老板商学院</a></li>
-		<li><a href="javascript:;" class="fw200">小暖炉公益</a></li>
+		<li><a href="<?php echo U('About/index#xnl');?>" class="fw200">小暖炉公益</a></li>
 		<li><a href="<?php echo U('Contact/index');?>" class="fw200">联系我们</a></li>
       </ul>
 		<dl>
@@ -159,6 +159,7 @@ $(function() {
 		
 		
     <div class="section content1">
+	<div class="maskbar"></div>
             <div class="pc_version h92">
                 <div class="home-secondblock h100">
                     <div class="container relative">
@@ -210,102 +211,6 @@ $(function() {
                     </div>
                 </div>
             </div>
-            <div class="mobile_version h100 bg_height">
-				<div class="mobile h100">
-					<div class="home-secondblock h100" background-size: contain;>
-                  <div class="container relative">
-                    <div class="row" >
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs tab_toggle" role="tablist">
-                            <li role="presentation" class="active" id="buy_buy">
-                                <a href="#mobile_buycar" role="tab" data-toggle="tab" class="fw200" >分期买车</a>
-                            </li>
-                           <!--  <li role="presentation">
-                                <a>/</a>
-                            </li> -->
-                            <li role="presentation" id="purchase_purchase">
-                                <a href="#mobile_purchase" role="tab" data-toggle="tab" class="fw200" >分期进货</a>
-                            </li>
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane fade in active" id="mobile_buycar">
-                                <div id="buy_car" class="carousel slide carousel-fade" style="width:100%;" style="position: relative;">
-
-                                    <ol class="carousel-indicators" style="bottom: 39px;">
-                                        <li data-target="#buy_car" data-slide-to="0" class="active">1<img src="/Public/Home/img/next.png" alt=""></li>
-                                        <li data-target="#buy_car" data-slide-to="1">2<img src="/Public/Home/img/next.png" alt=""></li>
-                                        <li data-target="#buy_car" data-slide-to="2">3<img src="/Public/Home/img/next.png" alt=""></li>
-                                        <li data-target="#buy_car" data-slide-to="3">4</li>
-                                    </ol>
-
-
-                                    <div class="carousel-inner" role="listbox">
-                                        <div class="item active">
-                                          <img  class="mobile-img1" src="/Public/Home/img/xiang.png" alt="">
-                                        </div>
-                                        <div class="item">
-                                          <p class="mobile-img2-title">进门店</p><p class="mobile-img3-title">选车</p>
-                                          <img  class="mobile-img2" src="/Public/Home/img/mobile_dian.png" alt="">
-                                            <img  class="mobile-img3" src="/Public/Home/img/mobile_jinmen.png" alt="">
-                                            <img  class="mobile-img4" src="/Public/Home/img/purchase_vendor.png" alt="">
-                                        </div>
-                                        <div class="item">
-                                          <img  class="mobile-img2" src="/Public/Home/img/mobile_dian.png" alt="">
-                                            <img  class="mobile-img6" src="/Public/Home/img/nongming.png" alt="">
-                                            <img  class="mobile-img7" src="/Public/Home/img/purchase_vendor.png" alt="">
-                                            <img  class="mobile-img8" src="/Public/Home/img/mobile_shenhe.png" alt="">
-                                        </div>
-                                        <div class="item">
-                                          <p class="mobile-img9-title">骑车回家啰</p>
-                                          <img  class="mobile-img9" src="/Public/Home/img/mobile_huijia.png" alt="">
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div role="tabpanel" class="tab-pane fade" id="mobile_purchase">
-                                    <div id="restore" class="carousel" style="width:100%;">
-                                        <!-- Indicators -->
-                                        <ol class="carousel-indicators" style="bottom: 39px;">
-                                            <li data-target="#restore" data-slide-to="0" class="active">1<img src="/Public/Home/img/next.png" alt=""></li>
-                                            <li data-target="#restore" data-slide-to="1">2<img src="/Public/Home/img/next.png" alt=""></li>
-                                            <li data-target="#restore" data-slide-to="2">3<img src="/Public/Home/img/next.png" alt=""></li>
-                                            <li data-target="#restore" data-slide-to="3">4</li>
-                                        </ol>
-                                        <!-- Wrapper for slides -->
-                                        <div class="carousel-inner" role="listbox">
-                                            <div class="item active">
-                                              <img  class="mobile-img2" src="/Public/Home/img/mobile_dian.png" alt="">
-                                              <img  class="mobile-img10" src="/Public/Home/img/purchase_vendor.png" alt="">
-                                              <img  class="mobile-img11" src="/Public/Home/img/purchase_xiang.png" alt="">
-                                            </div>
-                                            <div class="item">
-                                              <img  class="mobile-img2" src="/Public/Home/img/mobile_dian.png" alt="">
-                                                <img  class="mobile-img10" src="/Public/Home/img/purchase_vendor.png" alt="">
-                                                <img  class="mobile-img8" src="/Public/Home/img/purchase_shenhe.png" alt="">
-                                            </div>
-                                            <div class="item">
-                                              <p class="mobile-img12-title">收货啦~</p>
-                                              <img  class="mobile-img2" src="/Public/Home/img/mobile_dian.png" alt="">
-                                                <img  class="mobile-img12" src="/Public/Home/img/purchase_kache.png" alt="">
-                                            </div>
-                                            <div class="item">
-                                              <img  class="mobile-img2" src="/Public/Home/img/mobile_dian.png" alt="">
-                                                <img  class="mobile-img12" src="/Public/Home/img/purchase_che.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                  </div>
-                </div>
-				</div>
-			</div>
 	</div>
        
 		
@@ -324,21 +229,23 @@ $(function() {
 		
 		<!--业务介绍-->
 		<div class="section content3">
+			<button class="btnud"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button>
+			
 			<div class="bg-style hxyw2">
 				<div class="swiper-container bg_div-left">
 					<div class="swiper-wrapper ">
-						<div class="swiper-slide pub_sd bg_1"><img id="bg_1imgl" src="/Public/Home/img/imgl01.jpg" alt=""/></div>
-						<div class="swiper-slide pub_sd bg_2"><img id="bg_2imgl" src="/Public/Home/img/imgl02.jpg" alt=""/></div>
-						<div class="swiper-slide pub_sd bg_3"><img id="bg_3imgl" src="/Public/Home/img/imgl03.jpg" alt=""/></div>
-						<div class="swiper-slide pub_sd bg_4"><img id="bg_4imgl" src="/Public/Home/img/imgl04.jpg" alt=""/></div>
+						<div class="swiper-slide pub_sd bg_1"><img class="bg_1imgl" src="/Public/Home/img/imgl01.jpg" alt=""/></div>
+						<div class="swiper-slide pub_sd bg_2"><img class="bg_2imgl" src="/Public/Home/img/imgl02.jpg" alt=""/></div>
+						<div class="swiper-slide pub_sd bg_3"><img class="bg_3imgl" src="/Public/Home/img/imgl03.jpg" alt=""/></div>
+						<div class="swiper-slide pub_sd bg_4"><img class="bg_4imgl" src="/Public/Home/img/imgl04.jpg" alt=""/></div>
 					</div>
 				</div>
 				<div class="swiper-container R_bg">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide bg_4"><img id="bg_4img" src="/Public/Home/img/imgr04.jpg" alt="" /><img id="bg_4img" src="/Public/Home/img/imgr04b.jpg" alt="" /></div>
-						<div class="swiper-slide bg_3"><img id="bg_3img" src="/Public/Home/img/imgr03.jpg" alt="" /><img id="bg_4img" src="/Public/Home/img/imgr03b.jpg" alt="" /></div>
-						<div class="swiper-slide bg_2"><img id="bg_2img" src="/Public/Home/img/imgr02.jpg" alt="" /><img id="bg_4img" src="/Public/Home/img/imgr02b.jpg" alt="" /></div>
-						<div class="swiper-slide bg_1"><img id="bg_1img" src="/Public/Home/img/imgr01.jpg" alt="" /><img id="bg_4img" src="/Public/Home/img/imgr01b.jpg" alt="" /></div>
+						<div class="swiper-slide bg_4"><img class="bg_4img" src="/Public/Home/img/imgr04.jpg" alt="" /><img class="bg_4imgb" src="/Public/Home/img/imgr04b.jpg" alt="" /></div>
+						<div class="swiper-slide bg_3"><img class="bg_3img" src="/Public/Home/img/imgr03.jpg" alt="" /><img class="bg_3imgb" src="/Public/Home/img/imgr03b.jpg" alt="" /></div>
+						<div class="swiper-slide bg_2"><img class="bg_2img" src="/Public/Home/img/imgr02.jpg" alt="" /><img class="bg_2imgb" src="/Public/Home/img/imgr02b.jpg" alt="" /></div>
+						<div class="swiper-slide bg_1"><img class="bg_1img" src="/Public/Home/img/imgr01.jpg" alt="" /><img class="bg_1imgb" src="/Public/Home/img/imgr01b.jpg" alt="" /></div>
 					</div>
 				</div>
 			</div>
@@ -349,6 +256,7 @@ $(function() {
 		
 		<!--新闻资讯-->
 		<div class="section content4">
+		<div class="maskbarb"></div>
 		<div class="box-news">
 			<div class="box-newsmd">
 			
@@ -384,14 +292,15 @@ $(function() {
 				<div class="carousel slide" id="carousel-exampleb"  data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="item active box-logomd">
-						  <?php if(is_array($brands)): $i = 0; $__LIST__ = array_slice($brands,0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($vo["url"]); ?>"><img src="<?php echo ($vo["thumbnail"]); ?>" alt=""/><h5><?php echo ($vo["name"]); ?></h5></a><?php endforeach; endif; else: echo "" ;endif; ?>
+						  <?php if(is_array($brands)): $i = 0; $__LIST__ = array_slice($brands,0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($vo["url"]); ?>" target="_blank"><img src="<?php echo ($vo["thumbnail"]); ?>" alt=""/><h5><?php echo ($vo["name"]); ?></h5></a><?php endforeach; endif; else: echo "" ;endif; ?>
 						</div>
-						<div class="item box-logomd">
-                          <?php if(is_array($brands)): $i = 0; $__LIST__ = array_slice($brands,10,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($vo["url"]); ?>"><img src="<?php echo ($vo["thumbnail"]); ?>" alt=""/><h5><?php echo ($vo["name"]); ?></h5></a><?php endforeach; endif; else: echo "" ;endif; ?>
-						</div>
-						<div class="item box-logomd">
-                          <?php if(is_array($brands)): $i = 0; $__LIST__ = array_slice($brands,20,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($vo["url"]); ?>"><img src="<?php echo ($vo["thumbnail"]); ?>" alt=""/><h5><?php echo ($vo["name"]); ?></h5></a><?php endforeach; endif; else: echo "" ;endif; ?>
-						</div>
+
+                        <?php if($count > 10): ?><div class="item box-logomd">
+                          <?php if(is_array($brands)): $i = 0; $__LIST__ = array_slice($brands,10,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($vo["url"]); ?>" target="_blank"><img src="<?php echo ($vo["thumbnail"]); ?>" alt=""/><h5><?php echo ($vo["name"]); ?></h5></a><?php endforeach; endif; else: echo "" ;endif; ?>
+						</div><?php endif; ?> 
+                        <?php if($count > 20): ?><div class="item box-logomd">
+                          <?php if(is_array($brands)): $i = 0; $__LIST__ = array_slice($brands,19,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($vo["url"]); ?>" target="_blank"><img src="<?php echo ($vo["thumbnail"]); ?>" alt=""/><h5><?php echo ($vo["name"]); ?></h5></a><?php endforeach; endif; else: echo "" ;endif; ?>
+						</div><?php endif; ?> 
 					</div>
 					
 				</div>
@@ -415,7 +324,7 @@ $(function() {
 				<h5>公司地址：上海市长宁区凌空SOHO5号楼1楼</h5>
 				<h5>合作邮箱：hezuo@shenmajr.com</h5>
 				<h5>联系电话：400-088-6177&nbsp;&nbsp;021-62156265</h5>
-				<h5>媒体合作：PR@SHENMAJR.COM</h5>
+				<h5>媒体合作：pr@shenmajr.com</h5>
 				
 				<div class="contact-map">
 					<a href="http://api.map.baidu.com/geocoder?output=html&amp;address=%e4%b8%8a%e6%b5%b7%e5%b8%82%e9%95%bf%e5%ae%81%e5%8c%ba%e5%87%8c%e7%a9%basoho5%e5%8f%b7%e6%a5%bc1%e6%a5%bc" title="点击查看地图" ><img src="/Public/Home/img/map.jpg" alt="" /></a><dt>

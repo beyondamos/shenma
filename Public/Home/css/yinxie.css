@@ -2063,8 +2063,22 @@ a:hover{
 	}
 }
  */
+.footer-wrap .two-code .img-responsive{
+	max-width:86%;
+	margin-left:7%;
+}
 
-
+.home-footer .footer-wrap .two-code{
+	/* display: flex;
+	justify-content: center;
+	align-items: center;  */
+	/* vertical-align: middle;
+    display: table-cell;
+    text-align: center; */
+}
+/* .home-footer .footer-wrap .two-code p{
+	display: block!important;
+} */
 .footer-wrap h4{
 	color:#fff;
 	text-align:right;

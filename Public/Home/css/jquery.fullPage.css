@@ -452,13 +452,13 @@ html, body {
 
 
 
-.box-logo{
+/* .box-logo{
 	background-image:linear-gradient(to bottom,#fff,#fff,#fff,#d6e9f5);
 	background: -moz-linear-gradient(to bottom,#fff,#fff,#fff,#d6e9f5);
 	background: -webkit-linear-gradient(to bottom,#fff,#fff,#fff,#d6e9f5);
 	background: -o-linear-gradient(to bottom,#fff,#fff,#fff,#d6e9f5);
 	background: -ms-linear-gradient(to bottom,#fff,#fff,#fff,#d6e9f5);
-}
+} */
 
 .box-logomd{
 	width:900px;

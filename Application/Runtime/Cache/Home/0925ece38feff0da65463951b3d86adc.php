@@ -87,17 +87,17 @@ $(function() {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><img src="/Public/Home/img/header_logo.jpg" alt=""></a>
+      <a class="navbar-brand" href="<?php echo U('Home/index');?>"><img src="/Public/Home/img/header_logo.jpg" alt=""></a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-		<li><a href="/">首页</a></li>
+		<li><a href="<?php echo U('Home/index');?>">首页</a></li>
 		<li <?php if($controller_name == 'Loans'): ?>class="active"<?php endif; ?>><a href="<?php echo U('Loans/index');?>" class="fw200">借款申请</a></li>
 		<!-- <li><a href="javascript:;" class="fw200">借款申请</a></li> -->
 		<li <?php if($controller_name == 'About'): ?>class="active"<?php endif; ?>><a href="<?php echo U('About/index');?>" class="fw200">关于什马</a></li>
 		<li  <?php if($controller_name == 'Article'): ?>class="active"<?php endif; ?>><a href="<?php echo U('Article/index');?>" class="fw200">新闻资讯</a></li>
 		<li <?php if($controller_name == 'Edu'): ?>class="active"<?php endif; ?>><a href="<?php echo U('Edu/index');?>" class="fw200">老板商学院</a></li>
-		<li><a href="javascript:;" class="fw200">小暖炉公益</a></li>
+		<li><a href="<?php echo U('About/index#xnl');?>" class="fw200">小暖炉公益</a></li>
 		<li <?php if($controller_name == 'Contact'): ?>class="active"<?php endif; ?>><a href="<?php echo U('Contact/index');?>" class="fw200">联系我们</a></li>
       </ul>
     </div>
@@ -117,7 +117,12 @@ $(function() {
 			<div class="apply-app">
 				<div class="apply-app-md">
 					<h3><img src="/Public/Home/img/txt.png" alt="" /></h3>
-					<a href="javascript:;"><img src="/Public/Home/img/btn.jpg" alt="" /></a>
+					<a href="javascript:;"><img src="/Public/Home/img/btn.jpg" alt="" />
+						<i>
+							<img src="/Public/Home/img/qr01t.jpg" alt="" />
+							<img src="/Public/Home/img/qr02t.jpg" alt="" />
+						</i>
+					</a>
 				</div>
 			</div>
 			
@@ -172,13 +177,13 @@ $(function() {
                                 </div>
                             </div>
                             <div class="col-xs-4 col-sm-4">
-                                <div class="two-code pull-left">
+                                <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr02.jpg" alt="">
                                     <p class="text-center fw200">消费者微信自助借款</p>
                                 </div>
                             </div>
 							<div class="col-xs-4 col-sm-4">
-                                <div class="two-code pull-left">
+                                <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr03.jpg" alt="">
                                     <p class="text-center fw200">商户综合服务</p>
                                 </div>

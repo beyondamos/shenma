@@ -110,17 +110,16 @@
                    <span>链&nbsp;接&nbsp;地&nbsp;址</span><input type="text" name="url" class="form-control" value="<?php echo ($banner["url"]); ?>">
                </div>
 
-               <div class="boxinb">
-<div id="uploader-demo">
-    <!--用来存放item-->
-    
-    <div id="filePicker">选择图片</div>
-    <input id="thumbnail" type="hidden" name="thumbnail" value="<?php echo ($banner["thumbnail"]); ?>">
-    <img id="oldimg" src="<?php echo ($banner["thumbnail"]); ?>" width="300px" height="200px">
-    <div id="fileList" class="uploader-list"></div>
-</div>
-
-</div>
+              <div class="boxinb">
+                    <div id="uploader-demo">
+                        <!--用来存放item-->
+                        
+                        <div id="filePicker">选择图片</div>
+                        <input id="thumbnail" type="hidden" name="thumbnail" value="<?php echo ($banner["thumbnail"]); ?>">
+                        <img id="oldimg" src="<?php echo ($banner["thumbnail"]); ?>" width="300px" height="200px">
+                        <div id="fileList" class="uploader-list"></div>
+                    </div>
+              </div>
 
                 <div class="boxinb">
                    <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="<?php echo ($banner["sort"]); ?>">

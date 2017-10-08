@@ -14,6 +14,8 @@
     <script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
 
+<!--     <link rel="stylesheet" type="text/css" href="/Public/Admin/uploadify/uploadify.css" />
+    <script type="text/javascript" src="/Public/Admin/uploadify/jquery.uploadify.min.js"></script> -->
 
 <!--引入CSS-->
 <link rel="stylesheet" type="text/css" href="/Public/Admin/uploader/webuploader.css">
@@ -118,16 +120,16 @@
                 <img id="thumbnail" src="" width="300px" height="200px" style="display: none">
                 <input id="article-thumbnail" type="hidden" name="thumbnail" value="">
                </div>  -->
-              <div class="boxinb">
-                  <div id="uploader-demo">
-                      <!--用来存放item-->
-                      
-                      <div id="filePicker">选择图片</div>
-                      <input id="thumbnail" type="hidden" name="thumbnail" value="">
-                      <div id="fileList" class="uploader-list"></div>
-                  </div>
-            </div>
-            
+               <div class="boxinb">
+<div id="uploader-demo">
+    <!--用来存放item-->
+    
+    <div id="filePicker">选择图片</div>
+    <input id="thumbnail" type="hidden" name="thumbnail" value="">
+    <div id="fileList" class="uploader-list"></div>
+</div>
+
+</div>
                 <div class="boxinb">
                    <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="10">
                </div>
@@ -156,15 +158,20 @@ var $list=$("#fileList");   //这几个初始化全局的百度文档上没说�
    var thumbnailHeight = 100;  
 // 初始化Web Uploader
 var uploader = WebUploader.create({
+
     // 选完文件后，是否自动上传。
     auto: true,
+
     // swf文件路径
     swf: '/Public/Admin/uploader/Uploader.swf',
+
     // 文件接收服务端。
     server: '<?php echo U('Admin/Banner/up');?>',
+
     // 选择文件的按钮。可选。
     // 内部根据当前运行是创建，可能是input元素，也可能是flash.
     pick: '#filePicker',
+
     // // 只允许选择图片文件。
     // accept: {
     //     title: 'Images',
@@ -182,8 +189,11 @@ uploader.on( 'fileQueued', function( file ) {
             '</div>'
             ),
         $img = $li.find('img');
+
+
     // $list为容器jQuery实例
     $list.append( $li );
+
     // 创建缩略图
     // 如果为非图片文件，可以不用调用此方法。
     // thumbnailWidth x thumbnailHeight 为 100 x 100
@@ -192,14 +202,37 @@ uploader.on( 'fileQueued', function( file ) {
             $img.replaceWith('<span>不能预览</span>');
             return;
         }
+
         $img.attr( 'src', src );
     }, thumbnailWidth, thumbnailHeight );
 });
 
+
    // 文件上传成功，给item添加成功class, 用样式标记上传成功。  
    uploader.on( 'uploadSuccess', function( file , response) {  
+
+        // alert(response);
         $("#thumbnail").attr('value', '/Public/Upload/'+response);
+
+       // $( '#'+file.id ).addClass('upload-state-done');  
    });  
+    //     $(function(){
+    //     <?php $timestamp = time();?>
+    //     $('#file_upload').uploadify({
+    //         'formData' : {
+    //             'timestamp' : '<?php echo $timestamp;?>',
+    //             'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+    //         },
+    //         'debug'    : true,
+    //         'swf'      : '/Public/Admin/uploadify/uploadify.swf',
+    //         'uploader' : '/Public/Admin/uploadify/uploadify.php',
+    //         'onUploadSuccess' : function(file, data, response) {
+    //             $("#thumbnail").attr('src', data);
+    //             $("#thumbnail").show();
+    //             $("#article-thumbnail").val(data);
+    //         }
+    //     });
+    // });
 </script>
 
 

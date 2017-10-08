@@ -9,8 +9,8 @@ html {
 	transform: translate3d(0,0,0);
 }
 #main-container{display: none;}
-.navbar{display: none;}
-.footer{display: none;}
+.navbar{display: block;}
+.footer{display: block;}
 #load{transition: 1s all;}
 #load .loader{top: 33%;}
 body,h1,h2,h3,h4,h5,h6,hr,div,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,lengend,input,textarea,form,th,td{margin:0;padding:0;}

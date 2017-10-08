@@ -17,9 +17,9 @@
 <body>
 	<div class="ban-log">
 		<img src="/Public/Admin/images/imgbk.png" alt="" />
-		<img src="/Public/Admin/images/logob.png" alt="" />
-		<h1>甫劳科技后台管理系统</h1>
-		<h2>flower Background management system</h2>
+		<!-- <img src="/Public/Admin/images/logob.png" alt="" /> -->
+		<h1>什马金融后台管理系统</h1>
+		<!-- <h2>flower Background management system</h2> -->
 	</div>
 	<div class="log"><div class="logx">
 		<form action="<?php echo U('Login/index');?>" method="post">
@@ -33,7 +33,7 @@
 	</div>
 		<div class="nav-footb col-sm-12">
 			<div class="navfootb-center">
-				Copyright©2017-2020&nbsp;&nbsp;&nbsp;甫劳计算机科技(上海)有限公司&nbsp;&nbsp;&nbsp;版权所有&nbsp;v1.0
+				Copyright©2017-2020&nbsp;&nbsp;&nbsp;什马金融&nbsp;&nbsp;&nbsp;版权所有&nbsp;v1.0
 			</div>
 		</div>
 	</div>
