@@ -15,6 +15,10 @@ class LoansController extends HomeBaseController
 	 */
 	public function index()
 	{
+		//seo
+		$seo = D('Seo')->find(1);
+		$this->assign('seo', $seo);
+
 		//banner
 		$banner = D('Banner')->find(6);
 		$this->assign('banner', $banner);
@@ -37,6 +41,9 @@ class LoansController extends HomeBaseController
 
 	public function index2()
 	{
+		//seo
+		$seo = D('Seo')->find(2);
+		$this->assign('seo', $seo);
 		//banner
 		$banner = D('Banner')->find(6);
 		$this->assign('banner', $banner);

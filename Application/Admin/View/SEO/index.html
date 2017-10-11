@@ -23,12 +23,12 @@
 	<div class="contmain">
 		
 		<div class="boxi">
-			<h1>管理员列表</h1>
+			<h1>SEO列表</h1>
 			
 			<!-- 表格顶部搜索区 -->
-			<div class="boxoper">
+<!-- 			<div class="boxoper">
 				<a href="<{:U('User/add')}>">添加管理员</a>
-<!-- 				<div class="boxoper-seh">
+				<div class="boxoper-seh">
 					<form action="" method="post">
 						<button class="btn btn-default" type="submit"><img src="__IMG__/iconseh.png" /></button>
 						<input type="text" class="form-control" placeholder="搜索用户名或角色">
@@ -40,34 +40,27 @@
 							<option>分类</option>
 						</select>
 					</form>
-				</div> -->
-			</div>
+				</div>
+			</div> -->
 			
 			<!-- 表格 -->
 			<table class="table table-hover boxtable">
 				<thead>
 					<tr>
 					   <th class="col-md-1 text-vm">序号</th>
-					   <th class="col-md-2 text-vm">用户名</th>
-					   <th class="col-md-2 text-vm">所属角色</th>
-					   <th class="col-md-3 text-vm">邮箱</th>
-					   <th class="col-md-2 text-vm">加入时间</th>
+					   <th class="col-md-2 text-vm">名称</th>
+					   <th class="col-md-4 text-vm">网页标题</th>
 					   <th class="col-md-1 text-vm text-center">操作</th>
 					</tr>
 				</thead>
 				<tbody>
-					<volist name="user_data" id="vo">
+					<volist name="seos" id="vo">
 					<tr>
-						<td class="text-vm"><{$vo.user_id}></td>
-						<td class="text-vm"><{$vo.username}></td>
-						<td class="text-vm"><{$vo.role_name}></td>
-						<td class="text-vm"><{$vo.email}></td>
-						<td class="text-vm"><{:date('Y-m-d H:i:s',$vo['add_time'])}></td>
+						<td class="text-vm"><{$vo.id}></td>
+						<td class="text-vm"><{$vo.name}></td>
+						<td class="text-vm"><{$vo.title}></td>
 						<td class="text-vm">
-							<a href="<{:U('User/edit',array('user_id'=> $vo['user_id']))}>">编辑</a>
-							<if condition="$vo['user_id'] != 1">
-							<a href="<{:U('User/delete',array('user_id'=> $vo['user_id']))}>">删除</a>
-							</if>
+							<a href="<{:U('Seo/edit',array('id'=> $vo['id']))}>">编辑</a>
 						</td>
 					</tr>
 					</volist>

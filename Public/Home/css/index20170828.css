@@ -87,7 +87,6 @@
 .R_bg .bg_4 img,.R_bg .bg_3 img,.R_bg .bg_2 img,.R_bg .bg_1 img{
 	width:100%;
 	height:100%;
-	
 /* 	transition:All 0.8s ease-in-out;
 	-webkit-transition:All 0.8s ease-in-out;
 	-moz-transition:All 0.8s ease-in-out;
@@ -103,8 +102,19 @@
 }
  */
 
-
-
+/* .R_bg .bg_1imgb img:hover,.R_bg .bg_2imgb img:hover,.R_bg .bg_3imgb img:hover,.R_bg .bg_4imgb img:hover{
+	cursor:pointer;
+	transform:scale(1.02);
+	-webkit-transform:scale(1.02);
+	-moz-transform:scale(1.02);
+	-o-transform:scale(1.02);
+	-ms-transform:scale(1.02);
+	transition:All 0.8s ease-in-out;
+	-webkit-transition:All 0.8s ease-in-out;
+	-moz-transition:All 0.8s ease-in-out;
+	-o-transition:All 0.8s ease-in-out;
+}
+ */
 
 .navbar-collapse dl{
 	width:680px;
@@ -297,14 +307,35 @@
 .cont-detail h1{
 	text-align:center;
 	border-bottom:1px solid #ccc;
-	padding-bottom:50px;
+	padding-bottom:30px;
 	margin-bottom:30px;
+}
+.cont-detail h1 i{
+	display:block;
+	text-align:center;
+	color:#666;
+	font-size:13px;
+	font-style:normal;
+	line-height:40px;
+}
+.cont-detail h1 i span{
+	background-color:#f0f0f0;
+	margin-left:5px;
+	margin-right:5px;
+	border-radius:2px;
+	padding:0 10px;
+	text-decoration:none!important;
+	color:#666!important;
 }
 .cont-detail p{
 	text-indent:40px;
 	line-height:30px;
 }
-
+.cont-detail img{
+	max-width:900px !important;
+	height:auto !important;
+	margin-left:-40px;
+}
 .cont-detail-prenext{
 	margin-top:150px;
 	border-top:1px solid #ccc;
@@ -476,6 +507,17 @@
 }
 .imglimtb img{
 	width:700px;
+}
+
+.imglimtb .carousel-control.left img{
+	width:30px;
+	position:absolute;
+	left:20px;top:42%;
+}
+.imglimtb .carousel-control.right img{
+	width:30px;
+	position:absolute;
+	right:20px;top:42%;
 }
 
 
@@ -1275,6 +1317,7 @@
 	overflow-y:auto;
 	height:440px;
 }
+
 .contact-recruit-nav .panel-info-titl{
 	font-size:17px;
 	color:#242424;
@@ -1725,6 +1768,9 @@ a:visited,a:link,a:active{
 	background: transparent;
 	border:none;
 	color:#fff;
+	font-size:25px;
+	/* border:1px solid #fff; */
+	/* padding:4px 5px 1px 5px; */
 }
 .btnud:hover{
 	color:#58b8ea;

@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="renderer" content="webkit">
-	<title>甫劳科技后台管理系统</title>
+	<title>什马金融后台管理系统</title>
 	<link href="/Public/Admin/css/base.css" rel="stylesheet" type="text/css"/>
 	<link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/Public/Admin/uploadify/uploadify.css" />
@@ -42,7 +42,7 @@
 			<ul id="topnav">
 				<li>
 					<a href="javascript:;"><?php echo ($login_user_data["username"]); ?><!-- <img src="/Public/Admin/images/ard.png" alt="" /> --></a><!--用户名-->
-					<img src="/Public/Admin/images/head.jpg" alt=""/><!--用户头像-->
+			
 <!-- 					<span><dl>
 						<a href="javascript:;">基本资料</a><br/>
 						<a href="javascript:;">账号信息</a><br/>

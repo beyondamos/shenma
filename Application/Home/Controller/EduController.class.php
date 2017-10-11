@@ -10,6 +10,9 @@ class EduController extends HomeBaseController
 {
 	public function index()
 	{
+				//seo
+		$seo = D('Seo')->find(5);
+		$this->assign('seo', $seo);
 		//banner
 		$banner = D('Banner')->find(10);
 		$this->assign('banner', $banner);

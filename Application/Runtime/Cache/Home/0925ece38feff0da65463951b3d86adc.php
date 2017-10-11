@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="renderer" content="webkit">
-<title>什马金融</title>
+<title><?php echo ($seo["title"]); ?></title>
+<meta name="keywords" content="<?php echo ($seo["keywords"]); ?>">
+<meta name="description" content="<?php echo ($seo["synopsis"]); ?>">
 <link rel="stylesheet" href="/Public/Home/css/reset.css" rel="stylesheet">
 <link rel="stylesheet" href="/Public/Home/bootstrap3/css/bootstrap.min.css">
 <link rel="stylesheet" href="/Public/Home/css/yinxie.css" rel="stylesheet">
@@ -186,13 +188,13 @@ $(function() {
                             <div class="col-xs-4 col-sm-4">
                                 <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr02.jpg" alt="">
-                                    <p class="text-center fw200">消费者微信自助借款</p>
+                                    <p class="text-center fw200">什马个人号</p>
                                 </div>
                             </div>
 							<div class="col-xs-4 col-sm-4">
                                 <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr03.jpg" alt="">
-                                    <p class="text-center fw200">商户综合服务</p>
+                                    <p class="text-center fw200">什马商户号</p>
                                 </div>
                             </div>
 							

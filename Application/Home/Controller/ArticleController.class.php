@@ -42,6 +42,9 @@ class ArticleController extends HomeBaseController
 	 */
 	public function index()
 	{
+				//seo
+		$seo = D('Seo')->find(4);
+		$this->assign('seo', $seo);
 		//banner设置
 		$banner  = D('Banner')->find(9);
 		$this->assign('banner', $banner);

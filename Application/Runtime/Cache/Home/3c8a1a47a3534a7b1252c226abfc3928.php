@@ -116,10 +116,12 @@ $(function() {
 				<div class="cont-detail">
 					<div class="cont-detail-nav">
 						<a href="/">首页&gt;</a>
-						<a href="<?php echo U('Article/index');?>">新闻资讯</a>&nbsp;&ndash;&nbsp;<?php if($article["cate_id"] == 1 ): ?>什马新闻<?php else: ?>新闻动态<?php endif; echo ($category["cate_name"]); ?>
+						<a href="<?php echo U('Article/index');?>">新闻资讯</a>&nbsp;&ndash;&nbsp;<?php if($article["cate_id"] == 1 ): ?>什马新闻<?php else: ?>行业动态<?php endif; echo ($category["cate_name"]); ?>
 					</div>
 					
-					<h1><?php echo ($article["title"]); ?></h1>
+					<h1><?php echo ($article["title"]); ?>
+						<i><span><?php echo ($article["newstime"]); ?></span><span><?php echo ($article["author"]); ?></span><span><?php if($article["cate_id"] == 1 ): ?>什马新闻<?php else: ?>行业动态<?php endif; ?></span></i>
+					</h1>
 					
 					<?php echo html_entity_decode($article['content']);?>
 

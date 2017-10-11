@@ -236,18 +236,28 @@ $(function() {
 			<div class="bg-style hxyw2">
 				<div class="swiper-container bg_div-left">
 					<div class="swiper-wrapper ">
-						<div class="swiper-slide pub_sd bg_1"><img class="bg_1imgl" src="__PUBLIC__/Home/img/imgl01.jpg" alt=""/></div>
-						<div class="swiper-slide pub_sd bg_2"><img class="bg_2imgl" src="__PUBLIC__/Home/img/imgl02.jpg" alt=""/></div>
-						<div class="swiper-slide pub_sd bg_3"><img class="bg_3imgl" src="__PUBLIC__/Home/img/imgl03.jpg" alt=""/></div>
-						<div class="swiper-slide pub_sd bg_4"><img class="bg_4imgl" src="__PUBLIC__/Home/img/imgl04.jpg" alt=""/></div>
+                    <?php
+                        $num = count($carousels);
+                        for ($i=1;$i<=$num; $i++):
+                    ?>
+						<div class="swiper-slide pub_sd bg_<?php echo $i;?>"><img class="bg_<?php echo $i;?>imgl" src="<?php echo $carousels[$i]['thumbnail1'];?>" alt=""/></div>
+                        <?php
+                            endfor;
+                        ?>
+
 					</div>
 				</div>
 				<div class="swiper-container R_bg">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide bg_1"><img class="bg_1img" src="__PUBLIC__/Home/img/imgr01.jpg" alt="" /><img class="bg_1imgb" src="__PUBLIC__/Home/img/imgr01b.jpg" alt="" /></div>
-						<div class="swiper-slide bg_2"><img class="bg_2img" src="__PUBLIC__/Home/img/imgr02.jpg" alt="" /><img class="bg_2imgb" src="__PUBLIC__/Home/img/imgr02b.jpg" alt="" /></div>
-						<div class="swiper-slide bg_3"><img class="bg_3img" src="__PUBLIC__/Home/img/imgr03.jpg" alt="" /><img class="bg_3imgb" src="__PUBLIC__/Home/img/imgr03b.jpg" alt="" /></div>
-						<div class="swiper-slide bg_4"><img class="bg_4img" src="__PUBLIC__/Home/img/imgr04.jpg" alt="" /><img class="bg_4imgb" src="__PUBLIC__/Home/img/imgr04b.jpg" alt="" /></div>
+                      <?php
+                         for($i=$num; $i >=1; $i--):
+                      ?>  
+
+						<div class="swiper-slide bg_<?php echo $i;?>"><img class="bg_<?php echo $i;?>img" src="<?php echo $carousels[$i]['thumbnail2'];?>" alt="" /><img class="bg_<?php echo $i;?>imgb" src="<?php echo $carousels[$i]['thumbnail3'];?>" alt="" /></div>
+                        <?php
+                            endfor;
+                        ?>
+
 					</div>
 				</div>
 			</div>
