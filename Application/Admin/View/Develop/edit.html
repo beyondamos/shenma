@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
-    <title>甫劳科技后台管理系统</title>
+    <title>什马金融后台管理系统</title>
     <link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
     <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -31,7 +31,9 @@
 
              <form action="<{:U('Develop/edit')}>" method="post" enctype="multipart/form-data">
                 <div class="boxin">
-                   <span>历程名称</span><input type="text" name="title" class="form-control" value="<{$develop.title}>">
+                   <span>历程名称</span>
+                   <textarea name="title" class="form-control" rows="5"><{$develop.title}></textarea>
+                   <!-- <input type="text" name="title" class="form-control" value="<{$develop.title}>"> -->
                </div>
               <div class="boxinb">
                     <div id="uploader-demo">
@@ -47,6 +49,9 @@
             <span class="lets2">日&nbsp;&nbsp;&nbsp;&nbsp;期</span><input type="text" id="demo"  class="form-control laydate-icon" name="newstime"  value="<{$develop.newstime}>">
           </div>
                <input type="hidden" name="id" value="<{$develop.id}>">
+                              <div class="boxinb">
+               <span>注：</span>图片 宽度280px 高度200px
+               </div>
             <div class="boxinbtn">
                <input type="submit"  value="确定" class="btn btna" />
                <input type="reset"  value="重置" class="btn btnb" />

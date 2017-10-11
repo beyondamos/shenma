@@ -14,8 +14,6 @@
     <script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
 
-<!--     <link rel="stylesheet" type="text/css" href="/Public/Admin/uploadify/uploadify.css" />
-    <script type="text/javascript" src="/Public/Admin/uploadify/jquery.uploadify.min.js"></script> -->
 
 <!--引入CSS-->
 <link rel="stylesheet" type="text/css" href="/Public/Admin/uploader/webuploader.css">
@@ -61,31 +59,37 @@
 		<a href="<?php echo U('Carousel/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;轮播图设置</a>
 		<a href="<?php echo U('Brand/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合作品牌</a>
 		<a href="<?php echo U('Nav/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;底部导航设置</a>
+		<a href="<?php echo U('Add/index', array('classify' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页附加信息</a>
 		<a>借款申请</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 6 ));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
 		<a href="<?php echo U('Icon/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图标设置</a>
 		<a href="<?php echo U('Banner/index', array('classify' => 4));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商家中部设置</a>
 		<a href="<?php echo U('Product/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商家产品设置</a>
+		<a href="<?php echo U('Add/index', array('classify' => 2));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商家附加信息</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 16));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费者商品分期</a>
 		<a href="<?php echo U('Productf/index', array('classify' => 16));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费者商品图</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 17));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费者现金分期</a>
 		<a href="<?php echo U('Productf/index', array('classify' => 17));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费者现金图</a>
+		<a href="<?php echo U('Add/index', array('classify' => 3));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费者附加信息</a>
 		<a>关于什马</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 5));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
 		<a href="<?php echo U('Aboutus/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马介绍</a>
 		<a href="<?php echo U('Develop/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发展历程</a>
 		<a href="<?php echo U('Team/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;核心团队</a>
 		<a href="<?php echo U('Info/index', array('id' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小暖炉助学计划</a>
+		<a href="<?php echo U('Add/index', array('classify' => 4));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附加信息</a>
 		<a>新闻资讯</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 9));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
 		<a href="<?php echo U('Banner/index', array('classify' => 8));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新闻Banner图</a>
 		<a href="<?php echo U('Article/index', array('cate_id' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马新闻</a>
 		<a href="<?php echo U('Article/index', array('cate_id' => 2));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行业动态</a>
+		<a href="<?php echo U('Add/index', array('classify' => 5));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附加信息</a>
 		<a>老板商学院</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 10));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
 		<a href="<?php echo U('Info/index', array('id' => 2));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商学院简介</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 18));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马大讲堂</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 11));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;老板社区</a>
+		<a href="<?php echo U('Add/index', array('classify' => 6));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附加信息</a>
 		<a>联系我们</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 12));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
 		<a href="<?php echo U('Department/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地点部门设置</a>
@@ -93,6 +97,7 @@
 		<a href="<?php echo U('Qc/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;问题栏目</a>
 		<a href="<?php echo U('Question/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;问题设置</a>
 		<a href="<?php echo U('Message/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留言信息</a>
+		<a href="<?php echo U('Add/index', array('classify' => 7));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附加信息</a>
 	</div>
 	<?php if(is_array($user_auth_list)): $i = 0; $__LIST__ = $user_auth_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if($vo[0][auth_id] != 1): ?><div>
 		<span><?php echo ($vo[0]['auth_name']); ?><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
@@ -120,16 +125,16 @@
                 <img id="thumbnail" src="" width="300px" height="200px" style="display: none">
                 <input id="article-thumbnail" type="hidden" name="thumbnail" value="">
                </div>  -->
-               <div class="boxinb">
-<div id="uploader-demo">
-    <!--用来存放item-->
-    
-    <div id="filePicker">选择图片</div>
-    <input id="thumbnail" type="hidden" name="thumbnail" value="">
-    <div id="fileList" class="uploader-list"></div>
-</div>
-
-</div>
+              <div class="boxinb">
+                  <div id="uploader-demo">
+                      <!--用来存放item-->
+                      
+                      <div id="filePicker">选择图片</div>
+                      <input id="thumbnail" type="hidden" name="thumbnail" value="">
+                      <div id="fileList" class="uploader-list"></div>
+                  </div>
+            </div>
+            
                 <div class="boxinb">
                    <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="10">
                </div>
@@ -138,6 +143,9 @@
                </div><?php endif; ?>
                <?php if(I('get.classify') == 8): ?><div class="boxinb">
                <span>注：</span>图片 宽度810px 高度190px
+               </div><?php endif; ?>
+                <?php if(I('get.classify') == 4): ?><div class="boxinb">
+               <span>注：</span>图片 宽度不低于1000px
                </div><?php endif; ?>
                <input type="hidden" name="classify" value="<?php echo I('get.classify');?>">
             <div class="boxinbtn">
@@ -158,20 +166,15 @@ var $list=$("#fileList");   //这几个初始化全局的百度文档上没说�
    var thumbnailHeight = 100;  
 // 初始化Web Uploader
 var uploader = WebUploader.create({
-
     // 选完文件后，是否自动上传。
     auto: true,
-
     // swf文件路径
     swf: '/Public/Admin/uploader/Uploader.swf',
-
     // 文件接收服务端。
     server: '<?php echo U('Admin/Banner/up');?>',
-
     // 选择文件的按钮。可选。
     // 内部根据当前运行是创建，可能是input元素，也可能是flash.
     pick: '#filePicker',
-
     // // 只允许选择图片文件。
     // accept: {
     //     title: 'Images',
@@ -189,11 +192,8 @@ uploader.on( 'fileQueued', function( file ) {
             '</div>'
             ),
         $img = $li.find('img');
-
-
     // $list为容器jQuery实例
     $list.append( $li );
-
     // 创建缩略图
     // 如果为非图片文件，可以不用调用此方法。
     // thumbnailWidth x thumbnailHeight 为 100 x 100
@@ -202,37 +202,14 @@ uploader.on( 'fileQueued', function( file ) {
             $img.replaceWith('<span>不能预览</span>');
             return;
         }
-
         $img.attr( 'src', src );
     }, thumbnailWidth, thumbnailHeight );
 });
 
-
    // 文件上传成功，给item添加成功class, 用样式标记上传成功。  
    uploader.on( 'uploadSuccess', function( file , response) {  
-
-        // alert(response);
         $("#thumbnail").attr('value', '/Public/Upload/'+response);
-
-       // $( '#'+file.id ).addClass('upload-state-done');  
    });  
-    //     $(function(){
-    //     <?php $timestamp = time();?>
-    //     $('#file_upload').uploadify({
-    //         'formData' : {
-    //             'timestamp' : '<?php echo $timestamp;?>',
-    //             'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
-    //         },
-    //         'debug'    : true,
-    //         'swf'      : '/Public/Admin/uploadify/uploadify.swf',
-    //         'uploader' : '/Public/Admin/uploadify/uploadify.php',
-    //         'onUploadSuccess' : function(file, data, response) {
-    //             $("#thumbnail").attr('src', data);
-    //             $("#thumbnail").show();
-    //             $("#article-thumbnail").val(data);
-    //         }
-    //     });
-    // });
 </script>
 
 

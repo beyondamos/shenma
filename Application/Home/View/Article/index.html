@@ -88,9 +88,9 @@ $(function() {
 				<!--左侧-->
 				<div class="contl">
 					<div class="contl-nav">
-						<a href="<{:U('Article/index')}>" class="contl-nav-act contl-nav-actb">全部动态</a>
-						<a href="<{:U('Article/index', array('cate_id' => 1))}>">什马新闻</a>
-						<a href="<{:U('Article/index', array('cate_id' => 2))}>">行业动态</a>
+						<a href="<{:U('Article/index')}>" <if condition="empty($cate_id)"> class="contl-nav-act" </if>  >全部动态</a>
+						<a href="<{:U('Article/index', array('cate_id' => 1))}>" <if condition="$cate_id == 1"> class="contl-nav-act" </if> >什马新闻</a>
+						<a href="<{:U('Article/index', array('cate_id' => 2))}>"  <if condition="$cate_id == 2"> class="contl-nav-act" </if> >行业动态</a>
 					</div>
 				</div><!--左侧 end-->
 
@@ -131,7 +131,7 @@ $(function() {
 								<a href="<{:U('Article/detail', array('article_id' => $vo['article_id']))}>">
 									<h2><{$vo.title}></h2>
 									<h3><{$vo.newstime}></h3>
-									<h4><{$vo.synopsis}></h4>
+                                    <h4><{:mb_substr($vo['synopsis'],0,70,'utf-8')}>...</h4>
 								</a>
 							</div>
 						</volist>

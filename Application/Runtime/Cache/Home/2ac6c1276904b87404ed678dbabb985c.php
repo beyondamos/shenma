@@ -113,9 +113,9 @@ $(function() {
 				<!--左侧-->
 				<div class="contl">
 					<div class="contl-nav">
-						<a href="<?php echo U('Article/index');?>" class="contl-nav-act contl-nav-actb">全部动态</a>
-						<a href="<?php echo U('Article/index', array('cate_id' => 1));?>">什马新闻</a>
-						<a href="<?php echo U('Article/index', array('cate_id' => 2));?>">行业动态</a>
+						<a href="<?php echo U('Article/index');?>" <?php if(empty($cate_id)): ?>class="contl-nav-act"<?php endif; ?>  >全部动态</a>
+						<a href="<?php echo U('Article/index', array('cate_id' => 1));?>" <?php if($cate_id == 1): ?>class="contl-nav-act"<?php endif; ?> >什马新闻</a>
+						<a href="<?php echo U('Article/index', array('cate_id' => 2));?>"  <?php if($cate_id == 2): ?>class="contl-nav-act"<?php endif; ?> >行业动态</a>
 					</div>
 				</div><!--左侧 end-->
 
@@ -153,7 +153,7 @@ $(function() {
 								<a href="<?php echo U('Article/detail', array('article_id' => $vo['article_id']));?>">
 									<h2><?php echo ($vo["title"]); ?></h2>
 									<h3><?php echo ($vo["newstime"]); ?></h3>
-									<h4><?php echo ($vo["synopsis"]); ?></h4>
+                                    <h4><?php echo mb_substr($vo['synopsis'],0,70,'utf-8');?>...</h4>
 								</a>
 							</div><?php endforeach; endif; else: echo "" ;endif; ?>
 
@@ -195,13 +195,13 @@ $(function() {
                             <div class="col-xs-4 col-sm-4">
                                 <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr02.jpg" alt="">
-                                    <p class="text-center fw200">消费者微信自助借款</p>
+                                    <p class="text-center fw200">什马个人号</p>
                                 </div>
                             </div>
 							<div class="col-xs-4 col-sm-4">
                                 <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr03.jpg" alt="">
-                                    <p class="text-center fw200">商户综合服务</p>
+                                    <p class="text-center fw200">什马商户号</p>
                                 </div>
                             </div>
 							

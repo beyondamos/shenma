@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="__PUBLIC__/Home/bootstrap3/css/bootstrap.min.css">
 <link rel="stylesheet" href="__PUBLIC__/Home/css/yinxie.css" rel="stylesheet">
 <link rel="stylesheet" href="__PUBLIC__/Home/css/vic.css" rel="stylesheet">
+<link rel="stylesheet" href="__PUBLIC__/Home/css/layout.css" rel="stylesheet">
 
 <link rel="stylesheet" href="__PUBLIC__/Home/css/animate.css">
 <link href="__PUBLIC__/Home/img/favicon.ico" type="image/x-icon" rel="shortcut icon">
@@ -26,10 +27,6 @@
 <script type="text/javascript" src="__PUBLIC__/Home/bootstrap3/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="__PUBLIC__/Home/jquery.fullPage.js"></script>
 <script type="text/javascript" src="__PUBLIC__/Home/owl-carousel/owl.carousel.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.timelinr-0.9.53.js" async="async" defer="defer"></script>
-
-
-
 
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/index20170828.css" />
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/swiper.css" />
@@ -37,9 +34,7 @@
 <script type="text/javascript" src="__PUBLIC__/Home/js/jquery.mousewheel.min.js" async="async" defer="defer"></script>
 <script type="text/javascript" src="__PUBLIC__/Home/js/swiper.min.js" async="async" defer="defer"></script>
 <script type="text/javascript" src="__PUBLIC__/Home/js/slick/slick.min.js" async="async" defer="defer"></script>
-
-
-
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-ui.min.js"></script>	
 
 <script type="text/javascript">
 $.fn.extend({
@@ -73,17 +68,6 @@ $(function() {
 })
 </script>
 
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/styles.css" />
-<script src="__PUBLIC__/Home/js/jquery.timelinr-0.9.53.js" type="text/javascript"></script>
-<script type="text/javascript"> 
-	$(function(){
-		$().timelinr({
-			autoPlay: 'true',
-			autoPlayDirection: 'forward',
-			startAt: 4
-		})
-	});
-</script>
 </head>
 <body>
 
@@ -95,7 +79,6 @@ $(function() {
 			
 			<div class="cont">
 			
-			
                 <div class="about-shenma" id="gysm">
                     <h2><{$info.title}></h2>
                     <{:html_entity_decode($info['content'])}>
@@ -103,30 +86,30 @@ $(function() {
                 
 				
 				
-				
 				<div class="history-shenma" id="fzlc">
 					<h2>发展历程</h2>
-					<div id="container" class="content clearfix">
-						<div id="timeline">
-							<ul id="datesb">
-                                <volist name="develops" id="vo">
-								<li><a href="#<{$vo.newstime}>"><{:date('Y.m', strtotime($vo['newstime']))}></a></li>
-                                </volist>
-							</ul>
-							<ul id="issues">
-                            <volist name="develops" id="vo">
-								<li id="<{$vo.newstime}>">
-									<img src="<{$vo.thumbnail}>" />
-									<h1><{:date('Y.m', strtotime($vo['newstime']))}></h1>
-									<p><{$vo.title}></p>
-								</li>
-                            </volist>    
-							</ul>
-							
+					<div class="col-md-12 about">
+						<div class="about-body">
+							<div class="about-content process-content">
+								<div class="process-timeline draggable ui-widget-content">
+									<div id="draggable">
+										<div class="process-body">
+
+                                        <volist name="develops" id="vo">
+											<div class="process-row">
+												<div class="process-noyear"><php>echo date('Y.m', strtotime($vo['newstime']));</php></div><i></i>
+												<div class="process-content"><p><php>echo implode('<br/>', explode(';', $vo['title']));</php></p></div>
+											</div>
+                                        </volist>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div> 
-				
+					</div>
 				</div>
+				
+			
 				
 				<div class="core-shenma" id="hxtd">
                     <h2>核心团队</h2>
@@ -179,13 +162,10 @@ $(function() {
 		<div class="fp-auto-height">
 <include file="Public::foot" />
         </div>
-	<script>
-		$(".anc").click(function(){
-			var href = $(this).attr("href");
-			var pos = $(href).offset().top;
-			$("html,body").animate({scrollTop: pos}, 1000);
-			return false;
-		});
-	</script>
+		
+<script type="text/javascript" src="__PUBLIC__/Home/js/timeline.js"></script>			
 </body>
 </html>
+
+
+

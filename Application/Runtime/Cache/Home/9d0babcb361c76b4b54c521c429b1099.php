@@ -221,14 +221,14 @@ $(function() {
 				<a data-toggle="collapse" data-target="#claps-tit0<?php echo ($i); ?>">
 					<div class="panel-info-titl clapstit-act<?php if($i == 1): ?>a<?php else: ?>b<?php endif; ?>"><?php echo ($vo["qc"]); ?></div>
 				</a>
-				<div id="claps-tit0<?php echo ($i); ?>" class="claps-area collapse in">
+				<div id="claps-tit0<?php echo ($i); ?>" class="claps-area collapse <?php if($i == 1): ?>in <?php else: ?> on<?php endif; ?>">
 					<div class="container-fluid">
 						<div class="row">
 					<?php if(is_array($questions)): $j = 0; $__LIST__ = $questions;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$question): $mod = ($j % 2 );++$j; if($question['qc_id'] == $vo['id']): ?><!--第一题 第1条-->
 							<a data-toggle="collapse" data-target="#claps-tit0<?php echo ($i); ?>0<?php echo ($j); ?>">
 								<div class="panel-info-titl clapstit-act<?php if($j == 1): ?>a<?php else: ?>b<?php endif; ?>"><?php echo ($question["question"]); ?></div>
 							</a>
-							<div id="claps-tit0<?php echo ($i); ?>0<?php echo ($j); ?>" class="claps-area collapse in">
+							<div id="claps-tit0<?php echo ($i); ?>0<?php echo ($j); ?>" class="claps-area collapse <?php if($j ==1 ): ?>in <?php else: ?> on<?php endif; ?>">
 								<div class="container-fluid">
 									<div class="row">
 										<h3><?php echo ($question["answer"]); ?></h3>

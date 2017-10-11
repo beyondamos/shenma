@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="renderer" content="webkit">
-    <title>甫劳科技后台管理系统</title>
+    <title>什马金融后台管理系统</title>
 	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
     <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/uploadify/uploadify.css" />
@@ -23,9 +23,13 @@
 <!--引入JS-->
 <script type="text/javascript" src="__PUBLIC__/Admin/uploader/webuploader.js"></script>
 	<script>
-		KindEditor.ready(function(K) {
-			window.editor = K.create('#editor_id');
-		});
+KindEditor.ready(function(K) {
+        K.create('#editor_id', {
+                uploadJson : '__PUBLIC__/Admin/kindeditor/php/upload_json.php',
+                fileManagerJson : '__PUBLIC__/Admin/kindeditor/php/file_manager_json.php',
+                allowFileManager : true
+        });
+});
 	</script>
 
 	

@@ -116,7 +116,7 @@ $(function() {
 				<div class="cont-detail">
 					<div class="cont-detail-nav">
 						<a href="/">首页&gt;</a>
-						<a href="<?php echo U('Article/index');?>">新闻资讯</a>&nbsp;&ndash;&nbsp;<?php if($article["cate_id"] == 1 ): ?>什马新闻<?php else: ?>新闻动态<?php endif; echo ($category["cate_name"]); ?>&nbsp;&ndash;&nbsp;<?php echo ($article["title"]); ?>
+						<a href="<?php echo U('Article/index');?>">新闻资讯</a>&nbsp;&ndash;&nbsp;<?php if($article["cate_id"] == 1 ): ?>什马新闻<?php else: ?>新闻动态<?php endif; echo ($category["cate_name"]); ?>
 					</div>
 					
 					<h1><?php echo ($article["title"]); ?></h1>
@@ -158,13 +158,13 @@ $(function() {
                             <div class="col-xs-4 col-sm-4">
                                 <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr02.jpg" alt="">
-                                    <p class="text-center fw200">消费者微信自助借款</p>
+                                    <p class="text-center fw200">什马个人号</p>
                                 </div>
                             </div>
 							<div class="col-xs-4 col-sm-4">
                                 <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr03.jpg" alt="">
-                                    <p class="text-center fw200">商户综合服务</p>
+                                    <p class="text-center fw200">什马商户号</p>
                                 </div>
                             </div>
 							

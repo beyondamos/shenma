@@ -28,6 +28,10 @@ class LoansController extends HomeBaseController
 		$products = D('Product')->select();
 		$this->assign('products', $products);
 
+		//附加信息
+		$adds = D('Add')->where(array('classify' => 2))->order('id asc')->select();
+		$this->assign('adds', $adds);
+
 		$this->display();
 	}
 
@@ -55,6 +59,10 @@ class LoansController extends HomeBaseController
 		//商品产品图
 		$cash_products = D('Productf')->where(array('classify' => 17))->order('sort asc')->select();
 		$this->assign('cash_products', $cash_products);
+		//附加信息
+		$adds = D('Add')->where(array('classify' => 3))->order('id asc')->select();
+		$this->assign('adds', $adds);
+
 		$this->display();
 	}
 

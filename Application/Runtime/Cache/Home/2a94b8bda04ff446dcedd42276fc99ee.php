@@ -234,18 +234,23 @@ $(function() {
 			<div class="bg-style hxyw2">
 				<div class="swiper-container bg_div-left">
 					<div class="swiper-wrapper ">
-						<div class="swiper-slide pub_sd bg_1"><img class="bg_1imgl" src="/Public/Home/img/imgl01.jpg" alt=""/></div>
-						<div class="swiper-slide pub_sd bg_2"><img class="bg_2imgl" src="/Public/Home/img/imgl02.jpg" alt=""/></div>
-						<div class="swiper-slide pub_sd bg_3"><img class="bg_3imgl" src="/Public/Home/img/imgl03.jpg" alt=""/></div>
-						<div class="swiper-slide pub_sd bg_4"><img class="bg_4imgl" src="/Public/Home/img/imgl04.jpg" alt=""/></div>
+                    <?php
+ $num = count($carousels); for ($i=1;$i<=$num; $i++): ?>
+						<div class="swiper-slide pub_sd bg_<?php echo $i;?>"><img class="bg_<?php echo $i;?>imgl" src="<?php echo $carousels[$i]['thumbnail1'];?>" alt=""/></div>
+                        <?php
+ endfor; ?>
+
 					</div>
 				</div>
 				<div class="swiper-container R_bg">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide bg_4"><img class="bg_4img" src="/Public/Home/img/imgr04.jpg" alt="" /><img class="bg_4imgb" src="/Public/Home/img/imgr04b.jpg" alt="" /></div>
-						<div class="swiper-slide bg_3"><img class="bg_3img" src="/Public/Home/img/imgr03.jpg" alt="" /><img class="bg_3imgb" src="/Public/Home/img/imgr03b.jpg" alt="" /></div>
-						<div class="swiper-slide bg_2"><img class="bg_2img" src="/Public/Home/img/imgr02.jpg" alt="" /><img class="bg_2imgb" src="/Public/Home/img/imgr02b.jpg" alt="" /></div>
-						<div class="swiper-slide bg_1"><img class="bg_1img" src="/Public/Home/img/imgr01.jpg" alt="" /><img class="bg_1imgb" src="/Public/Home/img/imgr01b.jpg" alt="" /></div>
+                      <?php
+ for($i=$num; $i >=1; $i--): ?>  
+
+						<div class="swiper-slide bg_<?php echo $i;?>"><img class="bg_<?php echo $i;?>img" src="<?php echo $carousels[$i]['thumbnail2'];?>" alt="" /><img class="bg_<?php echo $i;?>imgb" src="<?php echo $carousels[$i]['thumbnail3'];?>" alt="" /></div>
+                        <?php
+ endfor; ?>
+
 					</div>
 				</div>
 			</div>
@@ -264,16 +269,16 @@ $(function() {
 				<h2><img src="/Public/Home/img/imgtxt01.jpg" alt=""/></h2>
 				
 				<div class="box-news-img">
-					<div class="imglimtc"><img src="<?php echo ($top_article["titleimg"]); ?>" alt=""/></div>
+					<div class="imglimtc"><img src="<?php echo ($top_article["thumbnail"]); ?>" alt=""/></div>
 					<a href="<?php echo U('Article/detail', array('article_id' => $top_article['article_id']));?>">
-						<?php echo ($top_article["title"]); ?><span><?php echo ($top_article["newstime"]); ?></span>
-						<i><?php echo ($top_article["synopsis"]); ?></i>
+						<?php echo mb_substr($top_article['title'],0,20,'utf-8');?>...<span><?php echo ($top_article["newstime"]); ?></span>
+						<i><?php echo mb_substr($top_article['synopsis'],0,35,'utf-8');?>...</i>
 					</a>
 				</div>
 				<ul>
                     <?php if(is_array($recommend_articles)): $i = 0; $__LIST__ = $recommend_articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('Article/detail', array('article_id' => $vo['article_id']));?>">
-						<b><?php echo substr($vo['newstime'], -2 , 2);?></b><?php echo ($vo["title"]); ?><span><?php echo ($vo["newstime"]); ?></span>
-						<i><?php echo ($vo["synopsis"]); ?>...</i>
+						<b><?php echo substr($vo['newstime'], -2 , 2);?></b><?php echo mb_substr($vo['title'],0,18,'utf-8');?>...<span><?php echo ($vo["newstime"]); ?></span>
+						<i><?php echo mb_substr($vo['synopsis'],0,25,'utf-8');?>...</i>
 					</a><?php endforeach; endif; else: echo "" ;endif; ?>
 				</ul>
 			</div>
@@ -365,13 +370,13 @@ $(function() {
                             <div class="col-xs-4 col-sm-4">
                                 <div class="two-code pull-left">
                                     <img class="img-responsive" src="/Public/Home/img/qr02.jpg" alt="">
-                                    <p class="text-center fw200">消费者微信自助借款</p>
+                                    <p class="text-center fw200">什马个人号</p>
                                 </div>
                             </div>
 							<div class="col-xs-4 col-sm-4">
                                 <div class="two-code pull-left">
                                     <img class="img-responsive" src="/Public/Home/img/qr03.jpg" alt="">
-                                    <p class="text-center fw200">商户综合服务</p>
+                                    <p class="text-center fw200">什马商户号</p>
                                 </div>
                             </div>
 							

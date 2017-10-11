@@ -154,6 +154,13 @@ $(function() {
 				</div>
 			</div>
 			
+
+            <!-- 附加信息  -->
+            <div class="apply-loans">
+                <div class="apply-loans-md">
+                    <?php if(is_array($adds)): $i = 0; $__LIST__ = $adds;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><img src="<?php echo ($vo["thumbnail"]); ?>" alt="" /><?php endforeach; endif; else: echo "" ;endif; ?>
+                </div>
+            </div>
 			
 		<!--页脚-->
 		<div class="fp-auto-height">

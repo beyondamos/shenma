@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
-    <title>甫劳科技后台管理系统</title>
+    <title>什马金融后台管理系统</title>
     <link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
     <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -56,7 +56,31 @@
                <span>注：</span>图片 宽度1920px 高度525px
                </div>
                </if>
-
+               <if condition="$banner['id'] == 18">
+               <div class="boxinb">
+               <span>注：</span>图片 宽度1750px 高度1330px
+               </div>
+               </if>
+               <if condition="$banner['id'] == 11">
+               <div class="boxinb">
+               <span>注：</span>图片 宽度1200px 高度700px
+               </div>
+               </if>
+              <if condition="$banner['classify'] == 1">
+               <div class="boxinb">
+               <span>注：</span>图片 宽度1920px 高度680px
+               </div>
+               </if>
+                <if condition="$banner['classify'] == 8">
+               <div class="boxinb">
+               <span>注：</span>图片 宽度810px 高度190px
+               </div>
+               </if>
+               <if condition="$banner['classify'] == 4 || $banner['classify'] == 9">
+               <div class="boxinb">
+               <span>注：</span>图片 宽度不低于1000px
+               </div>
+               </if>
                <input type="hidden" name="id" value="<{$banner.id}>">
             <div class="boxinbtn">
                <input type="submit"  value="确定" class="btn btna" />

@@ -185,7 +185,7 @@ class ArticleController extends CommonController{
         }
         $article_model = D('Article');
         if($article_model->del($article_id)){
-            $this->success('文章删除成功', U('Article/checkListing') ,1);
+            $this->success('文章删除成功', U('Article/index') ,1);
         }else{
             $this->error('文章删除失败');
         }

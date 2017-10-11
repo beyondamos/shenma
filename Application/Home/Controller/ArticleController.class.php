@@ -45,7 +45,7 @@ class ArticleController extends HomeBaseController
 		//banner设置
 		$banner  = D('Banner')->find(9);
 		$this->assign('banner', $banner);
-
+		$where = array();
 		//小banner轮播图
 		$banners = D('Banner')->where(array('classify' => 8))->order('sort')->select();
 		$this->assign('banners', $banners);
@@ -53,6 +53,7 @@ class ArticleController extends HomeBaseController
 		$cate_id = I('get.cate_id');
 		if (!empty($cate_id)) {
 			$where[] = array('cate_id' => $cate_id);
+			$this->assign('cate_id', $cate_id);
 		}
 
 		$keyword = I('get.keyword');
@@ -65,10 +66,10 @@ class ArticleController extends HomeBaseController
 
 		$article = D('Article');
 		// 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
-		$articles = $article->where($where)->order('article_id desc')->page($p.',15')->select();
+		$articles = $article->where($where)->order('newstime desc')->page($p.',9')->select();
 		$this->assign('articles',$articles);// 赋值数据集
 		$count	= $article->where($where)->count();// 查询满足要求的总记录数
-		$Page       = new \Think\Pagehome($count,15);// 实例化分页类 传入总记录数和每页显示的记录数
+		$Page       = new \Think\Pagehome($count,9);// 实例化分页类 传入总记录数和每页显示的记录数
 		$show       = $Page->show();// 分页显示输出
 		$this->assign('page',$show);// 赋值分页输出
 

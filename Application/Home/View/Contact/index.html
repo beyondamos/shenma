@@ -207,7 +207,7 @@ $(function() {
 				<a data-toggle="collapse" data-target="#claps-tit0<{$i}>">
 					<div class="panel-info-titl clapstit-act<if condition="$i == 1">a<else />b</if>"><{$vo.qc}></div>
 				</a>
-				<div id="claps-tit0<{$i}>" class="claps-area collapse in">
+				<div id="claps-tit0<{$i}>" class="claps-area collapse <if condition="$i == 1"> in <else /> on </if>">
 					<div class="container-fluid">
 						<div class="row">
 					<volist name="questions" id="question" key="j">
@@ -216,7 +216,7 @@ $(function() {
 							<a data-toggle="collapse" data-target="#claps-tit0<{$i}>0<{$j}>">
 								<div class="panel-info-titl clapstit-act<if condition="$j == 1">a<else />b</if>"><{$question.question}></div>
 							</a>
-							<div id="claps-tit0<{$i}>0<{$j}>" class="claps-area collapse in">
+							<div id="claps-tit0<{$i}>0<{$j}>" class="claps-area collapse <if condition="$j ==1 ">in <else /> on </if>">
 								<div class="container-fluid">
 									<div class="row">
 										<h3><{$question.answer}></h3>

@@ -8,17 +8,31 @@
 	}
 		#datesb {
 			width: 800px;
-			height: 60px;
+			height: 70px;
 			overflow: hidden;
 		}
 			#datesb li {
 				list-style: none;
 				float: left;
-				width: 100px;
+				width: 180px;
 				height: 50px;
 				font-size: 16px;
 				text-align: center;
+				border-bottom:2px dashed #58b8ea;
+				position:relative;
 			}
+			#datesb  li .selected:after {
+				content:" ";
+				display:inline-block;
+				width:20px;
+				height:20px;
+				background-color:#58b8ea;
+				border-radius:10px;
+				position:absolute;
+				top:40px;
+				left:80px;
+			}
+			
 				#datesb a {
 					line-height: 38px;
 					padding-bottom: 10px;
@@ -29,15 +43,19 @@
 				}
 		
 		#issues {
-			width: 800px;
+			width: 200px;
 			height: 300px;
 			overflow: hidden;
 		}	
 			#issues li {
-				width: 800px;
+				/* width: 800px; */
+				width:180px;
 				height: 300px;
 				list-style: none;
 				float: left;
+				margin-left:25px;
+				margin-right:25px;
+				position:relative;
 			}
 				#issues li img {
 					float: left;
@@ -46,15 +64,42 @@
 					height:200px;
 				}
 				#issues li h1 {
-					color: #58b8ea;
+					/* color: #58b8ea; */
+					color:#6a6a6a;
+					/* background-color:#fff; */
 					font-size: 38px;
 					margin: 5px;
+					display:inline-block;
+					padding-left:15px;
+					padding-right:15px;
+					border-radius:5px;
 				}
 				#issues li p {
-					font-size: 14px;
-					margin-right: 70px;
+					width:180px;
+					font-size: 18px;
+					/* margin-left: 20px; */
+					text-align:center;
 					font-weight: normal;
 					line-height: 22px;
+					/* color:#58b8ea; */
+					color:#6a6a6a;
+					margin-top:70px;
+					
+				}
+				
+				#issues li i {
+					/* border-left:2px dashed #58b8ea; */
+					border-left:2px dashed #6a6a6a;
+					height:70px;
+					position:absolute;
+					top:50px;
+					left:90px;
+					/* background-color:red; */
+				}
+				
+				#issues  li.selected h1{
+					color: #fff;
+					background-color:#58b8ea;
 				}
 		
 		#grad_left,

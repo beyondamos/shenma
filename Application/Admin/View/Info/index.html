@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="renderer" content="webkit">
-	<title>甫劳科技后台管理系统</title>
+	<title>什马金融后台管理系统</title>
 	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
 	<link href="__CSS__/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/uploadify/uploadify.css" />
@@ -44,6 +44,7 @@
 				<div class="boxinb">
 					<span>文章标题</span><input type="text" class="form-control"  name="title" value="<{$info.title}>">
 				</div>
+                <if condition="$info['id'] != 2">
               <div class="boxinb">
                     <div id="uploader-demo">
                         <!--用来存放item-->
@@ -54,6 +55,7 @@
                         <div id="fileList" class="uploader-list"></div>
                     </div>
               </div>
+              </if>
 				<div class="boxuediter">
 					<div class="lets2">正&nbsp;&nbsp;&nbsp;&nbsp;文</div>
 					<div class="uediter">

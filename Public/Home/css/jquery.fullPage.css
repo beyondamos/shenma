@@ -340,11 +340,12 @@ html, body {
 }
 .box-news-img .imglimtc{
 	width:480px;
-	height:250px;
+	height:260px;
 	overflow:hidden;
 }
 .box-news-img img{
 	width:480px;
+	height:260px
 }
 
 .box-newsmd ul{
@@ -394,11 +395,11 @@ html, body {
 
 .box-news-img a{
 	display:block;
-	margin-bottom:10px;
+	margin-bottom:5px;
 	padding:13px 20px;
 	font-size:16px;
 	font-weight:bold;
-	margin-top:5px;
+	margin-top:0;
 }
 
 .box-news-img a i{
@@ -546,10 +547,10 @@ html, body {
 	/* overflow-y:scroll;filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(100%); */
 	
 	
-	filter:alpha(opacity=41);
-	-moz-opacity:.41;
-	-khtml-opacity:.41;
-	opacity:.41;
+	filter:alpha(opacity=31);
+	-moz-opacity:.31;
+	-khtml-opacity:.31;
+	opacity:.31;
 }
 
 .box-logomd a:hover img{
@@ -585,7 +586,9 @@ html, body {
 	color:#0f2d6d !important;
 }
 
-
+.box-logo .carousel-control img{
+	display:block!important;
+}
 .content5 .carousel-control img{
 	margin-top:20%;
 	margin-right:50%;

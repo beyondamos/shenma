@@ -28,9 +28,9 @@ class ArticleModel extends Model{
 			$map['article_id'] = array('in', $id);
 		}
 		
-		$image_info = $this->field('titleimg')->where($map)->select();
+		$image_info = $this->field('thumbnail')->where($map)->select();
 		foreach($image_info as $val){
-			if(is_file('.'.$val['titleimg'])) unlink('.'.$val['titleimg']);
+			if(is_file('.'.$val['thumbnail'])) unlink('.'.$val['thumbnail']);
 			if(is_file('.'.$val['video'])) unlink('.'.$val['video']);
 		}
 
@@ -46,7 +46,7 @@ class ArticleModel extends Model{
 	 * @param  int $article_id 文章id
 	 */
 	public function deleteImg($article_id){
-		$img = '.'.$this->where(array('article_id'=> $article_id))->getField('titleimg');
+		$img = '.'.$this->where(array('article_id'=> $article_id))->getField('thumbnail');
 		unlink($img);
 	}
 

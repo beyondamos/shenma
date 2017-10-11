@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="/Public/Home/bootstrap3/css/bootstrap.min.css">
 <link rel="stylesheet" href="/Public/Home/css/yinxie.css" rel="stylesheet">
 <link rel="stylesheet" href="/Public/Home/css/vic.css" rel="stylesheet">
+<link rel="stylesheet" href="/Public/Home/css/layout.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/Public/Home/css/animate.css">
 <link href="/Public/Home/img/favicon.ico" type="image/x-icon" rel="shortcut icon">
@@ -26,10 +27,6 @@
 <script type="text/javascript" src="/Public/Home/bootstrap3/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/Public/Home/jquery.fullPage.js"></script>
 <script type="text/javascript" src="/Public/Home/owl-carousel/owl.carousel.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="/Public/Home/js/jquery.timelinr-0.9.53.js" async="async" defer="defer"></script>
-
-
-
 
 <link rel="stylesheet" type="text/css" href="/Public/Home/css/index20170828.css" />
 <link rel="stylesheet" type="text/css" href="/Public/Home/css/swiper.css" />
@@ -37,9 +34,7 @@
 <script type="text/javascript" src="/Public/Home/js/jquery.mousewheel.min.js" async="async" defer="defer"></script>
 <script type="text/javascript" src="/Public/Home/js/swiper.min.js" async="async" defer="defer"></script>
 <script type="text/javascript" src="/Public/Home/js/slick/slick.min.js" async="async" defer="defer"></script>
-
-
-
+<script type="text/javascript" src="/Public/Home/js/jquery-ui.min.js"></script>	
 
 <script type="text/javascript">
 $.fn.extend({
@@ -73,17 +68,6 @@ $(function() {
 })
 </script>
 
-<link rel="stylesheet" type="text/css" href="/Public/Home/css/styles.css" />
-<script src="/Public/Home/js/jquery.timelinr-0.9.53.js" type="text/javascript"></script>
-<script type="text/javascript"> 
-	$(function(){
-		$().timelinr({
-			autoPlay: 'true',
-			autoPlayDirection: 'forward',
-			startAt: 4
-		})
-	});
-</script>
 </head>
 <body>
 
@@ -120,7 +104,6 @@ $(function() {
 			
 			<div class="cont">
 			
-			
                 <div class="about-shenma" id="gysm">
                     <h2><?php echo ($info["title"]); ?></h2>
                     <?php echo html_entity_decode($info['content']);?>
@@ -128,26 +111,28 @@ $(function() {
                 
 				
 				
-				
 				<div class="history-shenma" id="fzlc">
 					<h2>发展历程</h2>
-					<div id="container" class="content clearfix">
-						<div id="timeline">
-							<ul id="datesb">
-                                <?php if(is_array($develops)): $i = 0; $__LIST__ = $develops;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="#<?php echo ($vo["newstime"]); ?>"><?php echo date('Y.m', strtotime($vo['newstime']));?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
-							</ul>
-							<ul id="issues">
-                            <?php if(is_array($develops)): $i = 0; $__LIST__ = $develops;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li id="<?php echo ($vo["newstime"]); ?>">
-									<img src="<?php echo ($vo["thumbnail"]); ?>" />
-									<h1><?php echo date('Y.m', strtotime($vo['newstime']));?></h1>
-									<p><?php echo ($vo["title"]); ?></p>
-								</li><?php endforeach; endif; else: echo "" ;endif; ?>    
-							</ul>
-							
+					<div class="col-md-12 about">
+						<div class="about-body">
+							<div class="about-content process-content">
+								<div class="process-timeline draggable ui-widget-content">
+									<div id="draggable">
+										<div class="process-body">
+
+                                        <?php if(is_array($develops)): $i = 0; $__LIST__ = $develops;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="process-row">
+												<div class="process-noyear"><?php echo date('Y.m', strtotime($vo['newstime'])); ?></div><i></i>
+												<div class="process-content"><p><?php echo implode('<br/>', explode(';', $vo['title'])); ?></p></div>
+											</div><?php endforeach; endif; else: echo "" ;endif; ?>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div> 
-				
+					</div>
 				</div>
+				
+			
 				
 				<div class="core-shenma" id="hxtd">
                     <h2>核心团队</h2>
@@ -218,13 +203,13 @@ $(function() {
                             <div class="col-xs-4 col-sm-4">
                                 <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr02.jpg" alt="">
-                                    <p class="text-center fw200">消费者微信自助借款</p>
+                                    <p class="text-center fw200">什马个人号</p>
                                 </div>
                             </div>
 							<div class="col-xs-4 col-sm-4">
                                 <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr03.jpg" alt="">
-                                    <p class="text-center fw200">商户综合服务</p>
+                                    <p class="text-center fw200">什马商户号</p>
                                 </div>
                             </div>
 							
@@ -234,13 +219,7 @@ $(function() {
                 </div>
             </footer>
         </div>
-	<script>
-		$(".anc").click(function(){
-			var href = $(this).attr("href");
-			var pos = $(href).offset().top;
-			$("html,body").animate({scrollTop: pos}, 1000);
-			return false;
-		});
-	</script>
+		
+<script type="text/javascript" src="/Public/Home/js/timeline.js"></script>			
 </body>
 </html>

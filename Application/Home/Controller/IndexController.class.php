@@ -33,6 +33,11 @@ class IndexController extends HomeBaseController
         $about = D('About')->find(2);
         $this->assign('about', $about);
 
+        //轮播图
+        $carousels = D('Carousel')->order('sort asc')->select();
+        $this->assign('carousels', $carousels);
+
+
 
         $model = D('Article');
         $top_article = $model->where(array('is_top' => 1))->order('newstime desc')->limit(1)->find();
@@ -42,7 +47,7 @@ class IndexController extends HomeBaseController
         $this->assign('recommend_articles', $recommend_articles);
 
         //合作品牌
-        $brands = D('Brand')->where(array('status' => 1))->select();
+        $brands = D('Brand')->where(array('status' => 1))->order('sort asc')->select();
         $this->assign('brands', $brands);
         $count = D('Brand')->count();
         $this->assign('count',$count);
