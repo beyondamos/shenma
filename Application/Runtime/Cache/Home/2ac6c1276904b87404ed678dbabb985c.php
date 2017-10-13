@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="renderer" content="webkit">
-<title>什马金融</title>
+<title><?php echo ($seo["title"]); ?></title>
+<meta name="keywords" content="<?php echo ($seo["keywords"]); ?>">
+<meta name="description" content="<?php echo ($seo["synopsis"]); ?>">
 <link rel="stylesheet" href="/Public/Home/css/reset.css" rel="stylesheet">
 <link rel="stylesheet" href="/Public/Home/bootstrap3/css/bootstrap.min.css">
 <link rel="stylesheet" href="/Public/Home/css/yinxie.css" rel="stylesheet">
@@ -138,11 +140,27 @@ $(function() {
 								<div class="carousel-inner">
 								<?php if(is_array($banners)): $i = 0; $__LIST__ = $banners;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="item <?php if($i == 1): ?>active<?php endif; ?>"><a href="<?php echo ($vo["url"]); ?>"><img src="<?php echo ($vo["thumbnail"]); ?>" alt="" /></a></div><!--图片 宽度810px 高度190px--><?php endforeach; endif; else: echo "" ;endif; ?>
 								</div>
-								<a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev"></a>
-								<a class="right carousel-control" href="#carousel-example" role="button" data-slide="next"></a>
+								<a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev"><img src="/Public/Home/img/arl.png" alt="" /></a>
+								<a class="right carousel-control" href="#carousel-example" role="button" data-slide="next"><img src="/Public/Home/img/arr.png" alt="" /></a>
 							</div>
 						</div><!--新闻列表页 头部 轮播图 end-->
-						
+						<script type="text/javascript">
+							$(".carousel-control.left").hover(function () {
+								$(".carousel-control.left img").css('display','block');
+								$(".carousel-control.left img").animate({ "left": "30px" }, 300);
+							}, function () {
+								$(".carousel-control.left img").animate({ "left": "0" }, 300,function(){
+									$(".carousel-control.left img").css('display','none');});
+							});
+							
+							$(".carousel-control.right").hover(function () {
+								$(".carousel-control.right img").css('display','block');
+								$(".carousel-control.right img").animate({ "right": "30px" }, 300);
+							}, function () {
+								$(".carousel-control.right img").animate({ "right": "0" }, 300,function(){
+									$(".carousel-control.right img").css('display','none');});
+							});
+						</script>
 						
 						<div class="list-news">
 

@@ -1,0 +1,3829 @@
+[ 2017-10-13T12:28:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0040s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:28:21+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:28:21+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-13T12:28:22+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:22+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-13T12:28:22+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:22+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:22+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:22+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:28:22+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:22+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:28:22+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:22+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-13T12:28:22+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:22+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:30+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:42+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0040s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:28:42+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:28:42+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-13T12:28:42+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:42+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:28:42+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:28:42+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:43+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:43+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:28:43+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:28:43+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:28:43+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:43+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:43+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:28:43+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0060s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0040s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:29:29+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0040s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:13+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0040s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:15+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:18+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0040s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:18+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:18+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:18+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:18+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:18+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:18+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:18+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:18+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:18+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:18+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:19+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:19+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:19+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:19+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0040s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:23+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:25+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:25+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:25+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:26+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0040s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0040s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0040s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:27+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0040s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:28+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:54+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:56+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:40:59+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:40:59+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:00+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0050s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0100s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0020s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0050s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0090s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0050s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:41:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:36+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:44+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:45+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:48+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:56+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0020s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:45:58+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:01+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0040s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:02+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:04+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/imgl04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/imgr01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/imgr01b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/imgr02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/imgr02b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/imgr03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:05+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:46:57+08:00 ] 127.0.0.1 /Loans/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_seo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_seo` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_icon` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_icon`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 4  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_product`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_add` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_add` WHERE `classify` = 2 ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:59+08:00 ] 127.0.0.1 /About/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_seo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_seo` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_develop` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_develop` ORDER BY newstime asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_team` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_team` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_info` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_info` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:46:59+08:00 ] 127.0.0.1 /Public/Home/img/imgbkmap.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:47:01+08:00 ] 127.0.0.1 /Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_seo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_seo` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8 ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` ORDER BY newstime desc LIMIT 0,9   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_article` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: cate_id D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Home\2ac6c1276904b87404ed678dbabb985c.php 第 119 行.
+NOTIC: [8] Undefined variable: cate_id D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Home\2ac6c1276904b87404ed678dbabb985c.php 第 120 行.
+NOTIC: [8] Undefined variable: keyword D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Home\2ac6c1276904b87404ed678dbabb985c.php 第 133 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:47:02+08:00 ] 127.0.0.1 /Edu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_seo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_seo` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_info` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_info` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:47:02+08:00 ] 127.0.0.1 /About/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shenma_seo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_seo` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_develop` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_develop` ORDER BY newstime asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_team` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_team` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_info` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_info` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:47:03+08:00 ] 127.0.0.1 /Public/Home/img/imgbkmap.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:47:08+08:00 ] 127.0.0.1 /Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_seo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_seo` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 8 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_article` ORDER BY newstime desc LIMIT 0,9   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_article` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: cate_id D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Home\2ac6c1276904b87404ed678dbabb985c.php 第 119 行.
+NOTIC: [8] Undefined variable: cate_id D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Home\2ac6c1276904b87404ed678dbabb985c.php 第 120 行.
+NOTIC: [8] Undefined variable: keyword D:\phpStudy\WWW\shenma\Application\Runtime\Cache\Home\2ac6c1276904b87404ed678dbabb985c.php 第 133 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:47:11+08:00 ] 127.0.0.1 /About/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_seo` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_seo` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_develop` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_develop` ORDER BY newstime asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_team` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_team` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_info` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_info` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:47:11+08:00 ] 127.0.0.1 /Public/Home/img/imgbkmap.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:47:12+08:00 ] 127.0.0.1 /Home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shenma_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `conf_value` FROM `shenma_config` WHERE ( conf_id = 4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_banner` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_banner` WHERE `classify` = 1 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_about` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `shenma_about` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_carousel` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_top` = 1 ORDER BY newstime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shenma_article` WHERE `is_recommend` = 1 ORDER BY newstime desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shenma_brand` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `shenma_brand` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shenma_brand` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shenma_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shenma_nav`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:47:12+08:00 ] 127.0.0.1 /Public/Home/img/QR2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:47:12+08:00 ] 127.0.0.1 /Public/Home/img/kache_weiqi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-13T12:47:12+08:00 ] 127.0.0.1 /Public/Home/img/imgl01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:47:12+08:00 ] 127.0.0.1 /Public/Home/img/imgl02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:47:13+08:00 ] 127.0.0.1 /Public/Home/img/imgl03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:47:13+08:00 ] 127.0.0.1 /Public/Home/img/imgr03b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:47:13+08:00 ] 127.0.0.1 /Public/Home/img/imgr04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-13T12:47:13+08:00 ] 127.0.0.1 /Public/Home/img/imgr04b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+

@@ -121,8 +121,7 @@ $(function() {
 					<h3><img src="/Public/Home/img/txt.png" alt="" /></h3>
 					<a href="javascript:;"><img src="/Public/Home/img/btn.jpg" alt="" />
 						<i>
-							<img src="/Public/Home/img/qr01t.jpg" alt="" />
-							<img src="/Public/Home/img/qr02t.jpg" alt="" />
+							<img src="/Public/Home/img/qr01.jpg" alt="" />
 						</i>
 					</a>
 				</div>
@@ -150,7 +149,6 @@ $(function() {
 			
 			<!-- 产品 -->
 			<div class="apply-loans">
-				<!-- <img src="/Public/Home/img/bkimgArr.png" alt="" /> -->
 				<div class="apply-loans-md">
                     <?php if(is_array($products)): $i = 0; $__LIST__ = $products;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><img src="<?php echo ($vo["thumbnail"]); ?>" alt="" /><?php endforeach; endif; else: echo "" ;endif; ?>
 				</div>

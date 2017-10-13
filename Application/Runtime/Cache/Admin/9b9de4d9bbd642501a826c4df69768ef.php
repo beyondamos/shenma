@@ -182,6 +182,7 @@ var uploader = WebUploader.create({
     auto: true,
     // swf文件路径
     swf: '/Public/Admin/uploader/Uploader.swf',
+    compress: false,
     // 文件接收服务端。
     server: '<?php echo U('Admin/Banner/up');?>',
     // 选择文件的按钮。可选。

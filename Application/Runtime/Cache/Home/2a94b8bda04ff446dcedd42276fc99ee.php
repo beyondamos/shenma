@@ -127,7 +127,7 @@ $(function() {
 					<li data-slide-to="2" data-target="#carousel-example"></li>
 					<li data-slide-to="3" data-target="#carousel-example"></li>
 				</ol>-->
-				<div class="imgQR-fixed"><img src="/Public/Home/img/QR.jpg" alt="" /></div>
+				<div class="imgQR-fixed"><img src="/Public/Home/img/QR2.jpg" alt="" /></div>
 				
 				
 				<div class="carousel-inner">
@@ -234,23 +234,18 @@ $(function() {
 			<div class="bg-style hxyw2">
 				<div class="swiper-container bg_div-left">
 					<div class="swiper-wrapper ">
-                    <?php
- $num = count($carousels); for ($i=1;$i<=$num; $i++): ?>
-						<div class="swiper-slide pub_sd bg_<?php echo $i;?>"><img class="bg_<?php echo $i;?>imgl" src="<?php echo $carousels[$i]['thumbnail1'];?>" alt=""/></div>
-                        <?php
- endfor; ?>
-
+						<div class="swiper-slide pub_sd bg_1"><img class="bg_1imgl" src="/Public/Home/img/imgl01.jpg" alt=""/></div>
+						<div class="swiper-slide pub_sd bg_2"><img class="bg_2imgl" src="/Public/Home/img/imgl02.jpg" alt=""/></div>
+						<div class="swiper-slide pub_sd bg_3"><img class="bg_3imgl" src="/Public/Home/img/imgl03.jpg" alt=""/></div>
+						<div class="swiper-slide pub_sd bg_4"><img class="bg_4imgl" src="/Public/Home/img/imgl04.jpg" alt=""/></div>
 					</div>
 				</div>
 				<div class="swiper-container R_bg">
 					<div class="swiper-wrapper">
-                      <?php
- for($i=$num; $i >=1; $i--): ?>  
-
-						<div class="swiper-slide bg_<?php echo $i;?>"><img class="bg_<?php echo $i;?>img" src="<?php echo $carousels[$i]['thumbnail2'];?>" alt="" /><img class="bg_<?php echo $i;?>imgb" src="<?php echo $carousels[$i]['thumbnail3'];?>" alt="" /></div>
-                        <?php
- endfor; ?>
-
+						<div class="swiper-slide bg_1"><img class="bg_1img" src="/Public/Home/img/imgr01.jpg" alt="" /><img class="bg_1imgb" src="/Public/Home/img/imgr01b.jpg" alt="" /></div>
+						<div class="swiper-slide bg_2"><img class="bg_2img" src="/Public/Home/img/imgr02.jpg" alt="" /><img class="bg_2imgb" src="/Public/Home/img/imgr02b.jpg" alt="" /></div>
+						<div class="swiper-slide bg_3"><img class="bg_3img" src="/Public/Home/img/imgr03.jpg" alt="" /><img class="bg_3imgb" src="/Public/Home/img/imgr03b.jpg" alt="" /></div>
+						<div class="swiper-slide bg_4"><img class="bg_4img" src="/Public/Home/img/imgr04.jpg" alt="" /><img class="bg_4imgb" src="/Public/Home/img/imgr04b.jpg" alt="" /></div>
 					</div>
 				</div>
 			</div>
@@ -304,7 +299,10 @@ $(function() {
                           <?php if(is_array($brands)): $i = 0; $__LIST__ = array_slice($brands,10,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($vo["url"]); ?>" target="_blank"><img src="<?php echo ($vo["thumbnail"]); ?>" alt=""/><h5><?php echo ($vo["name"]); ?></h5></a><?php endforeach; endif; else: echo "" ;endif; ?>
 						</div><?php endif; ?> 
                         <?php if($count > 20): ?><div class="item box-logomd">
-                          <?php if(is_array($brands)): $i = 0; $__LIST__ = array_slice($brands,19,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($vo["url"]); ?>" target="_blank"><img src="<?php echo ($vo["thumbnail"]); ?>" alt=""/><h5><?php echo ($vo["name"]); ?></h5></a><?php endforeach; endif; else: echo "" ;endif; ?>
+                          <?php if(is_array($brands)): $i = 0; $__LIST__ = array_slice($brands,20,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($vo["url"]); ?>" target="_blank"><img src="<?php echo ($vo["thumbnail"]); ?>" alt=""/><h5><?php echo ($vo["name"]); ?></h5></a><?php endforeach; endif; else: echo "" ;endif; ?>
+						</div><?php endif; ?> 
+						 <?php if($count > 30): ?><div class="item box-logomd">
+                          <?php if(is_array($brands)): $i = 0; $__LIST__ = array_slice($brands,30,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($vo["url"]); ?>" target="_blank"><img src="<?php echo ($vo["thumbnail"]); ?>" alt=""/><h5><?php echo ($vo["name"]); ?></h5></a><?php endforeach; endif; else: echo "" ;endif; ?>
 						</div><?php endif; ?> 
 					</div>
 					
@@ -314,7 +312,7 @@ $(function() {
 			<a class="right carousel-control" href="#carousel-exampleb" role="button" data-slide="next"><img src="/Public/Home/img/arr.png" alt="" /></a>
 		</div>
 		
-		
+	
 		
 		
 		
@@ -332,7 +330,7 @@ $(function() {
 				<h5>媒体合作：pr@shenmajr.com</h5>
 				
 				<div class="contact-map">
-					<a href="http://api.map.baidu.com/geocoder?output=html&amp;address=%e4%b8%8a%e6%b5%b7%e5%b8%82%e9%95%bf%e5%ae%81%e5%8c%ba%e5%87%8c%e7%a9%basoho5%e5%8f%b7%e6%a5%bc1%e6%a5%bc" title="点击查看地图" ><img src="/Public/Home/img/map.jpg" alt="" /></a><dt>
+					<a href="http://api.map.baidu.com/geocoder?output=html&amp;address=%e4%b8%8a%e6%b5%b7%e5%b8%82%e9%95%bf%e5%ae%81%e5%8c%ba%e5%87%8c%e7%a9%basoho5%e5%8f%b7%e6%a5%bc1%e6%a5%bc" target="_blank" title="点击查看地图" ><img src="/Public/Home/img/map.jpg" alt="" /></a><dt>
 				</div>
 			</div>
 		</div>
@@ -368,13 +366,13 @@ $(function() {
                                 </div>
                             </div>
                             <div class="col-xs-4 col-sm-4">
-                                <div class="two-code pull-left">
+                                <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr02.jpg" alt="">
                                     <p class="text-center fw200">什马个人号</p>
                                 </div>
                             </div>
 							<div class="col-xs-4 col-sm-4">
-                                <div class="two-code pull-left">
+                                <div class="two-code pull-right">
                                     <img class="img-responsive" src="/Public/Home/img/qr03.jpg" alt="">
                                     <p class="text-center fw200">什马商户号</p>
                                 </div>
@@ -413,5 +411,6 @@ $(function() {
 <div class="hidden"></div>
 
 </body>
+<script>$(function(){$('#carousel-exampleb').carousel({interval: 600000});});</script>
 <script type="text/javascript" src="/Public/Home/js/index20170823.js" async="async" defer="defer"></script>
 </html>

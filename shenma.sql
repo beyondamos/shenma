@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?10 �?11 �?13:42
+-- 生成日期: 2017 �?10 �?13 �?09:20
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -227,7 +227,7 @@ CREATE TABLE IF NOT EXISTS `shenma_banner` (
 
 INSERT INTO `shenma_banner` (`id`, `url`, `name`, `thumbnail`, `sort`, `classify`) VALUES
 (1, 'javascript:;', '第一张', '/Public/Upload/20170921/1505956113_1392164059.jpg', 1, 1),
-(2, 'javascript:;', '第2张', '/Public/Upload/20170921/1505956130_606835435.jpg', 2, 1),
+(2, 'javascript:;', '第2张', '/Public/Upload/20171013/1507869940_1644321265.jpg', 2, 1),
 (3, 'javascript:;', '第3张', '/Public/Upload/20170921/1505956147_498624648.jpg', 3, 1),
 (4, 'javascript:;', '第4张', '/Public/Upload/20170921/1505956164_704730493.jpg', 4, 1),
 (5, '123213', '关于我们', '/Public/Upload/20170921/1505958524_1209540722.jpg', 1, 3),
@@ -740,7 +740,7 @@ CREATE TABLE IF NOT EXISTS `shenma_user` (
   `salt` char(6) NOT NULL DEFAULT '' COMMENT '密码盐',
   `role_id` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT '角色id',
   `last_login_time` int(11) NOT NULL DEFAULT '0' COMMENT '上次登录时间',
-  `last_login_ip` int(11) NOT NULL DEFAULT '0' COMMENT '上次登录ip',
+  `last_login_ip` bigint(11) NOT NULL DEFAULT '0' COMMENT '上次登录ip',
   `add_time` int(11) NOT NULL DEFAULT '0' COMMENT '用户添加时间',
   `login_times` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '登录次数',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '用户状态',
@@ -752,7 +752,7 @@ CREATE TABLE IF NOT EXISTS `shenma_user` (
 --
 
 INSERT INTO `shenma_user` (`user_id`, `username`, `nickname`, `password`, `email`, `salt`, `role_id`, `last_login_time`, `last_login_ip`, `add_time`, `login_times`, `status`) VALUES
-(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1507725477, 2130706433, 0, 68, 1),
+(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1507868919, 2130706433, 0, 69, 1),
 (8, 'shenma', 'shenma', 'e0872f7bc5e019bf4ad8c24f15d72cc5', 'shenma@qq.com', 'E0iAvl', 1, 1507446410, 1883314357, 1505444079, 4, 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

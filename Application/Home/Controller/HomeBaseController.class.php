@@ -9,9 +9,9 @@ class HomeBaseController extends Controller
 	 */
 	public function _initialize()
 	{
-		if (isMobile()) {
-			C('DEFAULT_THEME','Mobile');
-		}
+		// if (isMobile()) {
+		// 	C('DEFAULT_THEME','Mobile');
+		// }
 
 		$this->assign('controller_name', CONTROLLER_NAME);
 	}
