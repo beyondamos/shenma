@@ -140,8 +140,7 @@ $(function() {
 					<h3><img src="/Public/Home/img/txt.png" alt="" /></h3>
 					<a href="javascript:;"><img src="/Public/Home/img/btn.jpg" alt="" />
 						<i>
-							<img src="/Public/Home/img/qr01t.jpg" alt="" />
-							<img src="/Public/Home/img/qr02t.jpg" alt="" />
+							<img src="/Public/Home/img/qr01.jpg" alt="" />
 						</i>
 					</a>
 				</div>
@@ -161,7 +160,6 @@ $(function() {
 			
 			<!--核心产品-->
 			<div class="goods-core">
-				<!-- <img src="/Public/Home/img/bkimgArr.png" alt="" /> -->
 				<div class="goods-core-md">
 					<h2><span>核心产品</span><br/>CORE PRODUCTS</h2>
 					<?php if(is_array($cash_products)): $i = 0; $__LIST__ = $cash_products;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><img src="<?php echo ($vo["thumbnail"]); ?>" alt="" /><!--核心产品 放开花  图片宽度 不小于1000px--><?php endforeach; endif; else: echo "" ;endif; ?>

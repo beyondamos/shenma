@@ -3,20 +3,24 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="renderer" content="webkit">
+    <meta name="renderer" content="webkit">
     <title>什马金融后台管理系统</title>
-	<link href="/Public/Admin/css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Admin/css/base.css" rel="stylesheet" type="text/css"/>
     <link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="/Public/Admin/js/html5shiv.js"></script>
     <script src="/Public/Admin/js/respond.min.js"></script>
     <![endif]-->
-	<script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
-	
+    <script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
+
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
+<!--引入CSS-->
+<link rel="stylesheet" type="text/css" href="/Public/Admin/uploader/webuploader.css">
+<!--引入JS-->
+<script type="text/javascript" src="/Public/Admin/uploader/webuploader.js"></script>
 </head>
 <body>
-<div class="nav-top">
+    <div class="nav-top">
 	<div class="nav-top-center">
 		<div class="nav-top-left">
 			<a href="<?php echo U('Admin/Index/index');?>"><img src="/Public/Admin/images/logo.png" alt=""/><span>后台管理</span></a>
@@ -41,7 +45,7 @@
 	</div>
 </div>
 <div class="nav-topb"></div>
-<div style="float:left" id="my_menu" class="sdmenu">
+    <div style="float:left" id="my_menu" class="sdmenu">
 	<div>
 		<span><a href="<?php echo U('Admin/Index/index');?>">后台首页</a></span>
 	</div>
@@ -108,71 +112,100 @@
 	</div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 </div>
 
-<div class="cont">
-	<div class="contmain">
-		
-		<div class="boxi">
-			<h1>产品列表</h1>
-			
-			<!-- 表格顶部搜索区 -->
-			<div class="boxoper">
-				<a href="<?php echo U('Productf/add', array('classify' => $classify));?>">添加产品</a>
-				<!--<div class="boxoper-seh">-->
-					<!--<form action="" method="post">-->
-						<!--<button class="btn btn-default" type="submit"><img src="/Public/Admin/images/iconseh.png" /></button>-->
-						<!--<input type="text" class="form-control" placeholder="搜索用户名或角色">-->
-						<!--<select class="form-control">-->
-							<!--<option>全部</option>-->
-							<!--<option>分类</option>-->
-							<!--<option>分类</option>-->
-							<!--<option>分类</option>-->
-							<!--<option>分类</option>-->
-						<!--</select>-->
-					<!--</form>-->
-				<!--</div>-->
-			</div>
-			
-			<!-- 表格 -->
-			<table class="table table-hover boxtable">
-				<thead>
-					<tr>
-					   <th class="col-md-1 text-vm">序号</th>
-					   <th class="col-md-2 text-vm">产品名称</th>
-					   <th class="col-md-6 text-vm">链接URL</th>
-					   <th class="col-md-2 text-vm">顺序</th>
-					   <th class="col-md-1 text-vm text-center">操作</th>
-					</tr>
-				</thead>
-				<tbody>
-					<?php if(is_array($productfs)): $i = 0; $__LIST__ = $productfs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-						<td class="text-vm"><?php echo ($vo["id"]); ?></td>
-						<td class="text-vm"><?php echo ($vo["name"]); ?></td>
-						<td class="text-vm"><?php echo ($vo["url"]); ?></td>
-						<td class="text-vm"><?php echo ($vo["sort"]); ?></td>
-						<td class="text-vm">
-							<a href="<?php echo U('Productf/edit',array('id' => $vo['id']) );?>">编辑</a>
-							<a href="<?php echo U('Productf/delete',array('id' => $vo['id']) );?>">删除</a>
-						</td>
-					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-				</tbody>
-			</table>
-			
-			<!-- 分页 -->
-<!-- 			<div class="boxpage">
-				<a href="javascript:;"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
-				<a href="javascript:;"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span></a>
-				<a href="javascript:;">1</a>
-				<a href="javascript:;">2</a>
-				<a href="javascript:;" class="boxpage-act">3</a>
-				<a href="javascript:;">4</a>
-				<a href="javascript:;">5</a>
-				<a href="javascript:;"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a>
-				<a href="javascript:;"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
-			</div> -->
-		</div>
-	
-	</div>
+    <div class="cont">
+       <div class="contmain">
+
+          <div class="boxi">
+             <h1>编辑产品</h1>
+
+             <form action="<?php echo U('Productf/edit');?>" method="post" enctype="multipart/form-data">
+                <div class="boxin">
+                   <span>产品名称</span><input type="text" name="name" class="form-control" value="<?php echo ($product["name"]); ?>">
+               </div>
+               <div class="boxinb">
+                   <span>链&nbsp;接&nbsp;地&nbsp;址</span><input type="text" name="url" class="form-control" value="<?php echo ($product["url"]); ?>">
+               </div>
+              <div class="boxinb">
+                    <div id="uploader-demo">
+                        <!--用来存放item-->
+                        
+                        <div id="filePicker">选择图片</div>
+                        <input id="thumbnail" type="hidden" name="thumbnail" value="<?php echo ($product["thumbnail"]); ?>">
+                        <img id="oldimg" src="<?php echo ($product["thumbnail"]); ?>" width="300px" height="200px">
+                        <div id="fileList" class="uploader-list"></div>
+                    </div>
+              </div>
+                <div class="boxinb">
+                   <span>顺&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="sort" class="form-control" value="<?php echo ($product["sort"]); ?>">
+               </div>
+                              <div class="boxinb">
+               <span>注：</span>图片 宽度不低于1000px
+               </div>
+               <input type="hidden" name="id" value="<?php echo ($product["id"]); ?>">
+            <div class="boxinbtn">
+               <input type="submit"  value="确定" class="btn btna" />
+               <input type="reset"  value="重置" class="btn btnb" />
+           </div>
+
+       </form>
+   </div>
+
+</div>
 </div>
 <script src="/Public/Admin/js/sdmenu.js"></script>
+<script type="text/javascript">
+var $list=$("#fileList");   //这几个初始化全局的百度文档上没说明，好蛋疼。 
+   // var $btn =$("#ctlBtn");   //开始上传  
+   var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
+   var thumbnailHeight = 100;  
+// 初始化Web Uploader
+var uploader = WebUploader.create({
+    // 选完文件后，是否自动上传。
+    auto: true,
+    // swf文件路径
+    swf: '/Public/Admin/uploader/Uploader.swf',
+    // 文件接收服务端。
+    server: '<?php echo U('Admin/Banner/up');?>',
+    // 选择文件的按钮。可选。
+    // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+    pick: '#filePicker',
+    // // 只允许选择图片文件。
+    // accept: {
+    //     title: 'Images',
+    //     extensions: 'gif,jpg,jpeg,bmp,png',
+    //     mimeTypes: 'image/*'
+    // }
+});
+// 当有文件添加进来的时候
+uploader.on( 'fileQueued', function( file ) {
+    var $li = $(
+            '<div id="' + file.id + '" class="file-item thumbnail">' +
+                '<img>' +
+                '<div class="info">' + file.name + '</div>' +
+            '</div>'
+            ),
+        $img = $li.find('img');
+    // $list为容器jQuery实例
+    $list.append( $li );
+    // 创建缩略图
+    // 如果为非图片文件，可以不用调用此方法。
+    // thumbnailWidth x thumbnailHeight 为 100 x 100
+    uploader.makeThumb( file, function( error, src ) {
+        if ( error ) {
+            $img.replaceWith('<span>不能预览</span>');
+            return;
+        }
+        $img.attr( 'src', src );
+    }, thumbnailWidth, thumbnailHeight );
+});
+   // 文件上传成功，给item添加成功class, 用样式标记上传成功。  
+   uploader.on( 'uploadSuccess', function( file , response) {  
+        $('#oldimg').remove();
+        $("#thumbnail").attr('value', '/Public/Upload/'+response);
+   });  
+
+</script>
+
+
 </body>
 </html>

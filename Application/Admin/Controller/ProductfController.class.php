@@ -54,7 +54,7 @@ class ProductfController extends CommonController
     public function edit()
     {
         if (IS_POST) {
-            $product_model = D('Product');
+            $product_model = D('Productf');
             if($product_model->create()){
  
                 if($product_model->save() !== false){
@@ -68,7 +68,7 @@ class ProductfController extends CommonController
 
         } elseif (IS_GET) {
             $id = I('get.id');
-            $product_model = D('Product');
+            $product_model = D('Productf');
             $product = $product_model->find($id);
             $this->assign('product', $product);
             $this->display();
