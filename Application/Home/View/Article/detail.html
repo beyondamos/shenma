@@ -27,56 +27,17 @@
 <script type="text/javascript" src="__PUBLIC__/Home/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="__PUBLIC__/Home/bootstrap3/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="__PUBLIC__/Home/jquery.fullPage.js"></script>
-<script type="text/javascript" src="__PUBLIC__/Home/owl-carousel/owl.carousel.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.timelinr-0.9.53.js" async="async" defer="defer"></script>
-
-
+<script type="text/javascript" src="__PUBLIC__/Home/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.timelinr-0.9.53.js"></script>
 
 
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/index20170828.css" />
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/swiper.css" />
-<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.pj.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.mousewheel.min.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="__PUBLIC__/Home/js/swiper.min.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="__PUBLIC__/Home/js/slick/slick.min.js" async="async" defer="defer"></script>
-
-
-
-
-<script type="text/javascript">
-$.fn.extend({
-    animateCss: function(animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName);
-    }
-});
-         document.onreadystatechange = completeLoading;
-        function completeLoading() {
-            if (document.readyState == "complete") {
-                $('.footer,.navbar,#main-container').fadeIn();
-                $('#load').fadeOut();
-            }
-    }
-$(function() {
-    $('#load').height($(window).height());
-    var winW = $(window).width();
-    if (winW > 767) {
-        $('.mobile_version').hide();
-    } else {
-        $('.pc_version').hide();
-    }
-    // $('[data-toggle="popover"]').popover();
-        
-    //tab show reset
-
-    $('.scrollTopLi').click(function() {
-		$.fn.fullpage.moveTo('banner',1);
-	})
-})
-
-
-</script>
-
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.pj.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/swiper.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/slick/slick.min.js"></script>
+<include file="Public::count" />
 </head>
 <body>
 

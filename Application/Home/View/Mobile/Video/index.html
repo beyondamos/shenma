@@ -1,0 +1,133 @@
+<include file="Public::mhead" /> 
+
+	<!--头部选项开始-->
+
+	<div class="vheadbtn">
+		<a href="javascript:;" id="btna"><img src="__PUBLIC__/Mobile/images/btn01.jpg" alt/><span>秩序<br/>白银</span></a>
+		<a href="javascript:;" id="btnb"><img src="__PUBLIC__/Mobile/images/btn02.jpg" alt/><span>荣耀<br/>黄金</span></a>
+		<a href="javascript:;" id="btnc"><img src="__PUBLIC__/Mobile/images/btn03.jpg" alt/><span>尊贵<br/>白金</span></a>
+		<a href="javascript:;" id="btnd"><img src="__PUBLIC__/Mobile/images/btn04.jpg" alt/><span>永恒<br/>钻石</span></a>
+	</div>
+	<!--头部选项结束-->
+
+
+
+
+<!--秩序白银-->
+	<div class="boxcont" id="areaa">
+
+		<volist name="videocs" id="vo">
+		<if condition="$vo['parent_id'] == 1"> 
+		<a href="<{:U('Video/index2', array('id' => $vo['id']))}>"><div class="boxitem">
+			<div class="imglimt"><img src="__PUBLIC__/Mobile/images/bkitem01.jpg" alt="" /><h1><{$vo.name}></h1></div>
+			<div class="txtlimt">
+				<?php foreach(explode(';', $vo['desc']) as $value):?>
+				<h2><?php echo $value?></h2>
+				<?php endforeach;?>
+			</div>
+			<div class="boxitemz"><img src="__PUBLIC__/Mobile/images/iconz.png" alt="" />321</div>
+			<div class="boxitemarr"><img src="__PUBLIC__/Mobile/images/arr.png" alt="" /></div>
+		</div>
+		</a>
+		</if>
+		</volist>	
+
+	</div>
+
+	<!--荣耀黄金-->
+	<div class="boxcont" id="areab" style="display:none;">
+
+		<volist name="videocs" id="vo">
+		<if condition="$vo['parent_id'] == 2"> 
+		<a href="<{:U('Video/index2', array('id' => $vo['id']))}>"><div class="boxitem">
+			<div class="imglimt"><img src="__PUBLIC__/Mobile/images/bkitem02.jpg" alt="" /><h1><{$vo.name}></h1></div>
+			<div class="txtlimt">
+				<?php foreach(explode(';', $vo['desc']) as $value):?>
+				<h2><?php echo $value?></h2>
+				<?php endforeach;?>
+			</div>
+			<div class="boxitemz"><img src="__PUBLIC__/Mobile/images/iconz.png" alt="" />321</div>
+			<div class="boxitemarr"><img src="__PUBLIC__/Mobile/images/arr.png" alt="" /></div>
+		</div>
+		</a>
+		</if>
+		</volist>
+	</div>
+
+	<!--尊贵白金-->
+	<div class="boxcont" id="areac" style="display:none;">
+		<volist name="videocs" id="vo">
+		<if condition="$vo['parent_id'] == 3"> 
+		<a href="<{:U('Video/index2', array('id' => $vo['id']))}>"><div class="boxitem">
+			<div class="imglimt"><img src="__PUBLIC__/Mobile/images/bkitem01.jpg" alt="" /><h1><{$vo.name}></h1></div>
+			<div class="txtlimt">
+				<?php foreach(explode(';', $vo['desc']) as $value):?>
+				<h2><?php echo $value?></h2>
+				<?php endforeach;?>
+			</div>
+			<div class="boxitemz"><img src="__PUBLIC__/Mobile/images/iconz.png" alt="" />321</div>
+			<div class="boxitemarr"><img src="__PUBLIC__/Mobile/images/arr.png" alt="" /></div>
+		</div>
+		</a>
+		</if>
+		</volist>
+	</div>
+
+	<!--永恒钻石-->
+	<div class="boxcont" id="aread" style="display:none;">
+		<volist name="videocs" id="vo">
+		<if condition="$vo['parent_id'] == 4"> 
+		<a href="<{:U('Video/index2', array('id' => $vo['id']))}>"><div class="boxitem">
+			<div class="imglimt"><img src="__PUBLIC__/Mobile/images/bkitem01.jpg" alt="" /><h1><{$vo.name}></h1></div>
+			<div class="txtlimt">
+				<?php foreach(explode(';', $vo['desc']) as $value):?>
+				<h2><?php echo $value?></h2>
+				<?php endforeach;?>
+			</div>
+			<div class="boxitemz"><img src="__PUBLIC__/Mobile/images/iconz.png" alt="" />321</div>
+			<div class="boxitemarr"><img src="__PUBLIC__/Mobile/images/arr.png" alt="" /></div>
+		</div>
+		</a>
+		</if>
+		</volist>
+	</div>
+
+
+
+<include file="Public::mfoot" />
+
+
+
+
+<script>
+$(function(){
+		$("#btna").click(function(){
+			$("#areaa").css('display','block');
+			$("#areab").css('display','none');
+			$("#areac").css('display','none');
+			$("#aread").css('display','none');
+		});
+		$("#btnb").click(function(){
+			$("#areab").css('display','block');
+			$("#areaa").css('display','none');
+			$("#areac").css('display','none');
+			$("#aread").css('display','none');
+		});
+		$("#btnc").click(function(){
+			$("#areac").css('display','block');
+			$("#areaa").css('display','none');
+			$("#areab").css('display','none');
+			$("#aread").css('display','none');
+		});
+		$("#btnd").click(function(){
+			$("#aread").css('display','block');
+			$("#areaa").css('display','none');
+			$("#areab").css('display','none');
+			$("#areac").css('display','none');
+		});
+	});	
+</script>
+
+</body>
+
+</html>

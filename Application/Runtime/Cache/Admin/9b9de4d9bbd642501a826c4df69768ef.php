@@ -106,10 +106,15 @@
 		<a href="<?php echo U('Message/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留言信息</a>
 		<a href="<?php echo U('Add/index', array('classify' => 7));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附加信息</a>
 	</div>
+	<div></div>
+	<div>
+		<span><a href="<?php echo U('Admin/Index/index');?>">移动端管理</a></span>
+	</div>
 	<?php if(is_array($user_auth_list)): $i = 0; $__LIST__ = $user_auth_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if($vo[0][auth_id] != 1): ?><div>
 		<span><?php echo ($vo[0]['auth_name']); ?><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
 		<?php if(is_array($vo)): $i = 0; $__LIST__ = array_slice($vo,1,null,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i; if($val['status'] == 1): ?><a href="<?php echo U($val['auth_url']) ?>"><?php echo ($val["auth_name"]); ?></a><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 	</div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+
 </div>
 
     <div class="cont">

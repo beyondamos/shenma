@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <title>什马金融后台管理系统</title>
+	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+	
+    <script src="__JS__/bootstrap.min.js"></script>
+</head>
+<body>
+<include file="Public:nav_top" />
+<include file="Public:nav_left" />
+
+<div class="cont">
+	<div class="contmain">
+		
+		<div class="boxi">
+			<h1>视频编辑</h1>
+			
+			<form action="" method="post">
+				<div class="boxin">
+					<span>分类名称</span><input type="text"  class="form-control" name="name" value="<{$video_data.name}>"> 
+				</div>
+				<div class="boxinb">
+		          <div class="boxinbl">
+		            <span>上级分类</span>
+		            <select name="cate_id" class="form-control">
+		              <option value="0">一级分类</option>
+		              <volist name="videoc_data" id="vo">
+		                <option value="<{$vo.id}>" <if condition="$vo['id'] == $video_data['cate_id']"> selected </if>> <{:str_repeat('---------', $vo['level'])}><{$vo.name}></option>
+		              </volist>
+		            </select>
+		          </div>
+		        </div>
+				<div class="boxin">
+					<span>描述</span>
+					<textarea class="form-control" name="desc" rows="5" cols="80"><{$video_data.desc}></textarea>
+				</div>
+				<div class="boxinbtn">
+					<input type="hidden" name="id" value="<{$video_data.id}>">
+					<input type="submit"  value="确定" class="btn btna" />
+					<input type="reset"  value="重置" class="btn btnb" />
+				</div>
+				
+			</form>
+		</div>
+	
+	</div>
+</div>
+<script src="__JS__/sdmenu.js"></script>
+</body>
+</html>

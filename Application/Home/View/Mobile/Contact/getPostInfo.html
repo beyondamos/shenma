@@ -1,0 +1,18 @@
+			<volist name="departments" id="department">
+				<div class="contact-recruit-navbox">
+					<a data-toggle="collapse" data-target="#claps-tit<{$i}>r">
+						<div class="panel-info-titl"><!-- <img src="__PUBLIC__/Mobile/images/navimg01.jpg" alt=""/><br/> --><{$department.name}></div>
+					</a>
+					<div id="claps-tit<{$i}>r" class="claps-area collapse in">
+						<div class="container-fluid">
+							<div class="row">
+							<volist name="posts" id="post" key="j">
+							<if condition="$post['cate_id'] == $department['id']">
+								<li  class="post" post="<{$post['id']}>"><a href="javascript:;"><{$post.name}></a></li>
+							</if>
+							</volist>
+							</div>
+						</div>
+					</div>
+				</div>
+			</volist>

@@ -1,0 +1,67 @@
+<include file="Public::mhead" />
+
+<div class="bannertop">
+	<img alt="" src="<{$banner.thumbnail}>" />
+</div>
+
+
+
+<!--行业新闻-->
+<div class="boxnewsa">
+
+	<div class="headbtn">
+		<a href="<{:U('Article/index')}>" id="btna" <if condition="empty($cate_id)"> class="headbtnact"</if> >全部动态</a>
+		<a href="<{:U('Article/index', array('cate_id' => 1))}>" id="btnb" <if condition="$cate_id == 1"> class="headbtnact" </if> >什马新闻</a>
+		<a href="<{:U('Article/index', array('cate_id' => 2))}>" id="btnc"  <if condition="$cate_id == 2"> class="headbtnact" </if>>行业动态</a>
+	</div>
+
+
+	<div class="boxnewslb">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<volist name="banners" id="vo">
+				<div class="swiper-slide"><a href="<{$vo.url}>"><img alt="" src="<{$vo.thumbnail}>" /></a></div>
+				</volist>
+
+			</div>
+		</div>
+		
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				paginationClickable: true,
+				spaceBetween:0,
+				loop: true,
+				centeredSlides: true,
+				autoplay: 5000,
+				autoplayDisableOnInteraction: false
+			});
+		</script>
+	</div>							
+
+
+
+	<!--全部动态-->	
+	<div class="boxnews" id="areaa">
+		<volist name="articles" id="vo">
+		<a href="<{:U('Article/detail', array('article_id' => $vo['article_id']))}>"><div class="boxnewsitm">
+			<img src="<{$vo.thumbnail}>" alt="" />
+			<h6><{$vo.newstime}></h6>
+			<h1><{:mb_substr($vo['title'],0,11,'utf-8')}></h1>
+		</div></a>
+		</volist>
+	</div>
+
+
+		<{$page}>
+						
+						
+</div>
+
+
+<inlcude file="Public::mfoot" /> 
+
+
+
+</body>
+
+</html>

@@ -27,55 +27,26 @@
 <script type="text/javascript" src="/Public/Home/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="/Public/Home/bootstrap3/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/Public/Home/jquery.fullPage.js"></script>
-<script type="text/javascript" src="/Public/Home/owl-carousel/owl.carousel.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="/Public/Home/js/jquery.timelinr-0.9.53.js" async="async" defer="defer"></script>
-
-
+<script type="text/javascript" src="/Public/Home/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="/Public/Home/js/jquery.timelinr-0.9.53.js"></script>
 
 
 <link rel="stylesheet" type="text/css" href="/Public/Home/css/index20170828.css" />
 <link rel="stylesheet" type="text/css" href="/Public/Home/css/swiper.css" />
-<script type="text/javascript" src="/Public/Home/js/jquery.pj.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="/Public/Home/js/jquery.mousewheel.min.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="/Public/Home/js/swiper.min.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="/Public/Home/js/slick/slick.min.js" async="async" defer="defer"></script>
+<script type="text/javascript" src="/Public/Home/js/jquery.pj.js"></script>
+<script type="text/javascript" src="/Public/Home/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="/Public/Home/js/swiper.min.js"></script>
+<script type="text/javascript" src="/Public/Home/js/slick/slick.min.js"></script>
 
-
-
-
-<script type="text/javascript">
-$.fn.extend({
-    animateCss: function(animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName);
-    }
-});
-         document.onreadystatechange = completeLoading;
-        function completeLoading() {
-            if (document.readyState == "complete") {
-                $('.footer,.navbar,#main-container').fadeIn();
-                $('#load').fadeOut();
-            }
-    }
-$(function() {
-    $('#load').height($(window).height());
-    var winW = $(window).width();
-    if (winW > 767) {
-        $('.mobile_version').hide();
-    } else {
-        $('.pc_version').hide();
-    }
-    // $('[data-toggle="popover"]').popover();
-        
-    //tab show reset
-
-    $('.scrollTopLi').click(function() {
-		$.fn.fullpage.moveTo('banner',1);
-	})
-})
-
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?46f5ba243fac66bad14430d8e7cba2f5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
-
 </head>
 <body>
 
@@ -94,7 +65,7 @@ $(function() {
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
 		<li><a href="<?php echo U('Home/index');?>">首页</a></li>
-		<li <?php if($controller_name == 'Loans'): ?>class="active"<?php endif; ?>><a href="<?php echo U('Loans/index');?>" class="fw200">借款申请</a></li>
+		<li <?php if($controller_name == 'Loans'): ?>class="active"<?php endif; ?>><a href="<?php echo U('Loans/index');?>" class="fw200">业务申请</a></li>
 		<!-- <li><a href="javascript:;" class="fw200">借款申请</a></li> -->
 		<li <?php if($controller_name == 'About'): ?>class="active"<?php endif; ?>><a href="<?php echo U('About/index');?>" class="fw200">关于什马</a></li>
 		<li  <?php if($controller_name == 'Article'): ?>class="active"<?php endif; ?>><a href="<?php echo U('Article/index');?>" class="fw200">新闻资讯</a></li>

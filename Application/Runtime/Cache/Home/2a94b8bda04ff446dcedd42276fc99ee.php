@@ -27,21 +27,16 @@
 <script type="text/javascript" src="/Public/Home/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="/Public/Home/bootstrap3/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/Public/Home/jquery.fullPage.js"></script>
-<script type="text/javascript" src="/Public/Home/owl-carousel/owl.carousel.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="/Public/Home/js/jquery.timelinr-0.9.53.js" async="async" defer="defer"></script>
-
-
-
+<script type="text/javascript" src="/Public/Home/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="/Public/Home/js/jquery.timelinr-0.9.53.js"></script>
 
 
 <link rel="stylesheet" type="text/css" href="/Public/Home/css/index20170828.css" />
 <link rel="stylesheet" type="text/css" href="/Public/Home/css/swiper.css" />
-<script type="text/javascript" src="/Public/Home/js/jquery.pj.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="/Public/Home/js/jquery.mousewheel.min.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="/Public/Home/js/swiper.min.js" async="async" defer="defer"></script>
-<script type="text/javascript" src="/Public/Home/js/slick/slick.min.js" async="async" defer="defer"></script>
-
-
+<script type="text/javascript" src="/Public/Home/js/jquery.pj.js"></script>
+<script type="text/javascript" src="/Public/Home/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="/Public/Home/js/swiper.min.js"></script>
+<script type="text/javascript" src="/Public/Home/js/slick/slick.min.js"></script>
 
 
 <script type="text/javascript">
@@ -54,7 +49,7 @@ $.fn.extend({
          document.onreadystatechange = completeLoading;
         function completeLoading() {
             if (document.readyState == "complete") {
-                $('.footer,.navbar,#main-container').fadeIn();
+                $('#main-container').fadeIn();
                 $('#load').fadeOut();
             }
     }
@@ -98,7 +93,7 @@ $(function() {
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
 		<li class="active"><a href="/">首页</a></li>
-		<li><a href="<?php echo U('Loans/index');?>" class="fw200">借款申请</a></li>
+		<li><a href="<?php echo U('Loans/index');?>" class="fw200">业务申请</a></li>
 		<!-- <li><a href="javascript:;" class="fw200">借款申请</a></li> -->
 		<li><a href="<?php echo U('About/index');?>" class="fw200">关于什马</a></li>
 		<li><a href="<?php echo U('Article/index');?>" class="fw200">新闻资讯</a></li>
@@ -115,7 +110,7 @@ $(function() {
 		<img src="/Public/Home/img/headbk.png" alt=""/>
 </nav>
 
-<div id='load'><div class="square-spin"></div></div>
+<div id='load'><div class="square-spin"><div></div></div></div>
 <div id="main-container">
         
     <div id="fullpage">
@@ -242,10 +237,10 @@ $(function() {
 				</div>
 				<div class="swiper-container R_bg">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide bg_1"><img class="bg_1img" src="/Public/Home/img/imgr01.jpg" alt="" /><img class="bg_1imgb" src="/Public/Home/img/imgr01b.jpg" alt="" /></div>
-						<div class="swiper-slide bg_2"><img class="bg_2img" src="/Public/Home/img/imgr02.jpg" alt="" /><img class="bg_2imgb" src="/Public/Home/img/imgr02b.jpg" alt="" /></div>
-						<div class="swiper-slide bg_3"><img class="bg_3img" src="/Public/Home/img/imgr03.jpg" alt="" /><img class="bg_3imgb" src="/Public/Home/img/imgr03b.jpg" alt="" /></div>
-						<div class="swiper-slide bg_4"><img class="bg_4img" src="/Public/Home/img/imgr04.jpg" alt="" /><img class="bg_4imgb" src="/Public/Home/img/imgr04b.jpg" alt="" /></div>
+						<div class="swiper-slide bg_1"><img class="bg_1img" src="/Public/Home/img/imgr01.jpg" alt="" /><img class="bg_1imgb" src="/Public/Home/img/imgr01bb.jpg" alt="" /></div>
+						<div class="swiper-slide bg_2"><img class="bg_2img" src="/Public/Home/img/imgr02.jpg" alt="" /><img class="bg_2imgb" src="/Public/Home/img/imgr02bb.jpg" alt="" /></div>
+						<div class="swiper-slide bg_3"><img class="bg_3img" src="/Public/Home/img/imgr03.jpg" alt="" /><img class="bg_3imgb" src="/Public/Home/img/imgr03bb.jpg" alt="" /></div>
+						<div class="swiper-slide bg_4"><img class="bg_4img" src="/Public/Home/img/imgr04.jpg" alt="" /><img class="bg_4imgb" src="/Public/Home/img/imgr04bb.jpg" alt="" /></div>
 					</div>
 				</div>
 			</div>
@@ -398,7 +393,7 @@ $(function() {
     })
 </script>
 
-			<script type="text/javascript" src="/Public/Home/js/IndexFp.js" async="async" defer="defer"></script><!--PC端滚屏动画-->
+			<script type="text/javascript" src="/Public/Home/js/IndexFp.js"></script><!--PC端滚屏动画-->
 	
 
         <script type="text/javascript">
@@ -406,11 +401,11 @@ $(function() {
                 $('.bg_height').height($(window).height() - $('nav').height());
             })
         </script>
-        <script type="text/javascript" src="/Public/Home/js/IndexCommon.js" async="async" defer="defer"></script><!--移动端与PC端公用JS-->
+        <script type="text/javascript" src="/Public/Home/js/IndexCommon.js"></script><!--移动端与PC端公用JS-->
 
 <div class="hidden"></div>
 
 </body>
 <script>$(function(){$('#carousel-exampleb').carousel({interval: 600000});});</script>
-<script type="text/javascript" src="/Public/Home/js/index20170823.js" async="async" defer="defer"></script>
+<script type="text/javascript" src="/Public/Home/js/index20170823.js"></script>
 </html>

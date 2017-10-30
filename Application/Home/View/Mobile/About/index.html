@@ -1,0 +1,127 @@
+<include file="Public::mhead" />
+
+<div class="bannertop">
+	<img alt="" src="<{$banner.thumbnail}>" />
+</div>
+		
+<div class="boxabt">
+
+	<div class="about-shenma">
+		<h2><{$info.title}></h2>
+		
+<{:html_entity_decode($info['content'])}>
+	</div>
+</div>	
+	
+
+
+<div class="history-shenma">
+
+<div class="boxabtline"></div>
+<div class="boxabt">
+	<h2>发展历程</h2>
+
+</div>		
+
+	<div class="swiper-container">
+		
+        <div class="swiper-wrapper">
+		
+
+        <volist name="develops" id="vo">
+            <div class="swiper-slide">
+				<div class="process-row">
+					<div class="process-noyear">
+						<php>echo date('Y.m', strtotime($vo['newstime']));</php>
+					</div>
+					<i></i>
+					<div class="process-content">
+						<php>echo implode('<br/>', explode(';', $vo['title']));</php>
+					</div>
+				</div>
+			</div>
+		</volist>
+
+
+        </div>
+    </div>
+	
+	<script>
+		var swiper = new Swiper('.history-shenma .swiper-container', {
+			paginationClickable: true,
+			slidesPerView: 2,
+			spaceBetween:0,
+			loop: false,
+			centeredSlides: true,
+			autoplay: 4000,
+			autoplayDisableOnInteraction: false
+		});
+    </script>
+	
+	
+	
+
+</div>
+	
+	
+	
+	
+<div class="boxabt">		
+	
+	<div class="core-shenma">
+		<h2>核心团队</h2>
+		<!--<img src="__PUBLIC__/Mobile/images/abtcore.jpg" alt="" style="width:100%;" />-->
+
+		<volist name="teams" id="vo">
+		<li class="corep">
+			<img src="<{$vo.thumbnail}>" alt="" />
+			<h3><{$vo.name}></h3>
+			<span><{$vo.post}></span>
+			<h5><{$vo.content}><h5>
+		</li>
+		</volist>
+
+
+
+
+
+	</div>
+	
+
+</div>
+
+
+
+	<div class="culture-shenma">
+		<img src="__PUBLIC__/Mobile/images/imgabtbk2.jpg" alt="" />
+		
+	</div>
+	
+	
+	
+	
+<div class="boxabt" id="xnl">
+	<div class="xnla-shenma">
+		<h1><img src="<{$nuanlu.thumbnail}>" alt="" /></h1>
+		<h2><{$nuanlu.title}></h2>
+<{:html_entity_decode($nuanlu['content'])}>
+	</div>
+</div>
+		
+			
+	
+<div class="xnl-shenma">
+	<img src="__PUBLIC__/Mobile/images/imgabtbkb.jpg" alt="" />
+	<div class="xnl-shenma-md">
+		<p>目前什马金融已帮助近30名山区贫困学生完成求学梦想</p>
+		<p>我们的公益还在继续，让我们一起为山区的孩童播撒更多幸福的阳光</p>
+	</div>
+</div>
+	
+
+
+<include file="Public::mfoot" />
+	
+
+</body>
+</html>

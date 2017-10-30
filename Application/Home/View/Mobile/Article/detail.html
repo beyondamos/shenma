@@ -1,0 +1,38 @@
+<include file="Public::mhead" />
+
+<div class="bannertop">
+	<img alt="" src="__PUBLIC__/Mobile/images/bannernews.jpg" />
+</div>
+		
+<div class="cont-detail">
+	<div class="cont-detail-nav">
+		<a href="/">首页&gt;</a>
+		<a href="<{:U('Article/index')}>">新闻资讯</a>&nbsp;&ndash;&nbsp;<if condition="$article.cate_id == 1 "><a href="<{:U('Article/index', array('cate_id' => 1))}>">什马新闻</a><else /><a href="<{:U('Article/index', array('cate_id' => 2))}>">行业动态</a></if>
+	</div>
+	
+	<h1><{$article.title}><i><span><{$article.newstime}></span><span><{$article.author}></span><span><if condition="$article.cate_id == 1 ">什马新闻<else />行业动态</if></span></i></h1>
+	
+	<{:html_entity_decode($article['content'])}>
+	
+	<div class="cont-detail-prenext">
+
+	<if condition="$last_article">
+		<a href="<{:U('Article/detail', array('article_id' => $last_article['article_id']))}>">上一篇：<{$last_article.title}></a>
+	</if>
+	<if condition="$next_article">
+		<a href="<{:U('Article/detail', array('article_id' => $next_article['article_id']))}>">下一篇：<{$next_article.title}></a>
+	</if>
+	</div>
+	
+	<h6><a  onclick="javascript:history.back(-1);">返回&gt;&gt;</a><h6>
+	
+</div>
+	
+	
+	
+<include file="Public::mfoot" />
+
+
+
+</body>
+</html>

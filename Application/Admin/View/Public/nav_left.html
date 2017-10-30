@@ -59,6 +59,24 @@
 		<a href="<{:U('Message/index')}>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留言信息</a>
 		<a href="<{:U('Add/index', array('classify' => 7))}>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附加信息</a>
 	</div>
+	<div><span></span></div>
+	<div>
+		<span><a href="<{:U('Admin/Index/index')}>">移动端管理</a></span>
+	</div>
+	<div>	
+		<span>首页<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
+		<a href="<{:U('Bannerm/index', array('classify' => 1))}>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
+	</div>
+	<div>	
+		<span>老板商学院<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
+		<a href="<{:U('Bannerm/edit', array('id' => 3))}>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
+	</div>
+	<div>	
+		<span>学习视频<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
+		<a href="<{:U('Videoc/index')}>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;栏目设置</a>
+		<a href="<{:U('Video/index')}>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;视频设置</a>
+	</div>
+	<div><span></span></div>
 	<volist name="user_auth_list" id="vo">
 	<if condition="$vo[0][auth_id] != 1">
 	<div>
@@ -71,4 +89,5 @@
 	</div>
 	</if>
 	</volist>
+
 </div>

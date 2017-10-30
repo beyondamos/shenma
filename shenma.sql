@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?10 �?13 �?09:20
+-- 生成日期: 2017 �?10 �?30 �?08:34
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `shenma_auth` (
   `auth_url` varchar(50) NOT NULL DEFAULT '' COMMENT '权限路由',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '权限状态，是否显示在左侧菜单列表里',
   PRIMARY KEY (`auth_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=97 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=110 ;
 
 --
 -- 转存表中的数据 `shenma_auth`
@@ -203,7 +203,20 @@ INSERT INTO `shenma_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `sta
 (93, '附加信息删除', 1, 'Add/delete', 0),
 (94, '附加信息编辑', 1, 'Add/edit', 0),
 (95, 'SEO设置', 6, 'Seo/index', 1),
-(96, 'SEO删除', 6, 'Seo/edit', 0);
+(96, 'SEO删除', 6, 'Seo/edit', 0),
+(97, '移动Banner列表', 1, 'Bannerm/index', 0),
+(98, '移动Banner添加', 1, 'Bannerm/add', 0),
+(99, '移动Banner编辑', 1, 'Bannerm/edit', 0),
+(100, '移动Banner删除', 1, 'Bannerm/delete', 0),
+(101, '移动端图片上传', 1, 'Bannerm/up', 0),
+(102, '视频分类', 1, 'Videoc/index', 0),
+(103, '视频分类添加', 1, 'Videoc/add', 0),
+(104, '视频分类编辑', 1, 'Videoc/edit', 0),
+(105, '视频分类删除', 1, 'Videoc/delete', 0),
+(106, '视频列表', 1, 'Video/index', 0),
+(107, '视频编辑', 1, 'Video/edit', 0),
+(108, '视频删除', 1, 'Video/delete', 0),
+(109, '视频添加', 1, 'Video/add', 0);
 
 -- --------------------------------------------------------
 
@@ -244,6 +257,31 @@ INSERT INTO `shenma_banner` (`id`, `url`, `name`, `thumbnail`, `sort`, `classify
 (16, '', '消费者商品分期', '/Public/Upload/20170928/1506577927_739484615.png', 0, 9),
 (17, '', '消费者现金分期', '/Public/Upload/20170928/1506578122_1767109376.png', 0, 9),
 (18, '', '什马大讲堂', '/Public/Upload/20170928/1506579396_762841288.jpg', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `shenma_bannerm`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_bannerm` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `url` varchar(256) NOT NULL DEFAULT '' COMMENT 'url',
+  `name` varchar(50) NOT NULL DEFAULT '' COMMENT '链接名称',
+  `thumbnail` varchar(256) NOT NULL COMMENT '缩略图',
+  `sort` tinyint(4) NOT NULL DEFAULT '0' COMMENT '顺序',
+  `classify` tinyint(4) NOT NULL DEFAULT '0' COMMENT '分类',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='banner表' AUTO_INCREMENT=4 ;
+
+--
+-- 转存表中的数据 `shenma_bannerm`
+--
+
+INSERT INTO `shenma_bannerm` (`id`, `url`, `name`, `thumbnail`, `sort`, `classify`) VALUES
+(1, '', '第一张', '/Public/Upload/20171030/1509340379_1526874155.jpg', 10, 1),
+(2, '', '第2张', '/Public/Upload/20171030/1509340389_1868878205.jpg', 10, 1),
+(3, '', '老板商学院', '/Public/Upload/20171030/1509341273_2027608628.jpg', 0, 2);
 
 -- --------------------------------------------------------
 
@@ -588,7 +626,7 @@ INSERT INTO `shenma_productf` (`id`, `name`, `thumbnail`, `sort`, `classify`) VA
 (1, '第一张', '/Public/Upload/20170928/1506578332_720019109.png', 1, 16),
 (2, '第二张', '/Public/Upload/20170928/1506578344_43623345.png', 2, 16),
 (3, '第一张', '/Public/Upload/20170928/1506578776_1006944826.png', 1, 17),
-(4, '第二张', '/Public/Upload/20170928/1506578791_1624058579.png', 2, 17),
+(4, '第二张', '/Public/Upload/20171018/1508288299_1208356475.png', 2, 17),
 (5, '第三张', '/Public/Upload/20170928/1506578804_323668314.png', 3, 17);
 
 -- --------------------------------------------------------
@@ -752,8 +790,73 @@ CREATE TABLE IF NOT EXISTS `shenma_user` (
 --
 
 INSERT INTO `shenma_user` (`user_id`, `username`, `nickname`, `password`, `email`, `salt`, `role_id`, `last_login_time`, `last_login_ip`, `add_time`, `login_times`, `status`) VALUES
-(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1507868919, 2130706433, 0, 69, 1),
+(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1509339657, 2130706433, 0, 72, 1),
 (8, 'shenma', 'shenma', 'e0872f7bc5e019bf4ad8c24f15d72cc5', 'shenma@qq.com', 'E0iAvl', 1, 1507446410, 1883314357, 1505444079, 4, 1);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `shenma_video`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_video` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '视频id',
+  `cate_id` int(11) NOT NULL COMMENT '分类id',
+  `title` varchar(256) NOT NULL COMMENT '视频名称',
+  `url` varchar(256) NOT NULL COMMENT '视频地址',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
+
+--
+-- 转存表中的数据 `shenma_video`
+--
+
+INSERT INTO `shenma_video` (`id`, `cate_id`, `title`, `url`) VALUES
+(1, 5, '产品授信申请流程', ''),
+(2, 5, '产品分期办理流程', ''),
+(3, 5, '售后常见问题', ''),
+(4, 5, '经销商准入', ''),
+(5, 6, '新生贷', ''),
+(6, 6, '信用贷', ''),
+(7, 6, '什马分期', ''),
+(8, 6, '1分期', ''),
+(9, 6, '骑行意外保障', ''),
+(10, 6, '车辆盗抢保障', ''),
+(11, 7, '消费金融行业发展的背景和趋势', ''),
+(12, 7, '交通工具行业发展的背景和趋势', ''),
+(13, 8, '风控的意识和实践', ''),
+(14, 8, '网点催收的技巧', ''),
+(15, 8, '合规意识', '');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `shenma_videoc`
+--
+
+CREATE TABLE IF NOT EXISTS `shenma_videoc` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `parent_id` int(11) NOT NULL DEFAULT '0' COMMENT '视频分类id',
+  `name` varchar(256) NOT NULL DEFAULT '' COMMENT '分类名称',
+  `desc` varchar(256) NOT NULL DEFAULT '' COMMENT '描述',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='视频分类' AUTO_INCREMENT=11 ;
+
+--
+-- 转存表中的数据 `shenma_videoc`
+--
+
+INSERT INTO `shenma_videoc` (`id`, `parent_id`, `name`, `desc`) VALUES
+(1, 0, '秩序白银', ''),
+(2, 0, '荣耀黄金', ''),
+(3, 0, '尊贵白金', ''),
+(4, 0, '永恒钻石', ''),
+(5, 1, '办单流程', '40分钟;你将会了解如何成为什马合伙人;开始你的轻松赚钱之旅;从一个青铜菜鸟直接晋级到白银段位'),
+(6, 1, '什马产品', '边吃边看，一顿饭的时间;让你了解所有什马金融产品'),
+(7, 2, '行业相关', '一局王者的时间;让你尽情领略最前沿的行业资讯'),
+(8, 2, '风控相关', '已经是老板的你;意识到了眼前的风险么？'),
+(9, 2, '销售技巧', '如果提升销量？;如何拓宽渠道?;怎么和你的大客户打交道?'),
+(10, 2, '业务技能相关', '员工不听话?;事情总是延期?教你如何做一个合格的管理员');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -26,9 +26,19 @@ class IndexController extends HomeBaseController
         $site_desc = $site_model->where('conf_id = 4')->getField('conf_value');
         $this->assign('site_desc', $site_desc);
         //banner
-        $banner_model = D('Banner');
-        $banners = $banner_model->where(array('classify' => 1))->order('sort asc')->select();
-        $this->assign('banners', $banners);
+
+
+        if (C('DEFAULT_THEME') == 'Mobile') {
+            $banner_model = D('Bannerm');
+            $banners = $banner_model->where(array('classify' => 1))->order('sort asc')->select();
+            $this->assign('banners', $banners);
+        } else {
+            $banner_model = D('Banner');
+            $banners = $banner_model->where(array('classify' => 1))->order('sort asc')->select();
+            $this->assign('banners', $banners);
+        }
+
+
         //关于什马
         $about = D('About')->find(2);
         $this->assign('about', $about);

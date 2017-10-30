@@ -1,0 +1,346 @@
+<include file="Public::mhead" />	
+
+
+<div class="navtopbtn">
+	<a href="<{:U('Loans/index2')}>"><img src="__PUBLIC__/Mobile/images/linkxfz.png" alt="" />消费者申请 >></a>
+	<a href="<{:U('Loans/index')}>"><img src="__PUBLIC__/Mobile/images/linksh.png" alt="" />商家申请 >></a>
+</div>
+
+<!--头部图片-->
+<div class="banind">
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+        	<volist name="banners" id="vo">
+            <div class="swiper-slide"><a href="<{$vo.url}>"><img alt="" src="<{$vo.thumbnail}>" /></a></div>
+            </volist>	
+        </div>
+    </div>
+	
+	<script>
+		var swiper = new Swiper('.banind .swiper-container', {
+			paginationClickable: true,
+			spaceBetween:0,
+			loop: true,
+			centeredSlides: true,
+			autoplay: 5000,
+			autoplayDisableOnInteraction: false
+		});
+    </script>
+</div>
+
+
+<div class="box-cartoon">
+	<div class="box-cartoon-btn">
+		<a href="javascript:;" id="btna" class="box-cartoon-act">分期进货</a>
+		<a href="javascript:;" id="btnb">分期买车</a>
+	</div>
+	
+	<!--分期进货-->
+	<div class="box-cartoona" id="areaa">
+		<div class="swiper-container swiper-containera">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img alt="" src="__PUBLIC__/Mobile/images/carta01.jpg" /></div>
+				<div class="swiper-slide"><img alt="" src="__PUBLIC__/Mobile/images/carta02.jpg" /></div>
+				<div class="swiper-slide"><img alt="" src="__PUBLIC__/Mobile/images/carta03.jpg" /></div>
+				<div class="swiper-slide"><img alt="" src="__PUBLIC__/Mobile/images/carta04.jpg" /></div>
+				<div class="swiper-slide"><img alt="" src="__PUBLIC__/Mobile/images/carta05.jpg" /></div>
+			</div>
+			<div class="swiper-pagination swiper-paginationa"></div>
+		</div>
+	</div>
+
+	<!--分期买车-->
+	<div class="box-cartoonb" id="areab" style="height:0;">
+		<div class="swiper-container swiper-containerb">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img alt="" src="__PUBLIC__/Mobile/images/cartb01.jpg" /></div>
+				<div class="swiper-slide"><img alt="" src="__PUBLIC__/Mobile/images/cartb02.jpg" /></div>
+				<div class="swiper-slide"><img alt="" src="__PUBLIC__/Mobile/images/cartb03.jpg" /></div>
+				<div class="swiper-slide"><img alt="" src="__PUBLIC__/Mobile/images/cartb04.jpg" /></div>
+				<div class="swiper-slide"><img alt="" src="__PUBLIC__/Mobile/images/cartb05.jpg" /></div>
+			</div>
+			<div class="swiper-pagination swiper-paginationb"></div>
+		</div>
+	</div>
+	
+
+</div>
+
+<script>
+	$(function(){
+		
+		var swipera = new Swiper('.box-cartoona .swiper-containera', {
+		pagination: '.box-cartoona .swiper-paginationa',
+		paginationClickable: true,
+		paginationType: 'fraction',
+		spaceBetween:0,
+		loop: true,
+		centeredSlides: true,
+		autoplay: 1000,
+		autoplayDisableOnInteraction: false,
+		effect: 'fade'
+	});
+	
+	
+	var swiperb = new Swiper('.box-cartoonb .swiper-containerb', {
+		pagination: '.box-cartoonb .swiper-paginationb',
+		paginationClickable: true,
+		paginationType: 'fraction',
+		spaceBetween:0,
+		loop: true,
+		centeredSlides: true,
+		autoplay: 1000,
+		autoplayDisableOnInteraction: false,
+		effect: 'fade'
+	});	
+	
+	
+		$("#btna").click(function(){
+			swipera.startAutoplay();
+			swiperb.stopAutoplay();
+			$("#areaa").css('height','auto');
+			$("#areab").css('height','0');
+			$("#btna").addClass('box-cartoon-act');
+			$("#btnb").removeClass('box-cartoon-act');
+		});
+		$("#btnb").click(function(){
+			swiperb.startAutoplay();
+			swipera.stopAutoplay();
+			$("#areab").css('height','auto');
+			$("#areaa").css('height','0');
+			$("#btnb").addClass('box-cartoon-act');
+			$("#btna").removeClass('box-cartoon-act');
+		});
+	});	
+</script>
+
+<!--关于什马-->
+<div class="main-about">
+	<img src="__PUBLIC__/Mobile/images/bkabt.jpg" alt="" />
+	<div class="main-about-md">
+		<h2><{$about.title}></h2>
+		<{:html_entity_decode($about['content'])}>
+		<div class="main-about-more"><a href="<{$about.url}>">more</a></div>
+	</div>
+</div>
+
+
+<div class="box-adv">
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="bg_1img" src="__PUBLIC__/Mobile/images/imgr01.jpg" alt="" /><img class="bg_1imgb" src="__PUBLIC__/Mobile/images/imgr01b.jpg" alt="" /></div>
+            <div class="swiper-slide"><img class="bg_2img" src="__PUBLIC__/Mobile/images/imgr02.jpg" alt="" /><img class="bg_2imgb" src="__PUBLIC__/Mobile/images/imgr02b.jpg" alt="" /></div>
+            <div class="swiper-slide"><img class="bg_3img" src="__PUBLIC__/Mobile/images/imgr03.jpg" alt="" /><img class="bg_3imgb" src="__PUBLIC__/Mobile/images/imgr03b.jpg" alt="" /></div>
+            <div class="swiper-slide"><img class="bg_4img" src="__PUBLIC__/Mobile/images/imgr04.jpg" alt="" /><img class="bg_4imgb" src="__PUBLIC__/Mobile/images/imgr04b.jpg" alt="" /></div>
+        </div>
+		
+		<div class="swiper-pagination"></div>
+    </div>
+	
+	<script>
+		var swiperadv = new Swiper('.box-adv .swiper-container', {
+			pagination: '.box-adv .swiper-pagination',
+			paginationClickable: true,
+			spaceBetween:0,
+			loop: true,
+			centeredSlides: true,
+			autoplay: 3000,
+			autoplayDisableOnInteraction: false,
+			onSlideChangeEnd:function(swiperadv){
+				swiperadv.startAutoplay();
+			}
+		});
+		
+		$('.bg_1img').click(function() {
+			swiperadv.stopAutoplay();
+			$('.bg_1img').css('visibility', 'hidden');
+			$('.bg_1imgb').css('visibility','visible');
+		})
+		
+		$('.bg_1imgb').click(function() {
+			swiperadv.startAutoplay();
+			$('.bg_1imgb').css('visibility', 'hidden');
+			$('.bg_1img').css('visibility','visible');
+		})
+		
+		$('.bg_2img').click(function() {
+			swiperadv.stopAutoplay();
+			$('.bg_2img').css('visibility', 'hidden');
+			$('.bg_2imgb').css('visibility','visible');
+		})
+		
+		$('.bg_2imgb').click(function() {
+			swiperadv.startAutoplay();
+			$('.bg_2imgb').css('visibility', 'hidden');
+			$('.bg_2img').css('visibility','visible');
+		})
+		
+		$('.bg_3img').click(function() {
+			swiperadv.stopAutoplay();
+			$('.bg_3img').css('visibility', 'hidden');
+			$('.bg_3imgb').css('visibility','visible');
+		})
+		
+		$('.bg_3imgb').click(function() {
+			swiperadv.startAutoplay();
+			$('.bg_3imgb').css('visibility', 'hidden');
+			$('.bg_3img').css('visibility','visible');
+		})
+		
+		$('.bg_4img').click(function() {
+			swiperadv.stopAutoplay();
+			$('.bg_4img').css('visibility', 'hidden');
+			$('.bg_4imgb').css('visibility','visible');
+		})
+		
+		$('.bg_4imgb').click(function() {
+			swiperadv.startAutoplay();
+			$('.bg_4imgb').css('visibility', 'hidden');
+			$('.bg_4img').css('visibility','visible');
+		})
+		
+    </script>
+</div>
+
+	
+	
+	
+
+
+<!--新闻-->
+<div class="box-news">
+	<!--标题文字
+	<h2><img src="__PUBLIC__/Mobile/images/imgtxt01.jpg" alt=""/></h2>-->
+	<h4>新闻资讯</h4>
+	<h6>NEWS AND VIEWS</h6>
+	
+	<div class="box-news-img">
+		<a href="<{:U('Article/detail', array('article_id' => $top_article['article_id']))}>"><div class="imglimtc"><img src="<{$top_article.thumbnail}>" alt=""/></div>
+			<b><{:mb_substr($top_article['title'],0,20,'utf-8')}>...</b>
+			<i><{:mb_substr($top_article['synopsis'],0,35,'utf-8')}>...</i>
+		</a>
+	</div>
+	<ul>
+		<volist name="recommend_articles" id="vo">
+		<a href="<{:U('Article/detail', array('article_id' => $vo['article_id']))}>">
+			<b><{:substr($vo['newstime'], -2 , 2)}></b><{:mb_substr($vo['title'],0,18,'utf-8')}>...<span><{$vo.newstime}></span>
+			<i><{:mb_substr($vo['synopsis'],0,25,'utf-8')}>...</i>
+		</a>
+		</volist>
+	</ul>
+	<div class="news-more">
+		<a href="<{:U('Article/index')}>">more</a>
+	</div>
+	
+</div>
+
+
+
+
+<!--品牌区-->
+<div class="box-logo">
+	<!--标题文字
+	<h2><img src="__PUBLIC__/Mobile/images/imgtxt02.jpg" alt=""/></h2>-->
+	<h4>投资机构&合作品牌</h4>
+	<h6>INVESTMENT INSTITUTIONS & PARTNERS</h6>
+	
+	
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+
+
+            <div class="swiper-slide">
+				<div class="box-logomd">
+				<volist name="brands" id="vo" offset="0" length="10">
+					<a href="<{$vo.url}>" target="_blank"><img src="<{$vo.thumbnail}>" alt=""/><h5><{$vo.name}></h5></a>
+				</volist>
+				</div>
+			</div>
+
+
+			<if condition="$count gt 10"> 
+            <div class="swiper-slide">
+				<div class="box-logomd">
+				<volist name="brands" id="vo" offset="10" length="10">
+					<a href="<{$vo.url}>" target="_blank"><img src="<{$vo.thumbnail}>" alt=""/><h5><{$vo.name}></h5></a>
+				</volist>
+				</div>
+			</div>
+			</if> 
+
+
+			<if condition="$count gt 20"> 
+            <div class="swiper-slide">
+				<div class="box-logomd">
+				<volist name="brands" id="vo" offset="20" length="10">
+					<a href="<{$vo.url}>" target="_blank"><img src="<{$vo.thumbnail}>" alt=""/><h5><{$vo.name}></h5></a>
+				</volist>
+				</div>
+			</div>
+			</if> 
+
+			<if condition="$count gt 30"> 
+            <div class="swiper-slide">
+				<div class="box-logomd">
+				<volist name="brands" id="vo" offset="30" length="10">
+					<a href="<{$vo.url}>" target="_blank"><img src="<{$vo.thumbnail}>" alt=""/><h5><{$vo.name}></h5></a>
+				</volist>
+				</div>
+			</div>
+			</if> 
+
+
+        </div>
+		
+		<!--<div class="swiper-pagination"></div>-->
+		<if condition="$count elt 40"> 
+		<div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+		</if> 
+    </div>
+	
+	<script>
+		var swiper = new Swiper('.box-logo .swiper-container', {
+			pagination: '.box-logo .swiper-pagination',
+			paginationClickable: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			spaceBetween:0,
+			loop: true,
+			centeredSlides: true,
+			autoplay: 60000,
+			autoplayDisableOnInteraction: false
+		});
+    </script>
+</div>
+
+
+
+
+
+<!--联系方式-->
+<div class="contact-us">
+	<h4>联系方式</h4>
+	<h6>CONTACT</h6>
+	<div class="contact-usmd">
+		<h1>什马互联网金融信息服务(上海)有限公司</h1>
+		<h2>Shenma Internet Financial Information Service Co.,Ltd.</h2>
+		<!-- <h5>公司名称：什马互联网金融信息服务(上海)有限公司</h5> -->
+		<h5>公司地址：上海市长宁区凌空SOHO5号楼1楼</h5>
+		<h5>合作邮箱：hezuo@shenmajr.com</h5>
+		<h5>联系电话：400-088-6177&nbsp;&nbsp;021-62156265</h5>
+		<h5>媒体合作：PR@SHENMAJR.COM</h5>
+	</div>
+	<div class="contact-map">
+		<a href="http://api.map.baidu.com/geocoder?output=html&amp;address=%e4%b8%8a%e6%b5%b7%e5%b8%82%e9%95%bf%e5%ae%81%e5%8c%ba%e5%87%8c%e7%a9%basoho5%e5%8f%b7%e6%a5%bc1%e6%a5%bc" title="点击查看地图" ><img src="__PUBLIC__/Mobile/images/map.jpg" alt="" /></a><dt>
+	</div>
+</div>
+		
+		
+		
+	
+<include file="Public::mfoot" />
+
+
+</body>
+</html>

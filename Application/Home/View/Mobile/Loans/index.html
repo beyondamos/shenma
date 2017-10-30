@@ -1,0 +1,55 @@
+<include file="Public::mhead" />
+
+<div class="apply-top">
+	<img src="__PUBLIC__/Mobile/images/bkimgloan.jpg" alt="" />
+	<div class="apply-top-md">
+		<a href="<{:U('Loans/index1')}>"><img src="__PUBLIC__/Mobile/images/biz.png" alt="" /><h1>商家申请</h1><h2>Business application</h2></a>
+		<a href="<{:U('Loans/index2')}>"><img src="__PUBLIC__/Mobile/images/cust.png" alt="" /><h1>消费者申请</h1><h2>Consumer application</h2></a>
+	</div>
+</div>
+
+
+<!-- App下载 -->
+<div class="apply-app">
+	<div class="apply-app-md">
+		<a href="http://mmp.shenmajr.com/dealers/download.html"><img src="__PUBLIC__/Mobile/images/downbtn.jpg" alt="" />
+			<!--<i>
+				<img src="Public/static/img/qr01.jpg" alt="" />
+			</i>-->
+		</a>
+	</div>
+</div>
+
+<!-- 什么是商户进货贷 -->
+<div class="apply-cartoon">
+	<img src="__PUBLIC__/Mobile/images/bkimgCartoon.jpg" alt="" />
+	<div class="apply-cartoon-md">
+		<img src="<{$banners['0']['thumbnail']}>" alt="" />
+	</div>
+</div>	
+
+<!-- 两个核心产品 -->
+<div class="apply-goods">
+	<img src="__PUBLIC__/Mobile/images/bkxyd.jpg" alt="" />
+	<div class="apply-goods-md">
+		<img src="<{$banners['1']['thumbnail']}>" alt="" />
+	</div>
+</div>
+
+
+
+<!-- 产品 -->
+<div class="apply-loans">
+	<!-- <img src="Public/static/img/bkimgArr.png" alt="" /> -->
+	<div class="apply-loans-md">
+		<volist name="products" id="vo">
+			<img src="<{$vo.thumbnail}>" alt="" />
+		</volist>
+	</div>
+</div>
+
+
+<include file="Public::mfoot" />
+
+</body>
+</html>

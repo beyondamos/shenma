@@ -69,10 +69,10 @@ class ArticleController extends HomeBaseController
 
 		$article = D('Article');
 		// 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
-		$articles = $article->where($where)->order('newstime desc')->page($p.',9')->select();
+		$articles = $article->where($where)->order('newstime desc')->page($p.',10')->select();
 		$this->assign('articles',$articles);// 赋值数据集
 		$count	= $article->where($where)->count();// 查询满足要求的总记录数
-		$Page       = new \Think\Pagehome($count,9);// 实例化分页类 传入总记录数和每页显示的记录数
+		$Page       = new \Think\Pagehome($count,10);// 实例化分页类 传入总记录数和每页显示的记录数
 		$show       = $Page->show();// 分页显示输出
 		$this->assign('page',$show);// 赋值分页输出
 

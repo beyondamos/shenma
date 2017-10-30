@@ -1,0 +1,325 @@
+<include file="Public::mhead" />
+
+<div class="bannertop">
+	<img alt="" src="<{$banner.thumbnail}>" />
+</div>
+
+<!--招聘区-->
+<div class="contact-recruit">
+	
+	<div class="contact-recruitmd">
+		<h1>最新职位</h1>
+		<div class="navtabs">
+			<!-- 选项卡头 -->
+		
+			<span id="zpmore">+</span>
+			<span id="zpmoreb"></span>
+			<ul class="nav nav-tabs" role="tablist">
+
+			<volist name="locations" id="location">
+				<if condition="$location['parent_id'] == 0">
+				<li location="<{$location.id}>" role="presentation" <if condition="$i == 1"> class="active" </if>><a href="#tab<{$i}>" role="tab" data-toggle="tab" ><{$location.name}></a></li>
+				</if>
+			</volist>	
+
+			
+			</ul>
+			
+			<script>					
+				$("#zpmore").click(function(){
+				var t=$(this).text();
+				if(t=="+"){
+					$(".contact-recruitmd .nav-tabs").css('overflow','visible');
+					$(".contact-recruitmd .nav-tabs").css('height','auto');
+					$(this).text("-");
+				}else{
+					$(".contact-recruitmd .nav-tabs").css('overflow','hidden');
+					$(".contact-recruitmd .nav-tabs").css('height','20');
+					$(this).text("+");
+				}  
+				});
+			</script>
+
+
+
+			<!-- 招聘内容 -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="tab1">
+					<div class="box-news-item">
+					
+						<!-- 招聘内容详情 -->
+						<div class="contact-recruit-detail">
+							<{:html_entity_decode($posts[0]['content'])}>
+						</div><!-- 招聘内容详情 end-->
+		
+					</div>
+				</div>
+
+			</div><!-- 招聘内容 end-->
+		</div>
+		
+		
+		
+		<!-- 招聘email -->
+		<div class="contact-recruit-email">
+			<a href="mailto:smjr-hr@shenmajr.com">投递邮箱：smjr-hr@shenmajr.com</a>
+		</div><!-- 招聘email end-->	
+		
+		
+		
+		<!-- 招聘菜单 -->
+		<div class="contact-recruit-nav">
+
+			<volist name="departments" id="department">
+				<div class="contact-recruit-navbox">
+					<a data-toggle="collapse" data-target="#claps-tit<{$i}>r">
+						<div class="panel-info-titl"><!-- <img src="__PUBLIC__/Mobile/images/navimg01.jpg" alt=""/><br/> --><{$department.name}></div>
+					</a>
+					<div id="claps-tit<{$i}>r" class="claps-area collapse in">
+						<div class="container-fluid">
+							<div class="row">
+							<volist name="posts" id="post" key="j">
+							<if condition="$post['cate_id'] == $department['id']">
+								<li  class="post" post="<{$post['id']}>"><a href="javascript:;"><{$post.name}></a></li>
+							</if>
+							</volist>
+							</div>
+						</div>
+					</div>
+				</div>
+			</volist>
+
+	
+		</div><!-- 招聘菜单 end-->
+		
+
+
+		
+	</div>
+</div>	
+
+
+
+
+
+
+
+<!--常见问题-->
+<div class="contact-qa">
+	<img src="__PUBLIC__/Mobile/images/contactbk.jpg" alt="" />
+	
+	<div class="contact-qar">
+	<h1>常见问题</h1>
+		<volist name="qcs" id="vo">
+		<!--第一题-->
+		<a data-toggle="collapse" data-target="#claps-tit0<{$i}>">
+			<div class="panel-info-titl clapstit-act<if condition="$i == 1">a<else />b</if>"><{$vo.qc}></div>
+		</a>
+		<div id="claps-tit0<{$i}>" class="claps-area collapse <if condition="$i == 1"> in <else /> on </if>">
+			<div class="container-fluid">
+				<div class="row">
+					<volist name="questions" id="question" key="j">
+					<if condition="$question['qc_id'] == $vo['id']">
+					<!--第一题 第1条-->
+					<a data-toggle="collapse" data-target="#claps-tit0<{$i}>0<{$j}>">
+						<div class="panel-info-titl clapstit-act<if condition="$j == 1">a<else />b</if>"><{$question.question}></div>
+					</a>
+					<div id="claps-tit0<{$i}>0<{$j}>" class="claps-area collapse <if condition="$j ==1 ">in <else /> on </if>">
+						<div class="container-fluid">
+							<div class="row">
+								<h3><{$question.answer}></h3>
+							</div>
+						</div>
+					</div><!--第一题 第1条 end-->
+					</if>
+					</volist>
+
+					
+				</div>
+			</div>
+		</div><!--第一题 end-->
+		</volist>	
+
+
+
+	
+		
+		
+	</div>
+	
+	
+	<script type="text/javascript">
+	   $(document).ready(function(){
+		   $(".contact-qar .panel-info-titl").click(function(){
+				if($(this).hasClass("clapstit-acta")){
+					$(this).removeClass("clapstit-acta");
+					$(this).addClass("clapstit-actb");
+				}else{
+					$(this).removeClass("clapstit-actb");
+					$(this).addClass("clapstit-acta");
+				}
+		   });
+	   });
+	</script>
+	
+	
+</div>
+		
+		
+		
+		
+
+<!--百度地图容器-->
+		<div class="boxmapcont"><div id="dituContent"></div><!-- <div class="boxmapmask"></div> --></div>
+
+
+
+<!--联系方式-->
+<div class="contact-msg">
+	<img src="__PUBLIC__/Mobile/images/contactus.png" alt="" />
+	
+	<div class="contact-msgl">
+		<form action="<{:U('Contact/message')}>" method="post">
+			<div><label>姓名</label><input value="" type="text" name="name" id="" placeholder="" /></div>
+			<div><label>手机</label><input value="" type="text" name="phone" id="" placeholder="" /></div>
+			<div><label>邮箱</label><input type="text" value="" name="email" id="email" placeholder=""/></div>
+			<div><textarea id="" name="info" rows="" cols="" placeholder=""></textarea></div>
+			<h6><input type="submit" value="提交" class="contact-msg-btn" /></h6>
+		</form>
+	</div>
+	
+</div>
+
+	
+	
+<include file="Public::mfoot" />
+
+
+
+
+
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(121.359195,31.228724);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+	
+
+	
+	
+	
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+                }
+    
+    //标注点数组
+    var markerArr = [{title:"什马金融",content:"什马互联网金融信息服务(上海)有限公司",point:"121.359161|31.22846",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+
+
+<script>
+	//切换地点职位效果
+	$("li[role='presentation']").click(function(){
+		location_id = $(this).attr('location');
+		$.post('<{:U('Contact/getPostInfo')}>', {'location_id': location_id}, function(data){
+            // alert(data);
+			$('.contact-recruit-nav').html(data);
+			
+		});
+	});
+
+
+	//切换地点职位效果
+	$(".contact-recruit-nav").on('click','li',function(){
+        // alert($(this).html());
+		post_id = $(this).attr('post');
+		// alert(post_id);
+		$.post('<{:U('Contact/getPost')}>', {'post_id': post_id}, function(data){
+			// alert(data);
+		 	$('.contact-recruit-detail').html(data);
+		});
+
+	});
+
+</script>
+</body>
+</html>

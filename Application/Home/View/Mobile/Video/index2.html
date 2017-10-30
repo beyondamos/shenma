@@ -1,0 +1,23 @@
+<include file="Public::mhead" />
+
+	<!--头部图片-->
+	<div class="boxcont">
+		<div class="toplimt"><img src="__PUBLIC__/Mobile/images/bktop0<if condition="$videoc['parent_id'] ==1">1<else />2</if>.jpg" alt="" /><h1><{$videoc.name}></h1></div>
+	</div>
+<div class="vlist">
+	<volist name="videos" id="vo">
+		<a href="<{:U('Video/vplay', array('id' => $vo.id))}>"><div class="vlist-item vlist-item-<if condition="$videoc['parent_id'] ==1">yellow<else />blue</if>">
+			<h1><{$vo.title}></h1>
+			<img src="__PUBLIC__/Mobile/images/iconv.png" alt="" />
+		</div>
+		</a>
+	</volist>
+
+</div>
+		
+<div class="boxfootup"></div>
+<include file="Public::mfoot" />
+
+</body>
+
+</html>

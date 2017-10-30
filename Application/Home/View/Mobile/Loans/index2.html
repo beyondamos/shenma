@@ -1,0 +1,73 @@
+<include file="Public::mhead" />
+
+<div class="apply-top">
+	<img src="__PUBLIC__/Mobile/images/bkimgloan.jpg" alt="" />
+	<div class="apply-top-md">
+		<a href="<{:U('Loans/index')}>"><img src="__PUBLIC__/Mobile/images/biz.png" alt="" /><h1>商家申请</h1><h2>Business application</h2></a>
+		<a href="<{:U('Loans/index2')}>"><img src="__PUBLIC__/Mobile/images/cust.png" alt="" /><h1>消费者申请</h1><h2>Consumer application</h2></a>
+	</div>
+</div>
+
+
+
+<!--什么是商品分期？-->
+	<div class="goods-spfq">
+		<div class="goods-spfq-md">
+			<img src="<{$goods_banner.thumbnail}>" alt="" /><!--什么是商品分期？  图片宽度 不小于1000px-->
+		</div>
+	</div>
+	
+	
+	<!--核心产品-->
+	<div class="goods-core">
+		<!-- <img src="__PUBLIC__/Mobile/images/bkimgArr.png" alt="" /> -->
+		<div class="goods-core-md">
+			<h2><span>核心产品</span><br/>CORE PRODUCTS</h2>
+					<volist name="goods_products" id="vo">
+					<img src="<{$vo.thumbnail}>" alt="" />
+                    </volist> 
+	<!--核心产品 什马分期 1分期  申请流程  图片宽度 不小于1000px-->
+			
+		</div>
+	</div>
+	
+	
+
+	<!-- App下载 -->
+	<div class="apply-app">
+		<div class="apply-app-md">
+			<a href="http://mmp.shenmajr.com/dealers/download.html"><img src="__PUBLIC__/Mobile/images/downbtn.jpg" alt="" />
+				<!--<i>
+					<img src="Public/static/img/qr01.jpg" alt="" />
+				</i>-->
+			</a>
+		</div>
+	</div>
+		
+	
+	<!--什么是现金分期？-->
+	<div class="goods-spfq">
+		<div class="goods-spfq-md">
+			<img src="<{$cash_banner.thumbnail}>" alt="" /><!--什么是现金分期？  图片宽度 不小于1000px-->
+		</div>
+	</div>
+	
+	
+	
+	<!--核心产品-->
+	<div class="goods-core">
+		<!-- <img src="__PUBLIC__/Mobile/images/bkimgArr.png" alt="" /> -->
+		<div class="goods-core-md">
+			<h2><span>核心产品</span><br/>CORE PRODUCTS</h2>
+					<volist name="cash_products" id="vo">
+					<img src="<{$vo.thumbnail}>" alt="" /><!--核心产品 放开花  图片宽度 不小于1000px-->
+                    </volist>
+		</div>
+	</div>
+
+
+<include file="Public::mfoot" />
+
+
+</body>
+</html>
