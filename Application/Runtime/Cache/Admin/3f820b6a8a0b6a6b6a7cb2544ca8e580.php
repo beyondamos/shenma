@@ -45,16 +45,17 @@
 	<div>
 		<span><a href="<?php echo U('Admin/Index/index');?>">后台首页</a></span>
 	</div>
-	<div>
-		<span>内容管理<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
-		<a>首页</a>
+	<div>	
+		<span>首页<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
 		<a href="<?php echo U('Banner/index', array('classify' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
 		<a href="<?php echo U('Aboutus/shouye');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于什马</a>
 		<a href="<?php echo U('Carousel/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;轮播图设置</a>
 		<a href="<?php echo U('Brand/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合作品牌</a>
 		<a href="<?php echo U('Nav/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;底部导航设置</a>
 		<a href="<?php echo U('Add/index', array('classify' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页附加信息</a>
-		<a>借款申请</a>
+	</div>
+	<div>
+		<span>借款申请<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
 		<a href="<?php echo U('Banner/edit', array('id' => 6 ));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
 		<a href="<?php echo U('Icon/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图标设置</a>
 		<a href="<?php echo U('Banner/index', array('classify' => 4));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商家中部设置</a>
@@ -65,26 +66,34 @@
 		<a href="<?php echo U('Banner/edit', array('id' => 17));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费者现金分期</a>
 		<a href="<?php echo U('Productf/index', array('classify' => 17));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费者现金图</a>
 		<a href="<?php echo U('Add/index', array('classify' => 3));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费者附加信息</a>
-		<a>关于什马</a>
+	</div>
+	<div>
+		<span>关于什马<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
 		<a href="<?php echo U('Banner/edit', array('id' => 5));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
 		<a href="<?php echo U('Aboutus/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马介绍</a>
 		<a href="<?php echo U('Develop/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发展历程</a>
 		<a href="<?php echo U('Team/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;核心团队</a>
 		<a href="<?php echo U('Info/index', array('id' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小暖炉助学计划</a>
 		<a href="<?php echo U('Add/index', array('classify' => 4));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附加信息</a>
-		<a>新闻资讯</a>
+	</div>
+	<div>
+		<span>新闻资讯<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
 		<a href="<?php echo U('Banner/edit', array('id' => 9));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
 		<a href="<?php echo U('Banner/index', array('classify' => 8));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新闻Banner图</a>
 		<a href="<?php echo U('Article/index', array('cate_id' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马新闻</a>
 		<a href="<?php echo U('Article/index', array('cate_id' => 2));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行业动态</a>
 		<a href="<?php echo U('Add/index', array('classify' => 5));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附加信息</a>
-		<a>老板商学院</a>
+	</div>
+	<div>
+		<span>老板商学院<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
 		<a href="<?php echo U('Banner/edit', array('id' => 10));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
 		<a href="<?php echo U('Info/index', array('id' => 2));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商学院简介</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 18));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什马大讲堂</a>
 		<a href="<?php echo U('Banner/edit', array('id' => 11));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;老板社区</a>
 		<a href="<?php echo U('Add/index', array('classify' => 6));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附加信息</a>
-		<a>联系我们</a>
+	</div>
+	<div>	
+		<span>联系我们<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
 		<a href="<?php echo U('Banner/edit', array('id' => 12));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner设置</a>
 		<a href="<?php echo U('Department/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地点部门设置</a>
 		<a href="<?php echo U('Post/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;职位设置</a>
@@ -93,10 +102,29 @@
 		<a href="<?php echo U('Message/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留言信息</a>
 		<a href="<?php echo U('Add/index', array('classify' => 7));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附加信息</a>
 	</div>
+	<div><span></span></div>
+	<div>
+		<span><a href="<?php echo U('Admin/Index/index');?>">移动端管理</a></span>
+	</div>
+	<div>	
+		<span>首页<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
+		<a href="<?php echo U('Bannerm/index', array('classify' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
+	</div>
+	<div>	
+		<span>老板商学院<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
+		<a href="<?php echo U('Bannerm/edit', array('id' => 3));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
+	</div>
+	<div>	
+		<span>学习视频<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
+		<a href="<?php echo U('Videoc/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;栏目设置</a>
+		<a href="<?php echo U('Video/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;视频设置</a>
+	</div>
+	<div><span></span></div>
 	<?php if(is_array($user_auth_list)): $i = 0; $__LIST__ = $user_auth_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if($vo[0][auth_id] != 1): ?><div>
 		<span><?php echo ($vo[0]['auth_name']); ?><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
 		<?php if(is_array($vo)): $i = 0; $__LIST__ = array_slice($vo,1,null,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i; if($val['status'] == 1): ?><a href="<?php echo U($val['auth_url']) ?>"><?php echo ($val["auth_name"]); ?></a><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 	</div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+
 </div>
 
 <div class="cont">

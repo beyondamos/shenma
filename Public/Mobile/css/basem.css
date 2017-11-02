@@ -593,7 +593,7 @@ body,html{width:100%;height:100%;height:100vh}
 .contact-recruit-nav a:hover{background-color:#f3f3f3;color:#5e5e5e;text-decoration:none}
 .contact-recruit-navbox{width:50%;margin-top:0;margin-left:0;margin-bottom:20px;height:135px;overflow:hidden;padding-top:30px;position:relative;float:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .contact-recruit-navbox .panel-info-titl{width:100%;text-align:center;position:absolute;top:0}
-.contact-recruit-navbox .claps-area{height:150px;overflow:hidden;overflow-y:auto}
+.contact-recruit-navbox .claps-area{height:105px;overflow:hidden;overflow-y:auto}
 .contact-recruit-email{width:100%;height:50px;padding-left:10px;margin-top:-50px;position:relative;z-index:1;background-color:#fff;-webkit-box-shadow:#ddd 0 10px 20px;-moz-box-shadow:#ddd 0 10px 20px;box-shadow:#ddd 0 10px 20px}
 .contact-recruit-email a{color:#009fe3;font-size:20x;line-height:50px}
 .contact-qa{clear:both;position:relative;width:100%;margin-bottom:40px;margin-top:40px}
@@ -668,4 +668,5 @@ body,html{width:100%;height:100%;height:100vh}
 .toplimt img{width:100%;height:160px}
 .toplimt h1{width:100%;position:absolute;left:0;top:40px;font-size:35px;line-height:35px;color:#fff;text-align:center;font-weight:700;letter-spacing:1px}
 .boxcontv video{position:fixed;top:0;left:0;min-width:100%;min-height:100%}
+.boxcontv iframe{position:fixed;top:0;left:0;min-width:100%;min-height:100%}
 .boxcontv{position:fixed;left:0;top:0;width:100%;height:100%;padding:0 10px 20px 10px;background-color:#000}

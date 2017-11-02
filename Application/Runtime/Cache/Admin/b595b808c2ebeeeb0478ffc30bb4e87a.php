@@ -110,6 +110,15 @@
 		<span>首页<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
 		<a href="<?php echo U('Bannerm/index', array('classify' => 1));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
 	</div>
+	<div>	
+		<span>老板商学院<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
+		<a href="<?php echo U('Bannerm/edit', array('id' => 3));?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banner图设置</a>
+	</div>
+	<div>	
+		<span>学习视频<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
+		<a href="<?php echo U('Videoc/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;栏目设置</a>
+		<a href="<?php echo U('Video/index');?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;视频设置</a>
+	</div>
 	<div><span></span></div>
 	<?php if(is_array($user_auth_list)): $i = 0; $__LIST__ = $user_auth_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if($vo[0][auth_id] != 1): ?><div>
 		<span><?php echo ($vo[0]['auth_name']); ?><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>

@@ -27,7 +27,7 @@
 			
 			<form action="" method="post">
 				<div class="boxin">
-					<span>分类名称</span><input type="text"  class="form-control" name="name" value="<{$video_data.name}>"> 
+					<span>视频名称</span><input type="text"  class="form-control" name="title" value="<{$video_data.title}>"> 
 				</div>
 				<div class="boxinb">
 		          <div class="boxinbl">
@@ -41,8 +41,7 @@
 		          </div>
 		        </div>
 				<div class="boxin">
-					<span>描述</span>
-					<textarea class="form-control" name="desc" rows="5" cols="80"><{$video_data.desc}></textarea>
+					<span>视频URL</span><input type="text"  class="form-control" name="url" value="<{$video_data.url}>">
 				</div>
 				<div class="boxinbtn">
 					<input type="hidden" name="id" value="<{$video_data.id}>">

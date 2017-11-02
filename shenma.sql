@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?10 �?30 �?08:34
+-- 生成日期: 2017 �?11 �?02 �?09:26
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.6.27
 
@@ -790,7 +790,7 @@ CREATE TABLE IF NOT EXISTS `shenma_user` (
 --
 
 INSERT INTO `shenma_user` (`user_id`, `username`, `nickname`, `password`, `email`, `salt`, `role_id`, `last_login_time`, `last_login_ip`, `add_time`, `login_times`, `status`) VALUES
-(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1509339657, 2130706433, 0, 72, 1),
+(1, 'chunming', 'xiaoming1', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1509355684, 2130706433, 0, 73, 1),
 (8, 'shenma', 'shenma', 'e0872f7bc5e019bf4ad8c24f15d72cc5', 'shenma@qq.com', 'E0iAvl', 1, 1507446410, 1883314357, 1505444079, 4, 1);
 
 -- --------------------------------------------------------

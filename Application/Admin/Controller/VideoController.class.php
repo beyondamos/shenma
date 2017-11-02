@@ -55,7 +55,7 @@ class VideoController extends  CommonController{
             }
         }else{
             $video_id = I('get.id');
-            $vide_model = D('Video');
+            $video_model = D('Video');
             $video_data = $video_model->find($video_id);
             $this->assign('video_data', $video_data);
             $videoc_data = D('Videoc')->getSortCategories();

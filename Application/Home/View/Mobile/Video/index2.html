@@ -6,7 +6,7 @@
 	</div>
 <div class="vlist">
 	<volist name="videos" id="vo">
-		<a href="<{:U('Video/vplay', array('id' => $vo.id))}>"><div class="vlist-item vlist-item-<if condition="$videoc['parent_id'] ==1">yellow<else />blue</if>">
+		<a href="<{:U('Video/vplay', array('id' => $vo['id']))}>"><div class="vlist-item vlist-item-<if condition="$videoc['parent_id'] ==1">yellow<else />blue</if>">
 			<h1><{$vo.title}></h1>
 			<img src="__PUBLIC__/Mobile/images/iconv.png" alt="" />
 		</div>
